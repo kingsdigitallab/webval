@@ -1,0 +1,16 @@
+[
+  {
+    "name": "CultureCase",
+    "slug": "culturecase",
+    "sites": {
+      "liv": "culturecase.org"
+    }
+  },
+  {
+    "name": "Alice Thornton",
+    "slug": "thortnton",
+    "sites": {
+      "liv": "thornton.kdl.kcl.ac.uk"
+    }
+  }
+]

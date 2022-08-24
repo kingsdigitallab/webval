@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDL Accessibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <section class="section" id="app">
+      <div class="container">
+        <h1 class="title">
+          KDL Accessibility
+        </h1>
+        <p>
+          <select v-model="selection.project">
+            <option v-for="project in projects">{{ project.name }}</option>
+          </select>
+        </p>
+      </div>
+    </section>
+    <script>
+      const { createApp } = Vue
+
+      createApp({
+        data() {
+          return {
+            projects: [],
+            selection: {
+              project: null
+            }
+          }
+        },
+        mounted() {
+          this.loadSelection()
+
+          fetch('projects.json')
+            .then(res => res.json())
+            .then(res => {
+              this.projects = res
+            })
+        },
+        watch: {
+          selection: {
+            deep: true,
+            handler(val, valOld) {
+              this.saveSelection()
+            }
+          }
+        },
+        methods: {
+          loadSelection() {
+            this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
+            if (!this.selection?.project) {
+              this.selection = {project: null}
+            }
+          },
+          saveSelection() {
+            window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
+          },
+        }
+      }).mount('#app');
+    </script>
+  </body>
+</html>
