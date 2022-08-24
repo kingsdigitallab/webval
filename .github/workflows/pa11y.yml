@@ -1,0 +1,22 @@
+name: accessibility evaluation
+
+on:
+  push:
+
+jobs:
+  accessibility-evaluation:
+
+    name: accessibility-evaluation-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    container: buildkite/puppeteer
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i pa11y-ci
+    - name: Evaluation
+      run: npx pa11y-ci -c pa11y-ci.json
+    

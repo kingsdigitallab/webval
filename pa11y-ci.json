@@ -1,0 +1,18 @@
+{
+    "defaults": {
+        "chromeLaunchConfig": {
+            "args": [
+                "--no-sandbox"
+            ]
+        },
+        "timeout": 10000,
+        "viewport": {
+            "width": 320,
+            "height": 480
+        }
+    },
+    "urls": [
+        "https://pa11y.org/",
+        "https://pa11y.org/contributing"
+    ]
+}
