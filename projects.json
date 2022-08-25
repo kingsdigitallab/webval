@@ -1,32 +1,52 @@
 [
-  {
-    "name": "CultureCase",
-    "slug": "culturecase",
-    "sites": {
-      "liv": "culturecase.org"
-    },
-    "urls": [
-      "/",
-      "/about/",
-      "/faqs/",
-      "/contents/",
-      "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
-      "/search/?s=museum"
-    ]
+ {
+  "name": "LocalTest",
+  "slug": "local-test",
+  "sites": {
+   "liv": "http://localhost:5500"
   },
-  {
-    "name": "Alice Thornton",
-    "slug": "thortnton",
-    "sites": {
-      "liv": "thornton.kdl.kcl.ac.uk"
-    },
-    "urls": [
-      "/",
-      "/books/",
-      "/about/",
-      "/posts/",
-      "/posts/blog/",
-      "/posts/blog/2022-07-25-alice-thornton-middleham-castle/"
-    ]
+  "a11y": {
+   "status": "done",
+   "urls": [
+    "/"
+   ],
+   "evaluated": "2022-08-25T21:45:59.649Z"
   }
+ },
+ {
+  "name": "CultureCase",
+  "slug": "culturecase",
+  "sites": {
+   "liv": "culturecase.org"
+  },
+  "a11y": {
+   "status": "done",
+   "urls": [
+    "/",
+    "/about/",
+    "/faqs/",
+    "/contents/",
+    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+    "/search/?s=museum"
+   ]
+  }
+ },
+ {
+  "name": "Alice Thornton",
+  "slug": "thortnton",
+  "sites": {
+   "liv": "thornton.kdl.kcl.ac.uk"
+  },
+  "a11y": {
+   "status": "done",
+   "urls": [
+    "/",
+    "/books/",
+    "/about/",
+    "/posts/",
+    "/posts/blog/",
+    "/posts/blog/2022-07-25-alice-thornton-middleham-castle/"
+   ]
+  }
+ }
 ]

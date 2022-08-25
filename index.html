@@ -13,14 +13,42 @@ font-awesome/5.15.2/css/all.min.css"/>
   <body>
     <section class="section" id="app">
       <div class="container">
-        <h1 class="title">
+        <h1 class="title is-1">
           KDL Accessibility
         </h1>
         <p>
-          <select v-model="selection.project">
-            <option v-for="project in projects">{{ project.name }}</option>
+          Project: 
+          <select @change="onChangeProject()" v-model="selection.project">
+            <option v-for="project in projects" :value="project.slug">{{ project.name }}</option>
           </select>
         </p>
+        <h2 class="title is-2">Issues</h2>
+        <table class="table is-striped is-hoverable">
+          <thead>
+            <tr>
+              <td>Webpath</td>
+              <td>Level</td>
+              <td>Principle</td>
+              <td>Guideline</td>
+              <td>Rule</td>
+              <td>Code</td>
+              <td>Target</td>
+              <td>Comment</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(issue, idx) in issues">
+              <td><a :href="issue.host + issue.webpath">{{ issue.webpath }}</a></td>
+              <td>{{ issue.rule.level }}</td>
+              <td>{{ issue.rule.principle }}</td>
+              <td>{{ issue.rule.guideline }}</td>
+              <td>{{ issue.rule.rule }}</td>
+              <td>{{ issue.rule.code }}</td>
+              <td>{{ issue.rule.target }}</td>
+              <td><input type="text" v-model="issue.comment"/></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <script>
@@ -30,18 +58,18 @@ font-awesome/5.15.2/css/all.min.css"/>
         data() {
           return {
             projects: [],
+            issues: [],
             selection: {
               project: null
             }
           }
         },
         mounted() {
-          this.loadSelection()
-
           fetch('projects.json')
             .then(res => res.json())
             .then(res => {
               this.projects = res
+              this.loadSelection()
             })
         },
         watch: {
@@ -52,16 +80,32 @@ font-awesome/5.15.2/css/all.min.css"/>
             }
           }
         },
+        computed: {
+          project() {
+            let ret = this.projects.filter(p => p.slug == this.selection.project)
+            return ret ? ret[0] : null
+          }
+        },
         methods: {
           loadSelection() {
             this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
             if (!this.selection?.project) {
               this.selection = {project: null}
             }
+            this.onChangeProject()
           },
           saveSelection() {
             window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
           },
+          onChangeProject() {
+            // load issues
+            fetch(`./projects/${this.selection.project}/a11y-issues.json`)
+            .then(res => res.json())
+            .then(res => {
+              this.issues = res.issues
+            })
+            .catch(err => this.issues = [])
+          }
         }
       }).mount('#app');
     </script>
