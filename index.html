@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
 font-awesome/5.15.2/css/all.min.css"/>
+    <script type="module">
+      import { updateGithubJsonFile, readGithubJsonFile } from "./utils.js";
+      window.updateGithubJsonFile = updateGithubJsonFile
+      window.readGithubJsonFile = readGithubJsonFile
+    </script>    
     <script src="https://unpkg.com/vue@3"></script>
     <script type="module">
       import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
       window.Octokit = Octokit
-    </script>    
-    <script type="module">
-      import { updateGithubJsonFile } from "./utils.js";
-      window.updateGithubJsonFile = updateGithubJsonFile
     </script>    
   </head>
   <body>
@@ -77,97 +78,106 @@ font-awesome/5.15.2/css/all.min.css"/>
       </div>
     </section>
     <script>
-      const { createApp } = Vue
+      window.addEventListener("load", function(event) {
+        const { createApp } = Vue
 
-      createApp({
-        data() {
-          return {
-            projects: [],
-            issues: [],
+        createApp({
+          data() {
+            return {
+              projects: [],
+              issues: [],
+              selection: {
+                project: null,
+                gtoken: null
+              }
+            }
+          },
+          async mounted() {
+            // TODO: non-blocking
+            let res = await readGithubJsonFile('projects.json')
+            this.projects = res.data
+            this.projects_sha = res.sha
+            this.loadSelection()
+          },
+          watch: {
             selection: {
-              project: null,
-              gtoken: null
+              deep: true,
+              handler(val, valOld) {
+                this.saveSelection()
+              }
+            }
+          },
+          computed: {
+            project() {
+              let ret = this.projects.filter(p => p.slug == this.selection.project)
+              return ret ? ret[0] : null
+            },
+            isReadOnly() {
+              return !this.selection.gtoken
+            }
+          },
+          methods: {
+            loadSelection() {
+              this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
+              if (!this.selection?.project) {
+                this.selection = {project: null}
+              }
+              this.onChangeProject()
+            },
+            saveSelection() {
+              window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
+            },
+            async onChangeProject() {
+              // load issues
+              let res = await readGithubJsonFile(`./projects/${this.selection.project}/a11y-issues.json`)
+              if (res) {
+                this.issues = res.data.issues
+                this.issues_sha = res.sha
+              } else {
+                this.issues = []
+                this.issues_sha = null
+              }
+              // fetch(`./projects/${this.selection.project}/a11y-issues.json`)
+              // .then(res => res.json())
+              // .then(res => {
+              //   this.issues = res.issues
+              // })
+              // .catch(err => this.issues = [])
+            },
+            getPrincipleFromIssue(issue) {
+              return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
+            },
+            getGuidelineFromIssue(issue) {
+              const principlesGuidelines = [
+                [],
+                [],
+                [],
+                [],
+              ]
+              return principlesGuidelines[issue.rule.principle-1][issue.rule.guideline-1]
+            },
+            getOctokit(){
+              let ret = null
+              if (this.selection.gtoken) {
+                ret = new Octokit({
+                  auth: this.selection.gtoken
+                })
+              }
+              return ret
+            },
+            async onClickSave() {
+              if (this.isReadOnly) return;
+              
+              await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, {issues: this.issues}, this.getOctokit())
+            },
+            async onClickEvaluate() {
+              if (this.isReadOnly) return;
+              
+              await updateGithubJsonFile(`evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
             }
           }
-        },
-        mounted() {
-          fetch('projects.json')
-            .then(res => res.json())
-            .then(res => {
-              this.projects = res
-              this.loadSelection()
-            })
-        },
-        watch: {
-          selection: {
-            deep: true,
-            handler(val, valOld) {
-              this.saveSelection()
-            }
-          }
-        },
-        computed: {
-          project() {
-            let ret = this.projects.filter(p => p.slug == this.selection.project)
-            return ret ? ret[0] : null
-          },
-          isReadOnly() {
-            return !this.selection.gtoken
-          }
-        },
-        methods: {
-          loadSelection() {
-            this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
-            if (!this.selection?.project) {
-              this.selection = {project: null}
-            }
-            this.onChangeProject()
-          },
-          saveSelection() {
-            window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
-          },
-          onChangeProject() {
-            // load issues
-            fetch(`./projects/${this.selection.project}/a11y-issues.json`)
-            .then(res => res.json())
-            .then(res => {
-              this.issues = res.issues
-            })
-            .catch(err => this.issues = [])
-          },
-          getPrincipleFromIssue(issue) {
-            return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
-          },
-          getGuidelineFromIssue(issue) {
-            const principlesGuidelines = [
-              [],
-              [],
-              [],
-              [],
-            ]
-            return principlesGuidelines[issue.rule.principle-1][issue.rule.guideline-1]
-          },
-          getOctokit(){
-            let ret = null
-            if (this.selection.gtoken) {
-              ret = new Octokit({
-                auth: this.selection.gtoken
-              })
-            }
-            return ret
-          },
-          async onClickSave() {
-            if (this.isReadOnly) return;
-            
-            await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, {issues: this.issues}, this.getOctokit())
-          },
-          async onClickEvaluate() {
-            if (this.isReadOnly) return;
-            
-            await updateGithubJsonFile(`evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
-          }
-        }
-      }).mount('#app');
+        }).mount('#app');
+      })
     </script>
   </body>
 </html>
