@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
 font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://unpkg.com/vue@3"></script>
+    <script type="module">
+      import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+      window.Octokit = Octokit
+    </script>    
+    <script type="module">
+      import { updateGithubJsonFile } from "./utils.js";
+      window.updateGithubJsonFile = updateGithubJsonFile
+    </script>    
   </head>
   <body>
     <section class="section" id="app">
@@ -16,13 +24,24 @@ font-awesome/5.15.2/css/all.min.css"/>
         <h1 class="title is-1">
           KDL Accessibility
         </h1>
-        <p>
-          Project: 
-          <select @change="onChangeProject()" v-model="selection.project">
-            <option v-for="project in projects" :value="project.slug">{{ project.name }}</option>
-          </select>
-        </p>
+        <div class="control">
+          <label class="label">Project:</label> 
+          <div class="select">
+            <select @change="onChangeProject()" v-model="selection.project">
+              <option v-for="project in projects" :value="project.slug">{{ project.name }}</option>
+            </select>
+          </div>
+        </div>
+
         <h2 class="title is-2">Issues</h2>
+        <div class="field is-grouped">
+          <div class="control">
+            <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">Evaluate</button>
+          </div>
+          <div class="control">
+            <button @click="onClickSave()" name="action" value="save" class="button is-primary" :disabled="isReadOnly">Save</button>
+          </div>
+        </div>
         <table class="table is-striped is-hoverable">
           <thead>
             <tr>
@@ -31,7 +50,6 @@ font-awesome/5.15.2/css/all.min.css"/>
               <td>Principle</td>
               <td>Guideline</td>
               <td>Rule</td>
-              <td>Code</td>
               <td>Target</td>
               <td>Comment</td>
             </tr>
@@ -40,15 +58,22 @@ font-awesome/5.15.2/css/all.min.css"/>
             <tr v-for="(issue, idx) in issues">
               <td><a :href="issue.host + issue.webpath">{{ issue.webpath }}</a></td>
               <td>{{ issue.rule.level }}</td>
-              <td>{{ issue.rule.principle }}</td>
+              <td>{{ getPrincipleFromIssue(issue) }}</td>
               <td>{{ issue.rule.guideline }}</td>
               <td>{{ issue.rule.rule }}</td>
-              <td>{{ issue.rule.code }}</td>
               <td>{{ issue.rule.target }}</td>
-              <td><input type="text" v-model="issue.comment"/></td>
+              <td><input type="text" v-model="issue.comment" :disabled="isReadOnly" /></td>
             </tr>
           </tbody>
         </table>
+
+        <form :class="{field: 1, notification: 1, 'is-warning': isReadOnly}">
+          <div class="field">
+            <label class="label">Personal access token:</label>
+            <input type="password" v-model="selection.gtoken" class="input">
+            <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">Please generate and provide a github Personal Access Token to interact with the page</a>
+          </div>
+        </form>
       </div>
     </section>
     <script>
@@ -60,7 +85,8 @@ font-awesome/5.15.2/css/all.min.css"/>
             projects: [],
             issues: [],
             selection: {
-              project: null
+              project: null,
+              gtoken: null
             }
           }
         },
@@ -84,6 +110,9 @@ font-awesome/5.15.2/css/all.min.css"/>
           project() {
             let ret = this.projects.filter(p => p.slug == this.selection.project)
             return ret ? ret[0] : null
+          },
+          isReadOnly() {
+            return !this.selection.gtoken
           }
         },
         methods: {
@@ -105,6 +134,34 @@ font-awesome/5.15.2/css/all.min.css"/>
               this.issues = res.issues
             })
             .catch(err => this.issues = [])
+          },
+          getPrincipleFromIssue(issue) {
+            return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
+          },
+          getGuidelineFromIssue(issue) {
+            const principlesGuidelines = [
+              [],
+              [],
+              [],
+              [],
+            ]
+            return principlesGuidelines[issue.rule.principle-1][issue.rule.guideline-1]
+          },
+          getOctokit(){
+            let ret = null
+            if (this.selection.gtoken) {
+              ret = new Octokit({
+                auth: this.selection.gtoken
+              })
+            }
+            return ret
+          },
+          async onClickSave() {
+            if (this.isReadOnly) return;
+            
+            await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, {issues: this.issues}, this.getOctokit())
+
+            // await updateGithubJsonFile(`test.json`, {issues: "test"}, this.getOctokit())
           }
         }
       }).mount('#app');

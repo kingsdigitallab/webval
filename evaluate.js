@@ -1,5 +1,5 @@
-const tmpConfigPath = "/tmp/pa11y-ci.json"
 const projectsPath = "./projects.json"
+const toEvaluate = require("./evaluate.json");
 
 const projects = require(projectsPath);
 const pa11yCiConfig = require('./pa11y-ci.json');
@@ -8,6 +8,7 @@ const { execSync } = require('child_process');
 const pa11y = require('pa11y');
 
 function saveData(data, path) {
+  console.log('  WRITE ' + path)
   fs.writeFileSync(path, JSON.stringify(data, null, 1), "utf8")
 }
 
@@ -31,8 +32,8 @@ function setIssueRuleFromIssueCode(issue) {
 }
 
 projects
-  .filter(project => (project?.a11y?.status == 'scheduled'))
-  .forEach((project) => {
+  .filter(project => (project?.slug == toEvaluate.slug))
+  .forEach(async (project) => {
     let baseUri = project.sites.liv
     console.log(`Project ${project.name} ${baseUri}`)
 
@@ -44,7 +45,7 @@ projects
     }
 
     if (1) {
-      project.a11y.urls.forEach(async (webpath) => {
+      for (let webpath of project.a11y.urls) {
         console.log(`  PA11Y ${webpath}`)
         let results = null
         try {
@@ -52,12 +53,6 @@ projects
         } catch(err) {
           console.log(err.message)
         }
-
-        // console.log(results)
-        // project.a11y.status = 'done'
-        project.a11y.evaluated = new Date().toISOString()
-        project.a11y.status = 'done'
-        saveData(projects, projectsPath)
         
         for (let issue of results.issues) {
           issue.host = baseUri
@@ -65,10 +60,13 @@ projects
           setIssueRuleFromIssueCode(issue)
           res.issues.push(issue)
         } 
-        resultsPath = `./projects/${project.slug}/a11y-issues.json`
-        console.log('  WRITE ' + resultsPath)
-        saveData(res, resultsPath)
-      })
+      }
+
+      project.a11y.evaluated = new Date().toISOString()
+      saveData(projects, projectsPath)
+
+      let resultsPath = `./projects/${project.slug}/a11y-issues.json`
+      saveData(res, resultsPath)
     }
 
   })

@@ -2,8 +2,10 @@ name: accessibility evaluation
 
 on:
   push:
+    branches:
+      - 'main'
     paths:
-      - 'projects.json'
+      - 'evaluate.json'
 
 jobs:
   accessibility-evaluation:
@@ -26,4 +28,3 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated accessibuility test
-        
