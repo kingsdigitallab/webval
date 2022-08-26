@@ -34,7 +34,7 @@
  },
  {
   "name": "Alice Thornton",
-  "slug": "thortnton",
+  "slug": "thornton",
   "sites": {
    "liv": "thornton.kdl.kcl.ac.uk"
   },
@@ -47,7 +47,8 @@
     "/posts/",
     "/posts/blog/",
     "/posts/blog/2022-07-25-alice-thornton-middleham-castle/"
-   ]
+   ],
+   "evaluated": "2022-08-26T22:48:11.631Z"
   }
  }
 ]

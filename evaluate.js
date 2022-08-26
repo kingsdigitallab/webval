@@ -4,12 +4,16 @@ const toEvaluate = require("./evaluate.json");
 const projects = require(projectsPath);
 const pa11yCiConfig = require('./pa11y-ci.json');
 const fs = require("fs");
+const path = require('path')
 const { execSync } = require('child_process');
 const pa11y = require('pa11y');
 
-function saveData(data, path) {
-  console.log('  WRITE ' + path)
-  fs.writeFileSync(path, JSON.stringify(data, null, 1), "utf8")
+function saveData(data, apath) {
+  parentPath = path.dirname(apath);
+  fs.mkdirSync(parentPath, {recursive: true});
+
+  console.log('  WRITE ' + apath)
+  fs.writeFileSync(apath, JSON.stringify(data, null, 1), "utf8")
 }
 
 function setIssueRuleFromIssueCode(issue) {

@@ -160,8 +160,11 @@ font-awesome/5.15.2/css/all.min.css"/>
             if (this.isReadOnly) return;
             
             await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, {issues: this.issues}, this.getOctokit())
-
-            // await updateGithubJsonFile(`test.json`, {issues: "test"}, this.getOctokit())
+          },
+          async onClickEvaluate() {
+            if (this.isReadOnly) return;
+            
+            await updateGithubJsonFile(`evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
           }
         }
       }).mount('#app');
