@@ -18,6 +18,8 @@ jobs:
     container: buildkite/puppeteer
 
     steps:
+    - name: install git
+      run: apt update ; apt install -y git
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: npm i pa11y
