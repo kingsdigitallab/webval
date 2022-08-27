@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm i pa11y
     - name: Evaluation
-      run: node evaluate.js
+      run: node app/evaluate.js
     - name: Commit and push
       if: ${{ true }}
       uses: stefanzweifel/git-auto-commit-action@v4

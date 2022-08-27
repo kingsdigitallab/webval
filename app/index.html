@@ -94,7 +94,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           },
           async mounted() {
             // TODO: non-blocking
-            let res = await readGithubJsonFile('projects.json')
+            let res = await readGithubJsonFile('projects/projects.json')
             this.projects = res.data
             this.projects_sha = res.sha
             this.loadSelection()
@@ -129,7 +129,7 @@ font-awesome/5.15.2/css/all.min.css"/>
             },
             async onChangeProject() {
               // load issues
-              let res = await readGithubJsonFile(`./projects/${this.selection.project}/a11y-issues.json`)
+              let res = await readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`)
               if (res) {
                 this.issues = res.data.issues
                 this.issues_sha = res.sha
@@ -137,12 +137,6 @@ font-awesome/5.15.2/css/all.min.css"/>
                 this.issues = []
                 this.issues_sha = null
               }
-              // fetch(`./projects/${this.selection.project}/a11y-issues.json`)
-              // .then(res => res.json())
-              // .then(res => {
-              //   this.issues = res.issues
-              // })
-              // .catch(err => this.issues = [])
             },
             getPrincipleFromIssue(issue) {
               return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
@@ -173,7 +167,7 @@ font-awesome/5.15.2/css/all.min.css"/>
             async onClickEvaluate() {
               if (this.isReadOnly) return;
               
-              await updateGithubJsonFile(`evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
+              await updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
             }
           }
         }).mount('#app');

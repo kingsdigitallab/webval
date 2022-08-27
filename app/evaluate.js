@@ -1,8 +1,8 @@
-const projectsPath = "./projects.json"
-const toEvaluate = require("./evaluate.json");
+const projectsPath = "../projects/projects.json"
+const toEvaluate = require("../projects/evaluate.json");
 
 const projects = require(projectsPath);
-const pa11yCiConfig = require('./pa11y-ci.json');
+const pa11yCiConfig = require('../projects/pa11y-ci.json');
 const fs = require("fs");
 const path = require('path')
 const { execSync } = require('child_process');
@@ -69,7 +69,7 @@ projects
       project.a11y.evaluated = new Date().toISOString()
       saveData(projects, projectsPath)
 
-      let resultsPath = `./projects/${project.slug}/a11y-issues.json`
+      let resultsPath = `../projects/${project.slug}/a11y-issues.json`
       saveData(res, resultsPath)
     }
 
