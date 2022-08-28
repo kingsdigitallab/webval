@@ -52,17 +52,32 @@ font-awesome/5.15.2/css/all.min.css"/>
               <td>Guideline</td>
               <td>Rule</td>
               <td>Target</td>
+              <td>Roles</td>
+              <td>Complexity</td>
+              <td>Fixed</td>
               <td>Comment</td>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(issue, idx) in issues">
               <td><a :href="issue.host + issue.webpath">{{ issue.webpath }}</a></td>
-              <td>{{ issue.rule.level }}</td>
+              <td>{{ issue.code }} {{ issue.rule.level }}</td>
               <td>{{ getPrincipleFromIssue(issue) }}</td>
               <td>{{ issue.rule.guideline }}</td>
               <td>{{ issue.rule.rule }}</td>
               <td>{{ issue.rule.target }}</td>
+              <td><select v-model="issue.roles" :disabled="isReadOnly">
+                <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
+              </select></td>
+              <td><select v-model="issue.complexity" :disabled="isReadOnly">
+                <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
+              </select></td>
+              <td>
+                <label class="checkbox">
+                  <input type="checkbox" v-model="issue.fixed" :disabled="isReadOnly" />
+                  Fixed
+                </label>
+              </td>
               <td><input type="text" v-model="issue.comment" :disabled="isReadOnly" /></td>
             </tr>
           </tbody>
@@ -114,6 +129,12 @@ font-awesome/5.15.2/css/all.min.css"/>
             },
             isReadOnly() {
               return !this.selection.gtoken
+            },
+            complexities() {
+              return ['XS', 'S', 'M', 'L', 'XL']
+            },
+            roles() {
+              return ['U', 'D', 'UD', 'A', 'P']
             }
           },
           methods: {
