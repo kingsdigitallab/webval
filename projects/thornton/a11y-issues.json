@@ -1,1 +1,235 @@
-{"issues":[{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1563436173930156032&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(1) > article > nav > div > a:nth-child(1)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"},"fixed":true,"roles":"U","complexity":"M"},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1563436173930156032&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(1) > article > nav > div > a:nth-child(2)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"},"fixed":true},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1563436173930156032&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(1) > article > nav > div > a:nth-child(3)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"},"fixed":true},{"code":"WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2","type":"error","typeCode":1,"message":"Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.","context":"<a href=\"//twitter.com/thornton_books/status/1563436172084654080\"><img src=\"https://pbs.twimg.com...</a>","selector":"#app > li:nth-child(2) > article > a","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"1","guideline":"1","rule":"1","code":"H30","target":"2"},"fixed":true},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1563436172084654080&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(2) > article > nav > div > a:nth-child(1)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"}},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1563436172084654080&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(2) > article > nav > div > a:nth-child(2)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"}},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1563436172084654080&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(2) > article > nav > div > a:nth-child(3)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"}},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1563201457179881473&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(3) > article > nav > div > a:nth-child(1)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"}},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1563201457179881473&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(3) > article > nav > div > a:nth-child(2)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"}},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent","type":"error","typeCode":1,"message":"Anchor element found with a valid href attribute, but no link content has been supplied.","context":"<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1563201457179881473&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>","selector":"#app > li:nth-child(3) > article > nav > div > a:nth-child(3)","runner":"htmlcs","runnerExtras":{},"host":"thornton.kdl.kcl.ac.uk","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"A.NoContent"}}]}
+{
+ "issues": [
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1564205747180822528&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(1) > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1564205747180822528&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(1) > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1564205747180822528&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(1) > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1564205630931484672\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(2) > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1",
+    "code": "H30",
+    "target": "2"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1564205630931484672&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(2) > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1564205630931484672&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(2) > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1564205630931484672&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(2) > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1563798546276646912\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(3) > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1",
+    "code": "H30",
+    "target": "2"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1563798546276646912&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(3) > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1563798546276646912&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(3) > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  },
+  {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1563798546276646912&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(3) > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "level": "AA",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   }
+  }
+ ]
+}

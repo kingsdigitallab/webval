@@ -1,12 +1,16 @@
-const projectsPath = "../projects/projects.json"
-const toEvaluate = require("../projects/evaluate.json");
-
-const projects = require(projectsPath);
-const pa11yCiConfig = require('../projects/pa11y-ci.json');
-const fs = require("fs");
 const path = require('path')
+const pathScripts = __dirname
+const pathProjects = path.join(pathScripts, '../projects') 
+
+const projectsJsonPath = path.join(pathProjects, 'projects.json')
+const toEvaluate = require(path.join(pathProjects, 'evaluate.json'))
+
+const projects = require(projectsJsonPath);
+const pa11yCiConfig = require(path.join(pathProjects, 'pa11y-ci.json'))
+const fs = require("fs");
 const { execSync } = require('child_process');
 const pa11y = require('pa11y');
+
 
 function saveData(data, apath) {
   parentPath = path.dirname(apath);
@@ -14,6 +18,25 @@ function saveData(data, apath) {
 
   console.log('  WRITE ' + apath)
   fs.writeFileSync(apath, JSON.stringify(data, null, 1), "utf8")
+}
+
+function test(project) {
+  let ret = false
+  console.log(project.slug)
+
+  const projects2 = require(projectsJsonPath);
+  for (let p of projects2) {
+    if (p.slug == project.slug) {
+      if (p?.a11y?.evaluationEnd) {
+        ret = p?.a11y?.evaluationEnd
+      }
+      break
+    }
+  }
+
+  console.log(`test: ${ret}`)
+
+  return ret
 }
 
 function setIssueRuleFromIssueCode(issue) {
@@ -38,6 +61,7 @@ function setIssueRuleFromIssueCode(issue) {
 projects
   .filter(project => (project?.slug == toEvaluate.slug))
   .forEach(async (project) => {
+    // console.log(project.a11y)
     let baseUri = project.sites.liv
     console.log(`Project ${project.name} ${baseUri}`)
 
@@ -54,6 +78,7 @@ projects
         let results = null
         try {
           results = await pa11y(baseUri + webpath, pa11yCiConfig.defaults)
+          // results = {issues: []}
         } catch(err) {
           console.log(err.message)
         }
@@ -67,9 +92,15 @@ projects
       }
 
       project.a11y.evaluationEnd = new Date().toISOString()
-      saveData(projects, projectsPath)
+      delete project.a11y.status
+      delete project.a11y.evaluated
 
-      let resultsPath = `../projects/${project.slug}/a11y-issues.json`
+      // console.log(projectsJsonPath)
+      saveData(projects, projectsJsonPath)
+
+      // test(project)
+
+      let resultsPath = path.join(pathProjects, project.slug, 'a11y-issues.json')
       saveData(res, resultsPath)
     }
 
