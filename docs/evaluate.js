@@ -66,7 +66,7 @@ projects
         } 
       }
 
-      project.a11y.evaluated = new Date().toISOString()
+      project.a11y.evaluatiionEnd = new Date().toISOString()
       saveData(projects, projectsPath)
 
       let resultsPath = `../projects/${project.slug}/a11y-issues.json`

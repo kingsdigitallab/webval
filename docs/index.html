@@ -37,7 +37,9 @@ font-awesome/5.15.2/css/all.min.css"/>
         <h2 class="title is-2">Issues</h2>
         <div class="field is-grouped">
           <div class="control">
-            <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">Evaluate</button>
+            <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">
+              <template v-if="isEvaluating">Evaluating...</template><template v-else>Evaluate</template>
+            </button>
           </div>
           <div class="control">
             <button @click="onClickSave()" name="action" value="save" class="button is-primary" :disabled="isReadOnly">Save</button>
@@ -128,13 +130,16 @@ font-awesome/5.15.2/css/all.min.css"/>
               return ret ? ret[0] : null
             },
             isReadOnly() {
-              return !this.selection.gtoken
+              return this.isEvaluating || !this.selection.gtoken
             },
             complexities() {
               return ['XS', 'S', 'M', 'L', 'XL']
             },
             roles() {
               return ['U', 'D', 'UD', 'A', 'P']
+            },
+            isEvaluating() {
+              return (this.project?.evaluationStart || '0') > (this.project?.evaluationEnd || '0')
             }
           },
           methods: {
@@ -188,6 +193,9 @@ font-awesome/5.15.2/css/all.min.css"/>
             async onClickEvaluate() {
               if (this.isReadOnly) return;
               
+              this.project.a11y.evaluationStart = new Date().toISOString()
+
+              await updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
               await updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
             }
           }
