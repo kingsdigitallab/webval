@@ -33,6 +33,9 @@ font-awesome/5.15.2/css/all.min.css"/>
             </select>
           </div>
         </div>
+        <p v-if="project">
+          Last evaluation: {{ formatDate(project.a11y.evaluationEnd) }}
+        </p>
 
         <h2 class="title is-2">Issues</h2>
         <div class="field is-grouped">
@@ -111,10 +114,11 @@ font-awesome/5.15.2/css/all.min.css"/>
           },
           async mounted() {
             // TODO: non-blocking
-            let res = await readGithubJsonFile('projects/projects.json')
-            this.projects = res.data
-            this.projects_sha = res.sha
             this.loadSelection()
+            this.loadProjects()
+            this.onChangeProject()
+
+            setInterval(this.checkEvaluation, 60000);
           },
           watch: {
             selection: {
@@ -140,24 +144,27 @@ font-awesome/5.15.2/css/all.min.css"/>
             },
             isEvaluating() {
               let ret = (this.project?.a11y?.evaluationStart || '0') > (this.project?.a11y?.evaluationEnd || '0')
-              console.log(ret)
               return ret
             }
           },
           methods: {
+            async loadProjects() {
+              let res = await readGithubJsonFile('projects/projects.json', this.getOctokit())
+              this.projects = res.data
+              this.projects_sha = res.sha
+            },
             loadSelection() {
               this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
               if (!this.selection?.project) {
                 this.selection = {project: null}
               }
-              this.onChangeProject()
             },
             saveSelection() {
               window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
             },
             async onChangeProject() {
               // load issues
-              let res = await readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`)
+              let res = await readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
               if (res) {
                 this.issues = res.data.issues
                 this.issues_sha = res.sha
@@ -199,6 +206,24 @@ font-awesome/5.15.2/css/all.min.css"/>
 
               await updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
               await updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
+            },
+            formatDate(adate) {
+              if (!adate?.toDateString) {
+                adate = new Date(adate)
+              }
+              let ret = adate.toLocaleTimeString()
+              if ((new Date()).toLocaleDateString() != adate.toLocaleDateString()) {
+                ret = `${adate.toLocaleDateString()} ${ret}` 
+              }
+              return ret;
+            },
+            checkEvaluation() {
+              if (this.isEvaluating) {
+                this.loadProjects()
+                if (!this.isEvaluating) {
+                  this.onChangeProject()
+                }
+              }
             }
           }
         }).mount('#app');

@@ -6,21 +6,36 @@ function base64Encode(str) {
     }
 }
 
-export async function readGithubJsonFile(filePath) {
-    // we don't use octokit here 
-    // as we want this call to work without a github PAT
+export async function readGithubJsonFile(filePath, octokit) {
     let ret = null
+    let res = null
     let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
+    if (octokit) {
+        res = await octokit.request(`GET ${getUrl}`, {})
+        res = res.data
+        console.log(res)
+    } else {
+        // we don't use octokit here 
+        // as we want this call to work without a github PAT
+        // https://stackoverflow.com/a/42518434
+        // TODO: use Octokit is PAT provided, so we don't exceed rate limits
+        let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
 
-    let res = await fetch(getUrl)
-    if (res && res.status == 200) {
-        res = await res.json()
+        // let res = await fetch(getUrl, {cache: "no-cache"})
+        let res = await fetch(getUrl)
+        if (res && res.status == 200) {
+            res = await res.json()
+        }
+    }
+
+    if (res) {
         ret = {
             data: JSON.parse(atob(res.content)),
             sha: res.sha
         }
-        console.log(ret)
     }
+
+    console.log(ret)
 
     return ret
 }
