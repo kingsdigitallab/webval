@@ -139,7 +139,9 @@ font-awesome/5.15.2/css/all.min.css"/>
               return ['U', 'D', 'UD', 'A', 'P']
             },
             isEvaluating() {
-              return (this.project?.evaluationStart || '0') > (this.project?.evaluationEnd || '0')
+              let ret = (this.project?.a11y?.evaluationStart || '0') > (this.project?.a11y?.evaluationEnd || '0')
+              console.log(ret)
+              return ret
             }
           },
           methods: {
