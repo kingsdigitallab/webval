@@ -66,10 +66,10 @@ font-awesome/5.15.2/css/all.min.css"/>
           <tbody>
             <tr v-for="(issue, idx) in issues">
               <td><a :href="issue.host + issue.webpath">{{ issue.webpath }}</a></td>
-              <td>{{ issue.code }} {{ issue.rule.level }}</td>
+              <td>{{ getLevelFromIssue(issue) }}</td>
               <td>{{ getPrincipleFromIssue(issue) }}</td>
-              <td>{{ issue.rule.guideline }}</td>
-              <td>{{ issue.rule.rule }}</td>
+              <td>{{ getGuidelineFromIssue(issue) }}</td>
+              <td>{{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}</td>
               <td>{{ issue.rule.target }}</td>
               <td><select v-model="issue.roles" :disabled="isReadOnly">
                 <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
@@ -114,6 +114,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           },
           async mounted() {
             // TODO: non-blocking
+            this.rules = (await readGithubJsonFile('../projects/rules.json')).data
             this.loadSelection()
             this.loadProjects()
             this.onChangeProject()
@@ -173,17 +174,24 @@ font-awesome/5.15.2/css/all.min.css"/>
                 this.issues_sha = null
               }
             },
+            // getPrincipleFromIssue(issue) {
+            //   return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
+            // },
+            getLevelFromIssue(issue) {
+              return this.rules.rules[this.getNumbersFromIssue(issue)].level
+            },
             getPrincipleFromIssue(issue) {
-              return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
+              return this.rules.principles[issue.rule.principle].title
             },
             getGuidelineFromIssue(issue) {
-              const principlesGuidelines = [
-                [],
-                [],
-                [],
-                [],
-              ]
-              return principlesGuidelines[issue.rule.principle-1][issue.rule.guideline-1]
+              let r = issue.rule
+              return this.rules.guidelines[`${r.principle}.${r.guideline}`].title
+            },
+            getRuleFromIssue(issue) {
+              return this.rules.rules[this.getNumbersFromIssue(issue)].title
+            },
+            getNumbersFromIssue(issue) {
+              return `${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`
             },
             getOctokit(){
               let ret = null

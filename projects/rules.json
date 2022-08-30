@@ -1,548 +1,660 @@
 {
- "1.1.1": {
-  "id": "non-text-content",
-  "code": "1.1.1",
-  "title": "Non-text Content",
-  "level": "A",
-  "description": "If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology. "
- },
- "1.2.1": {
-  "id": "audio-only-and-video-only-prerecorded",
-  "code": "1.2.1",
-  "title": "Audio-only and Video-only (Prerecorded)",
-  "level": "A",
-  "description": "Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content. "
- },
- "1.2.2": {
-  "id": "captions-prerecorded",
-  "code": "1.2.2",
-  "title": "Captions (Prerecorded)",
-  "level": "A",
-  "description": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. "
- },
- "1.2.3": {
-  "id": "audio-description-or-media-alternative-prerecorded",
-  "code": "1.2.3",
-  "title": "Audio Description or Media Alternative (Prerecorded)",
-  "level": "A",
-  "description": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. "
- },
- "1.2.4": {
-  "id": "captions-live",
-  "code": "1.2.4",
-  "title": "Captions (Live)",
-  "level": "AA",
-  "description": "Captions are provided for all live audio content in synchronized media. "
- },
- "1.2.5": {
-  "id": "audio-description-prerecorded",
-  "code": "1.2.5",
-  "title": "Audio Description (Prerecorded)",
-  "level": "AA",
-  "description": "Audio description is provided for all prerecorded video content in synchronized media. "
- },
- "1.2.6": {
-  "id": "sign-language-prerecorded",
-  "code": "1.2.6",
-  "title": "Sign Language (Prerecorded)",
-  "level": "AAA",
-  "description": "Sign language interpretation is provided for all prerecorded audio content in synchronized media. "
- },
- "1.2.7": {
-  "id": "extended-audio-description-prerecorded",
-  "code": "1.2.7",
-  "title": "Extended Audio Description (Prerecorded)",
-  "level": "AAA",
-  "description": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media. "
- },
- "1.2.8": {
-  "id": "media-alternative-prerecorded",
-  "code": "1.2.8",
-  "title": "Media Alternative (Prerecorded)",
-  "level": "AAA",
-  "description": "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media. "
- },
- "1.2.9": {
-  "id": "audio-only-live",
-  "code": "1.2.9",
-  "title": "Audio-only (Live)",
-  "level": "AAA",
-  "description": "An alternative for time-based media that presents equivalent information for live audio-only content is provided. "
- },
- "1.3.1": {
-  "id": "info-and-relationships",
-  "code": "1.3.1",
-  "title": "Info and Relationships",
-  "level": "A",
-  "description": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. "
- },
- "1.3.2": {
-  "id": "meaningful-sequence",
-  "code": "1.3.2",
-  "title": "Meaningful Sequence",
-  "level": "A",
-  "description": "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. "
- },
- "1.3.3": {
-  "id": "sensory-characteristics",
-  "code": "1.3.3",
-  "title": "Sensory Characteristics",
-  "level": "A",
-  "description": "For requirements related to color, refer to Guideline 1.4."
- },
- "1.3.4": {
-  "id": "orientation",
-  "code": "1.3.4",
-  "title": "Orientation",
-  "level": "AA",
-  "description": "Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable."
- },
- "1.3.5": {
-  "id": "identify-input-purpose",
-  "code": "1.3.5",
-  "title": "Identify Input Purpose",
-  "level": "AA",
-  "description": "The purpose of each input field collecting information about the user can be programmatically determined when:"
- },
- "1.3.6": {
-  "id": "identify-purpose",
-  "code": "1.3.6",
-  "title": "Identify Purpose",
-  "level": "AAA",
-  "description": "In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined."
- },
- "1.4.1": {
-  "id": "use-of-color",
-  "code": "1.4.1",
-  "title": "Use of Color",
-  "level": "A",
-  "description": "This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding."
- },
- "1.4.2": {
-  "id": "audio-control",
-  "code": "1.4.2",
-  "title": "Audio Control",
-  "level": "A",
-  "description": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference. "
- },
- "1.4.3": {
-  "id": "contrast-minimum",
-  "code": "1.4.3",
-  "title": "Contrast (Minimum)",
-  "level": "AA",
-  "description": "Text that is part of a logo or brand name has no contrast requirement."
- },
- "1.4.4": {
-  "id": "resize-text",
-  "code": "1.4.4",
-  "title": "Resize text",
-  "level": "AA",
-  "description": "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. "
- },
- "1.4.5": {
-  "id": "images-of-text",
-  "code": "1.4.5",
-  "title": "Images of Text",
-  "level": "AA",
-  "description": "Logotypes (text that is part of a logo or brand name) are considered essential."
- },
- "1.4.6": {
-  "id": "contrast-enhanced",
-  "code": "1.4.6",
-  "title": "Contrast (Enhanced)",
-  "level": "AAA",
-  "description": "Text that is part of a logo or brand name has no contrast requirement."
- },
- "1.4.7": {
-  "id": "low-or-no-background-audio",
-  "code": "1.4.7",
-  "title": "Low or No Background Audio",
-  "level": "AAA",
-  "description": "Per the definition of \"decibel,\" background sound that meets this requirement will be approximately four times quieter than the foreground speech content. "
- },
- "1.4.8": {
-  "id": "visual-presentation",
-  "code": "1.4.8",
-  "title": "Visual Presentation",
-  "level": "AAA",
-  "description": "For the visual presentation of blocks of text, a mechanism is available to achieve the following: "
- },
- "1.4.9": {
-  "id": "images-of-text-no-exception",
-  "code": "1.4.9",
-  "title": "Images of Text (No Exception)",
-  "level": "AAA",
-  "description": "Logotypes (text that is part of a logo or brand name) are considered essential."
- },
- "1.4.10": {
-  "id": "reflow",
-  "code": "1.4.10",
-  "title": "Reflow",
-  "level": "AA",
-  "description": "Examples of content which require two-dimensional layout are images, maps, diagrams, video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while manipulating content."
- },
- "1.4.11": {
-  "id": "non-text-contrast",
-  "code": "1.4.11",
-  "title": "Non-text Contrast",
-  "level": "AA",
-  "description": "The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):"
- },
- "1.4.12": {
-  "id": "text-spacing",
-  "code": "1.4.12",
-  "title": "Text Spacing",
-  "level": "AA",
-  "description": "Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script."
- },
- "1.4.13": {
-  "id": "content-on-hover-or-focus",
-  "code": "1.4.13",
-  "title": "Content on Hover or Focus",
-  "level": "AA",
-  "description": "Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion."
- },
- "2.1.1": {
-  "id": "keyboard",
-  "code": "2.1.1",
-  "title": "Keyboard",
-  "level": "A",
-  "description": "This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation. "
- },
- "2.1.2": {
-  "id": "no-keyboard-trap",
-  "code": "2.1.2",
-  "title": "No Keyboard Trap",
-  "level": "A",
-  "description": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. "
- },
- "2.1.3": {
-  "id": "keyboard-no-exception",
-  "code": "2.1.3",
-  "title": "Keyboard (No Exception)",
-  "level": "AAA",
-  "description": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. "
- },
- "2.1.4": {
-  "id": "character-key-shortcuts",
-  "code": "2.1.4",
-  "title": "Character Key Shortcuts",
-  "level": "A",
-  "description": "If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:"
- },
- "2.2.1": {
-  "id": "timing-adjustable",
-  "code": "2.2.1",
-  "title": "Timing Adjustable",
-  "level": "A",
-  "description": "This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action. "
- },
- "2.2.2": {
-  "id": "pause-stop-hide",
-  "code": "2.2.2",
-  "title": "Pause, Stop, Hide",
-  "level": "A",
-  "description": "An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken. "
- },
- "2.2.3": {
-  "id": "no-timing",
-  "code": "2.2.3",
-  "title": "No Timing",
-  "level": "AAA",
-  "description": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events. "
- },
- "2.2.4": {
-  "id": "interruptions",
-  "code": "2.2.4",
-  "title": "Interruptions",
-  "level": "AAA",
-  "description": "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency. "
- },
- "2.2.5": {
-  "id": "re-authenticating",
-  "code": "2.2.5",
-  "title": "Re-authenticating",
-  "level": "AAA",
-  "description": "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating. "
- },
- "2.2.6": {
-  "id": "timeouts",
-  "code": "2.2.6",
-  "title": "Timeouts",
-  "level": "AAA",
-  "description": "Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion."
- },
- "2.3.1": {
-  "id": "three-flashes-or-below-threshold",
-  "code": "2.3.1",
-  "title": "Three Flashes or Below Threshold",
-  "level": "A",
-  "description": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. "
- },
- "2.3.2": {
-  "id": "three-flashes",
-  "code": "2.3.2",
-  "title": "Three Flashes",
-  "level": "AAA",
-  "description": "Web pages do not contain anything that flashes more than three times in any one second period. "
- },
- "2.3.3": {
-  "id": "animation-from-interactions",
-  "code": "2.3.3",
-  "title": "Animation from Interactions",
-  "level": "AAA",
-  "description": "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed."
- },
- "2.4.1": {
-  "id": "bypass-blocks",
-  "code": "2.4.1",
-  "title": "Bypass Blocks",
-  "level": "A",
-  "description": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. "
- },
- "2.4.2": {
-  "id": "page-titled",
-  "code": "2.4.2",
-  "title": "Page Titled",
-  "level": "A",
-  "description": "Web pages have titles that describe topic or purpose. "
- },
- "2.4.3": {
-  "id": "focus-order",
-  "code": "2.4.3",
-  "title": "Focus Order",
-  "level": "A",
-  "description": "If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. "
- },
- "2.4.4": {
-  "id": "link-purpose-in-context",
-  "code": "2.4.4",
-  "title": "Link Purpose (In Context)",
-  "level": "A",
-  "description": "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. "
- },
- "2.4.5": {
-  "id": "multiple-ways",
-  "code": "2.4.5",
-  "title": "Multiple Ways",
-  "level": "AA",
-  "description": "More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. "
- },
- "2.4.6": {
-  "id": "headings-and-labels",
-  "code": "2.4.6",
-  "title": "Headings and Labels",
-  "level": "AA",
-  "description": "Headings and labels describe topic or purpose. "
- },
- "2.4.7": {
-  "id": "focus-visible",
-  "code": "2.4.7",
-  "title": "Focus Visible",
-  "level": "AA",
-  "description": "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. "
- },
- "2.4.8": {
-  "id": "location",
-  "code": "2.4.8",
-  "title": "Location",
-  "level": "AAA",
-  "description": "Information about the user's location within a set of Web pages is available. "
- },
- "2.4.9": {
-  "id": "link-purpose-link-only",
-  "code": "2.4.9",
-  "title": "Link Purpose (Link Only)",
-  "level": "AAA",
-  "description": "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. "
- },
- "2.4.10": {
-  "id": "section-headings",
-  "code": "2.4.10",
-  "title": "Section Headings",
-  "level": "AAA",
-  "description": "This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2. "
- },
- "2.5.1": {
-  "id": "pointer-gestures",
-  "code": "2.5.1",
-  "title": "Pointer Gestures",
-  "level": "A",
-  "description": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
- },
- "2.5.2": {
-  "id": "pointer-cancellation",
-  "code": "2.5.2",
-  "title": "Pointer Cancellation",
-  "level": "A",
-  "description": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
- },
- "2.5.3": {
-  "id": "label-in-name",
-  "code": "2.5.3",
-  "title": "Label in Name",
-  "level": "A",
-  "description": "A best practice is to have the text of the label at the start of the name."
- },
- "2.5.4": {
-  "id": "motion-actuation",
-  "code": "2.5.4",
-  "title": "Motion Actuation",
-  "level": "A",
-  "description": "Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:"
- },
- "2.5.5": {
-  "id": "target-size",
-  "code": "2.5.5",
-  "title": "Target Size",
-  "level": "AAA",
-  "description": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:"
- },
- "2.5.6": {
-  "id": "concurrent-input-mechanisms",
-  "code": "2.5.6",
-  "title": "Concurrent Input Mechanisms",
-  "level": "AAA",
-  "description": "Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings."
- },
- "3.1.1": {
-  "id": "language-of-page",
-  "code": "3.1.1",
-  "title": "Language of Page",
-  "level": "A",
-  "description": "The default human language of each Web page can be programmatically determined. "
- },
- "3.1.2": {
-  "id": "language-of-parts",
-  "code": "3.1.2",
-  "title": "Language of Parts",
-  "level": "AA",
-  "description": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text. "
- },
- "3.1.3": {
-  "id": "unusual-words",
-  "code": "3.1.3",
-  "title": "Unusual Words",
-  "level": "AAA",
-  "description": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon. "
- },
- "3.1.4": {
-  "id": "abbreviations",
-  "code": "3.1.4",
-  "title": "Abbreviations",
-  "level": "AAA",
-  "description": "A mechanism for identifying the expanded form or meaning of abbreviations is available. "
- },
- "3.1.5": {
-  "id": "reading-level",
-  "code": "3.1.5",
-  "title": "Reading Level",
-  "level": "AAA",
-  "description": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available. "
- },
- "3.1.6": {
-  "id": "pronunciation",
-  "code": "3.1.6",
-  "title": "Pronunciation",
-  "level": "AAA",
-  "description": "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation. "
- },
- "3.2.1": {
-  "id": "on-focus",
-  "code": "3.2.1",
-  "title": "On Focus",
-  "level": "A",
-  "description": "When any user interface component receives focus, it does not initiate a change of context. "
- },
- "3.2.2": {
-  "id": "on-input",
-  "code": "3.2.2",
-  "title": "On Input",
-  "level": "A",
-  "description": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component. "
- },
- "3.2.3": {
-  "id": "consistent-navigation",
-  "code": "3.2.3",
-  "title": "Consistent Navigation",
-  "level": "AA",
-  "description": "Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. "
- },
- "3.2.4": {
-  "id": "consistent-identification",
-  "code": "3.2.4",
-  "title": "Consistent Identification",
-  "level": "AA",
-  "description": "Components that have the same functionality within a set of Web pages are identified consistently. "
- },
- "3.2.5": {
-  "id": "change-on-request",
-  "code": "3.2.5",
-  "title": "Change on Request",
-  "level": "AAA",
-  "description": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes. "
- },
- "3.3.1": {
-  "id": "error-identification",
-  "code": "3.3.1",
-  "title": "Error Identification",
-  "level": "A",
-  "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. "
- },
- "3.3.2": {
-  "id": "labels-or-instructions",
-  "code": "3.3.2",
-  "title": "Labels or Instructions",
-  "level": "A",
-  "description": "Labels or instructions are provided when content requires user input. "
- },
- "3.3.3": {
-  "id": "error-suggestion",
-  "code": "3.3.3",
-  "title": "Error Suggestion",
-  "level": "AA",
-  "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. "
- },
- "3.3.4": {
-  "id": "error-prevention-legal-financial-data",
-  "code": "3.3.4",
-  "title": "Error Prevention (Legal, Financial, Data)",
-  "level": "AA",
-  "description": "For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: "
- },
- "3.3.5": {
-  "id": "help",
-  "code": "3.3.5",
-  "title": "Help",
-  "level": "AAA",
-  "description": "Context-sensitive help is available. "
- },
- "3.3.6": {
-  "id": "error-prevention-all",
-  "code": "3.3.6",
-  "title": "Error Prevention (All)",
-  "level": "AAA",
-  "description": "For Web pages that require the user to submit information, at least one of the following is true: "
- },
- "4.1.1": {
-  "id": "parsing",
-  "code": "4.1.1",
-  "title": "Parsing",
-  "level": "A",
-  "description": "Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete. "
- },
- "4.1.2": {
-  "id": "name-role-value",
-  "code": "4.1.2",
-  "title": "Name, Role, Value",
-  "level": "A",
-  "description": "This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification. "
- },
- "4.1.3": {
-  "id": "status-messages",
-  "code": "4.1.3",
-  "title": "Status Messages",
-  "level": "AA",
-  "description": "In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus."
+ "meta": {
+  "source": "https://www.w3.org/TR/WCAG21",
+  "generated": "2022-08-30T23:27:52.395Z"
+ },
+ "principles": {
+  "1": {
+   "id": "perceivable",
+   "code": "1",
+   "title": " Perceivable ",
+   "description": "Information and user interface components must be presentable to users in ways they can perceive."
+  },
+  "2": {
+   "id": "operable",
+   "code": "2",
+   "title": "Operable ",
+   "description": "User interface components and navigation must be operable."
+  },
+  "3": {
+   "id": "understandable",
+   "code": "3",
+   "title": " Understandable ",
+   "description": "Information and the operation of user interface must be understandable."
+  },
+  "4": {
+   "id": "robust",
+   "code": "4",
+   "title": " Robust ",
+   "description": "Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies."
+  }
+ },
+ "guidelines": {
+  "1.1": {
+   "id": "text-alternatives",
+   "code": "1.1",
+   "title": "Text Alternatives",
+   "description": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language."
+  },
+  "1.2": {
+   "id": "time-based-media",
+   "code": "1.2",
+   "title": "Time-based Media",
+   "description": "Provide alternatives for time-based media."
+  },
+  "1.3": {
+   "id": "adaptable",
+   "code": "1.3",
+   "title": "Adaptable",
+   "description": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure."
+  },
+  "1.4": {
+   "id": "distinguishable",
+   "code": "1.4",
+   "title": "Distinguishable",
+   "description": "Make it easier for users to see and hear content including separating foreground from background."
+  },
+  "2.1": {
+   "id": "keyboard-accessible",
+   "code": "2.1",
+   "title": "Keyboard Accessible",
+   "description": "Make all functionality available from a keyboard."
+  },
+  "2.2": {
+   "id": "enough-time",
+   "code": "2.2",
+   "title": "Enough Time",
+   "description": "Provide users enough time to read and use content."
+  },
+  "2.3": {
+   "id": "seizures-and-physical-reactions",
+   "code": "2.3",
+   "title": "Seizures and Physical Reactions",
+   "description": "Do not design content in a way that is known to cause seizures or physical reactions."
+  },
+  "2.4": {
+   "id": "navigable",
+   "code": "2.4",
+   "title": "Navigable",
+   "description": "Provide ways to help users navigate, find content, and determine where they are."
+  },
+  "2.5": {
+   "id": "input-modalities",
+   "code": "2.5",
+   "title": "Input Modalities",
+   "description": "Make it easier for users to operate functionality through various inputs beyond keyboard."
+  },
+  "3.1": {
+   "id": "readable",
+   "code": "3.1",
+   "title": "Readable",
+   "description": "Make text content readable and understandable."
+  },
+  "3.2": {
+   "id": "predictable",
+   "code": "3.2",
+   "title": "Predictable",
+   "description": "Make Web pages appear and operate in predictable ways."
+  },
+  "3.3": {
+   "id": "input-assistance",
+   "code": "3.3",
+   "title": "Input Assistance",
+   "description": "Help users avoid and correct mistakes."
+  },
+  "4.1": {
+   "id": "compatible",
+   "code": "4.1",
+   "title": "Compatible",
+   "description": "Maximize compatibility with current and future user agents, including assistive technologies."
+  }
+ },
+ "rules": {
+  "1.1.1": {
+   "id": "non-text-content",
+   "code": "1.1.1",
+   "title": "Non-text Content",
+   "level": "A",
+   "description": "If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology. "
+  },
+  "1.2.1": {
+   "id": "audio-only-and-video-only-prerecorded",
+   "code": "1.2.1",
+   "title": "Audio-only and Video-only (Prerecorded)",
+   "level": "A",
+   "description": "Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content. "
+  },
+  "1.2.2": {
+   "id": "captions-prerecorded",
+   "code": "1.2.2",
+   "title": "Captions (Prerecorded)",
+   "level": "A",
+   "description": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. "
+  },
+  "1.2.3": {
+   "id": "audio-description-or-media-alternative-prerecorded",
+   "code": "1.2.3",
+   "title": "Audio Description or Media Alternative (Prerecorded)",
+   "level": "A",
+   "description": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. "
+  },
+  "1.2.4": {
+   "id": "captions-live",
+   "code": "1.2.4",
+   "title": "Captions (Live)",
+   "level": "AA",
+   "description": "Captions are provided for all live audio content in synchronized media. "
+  },
+  "1.2.5": {
+   "id": "audio-description-prerecorded",
+   "code": "1.2.5",
+   "title": "Audio Description (Prerecorded)",
+   "level": "AA",
+   "description": "Audio description is provided for all prerecorded video content in synchronized media. "
+  },
+  "1.2.6": {
+   "id": "sign-language-prerecorded",
+   "code": "1.2.6",
+   "title": "Sign Language (Prerecorded)",
+   "level": "AAA",
+   "description": "Sign language interpretation is provided for all prerecorded audio content in synchronized media. "
+  },
+  "1.2.7": {
+   "id": "extended-audio-description-prerecorded",
+   "code": "1.2.7",
+   "title": "Extended Audio Description (Prerecorded)",
+   "level": "AAA",
+   "description": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media. "
+  },
+  "1.2.8": {
+   "id": "media-alternative-prerecorded",
+   "code": "1.2.8",
+   "title": "Media Alternative (Prerecorded)",
+   "level": "AAA",
+   "description": "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media. "
+  },
+  "1.2.9": {
+   "id": "audio-only-live",
+   "code": "1.2.9",
+   "title": "Audio-only (Live)",
+   "level": "AAA",
+   "description": "An alternative for time-based media that presents equivalent information for live audio-only content is provided. "
+  },
+  "1.3.1": {
+   "id": "info-and-relationships",
+   "code": "1.3.1",
+   "title": "Info and Relationships",
+   "level": "A",
+   "description": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. "
+  },
+  "1.3.2": {
+   "id": "meaningful-sequence",
+   "code": "1.3.2",
+   "title": "Meaningful Sequence",
+   "level": "A",
+   "description": "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. "
+  },
+  "1.3.3": {
+   "id": "sensory-characteristics",
+   "code": "1.3.3",
+   "title": "Sensory Characteristics",
+   "level": "A",
+   "description": "For requirements related to color, refer to Guideline 1.4."
+  },
+  "1.3.4": {
+   "id": "orientation",
+   "code": "1.3.4",
+   "title": "Orientation",
+   "level": "AA",
+   "description": "Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable."
+  },
+  "1.3.5": {
+   "id": "identify-input-purpose",
+   "code": "1.3.5",
+   "title": "Identify Input Purpose",
+   "level": "AA",
+   "description": "The purpose of each input field collecting information about the user can be programmatically determined when:"
+  },
+  "1.3.6": {
+   "id": "identify-purpose",
+   "code": "1.3.6",
+   "title": "Identify Purpose",
+   "level": "AAA",
+   "description": "In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined."
+  },
+  "1.4.1": {
+   "id": "use-of-color",
+   "code": "1.4.1",
+   "title": "Use of Color",
+   "level": "A",
+   "description": "This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding."
+  },
+  "1.4.2": {
+   "id": "audio-control",
+   "code": "1.4.2",
+   "title": "Audio Control",
+   "level": "A",
+   "description": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference. "
+  },
+  "1.4.3": {
+   "id": "contrast-minimum",
+   "code": "1.4.3",
+   "title": "Contrast (Minimum)",
+   "level": "AA",
+   "description": "Text that is part of a logo or brand name has no contrast requirement."
+  },
+  "1.4.4": {
+   "id": "resize-text",
+   "code": "1.4.4",
+   "title": "Resize text",
+   "level": "AA",
+   "description": "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. "
+  },
+  "1.4.5": {
+   "id": "images-of-text",
+   "code": "1.4.5",
+   "title": "Images of Text",
+   "level": "AA",
+   "description": "Logotypes (text that is part of a logo or brand name) are considered essential."
+  },
+  "1.4.6": {
+   "id": "contrast-enhanced",
+   "code": "1.4.6",
+   "title": "Contrast (Enhanced)",
+   "level": "AAA",
+   "description": "Text that is part of a logo or brand name has no contrast requirement."
+  },
+  "1.4.7": {
+   "id": "low-or-no-background-audio",
+   "code": "1.4.7",
+   "title": "Low or No Background Audio",
+   "level": "AAA",
+   "description": "Per the definition of \"decibel,\" background sound that meets this requirement will be approximately four times quieter than the foreground speech content. "
+  },
+  "1.4.8": {
+   "id": "visual-presentation",
+   "code": "1.4.8",
+   "title": "Visual Presentation",
+   "level": "AAA",
+   "description": "For the visual presentation of blocks of text, a mechanism is available to achieve the following: "
+  },
+  "1.4.9": {
+   "id": "images-of-text-no-exception",
+   "code": "1.4.9",
+   "title": "Images of Text (No Exception)",
+   "level": "AAA",
+   "description": "Logotypes (text that is part of a logo or brand name) are considered essential."
+  },
+  "1.4.10": {
+   "id": "reflow",
+   "code": "1.4.10",
+   "title": "Reflow",
+   "level": "AA",
+   "description": "Examples of content which require two-dimensional layout are images, maps, diagrams, video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while manipulating content."
+  },
+  "1.4.11": {
+   "id": "non-text-contrast",
+   "code": "1.4.11",
+   "title": "Non-text Contrast",
+   "level": "AA",
+   "description": "The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):"
+  },
+  "1.4.12": {
+   "id": "text-spacing",
+   "code": "1.4.12",
+   "title": "Text Spacing",
+   "level": "AA",
+   "description": "Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script."
+  },
+  "1.4.13": {
+   "id": "content-on-hover-or-focus",
+   "code": "1.4.13",
+   "title": "Content on Hover or Focus",
+   "level": "AA",
+   "description": "Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion."
+  },
+  "2.1.1": {
+   "id": "keyboard",
+   "code": "2.1.1",
+   "title": "Keyboard",
+   "level": "A",
+   "description": "This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation. "
+  },
+  "2.1.2": {
+   "id": "no-keyboard-trap",
+   "code": "2.1.2",
+   "title": "No Keyboard Trap",
+   "level": "A",
+   "description": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. "
+  },
+  "2.1.3": {
+   "id": "keyboard-no-exception",
+   "code": "2.1.3",
+   "title": "Keyboard (No Exception)",
+   "level": "AAA",
+   "description": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. "
+  },
+  "2.1.4": {
+   "id": "character-key-shortcuts",
+   "code": "2.1.4",
+   "title": "Character Key Shortcuts",
+   "level": "A",
+   "description": "If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:"
+  },
+  "2.2.1": {
+   "id": "timing-adjustable",
+   "code": "2.2.1",
+   "title": "Timing Adjustable",
+   "level": "A",
+   "description": "This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action. "
+  },
+  "2.2.2": {
+   "id": "pause-stop-hide",
+   "code": "2.2.2",
+   "title": "Pause, Stop, Hide",
+   "level": "A",
+   "description": "An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken. "
+  },
+  "2.2.3": {
+   "id": "no-timing",
+   "code": "2.2.3",
+   "title": "No Timing",
+   "level": "AAA",
+   "description": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events. "
+  },
+  "2.2.4": {
+   "id": "interruptions",
+   "code": "2.2.4",
+   "title": "Interruptions",
+   "level": "AAA",
+   "description": "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency. "
+  },
+  "2.2.5": {
+   "id": "re-authenticating",
+   "code": "2.2.5",
+   "title": "Re-authenticating",
+   "level": "AAA",
+   "description": "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating. "
+  },
+  "2.2.6": {
+   "id": "timeouts",
+   "code": "2.2.6",
+   "title": "Timeouts",
+   "level": "AAA",
+   "description": "Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion."
+  },
+  "2.3.1": {
+   "id": "three-flashes-or-below-threshold",
+   "code": "2.3.1",
+   "title": "Three Flashes or Below Threshold",
+   "level": "A",
+   "description": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. "
+  },
+  "2.3.2": {
+   "id": "three-flashes",
+   "code": "2.3.2",
+   "title": "Three Flashes",
+   "level": "AAA",
+   "description": "Web pages do not contain anything that flashes more than three times in any one second period. "
+  },
+  "2.3.3": {
+   "id": "animation-from-interactions",
+   "code": "2.3.3",
+   "title": "Animation from Interactions",
+   "level": "AAA",
+   "description": "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed."
+  },
+  "2.4.1": {
+   "id": "bypass-blocks",
+   "code": "2.4.1",
+   "title": "Bypass Blocks",
+   "level": "A",
+   "description": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. "
+  },
+  "2.4.2": {
+   "id": "page-titled",
+   "code": "2.4.2",
+   "title": "Page Titled",
+   "level": "A",
+   "description": "Web pages have titles that describe topic or purpose. "
+  },
+  "2.4.3": {
+   "id": "focus-order",
+   "code": "2.4.3",
+   "title": "Focus Order",
+   "level": "A",
+   "description": "If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. "
+  },
+  "2.4.4": {
+   "id": "link-purpose-in-context",
+   "code": "2.4.4",
+   "title": "Link Purpose (In Context)",
+   "level": "A",
+   "description": "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. "
+  },
+  "2.4.5": {
+   "id": "multiple-ways",
+   "code": "2.4.5",
+   "title": "Multiple Ways",
+   "level": "AA",
+   "description": "More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. "
+  },
+  "2.4.6": {
+   "id": "headings-and-labels",
+   "code": "2.4.6",
+   "title": "Headings and Labels",
+   "level": "AA",
+   "description": "Headings and labels describe topic or purpose. "
+  },
+  "2.4.7": {
+   "id": "focus-visible",
+   "code": "2.4.7",
+   "title": "Focus Visible",
+   "level": "AA",
+   "description": "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. "
+  },
+  "2.4.8": {
+   "id": "location",
+   "code": "2.4.8",
+   "title": "Location",
+   "level": "AAA",
+   "description": "Information about the user's location within a set of Web pages is available. "
+  },
+  "2.4.9": {
+   "id": "link-purpose-link-only",
+   "code": "2.4.9",
+   "title": "Link Purpose (Link Only)",
+   "level": "AAA",
+   "description": "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. "
+  },
+  "2.4.10": {
+   "id": "section-headings",
+   "code": "2.4.10",
+   "title": "Section Headings",
+   "level": "AAA",
+   "description": "This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2. "
+  },
+  "2.5.1": {
+   "id": "pointer-gestures",
+   "code": "2.5.1",
+   "title": "Pointer Gestures",
+   "level": "A",
+   "description": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
+  },
+  "2.5.2": {
+   "id": "pointer-cancellation",
+   "code": "2.5.2",
+   "title": "Pointer Cancellation",
+   "level": "A",
+   "description": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
+  },
+  "2.5.3": {
+   "id": "label-in-name",
+   "code": "2.5.3",
+   "title": "Label in Name",
+   "level": "A",
+   "description": "A best practice is to have the text of the label at the start of the name."
+  },
+  "2.5.4": {
+   "id": "motion-actuation",
+   "code": "2.5.4",
+   "title": "Motion Actuation",
+   "level": "A",
+   "description": "Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:"
+  },
+  "2.5.5": {
+   "id": "target-size",
+   "code": "2.5.5",
+   "title": "Target Size",
+   "level": "AAA",
+   "description": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:"
+  },
+  "2.5.6": {
+   "id": "concurrent-input-mechanisms",
+   "code": "2.5.6",
+   "title": "Concurrent Input Mechanisms",
+   "level": "AAA",
+   "description": "Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings."
+  },
+  "3.1.1": {
+   "id": "language-of-page",
+   "code": "3.1.1",
+   "title": "Language of Page",
+   "level": "A",
+   "description": "The default human language of each Web page can be programmatically determined. "
+  },
+  "3.1.2": {
+   "id": "language-of-parts",
+   "code": "3.1.2",
+   "title": "Language of Parts",
+   "level": "AA",
+   "description": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text. "
+  },
+  "3.1.3": {
+   "id": "unusual-words",
+   "code": "3.1.3",
+   "title": "Unusual Words",
+   "level": "AAA",
+   "description": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon. "
+  },
+  "3.1.4": {
+   "id": "abbreviations",
+   "code": "3.1.4",
+   "title": "Abbreviations",
+   "level": "AAA",
+   "description": "A mechanism for identifying the expanded form or meaning of abbreviations is available. "
+  },
+  "3.1.5": {
+   "id": "reading-level",
+   "code": "3.1.5",
+   "title": "Reading Level",
+   "level": "AAA",
+   "description": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available. "
+  },
+  "3.1.6": {
+   "id": "pronunciation",
+   "code": "3.1.6",
+   "title": "Pronunciation",
+   "level": "AAA",
+   "description": "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation. "
+  },
+  "3.2.1": {
+   "id": "on-focus",
+   "code": "3.2.1",
+   "title": "On Focus",
+   "level": "A",
+   "description": "When any user interface component receives focus, it does not initiate a change of context. "
+  },
+  "3.2.2": {
+   "id": "on-input",
+   "code": "3.2.2",
+   "title": "On Input",
+   "level": "A",
+   "description": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component. "
+  },
+  "3.2.3": {
+   "id": "consistent-navigation",
+   "code": "3.2.3",
+   "title": "Consistent Navigation",
+   "level": "AA",
+   "description": "Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. "
+  },
+  "3.2.4": {
+   "id": "consistent-identification",
+   "code": "3.2.4",
+   "title": "Consistent Identification",
+   "level": "AA",
+   "description": "Components that have the same functionality within a set of Web pages are identified consistently. "
+  },
+  "3.2.5": {
+   "id": "change-on-request",
+   "code": "3.2.5",
+   "title": "Change on Request",
+   "level": "AAA",
+   "description": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes. "
+  },
+  "3.3.1": {
+   "id": "error-identification",
+   "code": "3.3.1",
+   "title": "Error Identification",
+   "level": "A",
+   "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. "
+  },
+  "3.3.2": {
+   "id": "labels-or-instructions",
+   "code": "3.3.2",
+   "title": "Labels or Instructions",
+   "level": "A",
+   "description": "Labels or instructions are provided when content requires user input. "
+  },
+  "3.3.3": {
+   "id": "error-suggestion",
+   "code": "3.3.3",
+   "title": "Error Suggestion",
+   "level": "AA",
+   "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. "
+  },
+  "3.3.4": {
+   "id": "error-prevention-legal-financial-data",
+   "code": "3.3.4",
+   "title": "Error Prevention (Legal, Financial, Data)",
+   "level": "AA",
+   "description": "For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: "
+  },
+  "3.3.5": {
+   "id": "help",
+   "code": "3.3.5",
+   "title": "Help",
+   "level": "AAA",
+   "description": "Context-sensitive help is available. "
+  },
+  "3.3.6": {
+   "id": "error-prevention-all",
+   "code": "3.3.6",
+   "title": "Error Prevention (All)",
+   "level": "AAA",
+   "description": "For Web pages that require the user to submit information, at least one of the following is true: "
+  },
+  "4.1.1": {
+   "id": "parsing",
+   "code": "4.1.1",
+   "title": "Parsing",
+   "level": "A",
+   "description": "Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete. "
+  },
+  "4.1.2": {
+   "id": "name-role-value",
+   "code": "4.1.2",
+   "title": "Name, Role, Value",
+   "level": "A",
+   "description": "This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification. "
+  },
+  "4.1.3": {
+   "id": "status-messages",
+   "code": "4.1.3",
+   "title": "Status Messages",
+   "level": "AA",
+   "description": "In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus."
+  }
  }
 }

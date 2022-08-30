@@ -49,7 +49,15 @@ async function fetchDataFromWCAGPage() {
     }
     */  
 
-    let ret = {}
+    let ret = {
+        'meta': {
+            'source': uriRules,
+            'generated': new Date().toISOString()
+        },
+        'principles': {},
+        'guidelines': {},
+        'rules': {}
+    }
 
     // fetch WCAG spec HTML doc
     res = await fetch(uriRules)
@@ -58,14 +66,15 @@ async function fetchDataFromWCAGPage() {
         return ret
     }
 
+    // rules
     const root = HTMLParser.parse(await res.text())
     let sections = root.querySelectorAll('section.sc')
     for (let section of sections) {
         let h4 = section.querySelector('h4')
-        code = h4.id.replace( new RegExp("^x((\\d+)-(\\d+)-(\\d+))-.*$","gm"),"$2.$3.$4")
+        let code = h4.id.replace( new RegExp("^x((\\d+)-(\\d+)-(\\d+))-.*$","gm"),"$2.$3.$4")
         // console.log(h4)
-        ps = section.querySelectorAll('p')
-        ret[code] = {
+        let ps = section.querySelectorAll('p')
+        ret['rules'][code] = {
             id: section.id,
             code: code,
             title: h4.childNodes.map(cn => (cn?._rawText || '')).join(''),
@@ -77,14 +86,43 @@ async function fetchDataFromWCAGPage() {
         }
     }
 
+    // guidelines
+    sections = root.querySelectorAll('section.guideline')
+    for (let section of sections) {
+        let h3 = section.querySelector('h3')
+        let code = h3.id.replace( new RegExp("^x((\\d+)-(\\d+))-.*$","gm"),"$2.$3")
+        // console.log(h4)
+        let ps = section.querySelectorAll('p')
+        ret['guidelines'][code] = {
+            id: section.id,
+            code: code,
+            title: h3.childNodes.map(cn => (cn?._rawText || '')).join(''),
+            description: ps[0].innerText.replace(new RegExp('\\s+', 'gm'), ' ')
+        }
+    }
 
+    // principles
+    sections = root.querySelectorAll('section.principle')
+    for (let section of sections) {
+        let h2 = section.querySelector('h2')
+        let code = h2.id.replace( new RegExp("^x((\\d+))-.*$","gm"),"$2")
+        // console.log(h4)
+        let ps = section.querySelectorAll('p')
+        ret['principles'][code] = {
+            id: section.id,
+            code: code,
+            title: h2.childNodes.map(cn => (cn?._rawText || '')).join(''),
+            description: ps[0].innerText.replace(new RegExp('\\s+', 'gm'), ' ')
+        }
+    }
+    
     return ret
 }
 
 async function fetchAndSaveRules() {
-    let rules = await fetchDataFromWCAGPage()
-    console.log(`Found ${Object.keys(rules).length} rules`)
-    saveData(rules, pathRules)
+    let data = await fetchDataFromWCAGPage()
+    console.log(`Found ${Object.keys(data.rules).length} rules`)
+    saveData(data, pathRules)
 }
 
 fetchAndSaveRules()
