@@ -13,7 +13,6 @@ export async function readGithubJsonFile(filePath, octokit) {
     if (octokit) {
         res = await octokit.request(`GET ${getUrl}`, {})
         res = res.data
-        console.log(res)
     } else {
         // we don't use octokit here 
         // as we want this call to work without a github PAT
