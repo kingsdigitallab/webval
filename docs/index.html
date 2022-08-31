@@ -114,7 +114,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           },
           async mounted() {
             // TODO: non-blocking
-            this.rules = (await readGithubJsonFile('../projects/rules.json')).data
+            this.rules = (await readGithubJsonFile('projects/rules.json')).data
             this.loadSelection()
             this.loadProjects()
             this.onChangeProject()
