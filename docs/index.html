@@ -68,8 +68,7 @@ font-awesome/5.15.2/css/all.min.css"/>
             <tr>
               <td>Location</td>
               <td>Level</td>
-              <td>Principle</td>
-              <td>Guideline</td>
+              <td>Category</td>
               <td>Rule</td>
               <td>Roles</td>
               <td>Complexity</td>
@@ -89,9 +88,13 @@ font-awesome/5.15.2/css/all.min.css"/>
                 </span>
               </td>
               <td><span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span></td>
-              <td>{{ getPrincipleFromIssue(issue) }}</td>
-              <td>{{ getGuidelineFromIssue(issue) }}</td>
-              <td>{{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}</td>
+              <td>{{ getPrincipleFromIssue(issue) }} 
+                <br>
+                &gt; {{ getGuidelineFromIssue(issue) }}
+              </td>
+              <td><a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
+                {{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}
+              </a></td>
               <td><select v-model="issue.roles" :disabled="isReadOnly">
                 <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
               </select></td>
@@ -253,6 +256,9 @@ font-awesome/5.15.2/css/all.min.css"/>
                 })
               }
               return ret
+            },
+            getIdFromIssue(issue){
+              return this.rules.rules[this.getNumbersFromIssue(issue)].id
             },
             async onClickSave() {
               if (this.isReadOnly) return;
