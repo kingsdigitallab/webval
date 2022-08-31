@@ -20,7 +20,6 @@
    "liv": "culturecase.org"
   },
   "a11y": {
-   "status": "done",
    "urls": [
     "/",
     "/about/",
@@ -29,7 +28,8 @@
     "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
     "/search/?s=museum"
    ],
-   "evaluated": "2022-08-26T22:15:37.884Z"
+   "evaluationStart": "2022-08-31T14:49:08.581Z",
+   "evaluationEnd": "2022-08-31T14:50:25.049Z"
   }
  },
  {
