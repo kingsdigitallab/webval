@@ -65,7 +65,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           </thead>
           <tbody>
             <tr v-for="(issue, idx) in issues">
-              <td><a :href="issue.host + issue.webpath">{{ issue.webpath }}</a></td>
+              <td><a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
               <td>{{ getLevelFromIssue(issue) }}</td>
               <td>{{ getPrincipleFromIssue(issue) }}</td>
               <td>{{ getGuidelineFromIssue(issue) }}</td>
