@@ -18,6 +18,16 @@ font-awesome/5.15.2/css/all.min.css"/>
       import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
       window.Octokit = Octokit
     </script>    
+    <style>
+      .code-block {
+        display: inline-block;
+        padding: 0.5em;
+        font-size: 80%;
+        font-family: monospace;
+        background-color: black;
+        color: lightgreen;
+      }
+    </style>
   </head>
   <body>
     <section class="section" id="app">
@@ -37,7 +47,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           Last evaluation: {{ formatDate(project.a11y.evaluationEnd) }}
         </p>
 
-        <h2 class="title is-2">Issues</h2>
+        <h2 class="title is-2">Issues ({{ issuesFiltered.length }})</h2>
         <div class="field is-grouped">
           <div class="control">
             <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">
@@ -47,16 +57,20 @@ font-awesome/5.15.2/css/all.min.css"/>
           <div class="control">
             <button @click="onClickSave()" name="action" value="save" class="button is-primary" :disabled="isReadOnly">Save</button>
           </div>
+          <div class="control">
+            <select v-model="selection.levels">
+              <option v-for="levels in levelsOptions" :value="levels.key">{{ levels.title }}</option>
+            </select>
+          </div>
         </div>
         <table class="table is-striped is-hoverable">
           <thead>
             <tr>
-              <td>Webpath</td>
+              <td>Location</td>
               <td>Level</td>
               <td>Principle</td>
               <td>Guideline</td>
               <td>Rule</td>
-              <td>Target</td>
               <td>Roles</td>
               <td>Complexity</td>
               <td>Fixed</td>
@@ -64,13 +78,20 @@ font-awesome/5.15.2/css/all.min.css"/>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(issue, idx) in issues">
-              <td><a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
-              <td>{{ getLevelFromIssue(issue) }}</td>
+            <tr v-for="(issue, idx) in issuesFiltered" :class="['issue-level-'+getLevelFromIssue(issue)]">
+              <td :title="issue.context">
+                <a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a>
+                <br>
+                {{ issue.selector }}
+                <br>
+                <span class="code-block">
+                  {{ issue.context }}
+                </span>
+              </td>
+              <td><span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span></td>
               <td>{{ getPrincipleFromIssue(issue) }}</td>
               <td>{{ getGuidelineFromIssue(issue) }}</td>
               <td>{{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}</td>
-              <td>{{ issue.rule.target }}</td>
               <td><select v-model="issue.roles" :disabled="isReadOnly">
                 <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
               </select></td>
@@ -107,8 +128,7 @@ font-awesome/5.15.2/css/all.min.css"/>
               projects: [],
               issues: [],
               selection: {
-                project: null,
-                gtoken: null
+                // see getDefaultSelection()
               }
             }
           },
@@ -146,6 +166,24 @@ font-awesome/5.15.2/css/all.min.css"/>
             isEvaluating() {
               let ret = (this.project?.a11y?.evaluationStart || '0') > (this.project?.a11y?.evaluationEnd || '0')
               return ret
+            },
+            issuesFiltered() {
+              return this.issues.filter(issue => {
+                ret = true
+                if (this.selection.levels && !this.selection.levels.includes('|'+this.getLevelFromIssue(issue)+'|')) {
+                  ret = false
+                }
+                return ret
+              })
+            },
+            levelsOptions() {
+              return [
+                {title: 'All', key: ''},
+                {title: 'A', key: '|A|'},
+                {title: 'AA', key: '|AA|'},
+                {title: 'A + AA', key: '|A|AA|'},
+                {title: 'AAA', key: '|AAA|'},
+              ]
             }
           },
           methods: {
@@ -157,7 +195,14 @@ font-awesome/5.15.2/css/all.min.css"/>
             loadSelection() {
               this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
               if (!this.selection?.project) {
-                this.selection = {project: null}
+                this.selection = this.getDefaultSelection()
+              }
+            },
+            getDefaultSelection() {
+              return {
+                project: null,
+                levels: '',
+                gtoken: null
               }
             },
             saveSelection() {
@@ -192,6 +237,13 @@ font-awesome/5.15.2/css/all.min.css"/>
             },
             getNumbersFromIssue(issue) {
               return `${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`
+            },
+            getTagClassFromIssue(issue) {
+              return {
+                'A': 'is-danger',
+                'AA': 'is-warning',
+                'AAA': 'is-info',
+              }[this.getLevelFromIssue(issue)]
             },
             getOctokit(){
               let ret = null

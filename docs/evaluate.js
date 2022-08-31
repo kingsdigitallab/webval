@@ -49,7 +49,8 @@ function setIssueRuleFromIssueCode(issue) {
 
   issue.rule = {
     standard: parts[0].substring(0, 5),
-    level: parts[0].substring(5),
+    // unreliable, Pa11y always output AA!
+    // level: parts[0].substring(5),
     principle: taxonomy[0],
     guideline: taxonomy[1],
     rule: taxonomy[2],
@@ -86,6 +87,7 @@ projects
         for (let issue of results.issues) {
           issue.host = baseUri
           issue.webpath = webpath
+          issue.updated = project.a11y.evaluationStart
           setIssueRuleFromIssueCode(issue)
           res.issues.push(issue)
         } 
