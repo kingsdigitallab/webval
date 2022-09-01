@@ -56,17 +56,7 @@ function setIssueRuleFromIssueCode(issue) {
     rule: taxonomy[2],
     code: parts[4],
     target: parts.filter((e,i) => i > 4).join('.'),
-  }            "axe",
-  "axe",            "axe",            "axe",            "axe",            "axe",
-
-  "axe",
-
-  "axe",
-
-  "axe",
-
-            "axe",
-
+  }
 }
 
 function getKeyFromIssue(issue) {
