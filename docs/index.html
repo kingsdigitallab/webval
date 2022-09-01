@@ -27,6 +27,10 @@ font-awesome/5.15.2/css/all.min.css"/>
         background-color: black;
         color: lightgreen;
       }
+      .issue-comment {
+        min-width: 10em;
+        min-height: 4em;
+      }
     </style>
   </head>
   <body>
@@ -57,7 +61,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           <div class="control">
             <button @click="onClickSave()" name="action" value="save" class="button is-primary" :disabled="isReadOnly">Save</button>
           </div>
-          <div class="control">
+          <div class="select">
             <select v-model="selection.levels">
               <option v-for="levels in levelsOptions" :value="levels.key">{{ levels.title }}</option>
             </select>
@@ -78,7 +82,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           </thead>
           <tbody>
             <tr v-for="(issue, idx) in issuesFiltered" :class="['issue-level-'+getLevelFromIssue(issue)]">
-              <td :title="issue.context">
+              <td>
                 <a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a>
                 <br>
                 {{ issue.selector }}
@@ -92,22 +96,28 @@ font-awesome/5.15.2/css/all.min.css"/>
                 <br>
                 &gt; {{ getGuidelineFromIssue(issue) }}
               </td>
-              <td><a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
+              <td :title="issue.message"><a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
                 {{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}
               </a></td>
-              <td><select v-model="issue.roles" :disabled="isReadOnly">
-                <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
-              </select></td>
-              <td><select v-model="issue.complexity" :disabled="isReadOnly">
-                <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
-              </select></td>
+              <td><div class="select">
+                <select v-model="issue.roles" :disabled="isReadOnly">
+                  <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
+                </select>
+              </div></td>
+              <td><div class="select">
+                <select v-model="issue.complexity" :disabled="isReadOnly">
+                  <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
+                </select>
+              </div></td>
               <td>
                 <label class="checkbox">
                   <input type="checkbox" v-model="issue.fixed" :disabled="isReadOnly" />
                   Fixed
                 </label>
               </td>
-              <td><input type="text" v-model="issue.comment" :disabled="isReadOnly" /></td>
+              <td>
+                <input class="input issue-comment" type="text" v-model="issue.comment" :disabled="isReadOnly" />
+              </td>
             </tr>
           </tbody>
         </table>
@@ -171,13 +181,29 @@ font-awesome/5.15.2/css/all.min.css"/>
               return ret
             },
             issuesFiltered() {
-              return this.issues.filter(issue => {
-                ret = true
+              let ret = this.issues.filter(issue => {
+                let ret = true
+                // filter by selected levels
                 if (this.selection.levels && !this.selection.levels.includes('|'+this.getLevelFromIssue(issue)+'|')) {
                   ret = false
                 }
                 return ret
               })
+              
+              // sort by (page, level, code)
+              let getSortKey = (issue) => {
+                return (''+issue.webpath.length).padStart(3,'0')
+                  + (this.getLevelFromIssue(issue).padStart(3, '0'))
+                  + (issue.rule.principle)
+                  + (issue.rule.guideline.padStart(2,'0'))
+                  + (issue.rule.rule.padStart(3,'0'))
+              }
+
+              ret = ret.sort((a, b) => {
+                return getSortKey(a) > getSortKey(b)
+              })
+              
+              return ret
             },
             levelsOptions() {
               return [
@@ -237,6 +263,9 @@ font-awesome/5.15.2/css/all.min.css"/>
             },
             getRuleFromIssue(issue) {
               return this.rules.rules[this.getNumbersFromIssue(issue)].title
+            },
+            getDescriptionFromIssue(issue) {
+              return this.rules.rules[this.getNumbersFromIssue(issue)].description
             },
             getNumbersFromIssue(issue) {
               return `${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`

@@ -9,7 +9,10 @@
         "viewport": {
             "width": 320,
             "height": 480
-        }
+        },
+        "runners": [
+            "htmlcs"
+        ]       
     },
     "urls": [
         "https://pa11y.org/",

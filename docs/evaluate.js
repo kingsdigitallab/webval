@@ -11,10 +11,9 @@ const fs = require("fs");
 const { execSync } = require('child_process');
 const pa11y = require('pa11y');
 
-
 function saveData(data, apath) {
   parentPath = path.dirname(apath);
-  fs.mkdirSync(parentPath, {recursive: true});
+  fs.mkdirSync(parentPath, {recursive: true})
 
   console.log('  WRITE ' + apath)
   fs.writeFileSync(apath, JSON.stringify(data, null, 1), "utf8")
@@ -24,7 +23,7 @@ function test(project) {
   let ret = false
   console.log(project.slug)
 
-  const projects2 = require(projectsJsonPath);
+  const projects2 = require(projectsJsonPath)
   for (let p of projects2) {
     if (p.slug == project.slug) {
       if (p?.a11y?.evaluationEnd) {
@@ -44,6 +43,7 @@ function setIssueRuleFromIssueCode(issue) {
   // part:  0       1          2            3     4   5      6
   
   let parts = issue.code.split('.')
+  // console.log(issue.code)
 
   let taxonomy = parts[3].split('_')
 
@@ -56,7 +56,21 @@ function setIssueRuleFromIssueCode(issue) {
     rule: taxonomy[2],
     code: parts[4],
     target: parts.filter((e,i) => i > 4).join('.'),
-  }
+  }            "axe",
+  "axe",            "axe",            "axe",            "axe",            "axe",
+
+  "axe",
+
+  "axe",
+
+  "axe",
+
+            "axe",
+
+}
+
+function getKeyFromIssue(issue) {
+  return `${issue.code}|${issue.context}|${issue.selector}`
 }
 
 projects
@@ -73,6 +87,8 @@ projects
       "issues": []
     }
 
+    let issueKeys = {}
+
     if (1) {
       for (let webpath of project.a11y.urls) {
         console.log(`  PA11Y ${webpath}`)
@@ -85,11 +101,16 @@ projects
         }
         
         for (let issue of results.issues) {
+          let issueKey = getKeyFromIssue(issue)
+          if (issueKeys[issueKey]) continue
+
           issue.host = baseUri
           issue.webpath = webpath
           issue.updated = project.a11y.evaluationStart
           setIssueRuleFromIssueCode(issue)
           res.issues.push(issue)
+
+          issueKeys[issueKey] = 1
         } 
       }
 
