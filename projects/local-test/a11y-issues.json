@@ -1,1 +1,103 @@
-{"issues":[{"code":"WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2","type":"error","typeCode":1,"message":"The html element should have a lang or xml:lang attribute which describes the language of the document.","context":"<html><head>\n    <meta charset=\"utf-8...</html>","selector":"html","runner":"htmlcs","runnerExtras":{},"host":"http://localhost:5500","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"3","guideline":"1","rule":"1","code":"H57","target":"2"},"comment":"456","roles":"U","complexity":"XS","fixed":true},{"code":"WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name","type":"error","typeCode":1,"message":"This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.","context":"<select><option value=\"local-test\">Loca...</select>","selector":"#app > div > p > select","runner":"htmlcs","runnerExtras":{},"host":"http://localhost:5500","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"4","guideline":"1","rule":"2","code":"H91","target":"Select.Name"}},{"code":"WCAG2AA.Principle1.Guideline1_3.1_3_1.F68","type":"error","typeCode":1,"message":"This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.","context":"<select><option value=\"local-test\">Loca...</select>","selector":"#app > div > p > select","runner":"htmlcs","runnerExtras":{},"host":"http://localhost:5500","webpath":"/","rule":{"standard":"WCAG2","level":"AA","principle":"1","guideline":"3","rule":"1","code":"F68","target":""},"comment":"12345"}]}
+{
+ "meta": {
+  "version": "0.1.0",
+  "evaluationStarted": "2022-09-03T00:17:01.377Z",
+  "evaluationEnded": "2022-09-03T00:17:02.805Z"
+ },
+ "issues": {
+  "47752301": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"id1\" found on the web page.",
+   "context": "<span id=\"id1\">v3</span>",
+   "selector": "#id1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:5500",
+   "webpath": "/docs/test.html",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1",
+    "code": "F77",
+    "target": ""
+   },
+   "detected": "2022-09-03T00:17:01.377Z",
+   "hash": 47752301
+  },
+  "341155308": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"id1\" found on the web page.",
+   "context": "<span id=\"id1\">v2</span>",
+   "selector": "#id1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:5500",
+   "webpath": "/docs/test.html",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1",
+    "code": "F77",
+    "target": ""
+   },
+   "detected": "2022-09-03T00:17:01.377Z",
+   "hash": 341155308
+  },
+  "967767831": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+   "context": "<img src=\"https://s1.qwant.com/thumbr/0x380/9/7/54b459af646429517aa91eefb92e937da4648b7b57e05e496f6b966d1c0146/991958-sky-clouds-nature.jpg?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2019%2F09%2F991958-sky-clouds-nature.jpg&amp;q=0&amp;b=1&a...",
+   "selector": "html > body > section > div > img",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:5500",
+   "webpath": "/docs/test.html",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1",
+    "code": "H37",
+    "target": ""
+   },
+   "detected": "2022-09-03T00:17:01.377Z",
+   "hash": 967767831
+  },
+  "1398338803": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:5500",
+   "webpath": "/docs/test.html",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1",
+    "code": "H57",
+    "target": "2"
+   },
+   "detected": "2022-09-03T00:17:01.377Z",
+   "hash": 1398338803
+  }
+ },
+ "annotations": {
+  "47752301": {},
+  "341155308": {},
+  "967767831": {},
+  "1398338803": {}
+ }
+}
