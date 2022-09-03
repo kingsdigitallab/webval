@@ -142,7 +142,7 @@
             <label>WCAG Rule</label>
             <div class="select">
               <select v-model="newIssue.ruleNumber" :disabled="isReadOnly">
-                <option v-for="rule in this.rules.rules" :value="rule.code">{{rule.code}} {{ rule.title }}</option>
+                <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
               </select>
             </div>
             &nbsp;
@@ -276,7 +276,7 @@
             issuesFiltered() {
               let ret = Object.values(this.issues).filter(issue => {
                 // filter by selected levels
-                if (this.selection.levels && !this.selection.levels.includes('|'+this.getLevelFromIssue(issue)+'|')) {
+                if (!this.isLevelSelected(this.getLevelFromIssue(issue))) {
                   return false
                 }
                 // issues detected in the last evaluation OR issues manually entered
@@ -365,6 +365,9 @@
             // getPrincipleFromIssue(issue) {
             //   return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
             // },
+            isLevelSelected(level) {
+              return !(this.selection.levels && !this.selection.levels.includes('|'+level+'|'))
+            },
             getLevelFromIssue(issue) {
               return this.rules.rules[this.getNumbersFromIssue(issue)].level
             },
