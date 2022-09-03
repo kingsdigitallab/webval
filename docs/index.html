@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KDL Accessibility</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
-font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script type="module">
       import { updateGithubJsonFile, readGithubJsonFile } from "./utils.js";
       window.updateGithubJsonFile = updateGithubJsonFile
@@ -48,7 +47,7 @@ font-awesome/5.15.2/css/all.min.css"/>
           </div>
         </div>
         <p v-if="project">
-          Last evaluation: {{ formatDate(project.a11y.evaluationEnd) }}
+          Last evaluation: {{ formatDate(project.a11y.evaluationStarted) }}
         </p>
 
         <h2 class="title is-2">Issues ({{ issuesFiltered.length }})</h2>
@@ -66,6 +65,12 @@ font-awesome/5.15.2/css/all.min.css"/>
               <option v-for="levels in levelsOptions" :value="levels.key">{{ levels.title }}</option>
             </select>
           </div>
+          &nbsp;
+          <div class="select">
+            <select v-model="selection.resolutions">
+              <option v-for="resolutions in resolutionsOptions" :value="resolutions.key">{{ resolutions.title }}</option>
+            </select>
+          </div>
         </div>
         <table class="table is-striped is-hoverable">
           <thead>
@@ -76,7 +81,7 @@ font-awesome/5.15.2/css/all.min.css"/>
               <td>Rule</td>
               <td>Roles</td>
               <td>Complexity</td>
-              <td>Fixed</td>
+              <td>Resolution</td>
               <td>Comment</td>
             </tr>
           </thead>
@@ -100,29 +105,67 @@ font-awesome/5.15.2/css/all.min.css"/>
                 {{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}
               </a></td>
               <td><div class="select">
-                <select v-model="issue.roles" :disabled="isReadOnly">
+                <select v-model="evaluation.annotations[issue.hash].roles" :disabled="isReadOnly">
                   <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
                 </select>
               </div></td>
               <td><div class="select">
-                <select v-model="issue.complexity" :disabled="isReadOnly">
+                <select v-model="evaluation.annotations[issue.hash].complexity" :disabled="isReadOnly">
                   <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
                 </select>
               </div></td>
               <td>
-                <label class="checkbox">
-                  <input type="checkbox" v-model="issue.fixed" :disabled="isReadOnly" />
-                  Fixed
-                </label>
+                <div class="select">
+                  <select v-model="evaluation.annotations[issue.hash].resolution" :disabled="isReadOnly">
+                    <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
+                  </select>
+                </div>
               </td>
               <td>
-                <input class="input issue-comment" type="text" v-model="issue.comment" :disabled="isReadOnly" />
+                <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.hash].comment" :disabled="isReadOnly" />
               </td>
             </tr>
           </tbody>
         </table>
 
-        <form :class="{field: 1, notification: 1, 'is-warning': isReadOnly}">
+        <form @submit.stop.prevent="onAddNewIssue" v-if="project" class="box">
+          <div class="field is-grouped">
+            <label>Web path</label>
+            <div class="control">
+              <div class="select">
+                <select v-model="newIssue.webpath" :disabled="isReadOnly">
+                  <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                </select>
+              </div>
+            </div>
+            &nbsp;
+            <label>WCAG Rule</label>
+            <div class="select">
+              <select v-model="newIssue.ruleNumber" :disabled="isReadOnly">
+                <option v-for="rule in this.rules.rules" :value="rule.code">{{rule.code}} {{ rule.title }}</option>
+              </select>
+            </div>
+            &nbsp;
+            <div class="control">
+              <button type="submit" name="action" value="addIssue" :disabled="isReadOnly" class="button is-primary">Add new issue</button>
+            </div>
+          </div>
+          <div class="field is-grouped">
+            <label>Context (HTML element)
+              <input type="text" class="input" v-model="newIssue.context">
+            </label>
+            &nbsp;
+            <label>Selector
+              <input type="text" class="input" v-model="newIssue.selector">
+            </label>
+            &nbsp;
+            <label>Problem
+              <input type="text" class="input" v-model="newIssue.message">
+            </label>
+          </div>
+        </form>
+
+        <form :class="{notification: 1, 'is-warning': isReadOnly}">
           <div class="field">
             <label class="label">Personal access token:</label>
             <input type="password" v-model="selection.gtoken" class="input">
@@ -135,13 +178,54 @@ font-awesome/5.15.2/css/all.min.css"/>
       window.addEventListener("load", function(event) {
         const { createApp } = Vue
 
+        // TODO: move to utils and share with evaluate.js
+        function getKeyFromIssue(issue, includeWebPath=false) {
+          let ret = `${issue.code}|${issue.context}|${issue.selector}`
+          if (includeWebPath) {
+            ret = `${issue.webpath}|` + ret
+          }
+          ret = hashCode(ret)
+          return ret
+        }
+
+        // TODO: move to utils and share with evaluate.js
+        /**
+         * Returns a hash code from a string
+         * @param  {String} str The string to hash.
+         * @return {Number}    A 32bit integer
+         * @see http://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/
+         * @see https://stackoverflow.com/a/8831937
+         */
+        function hashCode(str) {
+          let hash = 0;
+          for (let i = 0, len = str.length; i < len; i++) {
+              let chr = str.charCodeAt(i);
+              hash = (hash << 5) - hash + chr;
+              hash |= 0; // Convert to 32bit integer
+          }
+          return hash;
+        }
+
+
         createApp({
           data() {
             return {
               projects: [],
-              issues: [],
+              evaluation: {
+                issues: {},
+                annotations: {}
+              },
+              // issues: {},
+              // annotations: {},
               selection: {
                 // see getDefaultSelection()
+              },
+              newIssue: {
+                webpath: '',
+                ruleNumber: '',
+                context: '',
+                message: '',
+                selecgtor: ''
               }
             }
           },
@@ -163,6 +247,12 @@ font-awesome/5.15.2/css/all.min.css"/>
             }
           },
           computed: {
+            issues() {
+              return this.evaluation.issues
+            },
+            annotations() {
+              return this.evaluation.annotations
+            },
             project() {
               let ret = this.projects.filter(p => p.slug == this.selection.project)
               return ret ? ret[0] : null
@@ -173,21 +263,34 @@ font-awesome/5.15.2/css/all.min.css"/>
             complexities() {
               return ['XS', 'S', 'M', 'L', 'XL']
             },
+            resolutions() {
+              return ['Todo', 'In progress', 'Addressed', 'Won\'t']
+            },
             roles() {
               return ['U', 'D', 'UD', 'A', 'P']
             },
             isEvaluating() {
-              let ret = (this.project?.a11y?.evaluationStart || '0') > (this.project?.a11y?.evaluationEnd || '0')
+              let ret = (this.project?.a11y?.evaluationRequested || '0') > (this.project?.a11y?.evaluationEnded || '0')
               return ret
             },
             issuesFiltered() {
-              let ret = this.issues.filter(issue => {
-                let ret = true
+              let ret = Object.values(this.issues).filter(issue => {
                 // filter by selected levels
                 if (this.selection.levels && !this.selection.levels.includes('|'+this.getLevelFromIssue(issue)+'|')) {
-                  ret = false
+                  return false
                 }
-                return ret
+                // issues detected in the last evaluation OR issues manually entered
+                if (issue.detected && issue.detected != this.evaluation.meta.evaluationStarted) {
+                  return false
+                }
+                // addressed or won't issues
+                if (this.selection.resolutions != 'all') {                  
+                  let isClosed = 'Addressed|Won\'t'.includes(this.annotations[issue.hash].resolution)
+                  if (isClosed == (this.selection.resolutions == 'open')) {
+                    return false
+                  }
+                }
+                return true
               })
               
               // sort by (page, level, code)
@@ -207,11 +310,18 @@ font-awesome/5.15.2/css/all.min.css"/>
             },
             levelsOptions() {
               return [
-                {title: 'All', key: ''},
+                {title: 'All levels', key: ''},
                 {title: 'A', key: '|A|'},
                 {title: 'AA', key: '|AA|'},
                 {title: 'A + AA', key: '|A|AA|'},
                 {title: 'AAA', key: '|AAA|'},
+              ]
+            },
+            resolutionsOptions() {
+              return [
+                {title: 'Open issues', key: 'open'},
+                {title: 'All issues', key: 'all'},
+                {title: 'Closed issues', key: 'closed'},
               ]
             }
           },
@@ -231,6 +341,7 @@ font-awesome/5.15.2/css/all.min.css"/>
               return {
                 project: null,
                 levels: '',
+                resolutions: '',
                 gtoken: null
               }
             },
@@ -241,11 +352,14 @@ font-awesome/5.15.2/css/all.min.css"/>
               // load issues
               let res = await readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
               if (res) {
-                this.issues = res.data.issues
-                this.issues_sha = res.sha
+                this.evaluation = res.data
+                this.evaluation_sha = res.sha
               } else {
-                this.issues = []
-                this.issues_sha = null
+                this.evaluation = {
+                  issues: {},
+                  annotations: {}
+                }
+                this.evaluation_sha = null
               }
             },
             // getPrincipleFromIssue(issue) {
@@ -292,15 +406,15 @@ font-awesome/5.15.2/css/all.min.css"/>
             async onClickSave() {
               if (this.isReadOnly) return;
               
-              await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, {issues: this.issues}, this.getOctokit())
+              this.evaluation_sha = await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.evaluation, this.getOctokit(), this.evaluation_sha)
             },
             async onClickEvaluate() {
               if (this.isReadOnly) return;
               
-              this.project.a11y.evaluationStart = new Date().toISOString()
+              this.project.a11y.evaluationRequested = new Date().toISOString()
 
-              await updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
-              await updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: new Date().toISOString()}, this.getOctokit())
+              this.projects_sha = await updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
+              await updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: this.project.a11y.evaluationRequested}, this.getOctokit(), this.projects_sha)
             },
             formatDate(adate) {
               if (!adate?.toDateString) {
@@ -317,6 +431,34 @@ font-awesome/5.15.2/css/all.min.css"/>
                 this.loadProjects()
                 if (!this.isEvaluating) {
                   this.onChangeProject()
+                }
+              }
+            },
+            onAddNewIssue() {
+              let newIssue = this.newIssue
+              let codeParts = newIssue.ruleNumber.split('.')
+              let rule = this.rules[newIssue.ruleNumber]
+              let issue = {
+                code: `MANUAL-ISSUE-${newIssue.ruleNumber}`,
+                message: newIssue.message,
+                context: newIssue.context,
+                selector: newIssue.selector,
+                runner: "manual",
+                host: this.project.sites.liv,
+                webpath: newIssue.webpath,
+                rule: {
+                  standard: 'WCAG2',
+                  principle: codeParts[0],
+                  guideline: codeParts[1],
+                  rule: codeParts[2],
+                }
+              }
+              issue.hash = getKeyFromIssue(issue, true)
+              console.log(issue)
+              if (!this.issues[issue.hash]) { 
+                this.issues[issue.hash] = issue
+
+                this.annotations[issue.hash] = {
                 }
               }
             }

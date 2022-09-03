@@ -50,7 +50,8 @@ export async function readGithubJsonFile(filePath, octokit) {
     return ret
 }
 
-export async function updateGithubJsonFile(filePath, data, octokit) {
+export async function updateGithubJsonFile(filePath, data, octokit, sha=null) {
+    let res = null
     let options = {
         owner: 'kingsdigitallab',
         repo: 'webval',
@@ -63,23 +64,28 @@ export async function updateGithubJsonFile(filePath, data, octokit) {
     // TODO: sha should be obtained when we read the file the first time in the UI
     // and then passed here. Otherwise conflict detection won't work.
     // get the file sha
-    let sha = ''
-    let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
+    if (!sha) {
+        let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
 
-    let res = null
-    res = await fetch(getUrl)
-    if (res && res.status == 200) {
-        res = await res.json()
-        sha = res.sha
+        res = await fetch(getUrl)
+        if (res && res.status == 200) {
+            res = await res.json()
+            sha = res.sha
+        }
     }
 
     if (sha) {
+        console.log(sha)
         options.sha = sha
     }
     if (1) {
         res = await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', options)
     }
-    console.log(res)
+
+    let ret = res.data.content.sha
+    console.log(ret)
+
+    return ret
 }
 
 
