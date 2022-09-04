@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'actions/accept_sceenshots.json'
+      - 'actions/accept_screenshots.json'
 
 jobs:
   accept-screenshots:
