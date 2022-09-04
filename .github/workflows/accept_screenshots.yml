@@ -19,7 +19,7 @@ jobs:
     - name: copy latest screenshots to accepted folder
       run: node actions/accept_screenshots.js
     - name: Commit and push
-      if: ${{ false }}
+      if: ${{ true }}
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Accepted latest visual tests
