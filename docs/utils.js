@@ -15,7 +15,11 @@
         if (octokit) {
             let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
             try {
-                res = await octokit.request(`GET ${getUrl}`, {})
+                res = await octokit.request(`GET ${getUrl}`, {
+                    headers: {
+                        'If-None-Match': ''
+                    }                    
+                })
                 res = res.data
             } catch (err) {
                 console.log(err)
