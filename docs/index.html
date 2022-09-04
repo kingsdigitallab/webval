@@ -486,8 +486,8 @@
               
               this.project.a11y.evaluationRequested = new Date().toISOString()
 
-              this.projects_sha = await utils.updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
-              await utils.updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: this.project.a11y.evaluationRequested}, this.getOctokit(), this.projects_sha)
+              this.projects_sha = await utils.updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit(), this.projects_sha)
+              await utils.updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: this.project.a11y.evaluationRequested}, this.getOctokit())
             },
             formatDate(adate) {
               if (!adate?.toDateString) {

@@ -67,7 +67,7 @@
             // path: `projects/${this.selection.project}/a11y-issues.json`,
             path: filePath,
             message: `Commented ${filePath}`,
-            content: base64Encode(JSON.stringify(data))
+            content: base64Encode(JSON.stringify(data, null, 2))
         }
         
         // TODO: sha should be obtained when we read the file the first time in the UI
