@@ -111,6 +111,7 @@
             path.join(screenshotsPath, source),
             path.join(screenshotsPath, target),
         ]
+        fs.mkdirSync(shotDirs[1], {recursive: true})
         fs.readdirSync(shotDirs[0]).forEach(filename => {
             fs.copyFileSync(path.join(shotDirs[0], filename), path.join(shotDirs[1], filename))
             // console.log(`${path.join(shotDirs[0], filename)} -> ${path.join(shotDirs[1], filename)}`)
