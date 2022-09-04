@@ -7,11 +7,7 @@
     <title>KDL Accessibility</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script type="module">
-      import { updateGithubJsonFile, readGithubJsonFile } from "./utils.js";
-      window.updateGithubJsonFile = updateGithubJsonFile
-      window.readGithubJsonFile = readGithubJsonFile
-    </script>    
+    <script src="utils.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <script type="module">
       import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
@@ -30,6 +26,9 @@
         min-width: 10em;
         min-height: 4em;
       }
+      .thumbnail {
+        max-height: 20em;
+      }
     </style>
   </head>
   <body>
@@ -38,6 +37,7 @@
         <h1 class="title is-1">
           KDL Accessibility
         </h1>
+
         <div class="control">
           <label class="label">Project:</label> 
           <div class="select">
@@ -50,7 +50,69 @@
           Last evaluation: {{ formatDate(project.a11y.evaluationStarted) }}
         </p>
 
-        <h2 class="title is-2">Issues ({{ issuesFiltered.length }})</h2>
+        <br>
+
+        <div class="tabs is-large is-boxed">
+          <ul>
+            <li v-for="tab in tabs" :class="{'is-active': selection.tab == tab.key}">
+              <a @click="selection.tab = tab.key">
+                {{tab.title}}
+                <template v-if="tab.key == 'issues'">({{ issuesFiltered.length }})</template>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <br>
+      </div>
+
+      <div class="container" v-if="selection.tab == 'summary'">
+        <div v-if="project">
+          <h3 class="title is-3">Issues</h3>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Page</th>
+                <th><span class="tag is-danger">A</span></th>
+                <th><span class="tag is-warning">AA</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="url in project.a11y.urls">
+                <td>{{ url }}</td>
+                <td>{{ getIssuesCount(url, 'A') }}</td>
+                <td>{{ getIssuesCount(url, 'AA') }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="title is-3">Visual regression tests</h3>
+
+          <button @click="onAcceptScreenshots" class="button is-primary" name="action" value="acceptScreenshots" :disabled="isReadOnly">Accept latest screenshots</button>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Page</th>
+                <th>Last</th>
+                <th>Difference</th>
+                <th>Reference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="url in project.a11y.urls">
+                <td>{{ url }}</td>
+                <td v-for="dir in ['last', 'last-accepted', 'accepted']">
+                  <a :href="getScreenshotFromUrl(url, dir)" target="_blank"><img class="thumbnail" :src="getScreenshotFromUrl(url, dir)"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container" v-if="selection.tab == 'issues'">
         <div class="field is-grouped">
           <div class="control">
             <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">
@@ -133,7 +195,7 @@
             <label>Web path</label>
             <div class="control">
               <div class="select">
-                <select v-model="newIssue.webpath" :disabled="isReadOnly">
+                <select v-model="newIssue.webpath">
                   <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
                 </select>
               </div>
@@ -141,13 +203,13 @@
             &nbsp;
             <label>WCAG Rule</label>
             <div class="select">
-              <select v-model="newIssue.ruleNumber" :disabled="isReadOnly">
+              <select v-model="newIssue.ruleNumber">
                 <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
               </select>
             </div>
             &nbsp;
             <div class="control">
-              <button type="submit" name="action" value="addIssue" :disabled="isReadOnly" class="button is-primary">Add new issue</button>
+              <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issue</button>
             </div>
           </div>
           <div class="field is-grouped">
@@ -164,7 +226,9 @@
             </label>
           </div>
         </form>
+      </div>
 
+      <div class="container" v-if="selection.tab == 'settings'">
         <form :class="{notification: 1, 'is-warning': isReadOnly}">
           <div class="field">
             <label class="label">Personal access token:</label>
@@ -215,8 +279,6 @@
                 issues: {},
                 annotations: {}
               },
-              // issues: {},
-              // annotations: {},
               selection: {
                 // see getDefaultSelection()
               },
@@ -231,7 +293,7 @@
           },
           async mounted() {
             // TODO: non-blocking
-            this.rules = (await readGithubJsonFile('projects/rules.json')).data
+            this.rules = (await utils.readGithubJsonFile('projects/rules.json')).data
             this.loadSelection()
             this.loadProjects()
             this.onChangeProject()
@@ -317,6 +379,13 @@
                 {title: 'AAA', key: '|AAA|'},
               ]
             },
+            tabs() {
+              return [
+                {title: 'Issues', key: 'issues'},
+                {title: 'Summary', key: 'summary'},
+                {title: 'Settings', key: 'settings'},
+              ]
+            },
             resolutionsOptions() {
               return [
                 {title: 'Open issues', key: 'open'},
@@ -327,7 +396,7 @@
           },
           methods: {
             async loadProjects() {
-              let res = await readGithubJsonFile('projects/projects.json', this.getOctokit())
+              let res = await utils.readGithubJsonFile('projects/projects.json', this.getOctokit())
               this.projects = res.data
               this.projects_sha = res.sha
             },
@@ -340,8 +409,9 @@
             getDefaultSelection() {
               return {
                 project: null,
-                levels: '',
-                resolutions: '',
+                levels: '|A|AA|',
+                resolutions: 'open',
+                tab: 'issues',
                 gtoken: null
               }
             },
@@ -350,7 +420,7 @@
             },
             async onChangeProject() {
               // load issues
-              let res = await readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
+              let res = await utils.readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
               if (res) {
                 this.evaluation = res.data
                 this.evaluation_sha = res.sha
@@ -409,15 +479,15 @@
             async onClickSave() {
               if (this.isReadOnly) return;
               
-              this.evaluation_sha = await updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.evaluation, this.getOctokit(), this.evaluation_sha)
+              this.evaluation_sha = await utils.updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.evaluation, this.getOctokit(), this.evaluation_sha)
             },
             async onClickEvaluate() {
               if (this.isReadOnly) return;
               
               this.project.a11y.evaluationRequested = new Date().toISOString()
 
-              this.projects_sha = await updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
-              await updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: this.project.a11y.evaluationRequested}, this.getOctokit(), this.projects_sha)
+              this.projects_sha = await utils.updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit())
+              await utils.updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: this.project.a11y.evaluationRequested}, this.getOctokit(), this.projects_sha)
             },
             formatDate(adate) {
               if (!adate?.toDateString) {
@@ -436,6 +506,17 @@
                   this.onChangeProject()
                 }
               }
+            },
+            async onAcceptScreenshots() {
+              if (this.isReadOnly) return;
+              
+              this.evaluation_sha = await utils.updateGithubJsonFile(
+                'actions/accept_screenshots.json', {
+                  projectSlug: this.selection.project,
+                  requested: new Date().toISOString()
+                }, 
+                this.getOctokit()
+              )
             },
             onAddNewIssue() {
               let newIssue = this.newIssue
@@ -464,6 +545,17 @@
                 this.annotations[issue.hash] = {
                 }
               }
+            },
+            getScreenshotFromUrl(url, batch='last') {
+              let ret = ''
+              if (this.project) {
+                let urlSlug = url.replace(/\W+/g, '-')
+                ret = `../projects/${this.project.slug}/screenshots/${batch}/${urlSlug}.png`
+              }
+              return ret
+            },
+            getIssuesCount(url, level) {
+              return this.issuesFiltered.filter(i => i.webpath == url && this.getLevelFromIssue(i) == level).length
             }
           }
         }).mount('#app');

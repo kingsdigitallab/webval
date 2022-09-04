@@ -10,6 +10,7 @@ const pa11yCiConfig = require(path.join(pathProjects, 'pa11y-ci.json'))
 const fs = require("fs");
 const { execSync } = require('child_process');
 const pa11y = require('pa11y');
+const utils = require('./utils');
 
 function saveData(data, apath) {
   parentPath = path.dirname(apath);
@@ -42,7 +43,7 @@ function setIssueRuleFromIssueCode(issue) {
   // code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name'
   // part:  0       1          2            3     4   5      6
 
-  console.log(issue)
+  // console.log(issue)
   
   let parts = issue.code.split('.')
   // console.log(issue.code)
@@ -94,13 +95,22 @@ projects
 
     let resultsPath = path.join(pathProjects, project.slug, 'a11y-issues.json')
 
+    // create screenshots subdirs
+    let screenshotsPath = path.join(pathProjects, project.slug, 'screenshots')
+    fs.mkdirSync(screenshotsPath, {recursive: true})
+    for (let name of ['last', 'previous', 'accepted']) {
+      fs.mkdirSync(path.join(screenshotsPath, name), {recursive: true})
+    }
+    // copy from screenshots/last/*.png to screenshots/previous/
+    
+    utils.copyScreenshots(project.slug, 'last', 'previous')
+
     // console.log(project.a11y)
     let baseUri = project.sites.liv
     console.log(`Project ${project.name} ${baseUri}`)
 
     // TODO: create path to output if absent
     // TODO: add axe rules
-    
     let res = {
       "meta": {},
       "issues": {},
@@ -118,8 +128,12 @@ projects
       for (let webpath of project.a11y.urls) {
         console.log(`  PA11Y ${webpath}`)
         let results = null
+        let options = pa11yCiConfig.defaults
+
+        let pathSlug = webpath.replace(/\W+/g, '-')
+        options.screenCapture = `${screenshotsPath}/last/${pathSlug}.png`
         try {
-          results = await pa11y(baseUri + webpath, pa11yCiConfig.defaults)
+          results = await pa11y(baseUri + webpath, options)
         } catch(err) {
           console.log(err.message)
         }
@@ -138,7 +152,7 @@ projects
 
           // update issue 
           setIssueRuleFromIssueCode(issue)
-          console.log(issue)
+          // console.log(issue)
           issue.detected = project.a11y.evaluationStarted
           issue.hash = issueKeyAbsolute
           if (!res.annotations[issueKeyAbsolute]) {
@@ -149,6 +163,8 @@ projects
           issueKeys[issueKey] = 1
         } 
       }
+
+      utils.compareScreenshots(project.slug, 'last', 'accepted', 'last-accepted')
 
       project.a11y.evaluationEnded = new Date().toISOString()
 

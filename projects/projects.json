@@ -7,10 +7,11 @@
   },
   "a11y": {
    "urls": [
+    "/docs/",
     "/docs/test.html"
    ],
-   "evaluationStarted": "2022-09-03T11:32:24.683Z",
-   "evaluationEnded": "2022-09-03T11:32:26.116Z"
+   "evaluationStarted": "2022-09-04T19:19:56.760Z",
+   "evaluationEnded": "2022-09-04T19:20:01.357Z"
   }
  },
  {
