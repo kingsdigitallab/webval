@@ -332,7 +332,7 @@
               return ['U', 'D', 'UD', 'A', 'P']
             },
             isEvaluating() {
-              let ret = (this.project?.a11y?.evaluationRequested || '0') > (this.project?.a11y?.evaluationEnded || '0')
+              let ret = this.project && (this.project?.a11y?.evaluationRequested || '0') > (this.project?.a11y?.evaluationEnded || '0')
               return ret
             },
             issuesFiltered() {

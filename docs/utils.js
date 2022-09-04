@@ -14,8 +14,12 @@
         let res = null
         if (octokit) {
             let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
-            res = await octokit.request(`GET ${getUrl}`, {})
-            res = res.data
+            try {
+                res = await octokit.request(`GET ${getUrl}`, {})
+                res = res.data
+            } catch (err) {
+                console.log(err)
+            }
         } else {
             if (0) {
                 // we don't use octokit here 
@@ -32,7 +36,8 @@
             } else {
                 // TODO: simple relative fetch, no sha
                 let getUrl = `../${filePath}`
-                let res = await fetch(getUrl)
+                let res = null
+                res = await fetch(getUrl)
                 if (res && res.status == 200) {
                     ret = {
                         data: await res.json(),
