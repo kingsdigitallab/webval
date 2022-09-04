@@ -22,7 +22,7 @@ jobs:
       run: rm /etc/apt/sources.list.d/google.list && apt update && apt install -y git
     - uses: actions/checkout@v2
     - name: Install dependencies
-      run: npm i pa11y
+      run: npm i pa11y && npm i blink-diff
     - name: Evaluation
       run: node docs/evaluate.js
     - name: Commit and push
