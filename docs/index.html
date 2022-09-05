@@ -15,24 +15,35 @@
     </script>    
     <style>
       .issues-page {
+        color: white;
         background-color: #a0a0ff;
+        border-top: 3px solid #7d7dfd;
+      }
+      table.table.is-hoverable tbody tr.issues-page:hover {
+        background-color: #a0a0ff;
+      }
+      .issues-page td a {
+        color: white;
+        display: block;
       }
       .issues-group td {
         background-color: #d0d0ff;
       }
       .issue-message {
-        display: inline-block;
+        /* display: inline-block; */
+        font-style: italic;
       }
-      .issue-selector {
-        display: inline-block;
-      }
-      .issue-context {
-        display: inline-block;
+      .issue-context, .issue-selector {
+        /* display: inline-block; */
         padding: 0.5em;
         font-size: 80%;
         font-family: monospace;
         background-color: black;
         color: lightgreen;
+      }
+      .issue-selector {
+        color: inherit;
+        background-color: lightgrey;
       }
       .issue-comment {
         min-width: 10em;
@@ -152,21 +163,22 @@
             </select>
           </div>
         </div>
-        <table class="table is-hoverable">
+        <table class="table is-hoverable is-fullwidth">
           <thead>
             <tr>
-              <td>Level</td>
-              <td>Description</td>
-              <td>Roles</td>
-              <td>Complexity</td>
-              <td>Resolution</td>
-              <td>Comment</td>
+              <th>Level</th>
+              <th>Description</th>
+              <th>Roles</th>
+              <th>Complexity</th>
+              <th>Resolution</th>
+              <th>Comment</th>
             </tr>
           </thead>
           <tbody>
             <template v-for="(issue, idx) in issuesFiltered">
-              <tr v-if="idx == 0 || issuesFiltered[idx-1].webpath != issue.webpath" class="issues-page">
-                <td colspan="6"><a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
+              <tr v-if="idx == 0 || (issuesFiltered[idx-1].webpath != issue.webpath)" class="issues-page">
+                <td>...</td>
+                <td colspan="5"><a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
               </tr>
 
               <tr v-if="('type|issue'.includes(selection.depth)) && (idx == 0 || getGroupFromIssue(issuesFiltered[idx-1]) != getGroupFromIssue(issue))" class="issues-group">
@@ -206,15 +218,14 @@
                 <td>
                 </td>
                 <td>
-                  <span class="issue-message">
+                  <div class="issue-message">
                     <span v-if="!issue.detected" class="tag is-info">Manual</span>
-                    {{ issue.message }}
-                  </span>
-                  <span class="issue-selector">{{ issue.selector }}</span>
-                  <br>
-                  <span class="issue-context" v-if="issue.context">
+                    <template v-if="(idx == 0) || (issue.message != issuesFiltered[idx-1].message)">{{ issue.message }}</template>
+                  </div>
+                  <div class="issue-selector">{{ issue.selector }}</div>
+                  <div class="issue-context" v-if="issue.context">
                     {{ issue.context }}
-                  </span>
+                  </div>
                 </td>
                 <td><div class="select">
                   <select v-model="evaluation.annotations[issue.hash].roles" :disabled="isReadOnly">
@@ -426,22 +437,31 @@
                     resolution: 'Todo'
                   }
                 }
-                
 
                 return true
               })
               
               // sort by (page, level, code)
               let getSortKey = (issue) => {
-                return (''+issue.webpath.length).padStart(3,'0')
+                return (
+                  ''
                   + (this.getLevelFromIssue(issue).padStart(3, '0'))
                   + (issue.rule.principle)
                   + (issue.rule.guideline.padStart(2,'0'))
                   + (issue.rule.rule.padStart(3,'0'))
+                  + (issue.rule.code || '')
+                )
               }
 
               ret = ret.sort((a, b) => {
-                return getSortKey(a) > getSortKey(b)
+                let c = a.webpath.length - b.webpath.length
+                if (c == 0) {
+                  c = (a.webpath == b.webpath) ? 0 : (a.webpath > b.webpath)
+                  if (c == 0) {
+                    c = getSortKey(a) > getSortKey(b)                    
+                  }
+                }
+                return c
               })
               
               return ret
