@@ -1,4 +1,4 @@
-# webval
+# Webval
 
 A [Web application](https://kingsdigitallab.github.io/webval/docs/) hosted on gthub that lets you run accessibility evaluation on multiple pages for a collection of sites. The accessibility issues are saved in this repository and can be browsed and manually annotated to facilitate accessibility assessment, review and testing processes.
 
@@ -25,6 +25,7 @@ losing annotations
 
 ## TODO
 
+* M further testing & debugging, interface improvements
 * M issue grouping
 * S improve manual annotations
 * S ability to manage issues not covered by automated testers

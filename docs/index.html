@@ -73,16 +73,16 @@
           <table class="table">
             <thead>
               <tr>
-                <th>Page</th>
                 <th><span class="tag is-danger">A</span></th>
                 <th><span class="tag is-warning">AA</span></th>
+                <th>Page</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="url in project.a11y.urls">
-                <td>{{ url }}</td>
                 <td>{{ getIssuesCount(url, 'A') }}</td>
                 <td>{{ getIssuesCount(url, 'AA') }}</td>
+                <td>{{ url }}</td>
               </tr>
             </tbody>
           </table>
@@ -154,11 +154,14 @@
                 <br>
                 {{ issue.selector }}
                 <br>
-                <span class="code-block">
+                <span class="code-block" v-if="issue.context">
                   {{ issue.context }}
                 </span>
               </td>
-              <td><span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span></td>
+              <td>
+                <span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span>
+                <span v-if="!issue.detected" class="tag is-info">Manual</span>
+              </td>
               <td>{{ getPrincipleFromIssue(issue) }} 
                 <br>
                 &gt; {{ getGuidelineFromIssue(issue) }}
@@ -236,6 +239,23 @@
             <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">Please generate and provide a github Personal Access Token to interact with the page</a>
           </div>
         </form>
+      </div>
+
+      <div class="container" v-if="selection.tab == 'projects'">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Evaluated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="project in projects">
+              <td>{{ project.name }}</td>
+              <td>{{ formatDate(project.a11y.evaluationStarted) }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <script>
@@ -384,6 +404,7 @@
                 {title: 'Issues', key: 'issues'},
                 {title: 'Summary', key: 'summary'},
                 {title: 'Settings', key: 'settings'},
+                {title: 'Other projects', key: 'projects'},
               ]
             },
             resolutionsOptions() {
