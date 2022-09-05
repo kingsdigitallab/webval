@@ -1,0 +1,261 @@
+{
+ "meta": {
+  "version": "0.1.0",
+  "evaluationStarted": "2022-09-05T15:18:30.741Z",
+  "evaluationEnded": "2022-09-05T15:18:55.497Z"
+ },
+ "issues": {
+  "1036163283": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1566697653638930434&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(3) > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": 1036163283
+  },
+  "1513561841": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1566697652338794498&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(1) > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": 1513561841
+  },
+  "1537686492": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1566697653638930434&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(3) > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": 1537686492
+  },
+  "2015085050": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1566697652338794498&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(1) > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": 2015085050
+  },
+  "2109215013": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1566697653638930434&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(3) > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": 2109215013
+  },
+  "-756640338": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1566697652338794498\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(1) > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1",
+    "code": "H30",
+    "target": "2"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": -756640338
+  },
+  "-1708353725": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1566697652338794498&amp;related=Alice%20Thornton's%20Books\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(1) > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": -1708353725
+  },
+  "-1151610855": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/tweet?in_reply_to=1566702798154207233&amp;related=Prof.%20Cordelia%20Beattie\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(2) > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": -1151610855
+  },
+  "-1653134064": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/retweet?tweet_id=1566702798154207233&amp;related=Prof.%20Cordelia%20Beattie\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(2) > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": -1653134064
+  },
+  "-580082334": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"level-item\" href=\"//twitter.com/intent/like?tweet_id=1566702798154207233&amp;related=Prof.%20Cordelia%20Beattie\"><span class=\"icon is-small\"><sv...</a>",
+   "selector": "#app > li:nth-child(2) > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2",
+    "code": "H91",
+    "target": "A.NoContent"
+   },
+   "detected": "2022-09-05T15:18:30.741Z",
+   "hash": -580082334
+  }
+ },
+ "annotations": {
+  "1036163283": {
+   "resolution": "Todo"
+  },
+  "1513561841": {
+   "resolution": "Todo"
+  },
+  "1537686492": {
+   "resolution": "Todo"
+  },
+  "2015085050": {
+   "resolution": "Todo"
+  },
+  "2109215013": {
+   "resolution": "Todo"
+  },
+  "-756640338": {
+   "resolution": "Todo"
+  },
+  "-1708353725": {
+   "resolution": "Todo"
+  },
+  "-1151610855": {
+   "resolution": "Todo"
+  },
+  "-1653134064": {
+   "resolution": "Todo"
+  },
+  "-580082334": {
+   "resolution": "Todo"
+  }
+ }
+}
