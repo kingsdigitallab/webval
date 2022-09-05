@@ -14,7 +14,19 @@
       window.Octokit = Octokit
     </script>    
     <style>
-      .code-block {
+      .issues-page {
+        background-color: #a0a0ff;
+      }
+      .issues-group td {
+        background-color: #d0d0ff;
+      }
+      .issue-message {
+        display: inline-block;
+      }
+      .issue-selector {
+        display: inline-block;
+      }
+      .issue-context {
         display: inline-block;
         padding: 0.5em;
         font-size: 80%;
@@ -133,14 +145,18 @@
               <option v-for="resolutions in resolutionsOptions" :value="resolutions.key">{{ resolutions.title }}</option>
             </select>
           </div>
+          &nbsp;
+          <div class="select">
+            <select v-model="selection.depth">
+              <option v-for="depth in depthsOptions" :value="depth.key">{{ depth.title }}</option>
+            </select>
+          </div>
         </div>
-        <table class="table is-striped is-hoverable">
+        <table class="table is-hoverable">
           <thead>
             <tr>
-              <td>Location</td>
               <td>Level</td>
-              <td>Category</td>
-              <td>Rule</td>
+              <td>Description</td>
               <td>Roles</td>
               <td>Complexity</td>
               <td>Resolution</td>
@@ -148,48 +164,80 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(issue, idx) in issuesFiltered" :class="['issue-level-'+getLevelFromIssue(issue)]">
-              <td>
-                <a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a>
-                <br>
-                {{ issue.selector }}
-                <br>
-                <span class="code-block" v-if="issue.context">
-                  {{ issue.context }}
-                </span>
-              </td>
-              <td>
-                <span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span>
-                <span v-if="!issue.detected" class="tag is-info">Manual</span>
-              </td>
-              <td>{{ getPrincipleFromIssue(issue) }} 
-                <br>
-                &gt; {{ getGuidelineFromIssue(issue) }}
-              </td>
-              <td :title="issue.message"><a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
-                {{ getNumbersFromIssue(issue) }} {{ getRuleFromIssue(issue) }}
-              </a></td>
-              <td><div class="select">
-                <select v-model="evaluation.annotations[issue.hash].roles" :disabled="isReadOnly">
-                  <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
-                </select>
-              </div></td>
-              <td><div class="select">
-                <select v-model="evaluation.annotations[issue.hash].complexity" :disabled="isReadOnly">
-                  <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
-                </select>
-              </div></td>
-              <td>
-                <div class="select">
-                  <select v-model="evaluation.annotations[issue.hash].resolution" :disabled="isReadOnly">
-                    <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
+            <template v-for="(issue, idx) in issuesFiltered">
+              <tr v-if="idx == 0 || issuesFiltered[idx-1].webpath != issue.webpath" class="issues-page">
+                <td colspan="6"><a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
+              </tr>
+
+              <tr v-if="('type|issue'.includes(selection.depth)) && (idx == 0 || getGroupFromIssue(issuesFiltered[idx-1]) != getGroupFromIssue(issue))" class="issues-group">
+                <td>
+                  <span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span>
+                </td>
+                <td>
+                  <a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
+                    {{ getRuleFromIssue(issue) }} ({{ getGuidelineFromIssue(issue) }})
+                    <br>
+                    {{ getNumbersFromIssue(issue) }} 
+                  </a>
+                </td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[getGroupFromIssue(issue)].roles" :disabled="isReadOnly">
+                    <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
                   </select>
-                </div>
-              </td>
-              <td>
-                <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.hash].comment" :disabled="isReadOnly" />
-              </td>
-            </tr>
+                </div></td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[getGroupFromIssue(issue)].complexity" :disabled="isReadOnly">
+                    <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
+                  </select>
+                </div></td>
+                <td>
+                  <div class="select">
+                    <select v-model="evaluation.annotations[getGroupFromIssue(issue)].resolution" :disabled="isReadOnly">
+                      <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="input issue-comment" type="text" v-model="evaluation.annotations[getGroupFromIssue(issue)].comment" :disabled="isReadOnly" />
+                </td>
+              </tr>
+
+              <tr v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue)]" class="issue">
+                <td>
+                </td>
+                <td>
+                  <span class="issue-message">
+                    <span v-if="!issue.detected" class="tag is-info">Manual</span>
+                    {{ issue.message }}
+                  </span>
+                  <span class="issue-selector">{{ issue.selector }}</span>
+                  <br>
+                  <span class="issue-context" v-if="issue.context">
+                    {{ issue.context }}
+                  </span>
+                </td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[issue.hash].roles" :disabled="isReadOnly">
+                    <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
+                  </select>
+                </div></td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[issue.hash].complexity" :disabled="isReadOnly">
+                    <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
+                  </select>
+                </div></td>
+                <td>
+                  <div class="select">
+                    <select v-model="evaluation.annotations[issue.hash].resolution" :disabled="isReadOnly">
+                      <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.hash].comment" :disabled="isReadOnly" />
+                </td>
+              </tr>
+            </template>
           </tbody>
         </table>
 
@@ -372,6 +420,14 @@
                     return false
                   }
                 }
+                // side-effect! create missing annotation slots for issue types
+                if (!this.evaluation.annotations[this.getGroupFromIssue(issue)]) {
+                  this.evaluation.annotations[this.getGroupFromIssue(issue)] = {
+                    resolution: 'Todo'
+                  }
+                }
+                
+
                 return true
               })
               
@@ -413,6 +469,13 @@
                 {title: 'All issues', key: 'all'},
                 {title: 'Closed issues', key: 'closed'},
               ]
+            },
+            depthsOptions() {
+              return [
+                {title: 'Group issues by page', key: 'page'},
+                {title: 'Group issues by type', key: 'type'},
+                {title: 'Show all issues', key: 'issue'},
+              ]
             }
           },
           methods: {
@@ -432,6 +495,7 @@
                 project: null,
                 levels: '|A|AA|',
                 resolutions: 'open',
+                depth: 'issue',
                 tab: 'issues',
                 gtoken: null
               }
@@ -474,6 +538,9 @@
             },
             getDescriptionFromIssue(issue) {
               return this.rules.rules[this.getNumbersFromIssue(issue)].description
+            },
+            getGroupFromIssue(issue) {
+              return `${issue.webpath}|${this.getNumbersFromIssue(issue)}`
             },
             getNumbersFromIssue(issue) {
               return `${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`
