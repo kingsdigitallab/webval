@@ -52,6 +52,13 @@
       .thumbnail {
         max-height: 20em;
       }
+      .level-count {
+        display: inline-block;
+        margin: 0.2em;
+      }
+      .levels-counts {
+        min-width: 7em;
+      }
     </style>
   </head>
   <body>
@@ -177,13 +184,28 @@
           <tbody>
             <template v-for="(issue, idx) in issuesFiltered">
               <tr v-if="idx == 0 || (issuesFiltered[idx-1].webpath != issue.webpath)" class="issues-page">
-                <td>...</td>
+                <td>
+                  <template v-for="(count, level) in getLevelsIssuesCountFromGroupKey(issue.webpath)">
+                    <span v-if="count" class="level-count">
+                      <span :class="['tag', getTagClassFromLevel(level)]">{{level}}</span>
+                      <br>
+                      {{count}}
+                    </span>
+                  </template>
+                </td>
                 <td colspan="5"><a :href="'//' + issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
               </tr>
 
               <tr v-if="('type|issue'.includes(selection.depth)) && (idx == 0 || getGroupFromIssue(issuesFiltered[idx-1]) != getGroupFromIssue(issue))" class="issues-group">
-                <td>
-                  <span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span>
+                <td class="levels-counts">
+                  <!-- <span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span> -->
+                  <template v-for="(count, level) in getLevelsIssuesCountFromGroupKey(getGroupFromIssue(issue))">
+                    <span v-if="count" class="level-count">
+                      <span :class="['tag', getTagClassFromLevel(level)]">{{level}}</span>
+                      <br>
+                      {{count}}
+                    </span>
+                  </template>
                 </td>
                 <td>
                   <a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
@@ -372,6 +394,7 @@
           },
           async mounted() {
             // TODO: non-blocking
+            this.levelCounters = {}
             this.rules = (await utils.readGithubJsonFile('projects/rules.json')).data
             this.loadSelection()
             this.loadProjects()
@@ -415,6 +438,18 @@
               return ret
             },
             issuesFiltered() {
+              this.levelCounters = {}
+
+              updateLevelCounter = (issue) => {
+                ['ALL', issue.webpath, this.getGroupFromIssue(issue)].filter(k => {
+                  if (!this.levelCounters[k]) {
+                    this.levelCounters[k] = {'A': 0, 'AA': 0, 'AAA': 0}
+                  }
+                  let level = this.getLevelFromIssue(issue)
+                  this.levelCounters[k][level] += 1
+                })
+              }
+
               let ret = Object.values(this.issues).filter(issue => {
                 // filter by selected levels
                 if (!this.isLevelSelected(this.getLevelFromIssue(issue))) {
@@ -437,6 +472,8 @@
                     resolution: 'Todo'
                   }
                 }
+
+                updateLevelCounter(issue)
 
                 return true
               })
@@ -463,6 +500,8 @@
                 }
                 return c
               })
+
+              // console.log(this.levelCounters)
               
               return ret
             },
@@ -565,12 +604,15 @@
             getNumbersFromIssue(issue) {
               return `${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`
             },
-            getTagClassFromIssue(issue) {
+            getTagClassFromLevel(level) {
               return {
                 'A': 'is-danger',
                 'AA': 'is-warning',
                 'AAA': 'is-info',
-              }[this.getLevelFromIssue(issue)]
+              }[level]
+            },
+            getTagClassFromIssue(issue) {
+              return this.getTagClassFromLevel(this.getLevelFromIssue(issue))
             },
             getOctokit(){
               let ret = null
@@ -664,6 +706,9 @@
             },
             getIssuesCount(url, level) {
               return this.issuesFiltered.filter(i => i.webpath == url && this.getLevelFromIssue(i) == level).length
+            },
+            getLevelsIssuesCountFromGroupKey(key) {
+              return this.levelCounters[key]
             }
           }
         }).mount('#app');
