@@ -56,6 +56,7 @@
         cursor: copy; 
       }
       .issue-comment {
+        font-size: 80%;
         min-width: 10em;
         min-height: 4em;
       }
@@ -450,13 +451,13 @@
             },
             complexities() {
               // return ['XS', 'S', 'M', 'L', 'XL']
-              return ['S', 'M', 'L']
+              return ['', 'S', 'M', 'L']
             },
             resolutions() {
               return ['Todo', 'In progress', 'Addressed', 'Won\'t']
             },
             roles() {
-              return ['U', 'D', 'UD', 'A', 'P']
+              return ['', 'U', 'D', 'UD', 'A', 'P']
             },
             isEvaluating() {
               let ret = this.project && (this.project?.a11y?.evaluationRequested || '0') > (this.project?.a11y?.evaluationEnded || '0')
