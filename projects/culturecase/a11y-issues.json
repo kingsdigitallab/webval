@@ -2169,7 +2169,10 @@
       "resolution": "Todo"
     },
     "/search/?s=museum|1.4.3": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": "Use of orange in pagination, links and article titles.",
+      "roles": "U",
+      "complexity": "S"
     },
     "/|2.1.1": {
       "resolution": "Todo",
