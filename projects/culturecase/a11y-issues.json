@@ -1899,7 +1899,9 @@
       "resolution": "Todo"
     },
     "76161051": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "156302841": {
       "resolution": "Todo"
@@ -2157,10 +2159,14 @@
       "resolution": "Todo"
     },
     "/about/|1.4.3": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "/search/?s=museum|4.1.1": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "/|4.1.2": {
       "resolution": "Todo"
@@ -2190,7 +2196,9 @@
       "comment": ""
     },
     "/contents/|1.4.3": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     }
   }
 }
