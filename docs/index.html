@@ -14,6 +14,15 @@
       window.Octokit = Octokit
     </script>    
     <style>
+      .form-error {
+        
+      }
+      .form-add-issue .control {
+        max-width: 80%
+      }
+      .form-add-issue textarea {
+        max-width: 80%
+      }
       .issues-page {
         color: white;
         background-color: #a0a0ff;
@@ -44,6 +53,7 @@
       .issue-selector {
         color: inherit;
         background-color: lightgrey;
+        cursor: copy; 
       }
       .issue-comment {
         min-width: 10em;
@@ -87,7 +97,9 @@
             <li v-for="tab in tabs" :class="{'is-active': selection.tab == tab.key}">
               <a @click="selection.tab = tab.key">
                 {{tab.title}}
-                <template v-if="tab.key == 'issues'">({{ issuesFiltered.length }})</template>
+                <template v-if="tab.key == 'issues'">
+                  ({{ issuesFiltered.length }})
+                </template>
               </a>
             </li>
           </ul>
@@ -143,7 +155,8 @@
       </div>
 
       <div class="container" v-if="selection.tab == 'issues'">
-        <div class="field is-grouped">
+
+        <div class="field is-grouped bar-issues-filters">
           <div class="control">
             <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">
               <template v-if="isEvaluating">Evaluating...</template><template v-else>Evaluate</template>
@@ -170,7 +183,8 @@
             </select>
           </div>
         </div>
-        <table class="table is-hoverable is-fullwidth">
+
+        <table class="table is-hoverable is-fullwidth table-issues">
           <thead>
             <tr>
               <th>Level</th>
@@ -198,7 +212,6 @@
 
               <tr v-if="('type|issue'.includes(selection.depth)) && (idx == 0 || getGroupFromIssue(issuesFiltered[idx-1]) != getGroupFromIssue(issue))" class="issues-group">
                 <td class="levels-counts">
-                  <!-- <span :class="['tag', getTagClassFromIssue(issue)]">{{ getLevelFromIssue(issue) }}</span> -->
                   <template v-for="(count, level) in getLevelsIssuesCountFromGroupKey(getGroupFromIssue(issue))">
                     <span v-if="count" class="level-count">
                       <span :class="['tag', getTagClassFromLevel(level)]">{{level}}</span>
@@ -238,13 +251,20 @@
 
               <tr v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue)]" class="issue">
                 <td>
+                  <span v-if="!issue.detected" class="tag is-info">Manual</span>
                 </td>
                 <td>
                   <div class="issue-message">
-                    <span v-if="!issue.detected" class="tag is-info">Manual</span>
-                    <template v-if="(idx == 0) || (issue.message != issuesFiltered[idx-1].message)">{{ issue.message }}</template>
+                    <template v-if="!issue.detected">
+                      <input class="input issue-comment" type="text" v-model="evaluation.message" :disabled="isReadOnly" />
+                    </template>
+                    <template v-else>
+                      <template v-if="(idx == 0) || (issue.message != issuesFiltered[idx-1].message)">{{ issue.message }}</template>
+                    </template>
                   </div>
-                  <div class="issue-selector">{{ issue.selector }}</div>
+                  <div v-if="issue.selector" class="issue-selector" @click="copyIssueSelectorToClipboard(issue)" title="copy to clipboard">
+                    {{ issue.selector }}
+                  </div>
                   <div class="issue-context" v-if="issue.context">
                     {{ issue.context }}
                   </div>
@@ -274,42 +294,46 @@
           </tbody>
         </table>
 
-        <form @submit.stop.prevent="onAddNewIssue" v-if="project" class="box">
-          <div class="field is-grouped">
-            <label>Web path</label>
-            <div class="control">
-              <div class="select">
-                <select v-model="newIssue.webpath">
-                  <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
-                </select>
+        <div class="panel">
+          <p class="panel-heading">
+            Add new issue manually
+          </p>
+          <div class="panel-block">
+            <form class="form-add-issue" @submit.stop.prevent="onAddNewIssue" v-if="project">
+              <div class="field">
+                <label class="label">Web path</label>
+                <div class="control">
+                  <div class="select">
+                    <select v-model="newIssue.webpath">
+                      <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-            </div>
-            &nbsp;
-            <label>WCAG Rule</label>
-            <div class="select">
-              <select v-model="newIssue.ruleNumber">
-                <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
-              </select>
-            </div>
-            &nbsp;
-            <div class="control">
-              <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issue</button>
-            </div>
+              <div class="field">
+                <label class="label">WCAG Rule</label>
+                <div class="control">
+                  <div class="select">
+                    <select v-model="newIssue.ruleNumber">
+                      <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Problem & how to fix it</label>
+                <textarea class="textarea" v-model="newIssue.message"></textarea>
+              </div>
+              <p class="help is-danger" v-for="error in getNewIssueErrorMessages()">{{ error }}</p>
+              <div class="field">
+                <div class="control">
+                  <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issue</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="field is-grouped">
-            <label>Context (HTML element)
-              <input type="text" class="input" v-model="newIssue.context">
-            </label>
-            &nbsp;
-            <label>Selector
-              <input type="text" class="input" v-model="newIssue.selector">
-            </label>
-            &nbsp;
-            <label>Problem
-              <input type="text" class="input" v-model="newIssue.message">
-            </label>
-          </div>
-        </form>
+        </div>
+
       </div>
 
       <div class="container" v-if="selection.tab == 'settings'">
@@ -425,7 +449,8 @@
               return this.isEvaluating || !this.selection.gtoken
             },
             complexities() {
-              return ['XS', 'S', 'M', 'L', 'XL']
+              // return ['XS', 'S', 'M', 'L', 'XL']
+              return ['S', 'M', 'L']
             },
             resolutions() {
               return ['Todo', 'In progress', 'Addressed', 'Won\'t']
@@ -519,7 +544,7 @@
                 {title: 'Issues', key: 'issues'},
                 {title: 'Summary', key: 'summary'},
                 {title: 'Settings', key: 'settings'},
-                {title: 'Other projects', key: 'projects'},
+                // {title: 'Other projects', key: 'projects'},
               ]
             },
             resolutionsOptions() {
@@ -531,9 +556,9 @@
             },
             depthsOptions() {
               return [
-                {title: 'Group issues by page', key: 'page'},
-                {title: 'Group issues by type', key: 'type'},
-                {title: 'Show all issues', key: 'issue'},
+                {title: 'Group by page', key: 'page'},
+                {title: 'Group by type', key: 'type'},
+                {title: 'No grouping', key: 'issue'},
               ]
             }
           },
@@ -668,13 +693,13 @@
                 this.getOctokit()
               )
             },
-            onAddNewIssue() {
+            getNewIssueFromForm() {
               let newIssue = this.newIssue
               let codeParts = newIssue.ruleNumber.split('.')
               let rule = this.rules[newIssue.ruleNumber]
               let issue = {
                 code: `MANUAL-ISSUE-${newIssue.ruleNumber}`,
-                message: newIssue.message,
+                message: (newIssue.message || '').trim(),
                 context: newIssue.context,
                 selector: newIssue.selector,
                 runner: "manual",
@@ -688,11 +713,29 @@
                 }
               }
               issue.hash = getKeyFromIssue(issue, true)
-              console.log(issue)
-              if (!this.issues[issue.hash]) { 
+              return issue
+            },
+            getNewIssueErrorMessages() {
+              let ret = []
+              let issue = this.getNewIssueFromForm()
+              if (!issue.webpath) {
+                ret.push('Please specify a webpath.')
+              }
+              if (!issue.rule?.rule) {
+                ret.push('Please select a rule.')
+              }
+              if (this.issues[issue.hash]) {
+                ret.push('An issue for the same rule on that webpath already exists.')
+              }
+              return ret
+            },
+            onAddNewIssue() {
+              if (this.getNewIssueErrorMessages().length == 0) {
+                let issue = this.getNewIssueFromForm()
                 this.issues[issue.hash] = issue
 
                 this.annotations[issue.hash] = {
+                  resolution: "Todo"
                 }
               }
             },
@@ -709,6 +752,9 @@
             },
             getLevelsIssuesCountFromGroupKey(key) {
               return this.levelCounters[key]
+            },
+            copyIssueSelectorToClipboard(issue) {
+              navigator.clipboard.writeText(`inspect($$("${issue.selector}")[0])`)
             }
           }
         }).mount('#app');
