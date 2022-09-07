@@ -111,6 +111,33 @@
 
       <div class="container" v-if="selection.tab == 'summary'">
         <div v-if="project">
+          <h3 class="title is-3">Workload</h3>
+
+          <template v-if="effort_columns.length">
+            <table v-if="effort_columns.length" class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Role
+                  </th>
+                  <th v-for="col in effort_columns">
+                    {{ col }}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(effort, role) in effort_roles">
+                  <td>{{ role }}</td>
+                  <td v-for="(qt, col) in effort">
+                    {{ (col.length == 1) ? qt.toFixed(0) : qt.toFixed(2) }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>min, max and avg expressed in days.</p>  
+          </template>
+          <p v-else>Please fill in complexity and roles fields at the rule levels to get summary estimates.</p>
+
           <h3 class="title is-3">Issues</h3>
 
           <table class="table">
@@ -557,11 +584,72 @@
             },
             depthsOptions() {
               return [
-                {title: 'Group by page', key: 'page'},
-                {title: 'Group by type', key: 'type'},
-                {title: 'No grouping', key: 'issue'},
+                {title: 'Pages', key: 'page'},
+                {title: 'Pages > rules', key: 'type'},
+                {title: 'Pages > rules > issues', key: 'issue'},
               ]
-            }
+            },
+            effort_columns() {
+              let ret = []
+              for (k of Object.keys(this.effort_roles)) {
+                console.log(k, this.effort_roles[k])
+                ret = Object.keys(this.effort_roles[k])
+                break
+              }
+              return ret  
+            },
+            effort_roles() {
+              let complexities_range = {
+                // 10-60 mins
+                'S': [0.025, 0.14],
+                // 1-7 hour
+                'M': [0.14, 1],
+                // 1-2 day
+                'L': [1, 2],
+              }
+              let ret = {}
+
+              let total = {'min': 0, 'max': 0, 'avg': 0}
+              for (comp of this.complexities) {
+                if (comp) {
+                  total[comp] = 0
+                }
+              }
+
+              let issueLast = null;
+              for (let issue of this.issuesFiltered) {
+                if (!issueLast || this.getGroupFromIssue(issueLast) != this.getGroupFromIssue(issue)) {
+                  let annotation = this.evaluation.annotations[this.getGroupFromIssue(issue)]
+                  for (let role of (annotation?.roles || '').split('')) {
+                    if (!ret[role]) {
+                      ret[role] = {'min': 0, 'max': 0, 'avg': 0}
+                      for (comp of this.complexities) {
+                        if (comp) {
+                          ret[role][comp] = 0
+                        }
+                      }
+                    }
+                    ret[role][annotation.complexity] += 1
+                    let range = complexities_range[annotation.complexity]
+                    ret[role]['min'] += range[0]
+                    ret[role]['max'] += range[1]
+                    ret[role]['avg'] += (range[0] + range[1]) / 2
+
+                    total[annotation.complexity] += 1 
+                    total['min'] += range[0]
+                    total['max'] += range[1]
+                  }
+                }
+                issueLast = issue
+              }
+
+              if (Object.keys(ret).length) {
+                total['avg'] = (total['min'] + total['max']) / 2
+                ret['Total'] = total
+              }
+
+              return ret
+            },
           },
           methods: {
             async loadProjects() {
@@ -756,7 +844,7 @@
             },
             copyIssueSelectorToClipboard(issue) {
               navigator.clipboard.writeText(`inspect($$("${issue.selector}")[0])`)
-            }
+            },
           }
         }).mount('#app');
       })
