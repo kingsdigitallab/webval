@@ -2182,7 +2182,7 @@
     },
     "/|2.1.1": {
       "resolution": "Todo",
-      "complexity": "L"
+      "complexity": ""
     },
     "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|1.4.3": {
       "resolution": "Todo",
@@ -2192,7 +2192,7 @@
     },
     "/|1.3.1": {
       "resolution": "Todo",
-      "complexity": "S",
+      "complexity": "",
       "comment": ""
     },
     "/contents/|1.4.3": {
