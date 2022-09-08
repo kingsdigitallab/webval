@@ -438,6 +438,21 @@
       "detected": "2022-09-04T23:45:44.645Z",
       "hash": 1207173392
     },
+    "1210608861": {
+      "code": "MANUAL-ISSUE-2.1.1",
+      "message": "Groups under Impacts don't have visible focus and can't be expanded with keyboard",
+      "context": "",
+      "runner": "manual",
+      "host": "culturecase.org",
+      "webpath": "/contents/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "2",
+        "guideline": "1",
+        "rule": "1"
+      },
+      "hash": 1210608861
+    },
     "1310862637": {
       "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
       "type": "error",
@@ -1959,6 +1974,9 @@
     "1207173392": {
       "resolution": "Todo"
     },
+    "1210608861": {
+      "resolution": "Todo"
+    },
     "1310862637": {
       "resolution": "Todo"
     },
@@ -2209,6 +2227,11 @@
     "/contents/|1.4.3": {
       "resolution": "Todo",
       "roles": "U",
+      "complexity": "S"
+    },
+    "/contents/|2.1.1": {
+      "resolution": "Todo",
+      "roles": "D",
       "complexity": "S"
     }
   },
