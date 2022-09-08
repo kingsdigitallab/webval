@@ -88,8 +88,34 @@ function getKeyFromIssue(issue, includeWebPath=false) {
   return hash;
 }
 
+// read optional command line arguments
+// node evaluate.js PROJECTSLUG DOMAIN
+let projectSlug = toEvaluate.slug
+let projectDomain = ''
+let argScriptIndex = null
+process.argv.forEach(function (val, index, array) {
+  if (argScriptIndex === null) {
+    if (val.endsWith('.js')) {
+      argScriptIndex = index + 1
+    }
+  } else {
+    let indexRel = index - argScriptIndex
+    if (indexRel == 0) {
+      projectSlug = val
+    }
+    if (indexRel == 1) {
+      projectDomain = val
+    }
+  }
+});
+
+function getDetectedIssuesCount(results) {
+  let ret = Object.values(results.issues).filter(issue => issue.detected == results.meta.evaluationStarted).length
+  return ret 
+}
+
 projects
-  .filter(project => (project?.slug == toEvaluate.slug))
+  .filter(project => (project?.slug == projectSlug))
   .forEach(async (project) => {
     project.a11y.evaluationStarted = new Date().toISOString()
 
@@ -106,7 +132,7 @@ projects
     utils.copyScreenshots(project.slug, 'last', 'previous')
 
     // console.log(project.a11y)
-    let baseUri = project.sites.liv
+    let baseUri = projectDomain || project.sites.liv
     console.log(`Project ${project.name} ${baseUri}`)
 
     // TODO: create path to output if absent
@@ -121,6 +147,8 @@ projects
     }
 
     let issues = res.issues
+
+    let issuesBefore = getDetectedIssuesCount(res)
 
     let issueKeys = {}
 
@@ -192,6 +220,9 @@ projects
         // test(project)
         saveData(res, resultsPath)
       }
+
+      let issuesAfter = getDetectedIssuesCount(res)
+      console.log(`Detected issues (before) ${issuesBefore} -> ${issuesAfter} (now)`)
     }
 
   })
