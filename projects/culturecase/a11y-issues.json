@@ -2235,5 +2235,5 @@
       "complexity": "S"
     }
   },
-  "message": "Items under Contents, Insights, Impact menus are not keyboard accessible. "
+  "message": "Items under Insights and Impact menus are not keyboard accessible. "
 }
