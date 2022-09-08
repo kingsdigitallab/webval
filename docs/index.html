@@ -191,7 +191,10 @@
             </button>
           </div>
           <div class="control">
-            <button @click="onClickSave()" name="action" value="save" class="button is-primary" :disabled="isReadOnly">Save</button>
+            <button @click="onClickSave()" name="action" value="save" :class="{button: true, 'is-primary': isUnsaved}" :disabled="isReadOnly || !isUnsaved">
+              <template v-if="isUnsaved">Save</template>
+              <template v-else>Saved</template>
+            </button>
           </div>
           <div class="select">
             <select v-model="selection.levels">
@@ -441,7 +444,8 @@
                 context: '',
                 message: '',
                 selecgtor: ''
-              }
+              },
+              isUnsaved: false,
             }
           },
           async mounted() {
@@ -459,6 +463,12 @@
               deep: true,
               handler(val, valOld) {
                 this.saveSelection()
+              }
+            },
+            evaluation: {
+              deep: true,
+              handler(val, valOld) {
+                this.isUnsaved = this.isUnsaved === 0 ? false : true
               }
             }
           },
@@ -690,6 +700,7 @@
                 }
                 this.evaluation_sha = null
               }
+              this.isUnsaved = 0
             },
             // getPrincipleFromIssue(issue) {
             //   return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
@@ -745,6 +756,7 @@
               if (this.isReadOnly) return;
               
               this.evaluation_sha = await utils.updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.evaluation, this.getOctokit(), this.evaluation_sha)
+              this.isUnsaved = false
             },
             async onClickEvaluate() {
               if (this.isReadOnly) return;
