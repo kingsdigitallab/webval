@@ -26,10 +26,7 @@ losing annotations
 ## TODO
 
 * M further testing & debugging, interface improvements
-* M issue grouping
-* S improve manual annotations
-* S ability to manage issues not covered by automated testers
 * S documentation (how to add new project, etc.)
+* S rule tagging
 * C add axe-core engine
 * C assist with report & assessment generation
-* S rule tagging
