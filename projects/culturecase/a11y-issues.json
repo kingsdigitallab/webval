@@ -2219,7 +2219,7 @@
       "comment": "GN: Mainly the use of orange in font and background. Breadcrumb, article title, links."
     },
     "/|1.3.1": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "complexity": "S",
       "comment": "test6",
       "roles": "U"
