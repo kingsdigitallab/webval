@@ -82,7 +82,7 @@
         <div class="control">
           <label class="label">Project:</label> 
           <div class="select">
-            <select @change="onChangeProject()" v-model="selection.project">
+            <select @change="onSelectProject()" v-model="selection.project">
               <option v-for="project in projects" :value="project.slug">{{ project.name }}</option>
             </select>
           </div>
@@ -191,8 +191,9 @@
             </button>
           </div>
           <div class="control">
-            <button @click="onClickSave()" name="action" value="save" :class="{button: true, 'is-primary': isUnsaved}" :disabled="isReadOnly || !isUnsaved">
-              <template v-if="isUnsaved">Save</template>
+            <button @click="onClickSave()" name="action" value="save" :class="{button: true, 'is-primary': !isReadOnly && isUnsaved, 'is-danger': hasConflict}" :disabled="isReadOnly || !isUnsaved || hasConflict">
+              <template v-if="hasConflict">Conflict</template>
+              <template v-else-if="isUnsaved">Save</template>
               <template v-else>Saved</template>
             </button>
           </div>
@@ -214,6 +215,18 @@
             </select>
           </div>
         </div>
+        <article class="message is-danger" v-if="hasConflict">
+          <div class="message-body">
+            Someone else has already saved changes to those issues. 
+            Your changes cannot be saved as they would overwrite their modifications.
+            Please reload the page and resubmit your changes.
+          </div>
+        </article>
+        <article class="message is-warning" v-if="isTokenMissing">
+          <div class="message-body">
+            This web app is read-only until you have entered a github Personal Access Token under the Settings tab. 
+          </div>
+        </article>
 
         <table class="table is-hoverable is-fullwidth table-issues">
           <thead>
@@ -368,7 +381,7 @@
       </div>
 
       <div class="container" v-if="selection.tab == 'settings'">
-        <form :class="{notification: 1, 'is-warning': isReadOnly}">
+        <form :class="{notification: 1, 'is-warning': isTokenMissing}">
           <div class="field">
             <label class="label">Personal access token:</label>
             <input type="password" v-model="selection.gtoken" class="input">
@@ -435,6 +448,7 @@
                 issues: {},
                 annotations: {}
               },
+              evaluation_sha: null,
               selection: {
                 // see getDefaultSelection()
               },
@@ -452,11 +466,17 @@
             // TODO: non-blocking
             this.levelCounters = {}
             this.rules = (await utils.readGithubJsonFile('projects/rules.json')).data
-            this.loadSelection()
-            this.loadProjects()
-            this.onChangeProject()
+            await this.loadSelection()
+            await this.loadProjects()
+            this.onSelectProject()
 
             setInterval(this.checkEvaluation, 60000);
+
+            window.onbeforeunload = () => {
+              if (this.isUnsaved) {
+                return "You have unsaved changes are you sure you want to close this tab?";
+              }
+            };            
           },
           watch: {
             selection: {
@@ -483,8 +503,11 @@
               let ret = this.projects.filter(p => p.slug == this.selection.project)
               return ret ? ret[0] : null
             },
+            isTokenMissing() {
+              return !this.selection.gtoken
+            },
             isReadOnly() {
-              return this.isEvaluating || !this.selection.gtoken
+              return this.isEvaluating || this.isTokenMissing || this.hasConflict
             },
             complexities() {
               // return ['XS', 'S', 'M', 'L', 'XL']
@@ -554,12 +577,13 @@
                 )
               }
 
-              ret = ret.sort((a, b) => {
+              ret.sort((a, b) => {
                 let c = a.webpath.length - b.webpath.length
                 if (c == 0) {
                   c = (a.webpath == b.webpath) ? 0 : (a.webpath > b.webpath)
                   if (c == 0) {
-                    c = getSortKey(a) > getSortKey(b)                    
+                    sks = [getSortKey(a), getSortKey(b)]
+                    c = sks[0] == sks[1] ? 0 : (sks[0] > sks[1]) ? 1 : -1
                   }
                 }
                 return c
@@ -661,17 +685,29 @@
 
               return ret
             },
+            hasConflict() {
+              return this.evaluation_sha === 0
+            }
           },
           methods: {
             async loadProjects() {
               let res = await utils.readGithubJsonFile('projects/projects.json', this.getOctokit())
               this.projects = res.data
               this.projects_sha = res.sha
+              
+              // select first project in none selected
+              if (this.projects.length) {
+                if (!this.projects.filter(p => p.slug == this.selection?.project).length) {
+                  this.selection.project = this.projects[0].slug
+                }
+              }
             },
             loadSelection() {
-              this.selection = JSON.parse(window.localStorage.getItem('a11y.selection'))
-              if (!this.selection?.project) {
-                this.selection = this.getDefaultSelection()
+              this.selection = JSON.parse(window.localStorage.getItem('a11y.selection')) || {}
+              
+              let defaults = this.getDefaultSelection()
+              for (let k of Object.keys(defaults)) {
+                this.selection[k] ||= defaults[k] 
               }
             },
             getDefaultSelection() {
@@ -687,9 +723,12 @@
             saveSelection() {
               window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
             },
-            async onChangeProject() {
+            async onSelectProject() {
               // load issues
-              let res = await utils.readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
+              let res = null
+              if (this.selection.project) {
+                res = await utils.readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
+              }
               if (res) {
                 this.evaluation = res.data
                 this.evaluation_sha = res.sha
@@ -756,6 +795,7 @@
               if (this.isReadOnly) return;
               
               this.evaluation_sha = await utils.updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.evaluation, this.getOctokit(), this.evaluation_sha)
+
               this.isUnsaved = false
             },
             async onClickEvaluate() {
@@ -780,14 +820,14 @@
               if (this.isEvaluating) {
                 this.loadProjects()
                 if (!this.isEvaluating) {
-                  this.onChangeProject()
+                  this.onSelectProject()
                 }
               }
             },
             async onAcceptScreenshots() {
               if (this.isReadOnly) return;
               
-              this.evaluation_sha = await utils.updateGithubJsonFile(
+              await utils.updateGithubJsonFile(
                 'actions/accept_screenshots.json', {
                   projectSlug: this.selection.project,
                   requested: new Date().toISOString()

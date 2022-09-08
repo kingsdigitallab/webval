@@ -29,7 +29,7 @@
                 // we don't use octokit here 
                 // as we want this call to work without a github PAT
                 // https://stackoverflow.com/a/42518434
-                // TODO: use Octokit is PAT provided, so we don't exceed rate limits
+                // TODO: use Octokit if PAT provided, so we don't exceed rate limits
                 let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`
 
                 // let res = await fetch(getUrl, {cache: "no-cache"})
@@ -64,6 +64,7 @@
 
     // client-side
     exports.updateGithubJsonFile = async function(filePath, data, octokit, sha=null) {
+        let ret = null 
         let res = null
         let options = {
             owner: 'kingsdigitallab',
@@ -92,10 +93,20 @@
             options.sha = sha
         }
         if (1) {
-            res = await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', options)
+            try {
+                res = await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', options)
+                ret = res.data.content.sha
+            } catch (err) {
+                console.log(err)
+                if (err.message.includes('does not match')) {
+                    console.log('CONFLICT')
+                    // git conflict
+                    ret = 0
+                } else {
+                }
+            }
         }
 
-        let ret = res.data.content.sha
         console.log(ret)
 
         return ret
