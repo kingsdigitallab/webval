@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "0.1.0",
-  "evaluationStarted": "2022-09-09T01:24:31.981Z",
-  "evaluationEnded": "2022-09-09T01:24:56.441Z"
+  "evaluationStarted": "2022-09-09T14:12:20.745Z",
+  "evaluationEnded": "2022-09-09T14:12:38.073Z"
  },
  "issues": {
   "19260041": {
@@ -24,7 +24,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 19260041
   },
   "61229976": {
@@ -112,7 +112,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 156302841
   },
   "200033009": {
@@ -222,7 +222,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 400617245
   },
   "420926862": {
@@ -310,7 +310,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 479811459
   },
   "541718476": {
@@ -442,7 +442,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 753051525
   },
   "838147902": {
@@ -567,7 +567,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 980874058
   },
   "1134477401": {
@@ -611,7 +611,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1151425885
   },
   "1151867943": {
@@ -824,7 +824,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1337210375
   },
   "1337210406": {
@@ -846,7 +846,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1337210406
   },
   "1337210437": {
@@ -868,7 +868,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1337210437
   },
   "1354349351": {
@@ -912,7 +912,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1379523294
   },
   "1388161594": {
@@ -1000,7 +1000,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1548985318
   },
   "1565050732": {
@@ -1044,7 +1044,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1628720647
   },
   "1653504421": {
@@ -1110,7 +1110,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1671027511
   },
   "1687714142": {
@@ -1154,7 +1154,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1776990210
   },
   "1792705804": {
@@ -1198,7 +1198,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1824194050
   },
   "1870763327": {
@@ -1264,7 +1264,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 1946131824
   },
   "1972067868": {
@@ -1330,7 +1330,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": 2110111844
   },
   "2146133567": {
@@ -1440,7 +1440,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1514777813
   },
   "-1540617088": {
@@ -1462,7 +1462,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1540617088
   },
   "-1371379490": {
@@ -1550,7 +1550,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -55894111
   },
   "-1745798201": {
@@ -1682,7 +1682,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -994391466
   },
   "-1536838779": {
@@ -1704,7 +1704,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1536838779
   },
   "-1053420905": {
@@ -1726,7 +1726,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1053420905
   },
   "-1228250829": {
@@ -1814,7 +1814,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1139442282
   },
   "-1565738689": {
@@ -1836,7 +1836,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1565738689
   },
   "-1444201532": {
@@ -1858,7 +1858,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1444201532
   },
   "-1987450495": {
@@ -2122,14 +2122,14 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -457097845
   },
   "-1489846375": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
    "type": "error",
    "typeCode": 1,
-   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change text colour to #c44500.",
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation:  change background to #fff.",
    "context": "<a href=\"https://www.tandfonline.com/doi...\" target=\"_blank\">https://www.tandfonline.com/doi/full/10.1080/09548963.2019.1617929</a>",
    "selector": "#post-2 > div:nth-child(5) > table > tbody > tr:nth-child(5) > td > a",
    "runner": "htmlcs",
@@ -2144,14 +2144,14 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1489846375
   },
   "-1730397611": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
    "type": "error",
    "typeCode": 1,
-   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.85:1. Recommendation:  change text colour to #c44500.",
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation:  change background to #fff.",
    "context": "<a href=\"mailto:mreason@yorksj.ac.uk\" target=\"_blank\">mreason@yorksj.ac.uk</a>",
    "selector": "#post-2 > div:nth-child(5) > table > tbody > tr:nth-child(6) > td > a",
    "runner": "htmlcs",
@@ -2166,7 +2166,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1730397611
   },
   "-429950956": {
@@ -2518,7 +2518,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -1350792747
   },
   "-695525031": {
@@ -2628,7 +2628,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -244397697
   },
   "-244397666": {
@@ -2650,7 +2650,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -244397666
   },
   "-286356378": {
@@ -2694,7 +2694,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -435037530
   },
   "-435037499": {
@@ -2716,7 +2716,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -435037499
   },
   "-2070430488": {
@@ -2760,7 +2760,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -853840564
   },
   "-2058376214": {
@@ -2892,7 +2892,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-09T14:12:20.745Z",
    "hash": -501431293
   },
   "-77658075": {
