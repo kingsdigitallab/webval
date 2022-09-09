@@ -165,15 +165,13 @@
             <thead>
               <tr>
                 <th>Page</th>
-                <th>Last</th>
-                <th>Difference</th>
-                <th>Reference</th>
+                <th>Reference - Difference - Last evaluation</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="url in project.a11y.urls">
                 <td>{{ url }}</td>
-                <td v-for="dir in ['last', 'last-accepted', 'accepted']">
+                <td v-for="dir in ['accepted-last']">
                   <a :href="getScreenshotFromUrl(url, dir)" target="_blank"><img class="thumbnail" :src="getScreenshotFromUrl(url, dir)"></a>
                 </td>
               </tr>

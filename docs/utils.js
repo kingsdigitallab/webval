@@ -146,7 +146,9 @@
   };
 
   // server-side
-  exports.compareScreenshots = function (projectSlug, folderA, folderB) {
+  exports.compareScreenshots = async function (projectSlug, folderA, folderB) {
+    let ret = {}
+
     const path = require("path");
     const fs = require("fs");
     const pathScripts = __dirname;
@@ -166,7 +168,7 @@
     );
     fs.mkdirSync(shotDirs[2], { recursive: true });
 
-    fs.readdirSync(shotDirs[0]).forEach(async (filename) => {
+    await fs.readdirSync(shotDirs[0]).forEach(async (filename) => {
       let paths = shotDirs.map((p) => path.join(p, filename));
       if (fs.existsSync(paths[1])) {
         var diff = new BlinkDiff({
@@ -181,13 +183,14 @@
           hideShift: true, // Hide anti-aliasing differences - will still determine but not showing it
 
           imageOutputPath: paths[2],
-          composition: false,
+          composition: true,
         });
 
-        diff.run(function (error, result) {
+        let res = await diff.run(function (error, result) {
           if (error) {
             throw error;
           } else {
+            ret[filename] = result
             // console.log(diff.hasPassed(result.code) ? 'Passed' : 'Failed');
             // console.log('Found ' + result.differences + ' differences.');
             // console.log(paths[2])
@@ -195,5 +198,7 @@
         });
       }
     });
+
+    return ret
   };
 })(typeof exports === "undefined" ? (this["utils"] = {}) : exports);

@@ -54,6 +54,6 @@ losing annotations
 1. Evaluate your local site: `git pull && node docs/evaluate.js culturecase http://localhost:8000`
 2. check the script ends with a message like this: `Detected issues (before) 84 -> 82 (now)` 
 3. Push evaluation back to git: `git commit -am "pa11y evaluation" && git push`
-
+4. Check the results and screenshots on the [live Webval app](https://kingsdigitallab.github.io/webval/docs/)
 
 

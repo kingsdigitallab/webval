@@ -192,7 +192,7 @@ projects
         } 
       }
 
-      utils.compareScreenshots(project.slug, 'last', 'accepted', 'last-accepted')
+      project.screenshots = await utils.compareScreenshots(project.slug, 'accepted', 'last', 'accepted-last')
 
       project.a11y.evaluationEnded = new Date().toISOString()
 
