@@ -3185,7 +3185,10 @@
       "resolution": "Todo"
     },
     "-1139442282": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "roles": "D",
+      "comment": "GN: can't even find how to disable existing totop widget!",
+      "complexity": "M"
     },
     "-1565738689": {
       "resolution": "Todo"
