@@ -3270,9 +3270,10 @@
       "resolution": "Todo"
     },
     "/|1.4.3": {
-      "resolution": "Todo",
+      "resolution": "Won't",
       "roles": "U",
-      "complexity": "S"
+      "complexity": "S",
+      "comment": "This has to be done separately and will fix on all sites that use it."
     },
     "/about/|1.4.3": {
       "resolution": "Todo",
