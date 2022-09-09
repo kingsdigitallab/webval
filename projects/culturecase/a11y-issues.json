@@ -1,10 +1,32 @@
 {
  "meta": {
   "version": "0.1.0",
-  "evaluationStarted": "2022-09-09T01:16:26.487Z",
-  "evaluationEnded": "2022-09-09T01:16:50.107Z"
+  "evaluationStarted": "2022-09-09T01:24:31.981Z",
+  "evaluationEnded": "2022-09-09T01:24:56.441Z"
  },
  "issues": {
+  "19260041": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-303 > div:nth-child(2) > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 19260041
+  },
   "61229976": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
    "type": "error",
@@ -24,7 +46,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 61229976
   },
   "67767394": {
@@ -46,7 +68,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 67767394
   },
   "76161051": {
@@ -90,7 +112,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 156302841
   },
   "200033009": {
@@ -114,6 +136,28 @@
    },
    "detected": "2022-09-09T01:07:08.344Z",
    "hash": 200033009
+  },
+  "237126068": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2014/09/how-augmented-reality-helps-museum-visitors-appreciate-paintings\" class=\"read-more\">Read More</a>",
+   "selector": "#post-144 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 237126068
   },
   "271187814": {
    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
@@ -178,7 +222,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 400617245
   },
   "420926862": {
@@ -200,8 +244,30 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 420926862
+  },
+  "450978262": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2022/09/museums-identity-shapes-its-audiences-behaviour\" class=\"read-more\">Read More</a>",
+   "selector": "#post-337 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 450978262
   },
   "459172406": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -222,7 +288,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 459172406
   },
   "479811459": {
@@ -244,7 +310,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 479811459
   },
   "541718476": {
@@ -269,6 +335,28 @@
    "detected": "2022-09-09T01:00:58.753Z",
    "hash": 541718476
   },
+  "565030248": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-108 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 565030248
+  },
   "641472039": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
    "type": "error",
@@ -288,7 +376,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 641472039
   },
   "671327193": {
@@ -310,8 +398,30 @@
     "code": "H91",
     "target": "InputText.Name"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 671327193
+  },
+  "681042028": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2016/02/living-near-museums-and-galleries-is-important-for-overall-cultural-engagement\" class=\"read-more\">Read More</a>",
+   "selector": "#post-199 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 681042028
   },
   "753051525": {
    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
@@ -332,8 +442,30 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 753051525
+  },
+  "838147902": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-252 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 838147902
   },
   "840790598": {
    "code": "MANUAL-ISSUE-2.1.1",
@@ -369,7 +501,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 895694355
   },
   "898181731": {
@@ -393,6 +525,50 @@
    },
    "detected": "2022-09-08T22:57:53.419Z",
    "hash": 898181731
+  },
+  "910926784": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2022/09/how-ownership-status-and-organisation-structure-can-affect-museum-performance\" class=\"read-more\">Read More</a>",
+   "selector": "#post-349 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 910926784
+  },
+  "980874058": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-304 > div:nth-child(2) > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 980874058
   },
   "1134477401": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -435,7 +611,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1151425885
   },
   "1151867943": {
@@ -460,6 +636,28 @@
    "detected": "2022-09-08T22:57:53.419Z",
    "hash": 1151867943
   },
+  "1153443014": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-337 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1153443014
+  },
   "1176267068": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
    "type": "error",
@@ -479,8 +677,30 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1176267068
+  },
+  "1198962623": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-396 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1198962623
   },
   "1207173392": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -518,6 +738,28 @@
     "rule": "1"
    },
    "hash": 1210608861
+  },
+  "1291037664": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-144 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1291037664
   },
   "1310862637": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -560,8 +802,74 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1330136146
+  },
+  "1337210375": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-252 > div:nth-child(2) > span:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1337210375
+  },
+  "1337210406": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-252 > div:nth-child(2) > span:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1337210406
+  },
+  "1337210437": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-252 > div:nth-child(2) > span:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1337210437
   },
   "1354349351": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -582,7 +890,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1354349351
   },
   "1379523294": {
@@ -604,7 +912,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1379523294
   },
   "1388161594": {
@@ -626,7 +934,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1388161594
   },
   "1471618953": {
@@ -651,6 +959,28 @@
    "detected": "2022-09-09T01:16:26.487Z",
    "hash": 1471618953
   },
+  "1494226111": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2018/11/publics-perception-museum-admission-fees\" class=\"read-more\">Read More</a>",
+   "selector": "#post-304 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1494226111
+  },
   "1548985318": {
    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
    "type": "error",
@@ -670,7 +1000,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1548985318
   },
   "1565050732": {
@@ -714,7 +1044,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1628720647
   },
   "1653504421": {
@@ -736,7 +1066,7 @@
     "code": "F68",
     "target": ""
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1653504421
   },
   "1665134175": {
@@ -758,7 +1088,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1665134175
   },
   "1671027511": {
@@ -780,8 +1110,52 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1671027511
+  },
+  "1687714142": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2022/09/factors-make-local-museums-more-vulnerable-funding-cuts\" class=\"read-more\">Read More</a>",
+   "selector": "#post-362 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1687714142
+  },
+  "1776990210": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-144 > div:nth-child(2) > span:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1776990210
   },
   "1792705804": {
    "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
@@ -804,6 +1178,28 @@
    },
    "detected": "2022-09-09T00:43:26.405Z",
    "hash": 1792705804
+  },
+  "1824194050": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-362 > div:nth-child(2) > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 1824194050
   },
   "1870763327": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -868,7 +1264,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1946131824
   },
   "1972067868": {
@@ -890,7 +1286,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": 1972067868
   },
   "2049608732": {
@@ -914,6 +1310,50 @@
    },
    "detected": "2022-09-09T01:07:08.344Z",
    "hash": 2049608732
+  },
+  "2110111844": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-199 > div:nth-child(2) > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 2110111844
+  },
+  "2146133567": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2018/08/rainy-days-museum\" class=\"read-more\">Read More</a>",
+   "selector": "#post-303 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": 2146133567
   },
   "-905731136": {
    "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
@@ -1000,7 +1440,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1514777813
   },
   "-1540617088": {
@@ -1022,7 +1462,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1540617088
   },
   "-1371379490": {
@@ -1044,7 +1484,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1371379490
   },
   "-336871395": {
@@ -1066,7 +1506,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -336871395
   },
   "-1865578248": {
@@ -1088,7 +1528,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1865578248
   },
   "-55894111": {
@@ -1110,7 +1550,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -55894111
   },
   "-1745798201": {
@@ -1132,7 +1572,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1745798201
   },
   "-1718627713": {
@@ -1154,7 +1594,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1718627713
   },
   "-1713993481": {
@@ -1176,7 +1616,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1713993481
   },
   "-1331962708": {
@@ -1198,7 +1638,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1331962708
   },
   "-1210747925": {
@@ -1220,7 +1660,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1210747925
   },
   "-994391466": {
@@ -1242,7 +1682,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -994391466
   },
   "-1536838779": {
@@ -1264,7 +1704,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1536838779
   },
   "-1053420905": {
@@ -1286,7 +1726,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1053420905
   },
   "-1228250829": {
@@ -1308,7 +1748,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1228250829
   },
   "-2006917832": {
@@ -1330,7 +1770,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -2006917832
   },
   "-8265646": {
@@ -1352,7 +1792,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -8265646
   },
   "-1139442282": {
@@ -1374,7 +1814,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1139442282
   },
   "-1565738689": {
@@ -1396,7 +1836,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1565738689
   },
   "-1444201532": {
@@ -1418,7 +1858,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1444201532
   },
   "-1987450495": {
@@ -1440,7 +1880,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1987450495
   },
   "-160431303": {
@@ -1462,7 +1902,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -160431303
   },
   "-1247153692": {
@@ -1484,7 +1924,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1247153692
   },
   "-617187469": {
@@ -1506,7 +1946,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -617187469
   },
   "-1262346143": {
@@ -1528,7 +1968,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1262346143
   },
   "-294721634": {
@@ -1550,7 +1990,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -294721634
   },
   "-1066986381": {
@@ -1572,7 +2012,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1066986381
   },
   "-1456899829": {
@@ -1594,7 +2034,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1456899829
   },
   "-360481406": {
@@ -1616,7 +2056,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -360481406
   },
   "-743142491": {
@@ -1638,7 +2078,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -743142491
   },
   "-1362280105": {
@@ -1660,7 +2100,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1362280105
   },
   "-457097845": {
@@ -1682,7 +2122,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -457097845
   },
   "-1489846375": {
@@ -1704,7 +2144,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1489846375
   },
   "-1730397611": {
@@ -1726,7 +2166,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1730397611
   },
   "-429950956": {
@@ -1748,7 +2188,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -429950956
   },
   "-477388718": {
@@ -1770,7 +2210,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -477388718
   },
   "-818327730": {
@@ -2056,7 +2496,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1473975181
   },
   "-1350792747": {
@@ -2078,7 +2518,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1350792747
   },
   "-695525031": {
@@ -2144,7 +2584,7 @@
     "code": "H91",
     "target": "InputText.Name"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -1531946847
   },
   "-28149907": {
@@ -2166,11 +2606,322 @@
     "code": "F68",
     "target": ""
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-09T01:24:31.981Z",
    "hash": -28149907
+  },
+  "-244397697": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-337 > div:nth-child(2) > span:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -244397697
+  },
+  "-244397666": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-337 > div:nth-child(2) > span:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -244397666
+  },
+  "-286356378": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-304 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -286356378
+  },
+  "-435037530": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-396 > div:nth-child(2) > span:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -435037530
+  },
+  "-435037499": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-396 > div:nth-child(2) > span:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -435037499
+  },
+  "-2070430488": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2022/09/how-brand-museums-turn-products-heritage\" class=\"read-more\">Read More</a>",
+   "selector": "#post-396 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -2070430488
+  },
+  "-853840564": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">museum</span>",
+   "selector": "#post-108 > div:nth-child(2) > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -853840564
+  },
+  "-2058376214": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2014/04/when-it-comes-to-museum-innovation-size-matters\" class=\"read-more\">Read More</a>",
+   "selector": "#post-108 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -2058376214
+  },
+  "-1438633689": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-349 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -1438633689
+  },
+  "-789587350": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/research/2017/07/how-a-school-museum-visit-helps-create-cultural-equality\" class=\"read-more\">Read More</a>",
+   "selector": "#post-252 > div:nth-child(3) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -789587350
+  },
+  "-2035919744": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-199 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -2035919744
+  },
+  "-32138466": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-362 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -32138466
+  },
+  "-501431293": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.21:1. Recommendation:  change text colour to #616161.",
+   "context": "<span class=\"relevanssi-query-term\">Museum</span>",
+   "selector": "#post-144 > div:nth-child(2) > span:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -501431293
+  },
+  "-77658075": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.16:1. Recommendation:  change text colour to #d14900.",
+   "context": "<a href=\"/author/Culture.Case/\" title=\"Posts by Culture.Case\" rel=\"author\">Culture.Case</a>",
+   "selector": "#post-303 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/search/?s=museum",
+   "rule": {
+    "standard": "WCAG2",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3",
+    "code": "G18",
+    "target": "Fail"
+   },
+   "detected": "2022-09-09T01:24:31.981Z",
+   "hash": -77658075
   }
  },
  "annotations": {
+  "19260041": {
+   "resolution": "Todo"
+  },
   "61229976": {
    "resolution": "Todo"
   },
@@ -2188,6 +2939,9 @@
   "200033009": {
    "resolution": "Todo"
   },
+  "237126068": {
+   "resolution": "Todo"
+  },
   "271187814": {
    "resolution": "Todo"
   },
@@ -2202,6 +2956,9 @@
   "420926862": {
    "resolution": "Todo"
   },
+  "450978262": {
+   "resolution": "Todo"
+  },
   "459172406": {
    "resolution": "Todo"
   },
@@ -2211,13 +2968,22 @@
   "541718476": {
    "resolution": "Todo"
   },
+  "565030248": {
+   "resolution": "Todo"
+  },
   "641472039": {
    "resolution": "Todo"
   },
   "671327193": {
    "resolution": "Todo"
   },
+  "681042028": {
+   "resolution": "Todo"
+  },
   "753051525": {
+   "resolution": "Todo"
+  },
+  "838147902": {
    "resolution": "Todo"
   },
   "840790598": {
@@ -2232,6 +2998,12 @@
   "898181731": {
    "resolution": "Todo"
   },
+  "910926784": {
+   "resolution": "Todo"
+  },
+  "980874058": {
+   "resolution": "Todo"
+  },
   "1134477401": {
    "resolution": "Todo"
   },
@@ -2241,7 +3013,13 @@
   "1151867943": {
    "resolution": "Todo"
   },
+  "1153443014": {
+   "resolution": "Todo"
+  },
   "1176267068": {
+   "resolution": "Todo"
+  },
+  "1198962623": {
    "resolution": "Todo"
   },
   "1207173392": {
@@ -2250,10 +3028,22 @@
   "1210608861": {
    "resolution": "Todo"
   },
+  "1291037664": {
+   "resolution": "Todo"
+  },
   "1310862637": {
    "resolution": "Todo"
   },
   "1330136146": {
+   "resolution": "Todo"
+  },
+  "1337210375": {
+   "resolution": "Todo"
+  },
+  "1337210406": {
+   "resolution": "Todo"
+  },
+  "1337210437": {
    "resolution": "Todo"
   },
   "1354349351": {
@@ -2266,6 +3056,9 @@
    "resolution": "Todo"
   },
   "1471618953": {
+   "resolution": "Todo"
+  },
+  "1494226111": {
    "resolution": "Todo"
   },
   "1548985318": {
@@ -2286,7 +3079,16 @@
   "1671027511": {
    "resolution": "Todo"
   },
+  "1687714142": {
+   "resolution": "Todo"
+  },
+  "1776990210": {
+   "resolution": "Todo"
+  },
   "1792705804": {
+   "resolution": "Todo"
+  },
+  "1824194050": {
    "resolution": "Todo"
   },
   "1870763327": {
@@ -2302,6 +3104,12 @@
    "resolution": "Todo"
   },
   "2049608732": {
+   "resolution": "Todo"
+  },
+  "2110111844": {
+   "resolution": "Todo"
+  },
+  "2146133567": {
    "resolution": "Todo"
   },
   "-905731136": {
@@ -2533,6 +3341,48 @@
    "resolution": "Todo"
   },
   "-28149907": {
+   "resolution": "Todo"
+  },
+  "-244397697": {
+   "resolution": "Todo"
+  },
+  "-244397666": {
+   "resolution": "Todo"
+  },
+  "-286356378": {
+   "resolution": "Todo"
+  },
+  "-435037530": {
+   "resolution": "Todo"
+  },
+  "-435037499": {
+   "resolution": "Todo"
+  },
+  "-2070430488": {
+   "resolution": "Todo"
+  },
+  "-853840564": {
+   "resolution": "Todo"
+  },
+  "-2058376214": {
+   "resolution": "Todo"
+  },
+  "-1438633689": {
+   "resolution": "Todo"
+  },
+  "-789587350": {
+   "resolution": "Todo"
+  },
+  "-2035919744": {
+   "resolution": "Todo"
+  },
+  "-32138466": {
+   "resolution": "Todo"
+  },
+  "-501431293": {
+   "resolution": "Todo"
+  },
+  "-77658075": {
    "resolution": "Todo"
   }
  },
