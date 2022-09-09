@@ -52,5 +52,32 @@
    "evaluationStarted": "2022-09-05T15:18:30.741Z",
    "evaluationEnded": "2022-09-05T15:18:55.497Z"
   }
+ },
+ {
+  "name": "African Rock Art",
+  "slug": "tara",
+  "sites": {
+   "liv": "africanrockart.britishmuseum.org"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/introduction/origins/",
+    "/introduction/chronologies/",
+    "/introduction/techniques/",
+    "/country/",
+    "/country/chad/",
+    "/country/chad/niola-doa/",
+    "/country/nigeria/",
+    "/country/nigeria/images/",
+    "/country/nigeria/images/#image2",
+    "/thematic/",
+    "/thematic/gone-fishing/"
+   ],
+   "evaluationRequested": "2022-09-05T15:17:24.443Z",
+   "evaluationStarted": "2022-09-09T16:43:00.147Z",
+   "evaluationEnded": "2022-09-09T16:44:30.017Z"
+  },
+  "screenshots": {}
  }
 ]

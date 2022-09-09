@@ -1,21 +1,21 @@
 {
-    "defaults": {
-        "chromeLaunchConfig": {
-            "args": [
-                "--no-sandbox"
-            ]
-        },
-        "timeout": 10000,
-        "viewport": {
-            "width": 320,
-            "height": 480
-        },
-        "runners": [
-            "htmlcs"
-        ]       
+  "defaults": {
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox"
+      ]
     },
-    "urls": [
-        "https://pa11y.org/",
-        "https://pa11y.org/contributing"
+    "timeout": 100000,
+    "viewport": {
+      "width": 320,
+      "height": 480
+    },
+    "runners": [
+      "htmlcs"
     ]
+  },
+  "urls": [
+    "https://pa11y.org/",
+    "https://pa11y.org/contributing"
+  ]
 }

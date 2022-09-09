@@ -164,6 +164,7 @@ projects
           results = await pa11y(baseUri + webpath, options)
         } catch(err) {
           console.log(err.message)
+          exit(-1)
         }
         
         for (let issue of results.issues) {
