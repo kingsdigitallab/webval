@@ -2991,7 +2991,7 @@
       "resolution": "Todo"
     },
     "840790598": {
-      "comment": "GN: not trivial to key-nav the sub-items. Also not needed b/c sub-items listed on landing pages.",
+      "comment": "GN: maybe... but not trivial to key-nav the sub-items. Also not needed b/c sub-items listed on landing pages.",
       "roles": "",
       "complexity": "",
       "resolution": "Won't"
