@@ -2991,10 +2991,10 @@
       "resolution": "Todo"
     },
     "840790598": {
-      "comment": "",
+      "comment": "GN: not trivial to key-nav the sub-items. Also not needed b/c sub-items listed on landing pages.",
       "roles": "",
       "complexity": "",
-      "resolution": "Todo"
+      "resolution": "Won't"
     },
     "895694355": {
       "resolution": "Todo"
