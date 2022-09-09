@@ -26,7 +26,34 @@ losing annotations
 ## TODO
 
 * M further testing & debugging, interface improvements
+* M simplify testing of stg/dev & local sites
+* M keep some data private (e.g. estimates) or decoupled from web app logic
+* M reduce risk of git conflicts, improve collborative work
+* S more usable visual testing UI
 * S documentation (how to add new project, etc.)
 * S rule tagging
 * C add axe-core engine
 * C assist with report & assessment generation
+
+## Testing locally
+
+### One-off setup
+
+1. clone this repository (`git clone git@github.com:kingsdigitallab/webval.git`)
+2. change into that cloned folder (`cd webval`)
+3. install the necessary packages: `npm i pa11y blink-diff`
+4. if (3) fails, you may need to do this first:
+   * [install nvm on your machine](https://github.com/nvm-sh/nvm#install--update-script)
+   * restart your terminal session
+   * install node.js and npm: `nvm i node`
+
+### Evaluating a site running on your machine
+
+(where `culturecase` is the name of the project to test, and `http://localhost:8000` is the root of the site running on your machine)
+
+1. Evaluate your local site: `git pull && node docs/evaluate.js culturecase http://localhost:8000`
+2. check the script ends with a message like this: `Detected issues (before) 84 -> 82 (now)` 
+3. Push evaluation back to git: `git commit -am "pa11y evaluation" && git push`
+
+
+
