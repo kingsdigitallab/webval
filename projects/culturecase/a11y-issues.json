@@ -2934,7 +2934,10 @@
       "complexity": "S"
     },
     "156302841": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S",
+      "comment": "TO: Can't find in templates so think it's added some other way. There are a few similar issues within this rule section."
     },
     "200033009": {
       "resolution": "Todo"
@@ -2951,7 +2954,8 @@
     "400617245": {
       "resolution": "Todo",
       "roles": "D",
-      "complexity": "M"
+      "complexity": "M",
+      "comment": ""
     },
     "420926862": {
       "resolution": "Todo"
