@@ -212,6 +212,7 @@ projects
         res.annotations = {}
       }
 
+      res.meta.host = baseUri
       res.meta.version = '0.1.0'
       res.meta.evaluationStarted = project.a11y.evaluationStarted
       res.meta.evaluationEnded = project.a11y.evaluationEnded

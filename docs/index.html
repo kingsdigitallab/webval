@@ -88,7 +88,8 @@
           </div>
         </div>
         <p v-if="project">
-          Last evaluation: {{ formatDate(project.a11y.evaluationStarted) }}
+          Last evaluation: {{ formatDate(project.a11y.evaluationStarted) }} 
+          ({{ evaluation.meta.host }})
         </p>
 
         <br>
@@ -249,7 +250,7 @@
                     </span>
                   </template>
                 </td>
-                <td colspan="5"><a :href="issue.host + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
+                <td colspan="5"><a :href="(evaluation.meta.host || issue.host) + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
               </tr>
 
               <tr v-if="('type|issue'.includes(selection.depth)) && (idx == 0 || getGroupFromIssue(issuesFiltered[idx-1]) != getGroupFromIssue(issue))" class="issues-group">
