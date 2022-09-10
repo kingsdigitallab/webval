@@ -2992,8 +2992,8 @@
     },
     "840790598": {
       "comment": "GN: maybe... but not trivial to key-nav the sub-items. Also not needed b/c sub-items listed on landing pages.",
-      "roles": "",
-      "complexity": "",
+      "roles": "D",
+      "complexity": "M",
       "resolution": "Won't"
     },
     "895694355": {
@@ -3030,7 +3030,9 @@
       "resolution": "Todo"
     },
     "1210608861": {
-      "resolution": "Addressed"
+      "resolution": "Addressed",
+      "roles": "D",
+      "complexity": "S"
     },
     "1291037664": {
       "resolution": "Todo"
@@ -3316,7 +3318,7 @@
     },
     "/|2.1.1": {
       "resolution": "Won't",
-      "complexity": "S",
+      "complexity": "M",
       "roles": "D"
     },
     "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|1.4.3": {
