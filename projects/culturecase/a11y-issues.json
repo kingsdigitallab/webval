@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "0.1.0",
-  "evaluationStarted": "2022-09-10T10:41:16.072Z",
-  "evaluationEnded": "2022-09-10T10:41:45.341Z"
+  "evaluationStarted": "2022-09-10T11:39:32.235Z",
+  "evaluationEnded": "2022-09-10T11:40:02.087Z"
  },
  "issues": {
   "19260041": {
@@ -24,7 +24,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 19260041
   },
   "61229976": {
@@ -36,7 +36,7 @@
    "selector": "#dpe_fp_widget-2 > ul > li:nth-child(2) > a > h4",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -46,7 +46,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 61229976
   },
   "67767394": {
@@ -58,7 +58,7 @@
    "selector": "#post-2 > div > div > p:nth-child(18) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -68,7 +68,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 67767394
   },
   "76161051": {
@@ -80,7 +80,7 @@
    "selector": "#post-1449",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -90,7 +90,7 @@
     "code": "F77",
     "target": ""
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 76161051
   },
   "156302841": {
@@ -112,7 +112,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 156302841
   },
   "200033009": {
@@ -168,7 +168,7 @@
    "selector": "#header",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -178,7 +178,7 @@
     "code": "F77",
     "target": ""
    },
-   "detected": "2022-09-08T22:57:53.419Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 271187814
   },
   "285697326": {
@@ -190,7 +190,7 @@
    "selector": "#nav",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -200,7 +200,7 @@
     "code": "F77",
     "target": ""
    },
-   "detected": "2022-09-09T00:31:23.451Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 285697326
   },
   "400617245": {
@@ -222,7 +222,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 400617245
   },
   "420926862": {
@@ -234,7 +234,7 @@
    "selector": "#post-2 > div > div > p:nth-child(24) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -244,7 +244,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 420926862
   },
   "450978262": {
@@ -278,7 +278,7 @@
    "selector": "#wrapper > div:nth-child(5) > div > div > h1",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -288,7 +288,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 459172406
   },
   "479811459": {
@@ -310,7 +310,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 479811459
   },
   "541718476": {
@@ -366,7 +366,7 @@
    "selector": "#content > div:nth-child(11) > span",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -376,7 +376,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 641472039
   },
   "671327193": {
@@ -442,7 +442,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 753051525
   },
   "838147902": {
@@ -491,7 +491,7 @@
    "selector": "#text-2 > h3 > a:nth-child(1)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -501,7 +501,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 895694355
   },
   "898181731": {
@@ -513,7 +513,7 @@
    "selector": "#nav",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -523,7 +523,7 @@
     "code": "F77",
     "target": ""
    },
-   "detected": "2022-09-08T22:57:53.419Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 898181731
   },
   "910926784": {
@@ -567,7 +567,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 980874058
   },
   "1134477401": {
@@ -579,7 +579,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -589,7 +589,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1134477401
   },
   "1151425885": {
@@ -601,7 +601,7 @@
    "selector": "#nav > div:nth-child(2) > div > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -611,7 +611,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-09T21:22:17.600Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1151425885
   },
   "1151867943": {
@@ -623,7 +623,7 @@
    "selector": "#nav > div > div > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -633,7 +633,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-08T22:57:53.419Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1151867943
   },
   "1153443014": {
@@ -667,7 +667,7 @@
    "selector": "#content > div:nth-child(1) > a:nth-child(2)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -677,7 +677,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1176267068
   },
   "1198962623": {
@@ -711,7 +711,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -721,7 +721,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1207173392
   },
   "1210608861": {
@@ -770,7 +770,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -780,7 +780,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1310862637
   },
   "1330136146": {
@@ -792,7 +792,7 @@
    "selector": "#post-2 > div > div > p:nth-child(6) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -802,7 +802,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1330136146
   },
   "1337210375": {
@@ -824,7 +824,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1337210375
   },
   "1337210406": {
@@ -846,7 +846,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1337210406
   },
   "1337210437": {
@@ -868,7 +868,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1337210437
   },
   "1354349351": {
@@ -880,7 +880,7 @@
    "selector": "#post-2 > div:nth-child(6) > div > span:nth-child(1) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -890,7 +890,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1354349351
   },
   "1379523294": {
@@ -912,7 +912,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1379523294
   },
   "1388161594": {
@@ -924,7 +924,7 @@
    "selector": "#dpe_fp_widget-2 > ul > li:nth-child(3) > a > h4",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -934,7 +934,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1388161594
   },
   "1471618953": {
@@ -946,7 +946,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -956,7 +956,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1471618953
   },
   "1494226111": {
@@ -1000,7 +1000,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1548985318
   },
   "1565050732": {
@@ -1012,7 +1012,7 @@
    "selector": "#post-1449 > div:nth-child(2) > span:nth-child(3)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -1022,7 +1022,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1565050732
   },
   "1628720647": {
@@ -1044,7 +1044,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1628720647
   },
   "1653504421": {
@@ -1078,7 +1078,7 @@
    "selector": "#post-2 > div > div > p:nth-child(27) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1088,7 +1088,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1665134175
   },
   "1671027511": {
@@ -1110,7 +1110,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1671027511
   },
   "1687714142": {
@@ -1154,7 +1154,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1776990210
   },
   "1792705804": {
@@ -1166,7 +1166,7 @@
    "selector": "#s",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1176,7 +1176,7 @@
     "code": "H91",
     "target": "InputText.Name"
    },
-   "detected": "2022-09-09T00:43:26.405Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1792705804
   },
   "1824194050": {
@@ -1198,7 +1198,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1824194050
   },
   "1870763327": {
@@ -1210,7 +1210,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -1220,7 +1220,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1870763327
   },
   "1913075816": {
@@ -1264,7 +1264,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 1946131824
   },
   "1972067868": {
@@ -1276,7 +1276,7 @@
    "selector": "#dpe_fp_widget-2 > ul > li:nth-child(5) > a > h4",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1286,7 +1286,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1972067868
   },
   "2049608732": {
@@ -1330,7 +1330,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": 2110111844
   },
   "2146133567": {
@@ -1364,7 +1364,7 @@
    "selector": "#s",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1374,7 +1374,7 @@
     "code": "F68",
     "target": ""
    },
-   "detected": "2022-09-09T00:43:26.405Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -905731136
   },
   "-524716099": {
@@ -1386,7 +1386,7 @@
    "selector": "#s",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1396,7 +1396,7 @@
     "code": "F77",
     "target": ""
    },
-   "detected": "2022-09-09T00:43:26.405Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -524716099
   },
   "-1451746613": {
@@ -1408,7 +1408,7 @@
    "selector": "#searchsubmit",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1418,7 +1418,7 @@
     "code": "F77",
     "target": ""
    },
-   "detected": "2022-09-09T01:07:08.344Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1451746613
   },
   "-1514777813": {
@@ -1440,7 +1440,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1514777813
   },
   "-1540617088": {
@@ -1462,7 +1462,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1540617088
   },
   "-1371379490": {
@@ -1474,7 +1474,7 @@
    "selector": "#wrapper > div:nth-child(1) > div > ul > li:nth-child(1) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1484,7 +1484,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1371379490
   },
   "-336871395": {
@@ -1496,7 +1496,7 @@
    "selector": "#wrapper > div:nth-child(1) > div > ul > li:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1506,7 +1506,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -336871395
   },
   "-1865578248": {
@@ -1518,7 +1518,7 @@
    "selector": "#wrapper > div:nth-child(1) > div > ul > li:nth-child(3) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1528,7 +1528,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1865578248
   },
   "-55894111": {
@@ -1550,7 +1550,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -55894111
   },
   "-1745798201": {
@@ -1562,7 +1562,7 @@
    "selector": "#post-2 > div > div:nth-child(2) > p:nth-child(6) > a:nth-child(1)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1572,7 +1572,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1745798201
   },
   "-1718627713": {
@@ -1584,7 +1584,7 @@
    "selector": "#post-2 > div > div:nth-child(2) > p:nth-child(6) > a:nth-child(2)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1594,7 +1594,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1718627713
   },
   "-1713993481": {
@@ -1606,7 +1606,7 @@
    "selector": "#post-2 > div > div:nth-child(2) > p:nth-child(9) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1616,7 +1616,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1713993481
   },
   "-1331962708": {
@@ -1628,7 +1628,7 @@
    "selector": "#dpe_fp_widget-2 > ul > li:nth-child(1) > a > h4",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1638,7 +1638,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1331962708
   },
   "-1210747925": {
@@ -1650,7 +1650,7 @@
    "selector": "#dpe_fp_widget-2 > ul > li:nth-child(4) > a > h4",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1660,7 +1660,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1210747925
   },
   "-994391466": {
@@ -1682,7 +1682,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -994391466
   },
   "-1536838779": {
@@ -1704,7 +1704,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1536838779
   },
   "-1053420905": {
@@ -1726,7 +1726,7 @@
     "code": "H91",
     "target": "A.EmptyNoId"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1053420905
   },
   "-1228250829": {
@@ -1738,7 +1738,7 @@
    "selector": "#wrapper > footer > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(1) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1748,7 +1748,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1228250829
   },
   "-2006917832": {
@@ -1760,7 +1760,7 @@
    "selector": "#wrapper > footer > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(3) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1770,7 +1770,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -2006917832
   },
   "-8265646": {
@@ -1782,7 +1782,7 @@
    "selector": "#wrapper > footer > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(4) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -1792,7 +1792,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -8265646
   },
   "-1139442282": {
@@ -1814,7 +1814,7 @@
     "code": "H91",
     "target": "A.NoContent"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1139442282
   },
   "-1565738689": {
@@ -1836,7 +1836,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1565738689
   },
   "-1444201532": {
@@ -1858,7 +1858,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1444201532
   },
   "-1987450495": {
@@ -1870,7 +1870,7 @@
    "selector": "#post-2 > div > div > p:nth-child(10) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1880,7 +1880,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1987450495
   },
   "-160431303": {
@@ -1892,7 +1892,7 @@
    "selector": "#post-2 > div > div > p:nth-child(12) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1902,7 +1902,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -160431303
   },
   "-1247153692": {
@@ -1914,7 +1914,7 @@
    "selector": "#post-2 > div > div > p:nth-child(14) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1924,7 +1924,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1247153692
   },
   "-617187469": {
@@ -1936,7 +1936,7 @@
    "selector": "#post-2 > div > div > p:nth-child(16) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1946,7 +1946,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -617187469
   },
   "-1262346143": {
@@ -1958,7 +1958,7 @@
    "selector": "#post-2 > div > div > p:nth-child(20) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1968,7 +1968,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1262346143
   },
   "-294721634": {
@@ -1980,7 +1980,7 @@
    "selector": "#post-2 > div > div > p:nth-child(22) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/about/",
    "rule": {
     "standard": "WCAG2",
@@ -1990,7 +1990,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -294721634
   },
   "-1066986381": {
@@ -2002,7 +2002,7 @@
    "selector": "#post-2 > h2:nth-child(5) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/contents/",
    "rule": {
     "standard": "WCAG2",
@@ -2012,7 +2012,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1066986381
   },
   "-1456899829": {
@@ -2024,7 +2024,7 @@
    "selector": "#post-2 > h2:nth-child(7) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/contents/",
    "rule": {
     "standard": "WCAG2",
@@ -2034,7 +2034,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1456899829
   },
   "-360481406": {
@@ -2046,7 +2046,7 @@
    "selector": "#wrapper > div:nth-child(5) > div > div > h1",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -2056,7 +2056,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -360481406
   },
   "-743142491": {
@@ -2068,7 +2068,7 @@
    "selector": "#content > div:nth-child(1) > a:nth-child(1)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -2078,7 +2078,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -743142491
   },
   "-1362280105": {
@@ -2090,7 +2090,7 @@
    "selector": "#content > div:nth-child(1) > a:nth-child(3)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -2100,7 +2100,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1362280105
   },
   "-457097845": {
@@ -2122,7 +2122,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -457097845
   },
   "-1489846375": {
@@ -2144,7 +2144,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1489846375
   },
   "-1730397611": {
@@ -2166,7 +2166,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -1730397611
   },
   "-429950956": {
@@ -2178,7 +2178,7 @@
    "selector": "#post-2 > div:nth-child(6) > div > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -2188,7 +2188,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T14:31:37.770Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -429950956
   },
   "-477388718": {
@@ -2200,7 +2200,7 @@
    "selector": "#wrapper > div:nth-child(5) > div > div > h1",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2210,7 +2210,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:24:31.981Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -477388718
   },
   "-818327730": {
@@ -2222,7 +2222,7 @@
    "selector": "#post-1449 > div:nth-child(2) > span:nth-child(1)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2232,7 +2232,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -818327730
   },
   "-818327699": {
@@ -2244,7 +2244,7 @@
    "selector": "#post-1449 > div:nth-child(2) > span:nth-child(2)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2254,7 +2254,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -818327699
   },
   "-1346960939": {
@@ -2266,7 +2266,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(1) > span:nth-child(1) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2276,7 +2276,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1346960939
   },
   "-1342017157": {
@@ -2288,7 +2288,7 @@
    "selector": "#post-1449 > div:nth-child(2) > span",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2298,7 +2298,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1342017157
   },
   "-133804704": {
@@ -2310,7 +2310,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2320,7 +2320,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -133804704
   },
   "-1158213289": {
@@ -2332,7 +2332,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2342,7 +2342,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1158213289
   },
   "-1994685024": {
@@ -2354,7 +2354,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2364,7 +2364,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1994685024
   },
   "-818327668": {
@@ -2376,7 +2376,7 @@
    "selector": "#post-1449 > div:nth-child(2) > span:nth-child(3)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2386,7 +2386,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -818327668
   },
   "-1236545299": {
@@ -2398,7 +2398,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2408,7 +2408,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -1236545299
   },
   "-818327637": {
@@ -2420,7 +2420,7 @@
    "selector": "#post-1449 > div:nth-child(2) > span:nth-child(4)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2430,7 +2430,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -818327637
   },
   "-307900347": {
@@ -2442,7 +2442,7 @@
    "selector": "#post-1449 > div:nth-child(3) > div:nth-child(2) > a",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "http://localhost:8000",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2452,7 +2452,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-09T01:16:26.487Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -307900347
   },
   "-2096205821": {
@@ -2464,7 +2464,7 @@
    "selector": "#content > div:nth-child(11) > a:nth-child(6)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "culturecase.org",
+   "host": "https://culturecase.org",
    "webpath": "/search/?s=museum",
    "rule": {
     "standard": "WCAG2",
@@ -2474,7 +2474,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-08T22:50:07.601Z",
+   "detected": "2022-09-10T11:38:32.160Z",
    "hash": -2096205821
   },
   "-1473975181": {
@@ -2628,7 +2628,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -244397697
   },
   "-244397666": {
@@ -2650,7 +2650,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -244397666
   },
   "-286356378": {
@@ -2694,7 +2694,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -435037530
   },
   "-435037499": {
@@ -2716,7 +2716,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -435037499
   },
   "-2070430488": {
@@ -2760,7 +2760,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -853840564
   },
   "-2058376214": {
@@ -2892,7 +2892,7 @@
     "code": "G18",
     "target": "Fail"
    },
-   "detected": "2022-09-10T10:41:16.072Z",
+   "detected": "2022-09-10T11:39:32.235Z",
    "hash": -501431293
   },
   "-77658075": {

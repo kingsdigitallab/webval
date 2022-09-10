@@ -16,7 +16,7 @@
   "name": "CultureCase",
   "slug": "culturecase",
   "sites": {
-   "liv": "culturecase.org"
+   "liv": "https://culturecase.org"
   },
   "a11y": {
    "urls": [
@@ -28,8 +28,8 @@
     "/search/?s=museum"
    ],
    "evaluationRequested": "2022-09-04T23:44:37.956Z",
-   "evaluationStarted": "2022-09-10T10:41:16.072Z",
-   "evaluationEnded": "2022-09-10T10:41:45.341Z"
+   "evaluationStarted": "2022-09-10T11:39:32.235Z",
+   "evaluationEnded": "2022-09-10T11:40:02.087Z"
   },
   "screenshots": {}
  },
@@ -37,7 +37,7 @@
   "name": "Alice Thornton",
   "slug": "thornton",
   "sites": {
-   "liv": "thornton.kdl.kcl.ac.uk"
+   "liv": "https://thornton.kdl.kcl.ac.uk"
   },
   "a11y": {
    "urls": [
@@ -58,7 +58,7 @@
   "name": "African Rock Art",
   "slug": "tara",
   "sites": {
-   "liv": "africanrockart.britishmuseum.org"
+   "liv": "https://africanrockart.britishmuseum.org"
   },
   "a11y": {
    "urls": [

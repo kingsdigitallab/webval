@@ -11,6 +11,7 @@ const fs = require("fs");
 const { execSync } = require('child_process');
 const pa11y = require('pa11y');
 const utils = require('./utils');
+const { exit } = require('process')
 
 function saveData(data, apath) {
   parentPath = path.dirname(apath);
