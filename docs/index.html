@@ -322,7 +322,10 @@
                   </select>
                 </div></td>
                 <td>
-                  <div class="select">
+                  <template v-if="isIssueFixed(issue)">
+                    Fixed
+                  </template>
+                  <div v-else class="select">
                     <select v-model="evaluation.annotations[issue.hash].resolution" :disabled="isReadOnly">
                       <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
                     </select>
@@ -540,12 +543,9 @@
                   return false
                 }
                 // issues detected in the last evaluation OR issues manually entered
-                if (issue.detected && issue.detected != this.evaluation.meta.evaluationStarted) {
-                  return false
-                }
+                let isClosed = this.isIssueClosed(issue)
                 // addressed or won't issues
-                if (this.selection.resolutions != 'all') {                  
-                  let isClosed = 'Addressed|Won\'t'.includes(this.annotations[issue.hash].resolution)
+                if (this.selection.resolutions != 'all') {
                   if (isClosed == (this.selection.resolutions == 'open')) {
                     return false
                   }
@@ -896,6 +896,22 @@
             copyIssueSelectorToClipboard(issue) {
               navigator.clipboard.writeText(`inspect($$("${issue.selector}")[0])`)
             },
+            isIssueFixed(issue) {
+              // any previously detected issue not detected during last evaluation
+              return (issue.detected && issue.detected != this.evaluation.meta.evaluationStarted)
+            },
+            isIssueClosed(issue) {
+              let resolution = this.annotations[issue.hash].resolution
+              return (
+                // any previously detected issue not detected during last evaluation
+                this.isIssueFixed(issue)
+                // won't is always closed
+                || (resolution == 'Won\'t')
+                // addressed is only closed if manual
+                // automatically detected issues are closed by first clause
+                || (!issue.detected && resolution == 'Addressed') 
+              )
+            }
           }
         }).mount('#app');
       })
