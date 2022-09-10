@@ -298,7 +298,7 @@
                 <td>
                   <div class="issue-message">
                     <template v-if="!issue.detected">
-                      <input class="input issue-comment" type="text" v-model="evaluation.message" :disabled="isReadOnly" />
+                      <input class="input issue-comment" type="text" v-model="issue.message" :disabled="isReadOnly" />
                     </template>
                     <template v-else>
                       <template v-if="(idx == 0) || (issue.message != issuesFiltered[idx-1].message)">{{ issue.message }}</template>
