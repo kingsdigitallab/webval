@@ -469,7 +469,7 @@
     },
     "840790598": {
       "code": "MANUAL-ISSUE-2.1.1",
-      "message": "",
+      "message": "Impacts & Insight in subnav cannot be expanded with keyboard",
       "context": "",
       "runner": "manual",
       "host": "culturecase.org",
@@ -726,7 +726,7 @@
     },
     "1210608861": {
       "code": "MANUAL-ISSUE-2.1.1",
-      "message": "Groups under Impacts don't have visible focus and can't be expanded with keyboard",
+      "message": "Subcategories under Impacts don't have visible focus",
       "context": "",
       "runner": "manual",
       "host": "culturecase.org",
@@ -3030,7 +3030,7 @@
       "resolution": "Todo"
     },
     "1210608861": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "1291037664": {
       "resolution": "Todo"
