@@ -171,11 +171,11 @@ projects
           issue.host = baseUri
           issue.webpath = webpath
           
-          // ignore duplicate issues during this evaluation
+          // ignore duplicate issues (code, context, selector) during this evaluation
           let issueKey = getKeyFromIssue(issue)
           if (issueKeys[issueKey]) continue
 
-          // merge with previous issue (to preserve annotations)
+          // overwrite existing issue
           let issueKeyAbsolute = getKeyFromIssue(issue, true)
           issues[issueKeyAbsolute] = issue
 
@@ -185,9 +185,10 @@ projects
           issue.detected = project.a11y.evaluationStarted
           issue.hash = issueKeyAbsolute
           if (!res.annotations[issueKeyAbsolute]) {
-            res.annotations[issueKeyAbsolute] = {}
+            res.annotations[issueKeyAbsolute] = {
+              resolution: 'Todo'
+            }
           }
-          res.annotations[issueKeyAbsolute].resolution = 'Todo'
 
           issueKeys[issueKey] = 1
         } 
