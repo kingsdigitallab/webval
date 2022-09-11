@@ -295,6 +295,7 @@
               <tr v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue)]" class="issue">
                 <td>
                   <span v-if="!issue.detected" class="tag is-info">Manual</span>
+                  <span v-else class="tag is-info is-light">{{ issue.runner }}</span>
                 </td>
                 <td>
                   <div class="issue-message">
@@ -412,35 +413,6 @@
     <script>
       window.addEventListener("load", function(event) {
         const { createApp } = Vue
-
-        // TODO: move to utils and share with evaluate.js
-        function getKeyFromIssue(issue, includeWebPath=false) {
-          let ret = `${issue.code}|${issue.context}|${issue.selector}`
-          if (includeWebPath) {
-            ret = `${issue.webpath}|` + ret
-          }
-          ret = hashCode(ret)
-          return ret
-        }
-
-        // TODO: move to utils and share with evaluate.js
-        /**
-         * Returns a hash code from a string
-         * @param  {String} str The string to hash.
-         * @return {Number}    A 32bit integer
-         * @see http://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/
-         * @see https://stackoverflow.com/a/8831937
-         */
-        function hashCode(str) {
-          let hash = 0;
-          for (let i = 0, len = str.length; i < len; i++) {
-              let chr = str.charCodeAt(i);
-              hash = (hash << 5) - hash + chr;
-              hash |= 0; // Convert to 32bit integer
-          }
-          return hash;
-        }
-
 
         createApp({
           data() {
@@ -568,9 +540,9 @@
                 return (
                   ''
                   + (this.getLevelFromIssue(issue).padStart(3, '0'))
-                  + (issue.rule.principle)
-                  + (issue.rule.guideline.padStart(2,'0'))
-                  + (issue.rule.rule.padStart(3,'0'))
+                  + (issue.rule.principle.padStart(4,'0'))
+                  + (issue.rule.guideline.padStart(4,'0'))
+                  + (issue.rule.rule.padStart(4,'0'))
                   + (issue.rule.code || '')
                   + (issue.message || '')
                 )
@@ -853,7 +825,7 @@
                   rule: codeParts[2],
                 }
               }
-              issue.hash = getKeyFromIssue(issue, true)
+              issue.hash = utils.getKeyFromIssue(issue, true)
               return issue
             },
             getNewIssueErrorMessages() {

@@ -7,10 +7,22 @@
     },
     "timeout": 100000,
     "viewport": {
+      "width": 1280,
+      "height": 1024
+    },
+    "viewport-mobile": {
       "width": 320,
       "height": 480
     },
+    "viewport-desktop": {
+      "width": 1280,
+      "height": 1024
+    },
     "runners": [
+      "htmlcs",      
+      "axe"
+    ],
+    "runners.bk": [
       "htmlcs"
     ]
   },

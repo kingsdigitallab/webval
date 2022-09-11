@@ -8,6 +8,7 @@ const pathProjects = path.join(pathScripts, '../projects')
 const pathRules = path.join(pathProjects, 'rules.json')
 const HTMLParser = require('node-html-parser')
 const fetch = require('node-fetch')
+const { exit } = require("process")
 
 function saveData(data, apath) {
     parentPath = path.dirname(apath);
@@ -122,8 +123,54 @@ async function fetchDataFromWCAGPage() {
 async function fetchAndSaveRules() {
     let data = await fetchDataFromWCAGPage()
     console.log(`Found ${Object.keys(data.rules).length} rules`)
+
+    data['axe-core-to-wcag'] = (await fetchDataFromAxeCore())['rules']
+
     saveData(data, pathRules)
 }
 
 fetchAndSaveRules()
+
+const uriRulesCore = 'https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md'
+
+async function fetchDataFromAxeCore() {
+    let ret = {
+        'meta': {
+            'source': uriRulesCore,
+            'generated': new Date().toISOString()
+        },
+        'rules': {},
+    }
+
+    // fetch WCAG spec HTML doc
+    res = await fetch(uriRulesCore)
+    if (res.status != 200) {
+        console.log(res) 
+        return ret
+    }
+
+    // rules
+    const root = HTMLParser.parse(await res.text())
+    let rows = root.querySelectorAll('tr')
+    for (let row of rows) {
+        let tds = row.querySelectorAll('td')
+        if (tds.length > 4) {
+            let tdCore = tds[0]
+            // cat.semantics, wcag2aaa, wcag249
+            let tdTags = tds[3].innerText
+            code = tdCore.innerText
+
+            wcagCodes = []
+            for (let match of tdTags.matchAll(/wcag(\d)(\d)(\d)/g)) {
+                codeWcag = `${match[1]}.${match[2]}.${match[3]}`
+                wcagCodes.push(codeWcag)
+            }
+            if (wcagCodes.length) {
+                ret.rules[code] = wcagCodes
+            }
+        }
+    }
+
+    return ret
+}
 

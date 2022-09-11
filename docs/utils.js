@@ -7,6 +7,49 @@
     }
   }
 
+  /**
+   * Returns a hash code from a string
+   * @param  {String} str The string to hash.
+   * @return {Number}    A 32bit integer
+   * @see http://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/
+   * @see https://stackoverflow.com/a/8831937
+   */
+  function hashCode(str) {
+    let hash = 0;
+    for (let i = 0, len = str.length; i < len; i++) {
+        let chr = str.charCodeAt(i);
+        hash = (hash << 5) - hash + chr;
+        hash |= 0; // Convert to 32bit integer
+    }
+    return hash;
+  }
+
+  // LEGACY: used for upgrading legacy issue files
+  // generate a hash code (int) for that issue, so it can be indexed
+  exports.getKeyFromIssue_0_1_0 = function(issue, includeWebPath=false) {
+    // TODO: use the WCAG numbers instead of the whole code
+    // so we can marge with Axe-core issues. 
+    let ret = `${issue.code}|${issue.context}|${issue.selector}`
+    if (includeWebPath) {
+      ret = `${issue.webpath}|` + ret
+    }
+    ret = hashCode(ret)
+    return ret
+  }
+
+  // generate a hash code (int) for that issue, so it can be indexed
+  exports.getKeyFromIssue = function(issue, includeWebPath=false) {
+    // TODO: use the WCAG numbers instead of the whole code
+    // so we can merge with Axe-core issues. 
+    // console.log(issue)
+    let ret = `${issue.rule.standard}|${issue.rule.principle}|${issue.rule.guideline}|${issue.rule.rule}|${issue.context}|${issue.selector}`
+    if (includeWebPath) {
+      ret = `${issue.webpath}|` + ret
+    }
+    ret = hashCode(ret)
+    return ret
+  }
+
   // client-side
   exports.readGithubJsonFile = async function (filePath, octokit) {
     let ret = null;
@@ -75,7 +118,7 @@
       repo: "webval",
       // path: `projects/${this.selection.project}/a11y-issues.json`,
       path: filePath,
-      message: `Commented ${filePath}`,
+      message: `Modified ${filePath}`,
       content: base64Encode(JSON.stringify(data, null, 2)),
     };
 

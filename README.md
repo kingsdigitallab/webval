@@ -14,7 +14,7 @@ WCAG 2.1 A & AA issues are detected using Pa11y tool (html_cs engine and soon ax
 losing annotations
 * Filter issues by level and resolution status
 * Summary showing the number of issues per page and level
-* Simple visual regression test
+* Simple visual regression tests
 
 ## Architecture
 
@@ -29,6 +29,7 @@ losing annotations
 * M simplify testing of stg/dev & local sites
 * M keep some data private (e.g. estimates) or decoupled from web app logic
 * M reduce risk of git conflicts, improve collborative work
+* S allow multiple manual issues for same rule per page (by accepting selector)
 * S more usable visual testing UI
 * S documentation (how to add new project, etc.)
 * S rule tagging
