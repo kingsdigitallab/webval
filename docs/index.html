@@ -551,7 +551,7 @@
               ret.sort((a, b) => {
                 let c = a.webpath.length - b.webpath.length
                 if (c == 0) {
-                  c = (a.webpath == b.webpath) ? 0 : (a.webpath > b.webpath)
+                  c = (a.webpath == b.webpath) ? 0 : (a.webpath > b.webpath) ? 1 : -1
                   if (c == 0) {
                     sks = [getSortKey(a), getSortKey(b)]
                     c = sks[0] == sks[1] ? 0 : (sks[0] > sks[1]) ? 1 : -1

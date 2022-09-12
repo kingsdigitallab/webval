@@ -82,7 +82,8 @@ function getDetectedIssuesCount(results) {
 // returns a normalised version string (e.g. '0.1.2' => '0000.0001.0002')
 // to facilitate comparisons.
 function normaliseVersion(version) {
-  return version.replaceAll(/\d+/g, (m) => m.padStart(4, '0'))
+  let ret = (version.split('.').map((m) => m.padStart(4, '0'))).join('.')
+  return ret
 }
 
 function upgradeEvaluationData(evaluation) {
