@@ -19,22 +19,18 @@ losing annotations
 ## Architecture
 
 * Web app and all data are stored on github and run off github servers
-* Detection using Pa11y with html_codesniffer
+* Detection using Pa11y with html_codesniffer & Axe-Core engines
 * Vue.js interface with default Bulma styles
 * Regression test using Pa11y & Resemble.js
 
 ## TODO
 
 * M further testing & debugging, interface improvements
-* M simplify testing of stg/dev & local sites
-* M keep some data private (e.g. estimates) or decoupled from web app logic
-* M reduce risk of git conflicts, improve collborative work
 * S allow multiple manual issues for same rule per page (by accepting selector)
-* S more usable visual testing UI
 * S documentation (how to add new project, etc.)
-* S rule tagging
-* C add axe-core engine
 * C assist with report & assessment generation
+
+[See the full list of github tickets](https://github.com/kingsdigitallab/webval/issues)
 
 ## Testing locally
 
