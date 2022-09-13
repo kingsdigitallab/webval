@@ -79,5 +79,9 @@
       "2.4.7"
     ],
     "description": "Important rules not detected at all by automated detection engines and relevant for typical KDL websites."
+  },
+  "role.P": {
+    "rules": [],
+    "description": "Issues related to content and assigned primarily to project partners"
   }
 }
