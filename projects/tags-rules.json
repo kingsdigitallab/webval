@@ -78,6 +78,6 @@
       "1.4.4",
       "2.4.7"
     ],
-    "description": ""
+    "description": "Important rules not detected at all by automated detection engines and relevant for typical KDL websites."
   }
 }
