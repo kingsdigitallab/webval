@@ -1,9 +1,13 @@
 {
   "tag1": {
     "rules": [
-      "1.2.3",
-      "1.2.1"
+      "1.1.1",
+      "1.2.3"
     ],
+    "description": ""
+  },
+  "a11y-checklist": {
+    "rules": [],
     "description": ""
   }
 }
