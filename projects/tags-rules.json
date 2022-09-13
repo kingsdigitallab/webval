@@ -67,5 +67,15 @@
       "2.5.5"
     ],
     "description": "https://www.a11yproject.com/checklist/"
+  },
+  "kdl-manual": {
+    "rules": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.4",
+      "2.4.2",
+      "2.4.3"
+    ],
+    "description": ""
   }
 }
