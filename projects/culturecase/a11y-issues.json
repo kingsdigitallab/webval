@@ -1764,7 +1764,7 @@
     },
     "-1911466915": {
       "code": "MANUAL-ISSUE-2.1.1",
-      "message": "Impacts & Insight in subnav cannot be expanded with keyboard",
+      "message": "1. Mobile menu is not keyboard accessible 2. Impacts & Insight in subnav cannot be expanded with keyboard",
       "context": "",
       "runner": "manual",
       "host": "culturecase.org",
@@ -3373,7 +3373,7 @@
       "comment": "GN: maybe... but not trivial to key-nav the sub-items. Also not needed b/c sub-items listed on landing pages.",
       "roles": "D",
       "complexity": "M",
-      "resolution": "Won't"
+      "resolution": "Todo"
     },
     "-75888418": {
       "resolution": "Todo"
