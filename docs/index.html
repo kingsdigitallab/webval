@@ -391,6 +391,29 @@
             <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">Please generate and provide a github Personal Access Token to interact with the page</a>
           </div>
         </form>
+
+        <h2 class="title is-2">Rules ({{ selectedRules.length }})</h2>
+        <select v-model="selection.tagSlug">
+          <option v-for="(tag, tagSlug) in tags" :value="tagSlug">{{ tagSlug}}</option>
+        </select>
+        <button @click="onDeleteTag">delete</button>
+        <input type="text" class="control" v-model="newTagSlug" />
+        <button @click="onRenameTag">rename</button>
+        <button @click="onCreateTag">create</button>
+        <button @click="onSaveTags">save</button>
+        <table class="table">
+          <tr v-for="rule in selectedRules">
+            <td>
+              <label class="checkbox">
+                <input type="checkbox" @click="onTagRule(rule)" :checked="isRuleTagged(rule)">
+                {{ rule.code }}
+              </label>
+            </td> 
+            <td>{{ rule.level }}</td> 
+            <td>{{ rule.title }}</td> 
+            <td>{{ rule.description }}</td>
+          </tr>
+        </table>
       </div>
 
       <div class="container" v-if="selection.tab == 'projects'">
@@ -431,15 +454,22 @@
                 ruleNumber: '',
                 context: '',
                 message: '',
-                selecgtor: ''
+                selector: ''
               },
               isUnsaved: false,
+
+              tags: {},
+              newTagSlug: '',
+              tags_sha: null
             }
           },
           async mounted() {
             // TODO: non-blocking
             this.levelCounters = {}
             this.rules = (await utils.readGithubJsonFile('projects/rules.json')).data
+            let res = (await utils.readGithubJsonFile('projects/tags-rules.json'))
+            this.tags = res.data
+            this.tags_sha = res.sha
             await this.loadSelection()
             await this.loadProjects()
             this.onSelectProject()
@@ -658,6 +688,13 @@
             },
             hasConflict() {
               return this.evaluation_sha === 0
+            },
+            selectedTag() {
+              return this.tags[this.selection.tagSlug]
+            },
+            selectedRules() {
+              if (!this.rules) return []
+              return Object.values(this.rules.rules).filter(r => this.isLevelSelected(r.level)) 
             }
           },
           methods: {
@@ -688,6 +725,7 @@
                 resolutions: 'open',
                 depth: 'issue',
                 tab: 'issues',
+                tagSlug: '',
                 gtoken: null
               }
             },
@@ -884,6 +922,33 @@
                 // automatically detected issues are closed by first clause
                 || (!issue.detected && resolution == 'Addressed') 
               )
+            },
+            isRuleTagged(rule) {
+              return this.selectedTag && this.selectedTag.rules.includes(rule.code)
+            },
+            onTagRule(rule) {
+              let tag = this.selectedTag
+              if (!tag) return
+              if (!this.isRuleTagged(rule)) {
+                tag.rules.push(rule.code)
+              } else {
+                tag.rules = tag.rules.filter(c => c != rule.code)
+              }
+            },
+            onCreateTag() {
+              this.tags[this.newTagSlug] = {'rules': [], 'description': ''}
+              this.selection.tagSlug = this.newTagSlug
+            },
+            onRenameTag() {
+              this.tags[this.newTagSlug] = this.selectedTag
+              this.onDeleteTag()
+              this.selection.tagSlug = this.newTagSlug
+            },
+            onDeleteTag() {
+              delete this.tags[this.selection.tagSlug]
+            },
+            onSaveTags () {
+              this.tags_sha = utils.updateGithubJsonFile(`projects/tags-rules.json`, this.tags, this.getOctokit(), this.tags_sha)
             }
           }
         }).mount('#app');
