@@ -9,5 +9,9 @@
   "role.P": {
     "rules": [],
     "description": ""
+  },
+  "a11y-checklist": {
+    "rules": [],
+    "description": ""
   }
 }
