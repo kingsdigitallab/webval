@@ -7,7 +7,10 @@
     "description": ""
   },
   "role.P": {
-    "rules": [],
+    "rules": [
+      "1.1.1",
+      "1.2.2"
+    ],
     "description": ""
   },
   "a11y-checklist": {
