@@ -6,7 +6,7 @@ A [Web application](https://kingsdigitallab.github.io/webval/docs/) entirely hos
 
 **Note that automated detection can only cover a minority of WCAG rules. The rest must be manually detected.**
 
-[Additional information in the wiki](https://github.com/kingsdigitallab/webval/wiki/Webval-documentation)
+[Additional information in the wiki](https://github.com/kingsdigitallab/webval/wiki)
 
 [Report issues & suggest new features](https://github.com/kingsdigitallab/webval/issues)
 
