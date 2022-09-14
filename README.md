@@ -1,27 +1,34 @@
 # Webval
 
-A [Web application](https://kingsdigitallab.github.io/webval/docs/) hosted on gthub that lets you run accessibility evaluation on multiple pages for a collection of sites. The accessibility issues are saved in this repository and can be browsed and manually annotated to facilitate accessibility assessment, review and testing processes.
+A [Web application](https://kingsdigitallab.github.io/webval/docs/) entirely hosted on github that lets you run accessibility evaluation on multiple pages for a collection of sites. The accessibility issues are saved in this repository and can be browsed and manually annotated to facilitate accessibility assessments, reviews, reporting and continuous testing.
 
-WCAG 2.1 A & AA issues are detected using Pa11y tool (html_cs engine and soon axe-core). **Note that automated detection only covers part of WCAG rules**.
+[WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) 2.1 A & AA issues are reported by [Pa11y](https://pa11y.org/) (and detected by [HTML_CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) and [axe-core](https://github.com/dequelabs/axe-core) engines). 
+
+**Note that automated detection can only cover a minority of WCAG rules. The rest must be manually detected.**
+
+[Additional information in the wiki](https://github.com/kingsdigitallab/webval/wiki/Webval-documentation)
+
+[Report issues & suggest new features](https://github.com/kingsdigitallab/webval/issues)
 
 ## Features
 
-* The same instance can manage multiple sites and multiple pages per site (see [config file](projects/projects.json))
-* Automatically detects, store and report some of WCAG A & AA issues with details about location & problem
-* Ability to manually annotate the issues (assigning a role, complexity, resolution status and a comment)
-* Manually add issues not detected automatically 
-* Re-run automated tests on the same pages & update issues without
-losing annotations
-* Filter issues by level and resolution status
-* Summary showing the number of issues per page and level
-* Simple visual regression tests
+* The same instance can manage **multiple sites** and **multiple pages** per site (see [config file](projects/projects.json))
+* **Automatically detects, stores and reports** some of WCAG A & AA issues with details about location & problem
+* Ability to manually **annotate** the issues (assigning a role, complexity, resolution status and a comment)
+* **Manually** add and manage other issues not detected automatically 
+* **Re-run automated tests** on the same pages & update issues without losing annotations
+* Issues are **grouped by rules** for quick, high-level annotation
+* **Filter** issues by level and resolution status
+* **Summary** showing the number of issues per page and level
+* Simple **visual regression tests** 
+* Rule **tagging** system to help you categorise issues
 
 ## Architecture
 
 * Web app and all data are stored on github and run off github servers
-* Detection using Pa11y with html_codesniffer & Axe-Core engines
-* Vue.js interface with default Bulma styles
-* Regression test using Pa11y & Resemble.js
+* Detection using [Pa11y](https://pa11y.org/) with html_codesniffer & Axe-Core engines
+* Vue.js interface with default [Bulma](https://bulma.io/) styles
+* Regression test using Pa11y & [Blink-diff](https://github.com/yahoo/blink-diff)
 
 ## TODO
 

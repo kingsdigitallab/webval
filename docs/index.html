@@ -14,6 +14,9 @@
       window.Octokit = Octokit
     </script>    
     <style>
+      .rule-tag:hover {
+        background-color: #ffff88;
+      }
       .form-error {
         
       }
@@ -393,7 +396,7 @@
         </form>
 
         <template v-if="selectedTag">
-          <h2 class="title is-2">Tags ({{ selectedTag.rules.length }} / {{ selectedRules.length }})</h2>
+          <h2 class="title is-2">Tags ({{ getRuleCountFromSelectedTag }} / {{ selectedRules.length }})</h2>
           <div class="field is-grouped bar-issues-filters">
             <div class="control">
               <button @click="onSaveTags" class="button is-primary">save</button>
@@ -415,17 +418,23 @@
               <button @click="onCreateTag" class="button">create</button>
             </div>
           </div>
+          <label class="label">
+            Description:
+            <input type="text" class="input" v-model="selectedTag.description">
+          </label>
 
           <table class="table">
             <tr v-for="rule in selectedRules">
-              <td>
+              <td class="rule-tag">
                 <label class="checkbox">
                   <input type="checkbox" @click="onTagRule(rule)" :checked="isRuleTagged(rule)">
                   {{ rule.code }}
                 </label>
               </td> 
               <td>{{ rule.level }}</td> 
-              <td>{{ rule.title }}</td> 
+              <td>
+                <a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+rule.id+'.html'" target="_blank">{{ rule.title }}</a>
+              </td> 
               <td>{{ rule.description }}</td>
             </tr>
           </table>
@@ -726,6 +735,10 @@
             selectedRules() {
               if (!this.rules) return []
               return Object.values(this.rules.rules).filter(r => this.isLevelSelected(r.level)) 
+            },
+            getRuleCountFromSelectedTag () {
+              let ret = this.selectedRules.filter(r => this.isRuleTagged(r)).length
+              return ret
             }
           },
           methods: {
