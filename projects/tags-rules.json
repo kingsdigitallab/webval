@@ -85,7 +85,7 @@
       "3.3.3",
       "4.1.3"
     ],
-    "description": "Important rules not detected at all by automated detection engines and relevant for typical KDL websites."
+    "description": "Important rules not detected at all by automated detection engines and relevant for typical KDL websites. See https://blog.usablenet.com/automated-wcag-testing-is-not-enough-for-web-accessibility-ada-compliance and https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/"
   },
   "role.P": {
     "rules": [
