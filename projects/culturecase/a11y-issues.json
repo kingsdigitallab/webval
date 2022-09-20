@@ -3277,7 +3277,7 @@
       "resolution": "Todo",
       "roles": "U",
       "complexity": "S",
-      "comment": "TO: This has to be done separately and will fix on all sites that use it."
+      "comment": ""
     },
     "/about/|1.4.3": {
       "resolution": "Todo",
