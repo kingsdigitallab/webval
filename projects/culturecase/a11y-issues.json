@@ -3204,7 +3204,8 @@
       "resolution": "Todo"
     },
     "1583010404": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": ""
     },
     "1601223137": {
       "resolution": "Todo"
@@ -3313,7 +3314,7 @@
       "roles": "D"
     },
     "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|1.4.3": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "roles": "U",
       "complexity": "S",
       "comment": "GN: Mainly the use of orange in font and background. Breadcrumb, article title, links."
