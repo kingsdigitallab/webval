@@ -6,3 +6,4 @@ bin/
 package.json
 package-lock.json
 /tst
+.vscode
