@@ -3160,7 +3160,8 @@
     },
     "227554933": {
       "resolution": "Todo",
-      "comment": "TO: Unable to find background colour css to change."
+      "comment": "TO: To email partners to inform and ask them to change in wagtail giving colour checker link",
+      "roles": "P"
     },
     "305576726": {
       "resolution": "Todo"
@@ -3387,7 +3388,7 @@
     },
     "/|1.4.3": {
       "resolution": "Todo",
-      "roles": "U",
+      "roles": "",
       "complexity": "S",
       "comment": ""
     },
@@ -3661,7 +3662,8 @@
     },
     "-1406414370": {
       "resolution": "Todo",
-      "comment": "TO: Unable to find background colour css to change."
+      "comment": "TO: To email partners to inform and ask them to change in wagtail giving colour checker link",
+      "roles": "P"
     },
     "-746116146": {
       "resolution": "Addressed",
