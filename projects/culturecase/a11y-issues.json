@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "0.2.0",
-  "evaluationStarted": "2022-09-22T06:24:49.382Z",
-  "evaluationEnded": "2022-09-22T06:25:11.476Z",
+  "evaluationStarted": "2022-09-22T09:29:38.212Z",
+  "evaluationEnded": "2022-09-22T09:30:00.519Z",
   "host": "http://localhost:8000"
  },
  "issues": {
@@ -118,7 +118,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T06:24:49.382Z",
+   "detected": "2022-09-22T09:29:38.212Z",
    "hash": 227554933
   },
   "305576726": {
@@ -475,7 +475,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T06:24:49.382Z",
+   "detected": "2022-09-22T09:29:38.212Z",
    "hash": 748912532
   },
   "779396384": {
@@ -735,6 +735,28 @@
    "detected": "2022-09-10T11:38:32.160Z",
    "hash": 1208858435
   },
+  "1211579350": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.46:1. Recommendation:  change text colour to #fff.",
+   "context": "<button class=\"button\" id=\"close-cookie-disclaimer\" type=\"button\" aria-label=\"Accept\">Accept</button>",
+   "selector": "#close-cookie-disclaimer",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-22T09:29:38.212Z",
+   "hash": 1211579350
+  },
   "1215335513": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
    "type": "error",
@@ -754,7 +776,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T06:24:49.382Z",
+   "detected": "2022-09-22T09:29:38.212Z",
    "hash": 1215335513
   },
   "1238783443": {
@@ -1287,7 +1309,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T06:24:49.382Z",
+   "detected": "2022-09-22T09:29:38.212Z",
    "hash": 1812854743
   },
   "1824707770": {
@@ -3038,7 +3060,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T06:24:49.382Z",
+   "detected": "2022-09-22T09:29:38.212Z",
    "hash": -1406414370
   },
   "-746116146": {
@@ -3236,6 +3258,9 @@
    "resolution": "Todo"
   },
   "1208858435": {
+   "resolution": "Todo"
+  },
+  "1211579350": {
    "resolution": "Todo"
   },
   "1215335513": {
