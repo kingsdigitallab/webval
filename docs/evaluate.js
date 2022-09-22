@@ -1,4 +1,4 @@
-const currentVersion = '0.2.0'
+const currentVersion = '0.3.0'
 const path = require('path')
 const pathScripts = __dirname
 const pathProjects = path.join(pathScripts, '../projects') 
@@ -86,6 +86,28 @@ function normaliseVersion(version) {
   return ret
 }
 
+function changeIssueHash(evaluation, oldKey, newKey, version) {
+  let issue = evaluation.issues[oldKey]
+  if (oldKey != newKey) {
+    // change key of issue
+    if (normaliseVersion(version) < normaliseVersion('0.2.0')) {
+      issue.hash = newKey
+    } else {
+      issue.id = newKey
+      delete issue.hash
+    }
+    delete evaluation.issues[oldKey]
+    evaluation.issues[newKey] = issue
+
+    // change key of annotation
+    let annotation = evaluation.annotations[oldKey]
+    if (annotation) {
+      evaluation.annotations[newKey] = annotation
+      delete evaluation.annotations[oldKey]
+    }
+  }
+}
+
 function upgradeEvaluationData(evaluation) {
   // 1. is the data older than currentVersion?
   let version = evaluation?.meta?.version || '0.0.0'
@@ -98,19 +120,15 @@ function upgradeEvaluationData(evaluation) {
       for (let oldKey of Object.keys(evaluation.issues)) {
         let issue = evaluation.issues[oldKey]
         let newKey = utils.getKeyFromIssue(issue, true)
-        if (oldKey != newKey) {
-          // change key of issue
-          issue.hash = newKey
-          delete evaluation.issues[oldKey]
-          evaluation.issues[newKey] = issue
-
-          // change key of annotation
-          let annotation = evaluation.annotations[oldKey]
-          if (annotation) {
-            evaluation.annotations[newKey] = annotation
-            delete evaluation.annotations[oldKey]
-          }
-        }
+        changeIssueHash(evaluation, oldKey, newKey, version)
+      }
+    }
+    if (normaliseVersion(version) < normaliseVersion('0.3.0')) {
+      console.log('  issue keys=hash=unique number from sequence')
+      evaluation.meta.lastIssueId = 0
+      for (let oldKey of Object.keys(evaluation.issues)) {
+        let newKey = (++evaluation.meta.lastIssueId)
+        changeIssueHash(evaluation, oldKey, newKey, version)
       }
     }
   }
@@ -151,8 +169,8 @@ function evaluate() {
       for (let name of ['last', 'previous', 'accepted']) {
         fs.mkdirSync(path.join(screenshotsPath, name), {recursive: true})
       }
-      // copy from screenshots/last/*.png to screenshots/previous/
       
+      // copy from screenshots/last/*.png to screenshots/previous/
       utils.copyScreenshots(project.slug, 'last', 'previous')
 
       // console.log(project.a11y)
@@ -160,7 +178,6 @@ function evaluate() {
       console.log(`Project ${project.name} ${baseUri}`)
 
       // TODO: create path to output if absent
-      // TODO: add axe rules
       let res = {
         "meta": {},
         "issues": {},
@@ -171,6 +188,7 @@ function evaluate() {
       }
 
       upgradeEvaluationData(res)
+      // console.log(res)
 
       let issues = res.issues
 
@@ -204,14 +222,16 @@ function evaluate() {
               if (issueKeys[issueKey]) continue
 
               // overwrite existing issue
-              let issueKeyAbsolute = utils.getKeyFromIssue(issue, true)
-              issues[issueKeyAbsolute] = issue
+              let issueId = (++res.meta.lastIssueId)
+
+              // let issueKeyAbsolute = utils.getKeyFromIssue(issue, true)
+              issues[issueId] = issue
 
               // console.log(issue)
               issue.detected = project.a11y.evaluationStarted
-              issue.hash = issueKeyAbsolute
-              if (!res.annotations[issueKeyAbsolute]) {
-                res.annotations[issueKeyAbsolute] = {
+              issue.id = issueId
+              if (!res.annotations[issueId]) {
+                res.annotations[issueId] = {
                   resolution: 'Todo'
                 }
               }

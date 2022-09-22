@@ -298,7 +298,7 @@
               <tr v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue)]" class="issue">
                 <td>
                   <span v-if="!issue.detected" class="tag is-info">Manual</span>
-                  <span v-else class="tag is-info is-light">{{ issue.runner }}</span>
+                  <span v-if="issue.runner!='manual'" class="tag is-info is-light">{{ issue.runner }}</span>
                 </td>
                 <td>
                   <div class="issue-message">
@@ -317,12 +317,12 @@
                   </div>
                 </td>
                 <td><div class="select">
-                  <select v-model="evaluation.annotations[issue.hash].roles" :disabled="isReadOnly">
+                  <select v-model="evaluation.annotations[issue.id].roles" :disabled="isReadOnly">
                     <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
                   </select>
                 </div></td>
                 <td><div class="select">
-                  <select v-model="evaluation.annotations[issue.hash].complexity" :disabled="isReadOnly">
+                  <select v-model="evaluation.annotations[issue.id].complexity" :disabled="isReadOnly">
                     <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
                   </select>
                 </div></td>
@@ -331,13 +331,13 @@
                     Fixed
                   </template>
                   <div v-else class="select">
-                    <select v-model="evaluation.annotations[issue.hash].resolution" :disabled="isReadOnly">
+                    <select v-model="evaluation.annotations[issue.id].resolution" :disabled="isReadOnly">
                       <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
                     </select>
                   </div>
                 </td>
                 <td>
-                  <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.hash].comment" :disabled="isReadOnly" />
+                  <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.id].comment" :disabled="isReadOnly" />
                 </td>
               </tr>
             </template>
@@ -366,6 +366,16 @@
                   <div class="select">
                     <select v-model="newIssue.ruleNumber">
                       <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Detection</label>
+                <div class="control">
+                  <div class="select">
+                    <select v-model="newIssue.runner">
+                      <template v-for="engine in ['manual', 'siteimprove']"><option :value="engine">{{ engine }}</option></template>
                     </select>
                   </div>
                 </div>
@@ -467,6 +477,7 @@
             return {
               projects: [],
               evaluation: {
+                meta: {},
                 issues: {},
                 annotations: {}
               },
@@ -479,7 +490,8 @@
                 ruleNumber: '',
                 context: '',
                 message: '',
-                selector: ''
+                selector: '',
+                runner: 'manual'
               },
               isUnsaved: false,
 
@@ -897,7 +909,7 @@
                 message: (newIssue.message || '').trim(),
                 context: newIssue.context,
                 selector: newIssue.selector,
-                runner: "manual",
+                runner: newIssue.runner,
                 host: this.project.sites.liv,
                 webpath: newIssue.webpath,
                 rule: {
@@ -907,7 +919,6 @@
                   rule: codeParts[2],
                 }
               }
-              issue.hash = utils.getKeyFromIssue(issue, true)
               return issue
             },
             getNewIssueErrorMessages() {
@@ -919,17 +930,18 @@
               if (!issue.rule?.rule) {
                 ret.push('Please select a rule.')
               }
-              if (this.issues[issue.hash]) {
-                ret.push('An issue for the same rule on that webpath already exists.')
-              }
+              // if (this.issues[issue.id]) {
+              //   ret.push('An issue for the same rule on that webpath already exists.')
+              // }
               return ret
             },
             onAddNewIssue() {
               if (this.getNewIssueErrorMessages().length == 0) {
                 let issue = this.getNewIssueFromForm()
-                this.issues[issue.hash] = issue
+                issue.id = (++this.evaluation.meta.lastIssueId)
+                this.issues[issue.id] = issue
 
-                this.annotations[issue.hash] = {
+                this.annotations[issue.id] = {
                   resolution: "Todo"
                 }
               }
@@ -956,7 +968,7 @@
               return (issue.detected && issue.detected != this.evaluation.meta.evaluationStarted)
             },
             isIssueClosed(issue) {
-              let resolution = this.annotations[issue.hash].resolution
+              let resolution = this.annotations[issue.id].resolution
               return (
                 // any previously detected issue not detected during last evaluation
                 this.isIssueFixed(issue)

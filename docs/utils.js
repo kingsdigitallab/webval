@@ -39,9 +39,6 @@
 
   // generate a hash code (int) for that issue, so it can be indexed
   exports.getKeyFromIssue = function(issue, includeWebPath=false) {
-    // TODO: use the WCAG numbers instead of the whole code
-    // so we can merge with Axe-core issues. 
-    // console.log(issue)
     let ret = `${issue.rule.standard}|${issue.rule.principle}|${issue.rule.guideline}|${issue.rule.rule}|${issue.context}|${issue.selector}`
     if (includeWebPath) {
       ret = `${issue.webpath}|` + ret
