@@ -1,9 +1,9 @@
 {
  "meta": {
   "version": "0.2.0",
-  "evaluationStarted": "2022-09-22T11:01:49.553Z",
-  "evaluationEnded": "2022-09-22T11:02:24.701Z",
-  "host": "https://culturecase.org"
+  "evaluationStarted": "2022-09-22T12:57:38.712Z",
+  "evaluationEnded": "2022-09-22T12:58:28.444Z",
+  "host": "http://localhost:8000"
  },
  "issues": {
   "4679795": {
@@ -140,7 +140,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T10:34:37.074Z",
+   "detected": "2022-09-22T12:57:38.712Z",
    "hash": 227554933
   },
   "305576726": {
@@ -487,7 +487,7 @@
    "selector": "html > body > div:nth-child(15) > p > a:nth-child(1)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "https://culturecase.org",
+   "host": "http://localhost:8000",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -497,7 +497,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T11:01:49.553Z",
+   "detected": "2022-09-22T12:57:38.712Z",
    "hash": 748912532
   },
   "779396384": {
@@ -788,7 +788,7 @@
    "selector": "html > body > div:nth-child(15) > p > a:nth-child(2)",
    "runner": "htmlcs",
    "runnerExtras": {},
-   "host": "https://culturecase.org",
+   "host": "http://localhost:8000",
    "webpath": "/",
    "rule": {
     "standard": "WCAG2",
@@ -798,7 +798,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T11:01:49.553Z",
+   "detected": "2022-09-22T12:57:38.712Z",
    "hash": 1215335513
   },
   "1238783443": {
@@ -1321,7 +1321,7 @@
     "help": "Elements must have sufficient color contrast",
     "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
    },
-   "host": "https://culturecase.org",
+   "host": "http://localhost:8000",
    "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
    "rule": {
     "standard": "WCAG2",
@@ -1331,7 +1331,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T11:01:49.553Z",
+   "detected": "2022-09-22T12:57:38.712Z",
    "hash": 1812854743
   },
   "1824707770": {
@@ -3082,7 +3082,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-22T10:34:37.074Z",
+   "detected": "2022-09-22T12:57:38.712Z",
    "hash": -1406414370
   },
   "-746116146": {
