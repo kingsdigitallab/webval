@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "0.2.0",
-  "evaluationStarted": "2022-09-21T17:36:17.907Z",
-  "evaluationEnded": "2022-09-21T17:36:51.882Z",
+  "evaluationStarted": "2022-09-22T06:24:49.382Z",
+  "evaluationEnded": "2022-09-22T06:25:11.476Z",
   "host": "http://localhost:8000"
  },
  "issues": {
@@ -118,8 +118,35 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-21T17:36:17.907Z",
+   "detected": "2022-09-22T06:24:49.382Z",
    "hash": 227554933
+  },
+  "305576726": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a class=\"button open\" href=\"#\" id=\"show-privacy-policy\">Privacy &amp; Cookie Policy.</a>",
+   "selector": "#show-privacy-policy",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-22T06:24:49.382Z",
+   "hash": 305576726
   },
   "308542702": {
    "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
@@ -448,7 +475,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-21T17:36:17.907Z",
+   "detected": "2022-09-22T06:24:49.382Z",
    "hash": 748912532
   },
   "779396384": {
@@ -727,7 +754,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-21T17:36:17.907Z",
+   "detected": "2022-09-22T06:24:49.382Z",
    "hash": 1215335513
   },
   "1238783443": {
@@ -1260,7 +1287,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-21T17:36:17.907Z",
+   "detected": "2022-09-22T06:24:49.382Z",
    "hash": 1812854743
   },
   "1824707770": {
@@ -3011,7 +3038,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-21T17:36:17.907Z",
+   "detected": "2022-09-22T06:24:49.382Z",
    "hash": -1406414370
   },
   "-746116146": {
@@ -3038,7 +3065,7 @@
     "guideline": "4",
     "rule": "3"
    },
-   "detected": "2022-09-21T17:36:17.907Z",
+   "detected": "2022-09-22T06:24:49.382Z",
    "hash": -746116146
   },
   "-1957597180": {
@@ -3112,6 +3139,9 @@
   "227554933": {
    "resolution": "Todo",
    "comment": "TO: Unable to find background colour css to change."
+  },
+  "305576726": {
+   "resolution": "Todo"
   },
   "308542702": {
    "resolution": "Todo"
