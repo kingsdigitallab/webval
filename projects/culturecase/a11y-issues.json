@@ -5020,7 +5020,7 @@
       "comment": "TO: Fixed but axe still picks up a contrast error"
     },
     "148": {
-      "resolution": "Won't",
+      "resolution": "Addressed",
       "comment": "TO: There is an aria label that describes the function of the element"
     },
     "149": {
@@ -5040,7 +5040,7 @@
       "comment": "GN: for skip & back to top, I think the <a> might need to be wrapped in a div with a role & aria-label"
     },
     "152": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "roles": "D",
       "complexity": "S"
     },
@@ -5050,7 +5050,7 @@
       "complexity": "S"
     },
     "154": {
-      "resolution": "Won't",
+      "resolution": "Addressed",
       "comment": "TO: Unable to pause by able to click back and forth the carousel so will not fix. "
     },
     "155": {
@@ -5059,7 +5059,7 @@
       "complexity": "S"
     },
     "156": {
-      "resolution": "Won't",
+      "resolution": "Addressed",
       "comment": "TO: aria-label accurately describes the link"
     },
     "157": {
@@ -5067,7 +5067,7 @@
       "comment": "TO: Repeated issue as htmlcs detection, sla-app footer."
     },
     "158": {
-      "resolution": "Won't",
+      "resolution": "Addressed",
       "comment": "TO: Image is a logo so it has text but there is an alt text on the image"
     },
     "159": {
