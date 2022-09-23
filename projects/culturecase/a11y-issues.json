@@ -5028,8 +5028,8 @@
       "comment": "TO: These are added when using a third party application CMS editor, Wagtail, which we have no control of and cannot change"
     },
     "150": {
-      "resolution": "Todo",
-      "comment": "TO: Need to add aria-labels ",
+      "resolution": "Won't",
+      "comment": "GN: fixed one banner, the other two are KDL javascript written by Miguel & Ginestra - TO: Need to add aria-labels ",
       "roles": "D",
       "complexity": "S"
     },
