@@ -1061,7 +1061,7 @@
               let issueIds = []
               for (let issue of issues) {
                 let sameIssues = Object.values(this.issues).filter(i => (
-                  i.code == issue.code && i.runner == issue.runner && i.message == issue.message
+                  i.code == issue.code && i.runner == issue.runner && i.message == issue.message && i.webpath == issue.webpath
                 ))
                 if (sameIssues.length) {
                   let sameIssue = sameIssues[0]
