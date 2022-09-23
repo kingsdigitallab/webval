@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-09-23T14:59:54.049Z",
-  "evaluationEnded": "2022-09-23T15:00:15.321Z",
+  "evaluationStarted": "2022-09-23T15:37:47.596Z",
+  "evaluationEnded": "2022-09-23T15:38:10.369Z",
   "host": "http://localhost:8000",
-  "lastIssueId": 170
+  "lastIssueId": 177
  },
  "issues": {
   "1": {
@@ -3744,6 +3744,180 @@
    },
    "detected": "2022-09-23T14:59:54.049Z",
    "id": 170
+  },
+  "171": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.48:1. Recommendation:  change text colour to #b33e00.",
+   "context": "<a class=\"hidden\" role=\"navigation\" href=\"#main\" aria-label=\"skip\">Skip to main content</a>",
+   "selector": "html > body > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 171
+  },
+  "172": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.15:1. Recommendation:  change background to #545e63.",
+   "context": "<a href=\"https://www.kdl.kcl.ac.uk/how-we-work/kdl-designed-developed-and-maintained/\">maintained</a>",
+   "selector": "html > body > div:nth-child(16) > p > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 172
+  },
+  "173": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.15:1. Recommendation:  change background to #545e63.",
+   "context": "<a href=\"https://www.kdl.kcl.ac.uk/\">King's Digital Lab</a>",
+   "selector": "html > body > div:nth-child(16) > p > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 173
+  },
+  "174": {
+   "code": "aria-allowed-attr",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must only use allowed ARIA attributes (https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI)",
+   "context": "<header id=\"header\" aria-label=\"logo\">\n    <div class=\"avada-row\" sty...</header>",
+   "selector": "#header",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures ARIA attributes are allowed for an element's role",
+    "impact": "serious",
+    "help": "Elements must only use allowed ARIA attributes",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 174
+  },
+  "175": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"tp-caption large-black_text tp-fade tp-resizeme kdl-slide-title start\" data-x=\"right\" data-hoffset=\"-17\" data-y=\"58\" data-speed=\"300\" data-start=\"500\" data-easing=\"Power3.easeInOut\" data-splitin=\"none\" data-splitout=\"none\" data-elementdel...",
+   "selector": "#rev_slider_1_1 > ul > li:nth-child(1) > div:nth-child(3)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 175
+  },
+  "176": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"tp-caption blackbigger tp-fade tp-resizeme kdl-slide-link start\" data-x=\"546\" data-y=\"270\" data-speed=\"300\" data-start=\"500\" data-easing=\"Power3.easeInOut\" data-splitin=\"none\" data-splitout=\"none\" data-elementdelay=\"0.1\" data-endelementde...",
+   "selector": "#rev_slider_1_1 > ul > li:nth-child(1) > div:nth-child(6)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 176
+  },
+  "177": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4>Share this story – choose your ...</h4>",
+   "selector": "#post-2 > div:nth-child(7) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-23T15:37:47.596Z",
+   "id": 177
   }
  },
  "annotations": {
@@ -4321,6 +4495,27 @@
    "resolution": "Todo"
   },
   "170": {
+   "resolution": "Todo"
+  },
+  "171": {
+   "resolution": "Todo"
+  },
+  "172": {
+   "resolution": "Todo"
+  },
+  "173": {
+   "resolution": "Todo"
+  },
+  "174": {
+   "resolution": "Todo"
+  },
+  "175": {
+   "resolution": "Todo"
+  },
+  "176": {
+   "resolution": "Todo"
+  },
+  "177": {
    "resolution": "Todo"
   },
   "/|1.4.3": {
