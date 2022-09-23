@@ -4262,7 +4262,7 @@
       "complexity": "S"
     },
     "153": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "roles": "U",
       "complexity": "S"
     },
@@ -4271,7 +4271,7 @@
       "comment": "TO: Unable to pause by able to click back and forth the carousel so will not fix. "
     },
     "155": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "roles": "U",
       "complexity": "S"
     },
