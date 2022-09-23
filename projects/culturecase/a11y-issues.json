@@ -3913,10 +3913,14 @@
       "resolution": "Todo"
     },
     "143": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "UD",
+      "complexity": "S",
+      "comment": "TO: Has to be changed in sla-app"
     },
     "144": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": "TO: Has to be changed in sla-app"
     },
     "145": {
       "resolution": "Todo",
@@ -3964,7 +3968,8 @@
       "resolution": "Todo"
     },
     "156": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "TO: aria-label accurately describes the link"
     },
     "157": {
       "resolution": "Todo"
