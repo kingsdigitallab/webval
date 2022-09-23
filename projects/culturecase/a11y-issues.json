@@ -4,7 +4,7 @@
     "evaluationStarted": "2022-09-23T16:54:42.470Z",
     "evaluationEnded": "2022-09-23T16:55:04.292Z",
     "host": "http://localhost:8000",
-    "lastIssueId": 201
+    "lastIssueId": 206
   },
   "issues": {
     "1": {
@@ -4526,6 +4526,86 @@
       },
       "detected": "2022-09-23T16:54:42.470Z",
       "id": 201
+    },
+    "202": {
+      "code": "SITEIMPROVE-2.4.7",
+      "message": "Element not highlighted on focus",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/faqs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "2",
+        "guideline": "4",
+        "rule": "7"
+      },
+      "id": 202
+    },
+    "203": {
+      "code": "SITEIMPROVE-1.3.1",
+      "message": "\"Bold\" tag used to format text",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/about/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1"
+      },
+      "id": 203
+    },
+    "204": {
+      "code": "SITEIMPROVE-2.4.4",
+      "message": "Link text used for multiple different destinations",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/contents/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "2",
+        "guideline": "4",
+        "rule": "4"
+      },
+      "id": 204
+    },
+    "205": {
+      "code": "SITEIMPROVE-2.4.4",
+      "message": "Link text is too generic in its current context",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/search/?s=museum",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "2",
+        "guideline": "4",
+        "rule": "4"
+      },
+      "id": 205
+    },
+    "206": {
+      "code": "SITEIMPROVE-1.3.1",
+      "message": "HTML is used to format content",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1"
+      },
+      "id": 206
     }
   },
   "annotations": {
@@ -5200,6 +5280,21 @@
       "resolution": "Addressed",
       "comment": "TO: Fixed but still axe is still picking up and error"
     },
+    "202": {
+      "resolution": "Todo"
+    },
+    "203": {
+      "resolution": "Todo"
+    },
+    "204": {
+      "resolution": "Todo"
+    },
+    "205": {
+      "resolution": "Todo"
+    },
+    "206": {
+      "resolution": "Todo"
+    },
     "/|1.4.3": {
       "resolution": "Todo",
       "roles": "",
@@ -5284,6 +5379,21 @@
       "resolution": "Todo"
     },
     "/|1.4.5": {
+      "resolution": "Todo"
+    },
+    "/faqs/|2.4.7": {
+      "resolution": "Todo"
+    },
+    "/about/|1.3.1": {
+      "resolution": "Todo"
+    },
+    "/contents/|2.4.4": {
+      "resolution": "Todo"
+    },
+    "/search/?s=museum|2.4.4": {
+      "resolution": "Todo"
+    },
+    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|1.3.1": {
       "resolution": "Todo"
     }
   },
