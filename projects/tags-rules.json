@@ -105,5 +105,14 @@
       "2.4.1"
     ],
     "description": "Issues related to content editing and assigned primarily to project Partners - See https://www.w3.org/WAI/EO/wiki/Content_Author_Responsibilities_Mapping"
+  },
+  "manual.siteimprove": {
+    "rules": [
+      "1.4.2",
+      "2.1.4",
+      "2.5.4",
+      "1.2.4"
+    ],
+    "description": "A & AA Rules that are not detected at all by SiteImprove engine https://www.siteimprove.com/vpat/"
   }
 }
