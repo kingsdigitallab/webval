@@ -3919,10 +3919,16 @@
       "resolution": "Todo"
     },
     "145": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P",
+      "comment": "TO: Partners to be informed to edit in wagtail home page, cecking colour checker application",
+      "complexity": "S"
     },
     "146": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P",
+      "comment": "TO: Partners to be informed to edit in wagtail home page, cecking colour checker application",
+      "complexity": "S"
     },
     "147": {
       "resolution": "Addressed",
