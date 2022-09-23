@@ -4,7 +4,7 @@
     "evaluationStarted": "2022-09-22T22:39:25.644Z",
     "evaluationEnded": "2022-09-22T22:40:02.823Z",
     "host": "http://localhost:8000",
-    "lastIssueId": 156
+    "lastIssueId": 158
   },
   "issues": {
     "1": {
@@ -3413,6 +3413,38 @@
         "rule": "4"
       },
       "id": 156
+    },
+    "157": {
+      "code": "SITEIMPROVE-1.4.3",
+      "message": "Color contrast is insufficient",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "4",
+        "rule": "3"
+      },
+      "id": 157
+    },
+    "158": {
+      "code": "SITEIMPROVE-1.4.5",
+      "message": "Is the image free of text?",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "4",
+        "rule": "5"
+      },
+      "id": 158
     }
   },
   "annotations": {
@@ -3893,13 +3925,15 @@
       "resolution": "Todo"
     },
     "147": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "TO: Fixed but axe still picks up a contrast error"
     },
     "148": {
       "resolution": "Todo"
     },
     "149": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "TO: These are added when using a third party application CMS editor, Wagtail, which we have no control of and cannot change"
     },
     "150": {
       "resolution": "Todo"
@@ -3914,13 +3948,21 @@
       "resolution": "Todo"
     },
     "154": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "TO: Unable to pause by able to click back and forth the carousel so will not fix. "
     },
     "155": {
       "resolution": "Todo"
     },
     "156": {
       "resolution": "Todo"
+    },
+    "157": {
+      "resolution": "Todo"
+    },
+    "158": {
+      "resolution": "Won't",
+      "comment": "TO: Image is a logo so it has text but there is an alt text on the image"
     },
     "/|1.4.3": {
       "resolution": "Todo",
@@ -3962,13 +4004,13 @@
       "roles": "D"
     },
     "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|1.4.3": {
-      "resolution": "Addressed",
+      "resolution": "Todo",
       "roles": "U",
       "complexity": "S",
       "comment": ""
     },
     "/|1.3.1": {
-      "resolution": "Addressed",
+      "resolution": "Todo",
       "complexity": "S",
       "comment": "",
       "roles": "U"
@@ -4001,6 +4043,9 @@
       "resolution": "Todo"
     },
     "/|2.4.4": {
+      "resolution": "Todo"
+    },
+    "/|1.4.5": {
       "resolution": "Todo"
     }
   },
