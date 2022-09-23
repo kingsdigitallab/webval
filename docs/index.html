@@ -394,6 +394,42 @@
           </div>
         </div>
 
+        <div class="panel">
+          <p class="panel-heading">
+            Add SiteImprove issues
+          </p>
+          <div class="panel-block">
+            <form class="form-add-issue" @submit.stop.prevent="onAddPastedIssues" v-if="project">
+              <div class="field">
+                <label class="label">Web path</label>
+                <div class="control">
+                  <div class="select">
+                    <select v-model="pastedIssues.webpath">
+                      <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Paste issues</label>
+                <div class="control">
+                  <textarea class="textarea" v-model="pastedIssues.raw"></textarea>
+                </div>
+              </div>
+              
+              <div>
+                {{ getPastedIssues().length }} pasted SiteImprove issues
+              </div>
+              <p class="help is-danger" v-for="error in getPastedIssuesErrorMessages()">{{ error }}</p>
+              <div class="field">
+                <div class="control">
+                  <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="getPastedIssuesErrorMessages().length">Add new issue</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
 
       <div class="container" v-if="selection.tab == 'settings'">
@@ -432,7 +468,7 @@
             Description:
             <input type="text" class="input" v-model="selectedTag.description">
           </label>
-
+  
           <table class="table">
             <tr v-for="rule in selectedRules">
               <td class="rule-tag">
@@ -492,6 +528,10 @@
                 message: '',
                 selector: '',
                 runner: 'manual'
+              },
+              pastedIssues: {
+                raw: '',
+                webpath: '',
               },
               isUnsaved: false,
 
@@ -1013,6 +1053,62 @@
               )
               console.log(res)
               this.tags_sha = res
+            },
+            onAddPastedIssues() {
+              let issues = this.getPastedIssues()
+              if (issues.length < 1) return
+
+              let issueIds = []
+              for (let issue of issues) {
+                let sameIssues = Object.values(this.issues).filter(i => (
+                  i.code == issue.code && i.runner == issue.runner && i.message == issue.message
+                ))
+                if (sameIssues.length) {
+                  let sameIssue = sameIssues[0]
+                  let annotation = this.annotations[sameIssues[0].id]
+                  if (annotation.resolution == 'Addressed') {
+                    annotation.resolution = 'Todo'
+                  }
+                  issueIds.push(sameIssue.id)
+                } else {
+                  // this issue didn't exist
+                  issue.id = (++this.evaluation.meta.lastIssueId)
+
+                  this.issues[issue.id] = issue
+                  this.annotations[issue.id] = {
+                    resolution: "Todo"
+                  }
+                  issueIds.push(issue.id)
+                }
+              }
+              // reset all undetected SiteImprove issues to "Addressed"
+              for (let issue of Object.values(this.issues)) {
+                if (issue.runner == 'siteimprove' && issue.webpath == this.pastedIssues.webpath && !issueIds.includes(issue.id)) {
+                  this.annotations[issue.id].resolution = 'Addressed'
+                }
+              }
+            },
+            getPastedIssues() {
+              let ret = utils.getIssuesFromPastedSiteImprove(
+                this.pastedIssues.raw, 
+                this.pastedIssues.webpath,
+                this.project.sites.liv
+              )
+              return ret
+            },
+            getPastedIssuesErrorMessages() {
+              let ret = []
+              let issues = this.getPastedIssues()
+              if (!this.pastedIssues.webpath) {
+                ret.push('Please specify a webpath.')
+              }
+              if (issues.length < 1) {
+                ret.push('Please copy all text from SiteImprove browser pane and paste it in the above text box.')
+              }
+              // if (this.issues[issue.id]) {
+              //   ret.push('An issue for the same rule on that webpath already exists.')
+              // }
+              return ret
             }
           }
         }).mount('#app');

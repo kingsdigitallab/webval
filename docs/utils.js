@@ -241,4 +241,165 @@
 
     return ret
   };
+
+  exports.getIssuesFromPastedSiteImprove = function(pastedIssues, webpath, host) {
+    let pastedIssues2 = `
+    Back to all issues
+    Recheck page
+    Siteimprove logoClose the Siteimprove accessibility checker
+    
+    Accessibility Checker
+    Choose filters
+    Choose conformance level
+    
+    A conformance 9issues
+    
+    AA conformance 11issues
+    
+    AAA conformance 12issues
+    What does conformance level mean?
+    Choose severity
+    
+    
+    Error 3issues
+    
+    
+    Warning 4issues
+    
+    Review 5issues
+    What does severity mean?
+    Choose responsibility
+    
+    
+    Editor 3issues
+    
+    
+    Webmaster 5issues
+    
+    
+    Developer 4issues
+    What does responsibility mean?
+    Issues
+    Adaptable
+    
+    a
+    Info and Relationships
+    1.3.1
+    16
+    occurrences
+    
+    
+    
+    Warning
+    "i" tag used to format text
+    1
+    occurrence
+    
+    Webmaster
+    
+    
+    Warning
+    Non-distinguishable landmarks
+    10
+    occurrences
+    
+    Webmaster
+    
+    
+    Warning
+    Content not included in landmarks
+    5
+    occurrences
+    
+    Webmaster
+    Distinguishable
+    
+    a
+    Use of Color
+    1.4.1
+    4
+    occurrences
+    
+    
+    
+    Error
+    Link identified only by color
+    4
+    occurrences
+    
+    Developer
+    
+    aa
+    Contrast (Minimum)
+    1.4.3
+    2
+    occurrences
+    
+    
+    
+    Error
+    Color contrast is insufficient
+    2
+    occurrences
+    
+    Developer
+    Navigable
+    
+    a
+    Bypass Blocks
+    2.4.1
+    1
+    occurrence
+    
+    
+    
+    Warning
+    No option to skip repeated content
+    1
+    occurrence
+    
+    Developer
+    Get Your Full Website Check
+    FAQTerms of ServicePrivacy Policy
+    © 2017–2022 Siteimprove
+    `
+    let ret = []
+
+    let lines = pastedIssues.split('\n').map(l => l.trim())
+
+    let ignoreNext = false
+    let code = null
+    for (let i = 0; i < lines.length; i++) {
+      let line = lines[i]
+      if (line.match(/^\d+.\d+\.\d+$/)) {
+        ignoreNext = true
+        code = line
+      }
+      if (line.match(/^occurrences?$/)) {
+        if (ignoreNext) {
+          ignoreNext = false
+        } else {
+          let codeParts = code.split('.')
+          ret.push({
+            code: `SITEIMPROVE-${code}`,
+            message: lines[i-2],
+            context: '',
+            selector: '',
+            runner: 'siteimprove',
+            host: host,
+            webpath: webpath,
+            rule: {
+              standard: 'WCAG2',
+              principle: codeParts[0],
+              guideline: codeParts[1],
+              rule: codeParts[2],
+            }
+          })
+        }
+      }
+    }
+    // console.log(lines)
+
+    return ret
+  }
 })(typeof exports === "undefined" ? (this["utils"] = {}) : exports);
