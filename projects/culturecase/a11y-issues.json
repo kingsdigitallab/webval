@@ -4,7 +4,7 @@
     "evaluationStarted": "2022-09-23T16:54:42.470Z",
     "evaluationEnded": "2022-09-23T16:55:04.292Z",
     "host": "http://localhost:8000",
-    "lastIssueId": 206
+    "lastIssueId": 212
   },
   "issues": {
     "1": {
@@ -4606,6 +4606,102 @@
         "rule": "1"
       },
       "id": 206
+    },
+    "207": {
+      "code": "SITEIMPROVE-1.3.1",
+      "message": "\"Bold\" tag used to format text",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1"
+      },
+      "id": 207
+    },
+    "208": {
+      "code": "SITEIMPROVE-1.3.1",
+      "message": "Non-distinguishable landmarks",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1"
+      },
+      "id": 208
+    },
+    "209": {
+      "code": "SITEIMPROVE-1.3.1",
+      "message": "Content not included in landmarks",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1"
+      },
+      "id": 209
+    },
+    "210": {
+      "code": "SITEIMPROVE-1.4.3",
+      "message": "Color contrast is insufficient",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "4",
+        "rule": "3"
+      },
+      "id": 210
+    },
+    "211": {
+      "code": "SITEIMPROVE-2.4.4",
+      "message": "Link text used for multiple different destinations",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "2",
+        "guideline": "4",
+        "rule": "4"
+      },
+      "id": 211
+    },
+    "212": {
+      "code": "SITEIMPROVE-2.4.7",
+      "message": "Element not highlighted on focus",
+      "context": "",
+      "selector": "",
+      "runner": "siteimprove",
+      "host": "https://culturecase.org",
+      "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "2",
+        "guideline": "4",
+        "rule": "7"
+      },
+      "id": 212
     }
   },
   "annotations": {
@@ -5295,6 +5391,31 @@
     "206": {
       "resolution": "Todo"
     },
+    "207": {
+      "resolution": "Won't",
+      "comment": "GN: duplicate"
+    },
+    "208": {
+      "resolution": "Won't",
+      "comment": "GN: duplicate"
+    },
+    "209": {
+      "resolution": "Won't",
+      "comment": "GN: duplicate"
+    },
+    "210": {
+      "resolution": "Won't",
+      "comment": "GN: duplicate"
+    },
+    "211": {
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
+    },
+    "212": {
+      "resolution": "Won't",
+      "comment": "GN: duplicate"
+    },
     "/|1.4.3": {
       "resolution": "Todo",
       "roles": "",
@@ -5394,6 +5515,12 @@
       "resolution": "Todo"
     },
     "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|1.3.1": {
+      "resolution": "Todo"
+    },
+    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|2.4.4": {
+      "resolution": "Todo"
+    },
+    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/|2.4.7": {
       "resolution": "Todo"
     }
   },
