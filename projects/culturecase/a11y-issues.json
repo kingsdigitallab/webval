@@ -5029,7 +5029,7 @@
     },
     "150": {
       "resolution": "Won't",
-      "comment": "GN: fixed one banner, the other two are KDL javascript written by Miguel & Ginestra - TO: Need to add aria-labels ",
+      "comment": "GN: fixed one banner, the other two are remote KDL javascript written by Miguel & Ginestra - TO: Need to add aria-labels ",
       "roles": "D",
       "complexity": "S"
     },
