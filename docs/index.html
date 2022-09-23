@@ -302,7 +302,7 @@
                 </td>
                 <td>
                   <div class="issue-message">
-                    <template v-if="!issue.detected">
+                    <template v-if="issue.runner === 'manual'">
                       <input class="input issue-comment" type="text" v-model="issue.message" :disabled="isReadOnly" />
                     </template>
                     <template v-else>
