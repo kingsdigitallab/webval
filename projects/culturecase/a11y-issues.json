@@ -5037,7 +5037,7 @@
       "resolution": "In progress",
       "roles": "U",
       "complexity": "S",
-      "comment": "GN: I think the <a> might need to be wrapped in a div with a role & aria-label"
+      "comment": "GN: for skip & back to top, I think the <a> might need to be wrapped in a div with a role & aria-label"
     },
     "152": {
       "resolution": "Todo",
