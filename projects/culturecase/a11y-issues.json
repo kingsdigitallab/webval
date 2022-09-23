@@ -3929,7 +3929,8 @@
       "comment": "TO: Fixed but axe still picks up a contrast error"
     },
     "148": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "TO: There is an aria label that describes the function of the element"
     },
     "149": {
       "resolution": "Won't",
@@ -3945,7 +3946,9 @@
       "resolution": "Todo"
     },
     "153": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "154": {
       "resolution": "Won't",
