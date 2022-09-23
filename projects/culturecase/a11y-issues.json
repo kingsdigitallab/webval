@@ -3947,13 +3947,20 @@
       "comment": "TO: These are added when using a third party application CMS editor, Wagtail, which we have no control of and cannot change"
     },
     "150": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": "TO: Need to add aria-labels ",
+      "roles": "U",
+      "complexity": "S"
     },
     "151": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "152": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "153": {
       "resolution": "Todo",
@@ -3965,14 +3972,17 @@
       "comment": "TO: Unable to pause by able to click back and forth the carousel so will not fix. "
     },
     "155": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "156": {
       "resolution": "Won't",
       "comment": "TO: aria-label accurately describes the link"
     },
     "157": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "TO: Repeated issue as htmlcs detection, sla-app footer."
     },
     "158": {
       "resolution": "Won't",
