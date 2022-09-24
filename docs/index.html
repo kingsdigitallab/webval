@@ -423,7 +423,33 @@
               <p class="help is-danger" v-for="error in getPastedIssuesErrorMessages()">{{ error }}</p>
               <div class="field">
                 <div class="control">
-                  <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="getPastedIssuesErrorMessages().length">Add new issue</button>
+                  <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="getPastedIssuesErrorMessages().length">Add new issues</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel">
+          <p class="panel-heading">
+            Add Tagged issues
+          </p>
+          <div class="panel-block">
+            <form class="form-add-issue" @submit.stop.prevent="onAddTaggedIssues" v-if="project">
+              <div class="field">
+                <label class="label">Tag</label>
+                <div class="control">
+                  <div class="select">
+                    <select v-model="selection.tagSlug">
+                      <option v-for="(tag, tagSlug) in tags" :value="tagSlug">{{ tagSlug}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field">
+                <div class="control">
+                  <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issues</button>
                 </div>
               </div>
             </form>
@@ -1109,6 +1135,48 @@
               //   ret.push('An issue for the same rule on that webpath already exists.')
               // }
               return ret
+            },
+            onAddTaggedIssues() {
+              let rules = this.selectedRules.filter(r => this.isRuleTagged(r))
+              for (let rule of rules) {
+                for (let url of this.project.a11y.urls) {
+                  let codeParts = rule.code.split('.')
+                  let issue = {
+                    code: `MANUAL-ISSUE-${rule.code}`,
+                    message: (rule.message || '').trim(),
+                    context: '',
+                    selector: '',
+                    runner: 'manual',
+                    host: this.project.sites.liv,
+                    webpath: url,
+                    rule: {
+                      standard: 'WCAG2',
+                      principle: codeParts[0],
+                      guideline: codeParts[1],
+                      rule: codeParts[2],
+                    }
+                  }
+
+                  let sameIssues = Object.values(this.issues).filter(i => {
+                    return i.code == issue.code && i.webpath == issue.webpath
+                  })
+
+                  if (sameIssues.length < 1) {
+                    // this issue didn't exist
+                    issue.id = (++this.evaluation.meta.lastIssueId)
+
+                    this.issues[issue.id] = issue
+                    this.annotations[issue.id] = {
+                      resolution: "Todo"
+                    }
+                  } else {
+                    let annotation = this.annotations[sameIssues[0].id]
+                    if (annotation.resolution == "Addessed") {
+                      annotation.resolution = "Todo"
+                    }
+                  }
+                }
+              }
             }
           }
         }).mount('#app');
