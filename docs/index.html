@@ -778,7 +778,7 @@
               }
               let ret = {}
 
-              let total = {'min': 0, 'max': 0, 'avg': 0}
+              let total = {'min': 0, 'max': 0, 'avg': 0, 'Undefined': 0}
               for (comp of this.complexities) {
                 if (comp) {
                   total[comp] = 0
@@ -790,6 +790,7 @@
                 if (!issueLast || this.getGroupFromIssue(issueLast) != this.getGroupFromIssue(issue)) {
                   let annotation = this.evaluation.annotations[this.getGroupFromIssue(issue)]
                   for (let role of (annotation?.roles || '').split('')) {
+                    let comp = ''
                     if (!ret[role]) {
                       ret[role] = {'min': 0, 'max': 0, 'avg': 0}
                       for (comp of this.complexities) {
@@ -798,15 +799,20 @@
                         }
                       }
                     }
-                    ret[role][annotation.complexity] += 1
-                    let range = complexities_range[annotation.complexity]
-                    ret[role]['min'] += range[0]
-                    ret[role]['max'] += range[1]
-                    ret[role]['avg'] += (range[0] + range[1]) / 2
+                    comp = annotation.complexity || 'Undefined'
+                    ret[role][comp] += 1
+                    let range = complexities_range[comp]
+                    if (range) {
+                      ret[role]['min'] += range[0]
+                      ret[role]['max'] += range[1]
+                      ret[role]['avg'] += (range[0] + range[1]) / 2
 
-                    total[annotation.complexity] += 1 
-                    total['min'] += range[0]
-                    total['max'] += range[1]
+                      total['min'] += range[0]
+                      total['max'] += range[1]
+                    } else {
+                      console.log('comp', comp)
+                    }
+                    total[comp] += 1 
                   }
                 }
                 issueLast = issue
