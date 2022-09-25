@@ -6785,7 +6785,7 @@
     "216": {
       "resolution": "Todo",
       "roles": "D",
-      "comment": "GN: fix and ask partners to review on staging?",
+      "comment": "GN: fix and ask partners to review on staging? Alternative option is to remove the \"Contents\" landing page altogether as it is redundant with Insights + Impacts.",
       "complexity": "S"
     },
     "217": {
