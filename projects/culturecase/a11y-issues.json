@@ -4753,7 +4753,7 @@
     },
     "216": {
       "code": "MANUAL-ISSUE-1.3.2",
-      "message": "",
+      "message": "GN: seems to be a bug on this page as a lot of categories and articles are loaded but remains hidden.",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -6783,7 +6783,10 @@
       "resolution": "Todo"
     },
     "216": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "comment": "GN: fix and ask partners to review on staging?",
+      "complexity": "S"
     },
     "217": {
       "resolution": "Todo"
@@ -6849,13 +6852,13 @@
       "resolution": "Todo"
     },
     "238": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "239": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "240": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "241": {
       "resolution": "Addressed"
@@ -6867,13 +6870,13 @@
       "resolution": "Todo"
     },
     "244": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "245": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "246": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "247": {
       "resolution": "Addressed",
@@ -7027,7 +7030,8 @@
       "comment": "GN: not applicable, all actions trigger page load"
     },
     "294": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": ""
     },
     "295": {
       "resolution": "Todo"
@@ -7179,7 +7183,8 @@
       "resolution": "Todo"
     },
     "/|1.4.4": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U"
     },
     "/about/|1.4.4": {
       "resolution": "Todo"
@@ -7380,7 +7385,8 @@
       "resolution": "Todo"
     },
     "/|1.4.10": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U"
     }
   },
   "message": "Items under Insights and Impact menus are not keyboard accessible. "
