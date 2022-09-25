@@ -6737,7 +6737,10 @@
       "complexity": "S"
     },
     "205": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: added summary title in the aria-label of the \"Read more\" link.",
+      "roles": "D",
+      "complexity": "S"
     },
     "206": {
       "resolution": "Addressed"
