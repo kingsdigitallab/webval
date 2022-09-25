@@ -6721,14 +6721,20 @@
       "comment": "TO: Fixed but still axe is still picking up and error"
     },
     "202": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": "GN: qst for TO/GF, browser will correctly highlights items when key-navigating. But SiteImprove seems to complain about highlight on :focus (& :active?), are they mandatory?",
+      "roles": "U",
+      "complexity": "S"
     },
     "203": {
       "resolution": "Won't",
       "comment": "GN: wagtail CMS limitation"
     },
     "204": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": "GN: probably a content issue, well spotted by SiteImprove. The Impacts (& Insight) top categories has two separate landing pages: http://localhost:8000/research-category/impacts/ (accessible from Heading under /contents/) and http://localhost:8000/impacts/ (accessible with secondary menu). Simple solution would be for secondary menu to link to research category. Then have a redirect from old landing pages to that.",
+      "roles": "P",
+      "complexity": "S"
     },
     "205": {
       "resolution": "Todo"
