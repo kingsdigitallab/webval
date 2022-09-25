@@ -6776,11 +6776,11 @@
       "complexity": "M"
     },
     "214": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "comment": ""
     },
     "215": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "216": {
       "resolution": "Addressed",
@@ -6789,19 +6789,19 @@
       "complexity": ""
     },
     "217": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "218": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "219": {
       "resolution": "Addressed"
     },
     "220": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "221": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "222": {
       "resolution": "Todo",
@@ -6809,10 +6809,10 @@
       "complexity": "S"
     },
     "223": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "224": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "225": {
       "resolution": "Todo"
@@ -6833,25 +6833,25 @@
       "resolution": "Todo"
     },
     "231": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "232": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "233": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "234": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "235": {
       "resolution": "Addressed"
     },
     "236": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "237": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "238": {
       "resolution": "Addressed"
@@ -6866,10 +6866,10 @@
       "resolution": "Addressed"
     },
     "242": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "243": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "244": {
       "resolution": "Addressed"
@@ -6900,19 +6900,19 @@
       "resolution": "Addressed"
     },
     "253": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "254": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "255": {
       "resolution": "Addressed"
     },
     "256": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "257": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "258": {
       "resolution": "Todo",
@@ -6954,22 +6954,23 @@
       "resolution": "Addressed"
     },
     "270": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: marked this as ok, but didn't check every single element on home page"
     },
     "271": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "272": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "273": {
       "resolution": "Todo"
     },
     "274": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "275": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "276": {
       "resolution": "Addressed"
