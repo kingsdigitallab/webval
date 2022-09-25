@@ -6818,19 +6818,20 @@
       "resolution": "Todo"
     },
     "226": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "227": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": ""
     },
     "228": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "229": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "230": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "231": {
       "resolution": "Addressed"
@@ -6921,19 +6922,19 @@
       "complexity": "M"
     },
     "259": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "260": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "261": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "262": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "263": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "264": {
       "resolution": "Addressed"
@@ -7193,7 +7194,8 @@
       "resolution": "Todo"
     },
     "/faqs/|1.4.4": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U"
     },
     "/contents/|1.4.4": {
       "resolution": "Todo"
