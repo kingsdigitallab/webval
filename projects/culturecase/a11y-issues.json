@@ -7311,7 +7311,8 @@
       "resolution": "Todo"
     },
     "/contents/|2.4.4": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P"
     },
     "/search/?s=museum|2.4.4": {
       "resolution": "Todo"
