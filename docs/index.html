@@ -879,6 +879,9 @@
               return !(this.selection.levels && !this.selection.levels.includes('|'+level+'|'))
             },
             getLevelFromIssue(issue) {
+              if (!this.rules.rules[this.getNumbersFromIssue(issue)]) {
+                console.log(issue)
+              }
               return this.rules.rules[this.getNumbersFromIssue(issue)].level
             },
             getPrincipleFromIssue(issue) {

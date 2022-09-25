@@ -363,18 +363,71 @@
     FAQTerms of ServicePrivacy Policy
     © 2017–2022 Siteimprove
     `
+    let pastedIssues3 = `
+    opens in a new window:CultureCase ↗
+    Siteimprove logo
+    Accessibility Checker
+    
+    Issues
+    
+    Explorer
+    Issues
+    3
+    Search
+    Page zoom is restricted →
+    1.4.4 Resize text
+    1.4.10 Reflow
+    1
+    Line height is below minimum value →
+    1.4.8 Visual Presentation
+    2
+    Skip to main content link is missing →
+    Accessibility best practices
+    1
+    Siteimprove logo
+    opens in a new window:Get your full website check ↗    
+    `
     let ret = []
 
     let lines = pastedIssues.split('\n').map(l => l.trim())
 
     let ignoreNext = false
     let code = null
+    let lastNonCodeLine = ''
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i]
+
+      // new browser plugin (v2+)
+      let m = line.match(/^(\d+.\d+\.\d+) (\w+.+)$/)
+      if (m) {
+        let code = m[1]
+        let codeParts = code.split('.')
+        ret.push({
+          code: `SITEIMPROVE-${code}`,
+          message: `${lastNonCodeLine}`,
+          context: '',
+          selector: '',
+          runner: 'siteimprove',
+          host: host,
+          webpath: webpath,
+          rule: {
+            standard: 'WCAG2',
+            principle: codeParts[0],
+            guideline: codeParts[1],
+            rule: codeParts[2],
+          }
+        })
+        // console.log(code, lastNonCodeLine)
+      } else {
+        lastNonCodeLine = line.replace('→', '').trim()
+      }
+
+      // legacy browser plugin 127
       if (line.match(/^\d+.\d+\.\d+$/)) {
         ignoreNext = true
         code = line
       }
+
       if (line.match(/^occurrences?$/)) {
         if (ignoreNext) {
           ignoreNext = false
