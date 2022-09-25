@@ -1814,7 +1814,7 @@
     },
     "83": {
       "code": "MANUAL-ISSUE-2.1.1",
-      "message": "1. Mobile menu is not keyboard accessible 2. Impacts & Insight in subnav cannot be expanded with keyboard",
+      "message": "1. Mobile menu is not keyboard accessible  (yet shown on narrow desktop display)\n2. Impacts & Insight in subnav cannot be expanded with keyboard",
       "context": "",
       "runner": "manual",
       "host": "culturecase.org",
@@ -5153,7 +5153,7 @@
     },
     "241": {
       "code": "MANUAL-ISSUE-2.1.4",
-      "message": "",
+      "message": "GN: not conflicting shortcut as far as I'm aware",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -5425,7 +5425,7 @@
     },
     "258": {
       "code": "MANUAL-ISSUE-2.4.7",
-      "message": "",
+      "message": "GN: Carousel receives keyboard focus but the focus is not visible",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -6792,7 +6792,7 @@
       "resolution": "Todo"
     },
     "219": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "220": {
       "resolution": "Todo"
@@ -6840,7 +6840,7 @@
       "resolution": "Todo"
     },
     "235": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "236": {
       "resolution": "Todo"
@@ -6858,7 +6858,7 @@
       "resolution": "Todo"
     },
     "241": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "242": {
       "resolution": "Todo"
@@ -6876,7 +6876,8 @@
       "resolution": "Todo"
     },
     "247": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "roles": "P"
     },
     "248": {
       "resolution": "Todo"
@@ -6891,7 +6892,7 @@
       "resolution": "Todo"
     },
     "252": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "253": {
       "resolution": "Todo"
@@ -6909,7 +6910,10 @@
       "resolution": "Todo"
     },
     "258": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": "GN: Won't? ",
+      "roles": "UD",
+      "complexity": "M"
     },
     "259": {
       "resolution": "Todo"
