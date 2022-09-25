@@ -7003,22 +7003,28 @@
       "resolution": "Addressed"
     },
     "288": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: not applicable, all actions trigger page load"
     },
     "289": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: not applicable, all actions trigger page load"
     },
     "290": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: not applicable, all actions trigger page load"
     },
     "291": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: not applicable, all actions trigger page load"
     },
     "292": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: not applicable, all actions trigger page load"
     },
     "293": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: not applicable, all actions trigger page load"
     },
     "294": {
       "resolution": "Todo"
