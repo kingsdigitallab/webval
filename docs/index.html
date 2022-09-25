@@ -42,8 +42,12 @@
         background-color: #d0d0ff;
       }
       .issue-message {
-        /* display: inline-block; */
         font-style: italic;
+      }
+      .issue-message textarea.textarea {
+        font-size: 80%;
+        min-width: 10em;
+        min-height: 5em;
       }
       .issue-context, .issue-selector {
         /* display: inline-block; */
@@ -58,10 +62,24 @@
         background-color: lightgrey;
         cursor: copy; 
       }
-      .issue-comment {
-        font-size: 80%;
+      .cell-runner {
+        cursor: copy;
+      }
+      .cell-issue-comment {
+        position: relative;
         min-width: 10em;
+      }
+      .issue-comment.textarea {
+        position: relative;
+        font-size: 80%;
         min-height: 4em;
+      }
+      .issue-comment:hover, .issue-comment:focus {
+        position: absolute;
+        right: 1em;
+        min-width: 41em;
+        height: 10em;
+        z-index: 5;
       }
       .thumbnail {
         max-height: 20em;
@@ -290,20 +308,22 @@
                     </select>
                   </div>
                 </td>
-                <td>
-                  <input class="input issue-comment" type="text" v-model="evaluation.annotations[getGroupFromIssue(issue)].comment" :disabled="isReadOnly" />
+                <td class="cell-issue-comment">
+                  <!-- <input class="input issue-comment" type="text" v-model="evaluation.annotations[getGroupFromIssue(issue)].comment" :disabled="isReadOnly" /> -->
+                  <textarea class="textarea issue-comment" v-model="evaluation.annotations[getGroupFromIssue(issue)].comment" :disabled="isReadOnly"></textarea>
                 </td>
               </tr>
 
               <tr v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue)]" class="issue">
-                <td>
+                <td class="cell-runner" @click="copyGitCommitPrefixToClipboard(issue)" title="Copy git commit prefix to clipboard">
                   <span v-if="!issue.detected" class="tag is-info">Manual</span>
                   <span v-if="issue.runner!='manual'" class="tag is-info is-light">{{ issue.runner }}</span>
                 </td>
                 <td>
                   <div class="issue-message">
                     <template v-if="issue.runner === 'manual'">
-                      <input class="input issue-comment" type="text" v-model="issue.message" :disabled="isReadOnly" />
+                      <!-- <input class="input" type="text" v-model="issue.message" :disabled="isReadOnly" /> -->
+                      <textarea class="textarea" v-model="issue.message" :disabled="isReadOnly"></textarea>
                     </template>
                     <template v-else>
                       <template v-if="(idx == 0) || (issue.message != issuesFiltered[idx-1].message)">{{ issue.message }}</template>
@@ -336,8 +356,9 @@
                     </select>
                   </div>
                 </td>
-                <td>
-                  <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.id].comment" :disabled="isReadOnly" />
+                <td class="cell-issue-comment">
+                  <!-- <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.id].comment" :disabled="isReadOnly" /> -->
+                  <textarea class="textarea issue-comment" v-model="evaluation.annotations[issue.id].comment" :disabled="isReadOnly"></textarea>
                 </td>
               </tr>
             </template>
@@ -396,7 +417,12 @@
 
         <div class="panel">
           <p class="panel-heading">
-            Add SiteImprove issues
+            Add SiteImprove issues 
+            <a class="icom" target="_blank" href="https://github.com/kingsdigitallab/webval/wiki#adding-siteimprove-issues">            <span class="icon-text">
+                <i class="fas fa-question-circle"></i>
+              </span>
+              <span>Help</span>
+            </a>
           </p>
           <div class="panel-block">
             <form class="form-add-issue" @submit.stop.prevent="onAddPastedIssues" v-if="project">
@@ -921,6 +947,15 @@
                 })
               }
               return ret
+            },
+            copyGitCommitPrefixToClipboard(issue) {
+              navigator.clipboard.writeText(this.getGitCommitPrefixFromIssue(issue))
+            },
+            getGitCommitPrefixFromIssue(issue) {
+              // TODO: make this more unique, at the moment it only takes the first word in the webpath
+              let pathSlugs = issue.webpath.match(/\w+/)
+              let pathSlug = pathSlugs ? pathSlugs[0] : 'home'
+              return `ax-${this.getNumbersFromIssue(issue)}-${pathSlug}`
             },
             getIdFromIssue(issue){
               return this.rules.rules[this.getNumbersFromIssue(issue)].id
