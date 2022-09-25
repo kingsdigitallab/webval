@@ -6721,7 +6721,7 @@
       "comment": "TO: Fixed but still axe is still picking up and error"
     },
     "202": {
-      "resolution": "Todo",
+      "resolution": "In progress",
       "comment": "GN: qst for TO/GF, browser will correctly highlights items when key-navigating. But SiteImprove seems to complain about highlight on :focus (& :active?), are they mandatory?",
       "roles": "U",
       "complexity": "S"
@@ -7021,7 +7021,10 @@
       "resolution": "Todo"
     },
     "296": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "comment": "GN: False positive. SiteImprove incorrectly flags the Field names in the metadata table below the article: Title, Author, ... (tested with FF & Chrome, up to 300%)",
+      "roles": "D",
+      "complexity": "S"
     },
     "/|1.4.3": {
       "resolution": "Todo",
