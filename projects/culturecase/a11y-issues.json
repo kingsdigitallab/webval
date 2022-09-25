@@ -5665,7 +5665,7 @@
     },
     "273": {
       "code": "MANUAL-ISSUE-2.5.3",
-      "message": "",
+      "message": "GN: accordion may not reflect its expandable state.",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -6906,7 +6906,7 @@
       "resolution": "Todo"
     },
     "255": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "256": {
       "resolution": "Todo"
