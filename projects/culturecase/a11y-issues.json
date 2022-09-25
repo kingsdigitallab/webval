@@ -6724,7 +6724,8 @@
       "resolution": "Todo"
     },
     "203": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "GN: wagtail CMS limitation"
     },
     "204": {
       "resolution": "Todo"
@@ -6764,7 +6765,8 @@
       "resolution": "Todo"
     },
     "214": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "comment": ""
     },
     "215": {
       "resolution": "Todo"
