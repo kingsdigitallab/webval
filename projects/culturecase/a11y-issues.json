@@ -6773,7 +6773,8 @@
     "213": {
       "resolution": "Todo",
       "comment": "GN: to be discussed, probably not possible",
-      "complexity": "M"
+      "complexity": "M",
+      "roles": "UD"
     },
     "214": {
       "resolution": "Addressed",
@@ -6815,7 +6816,7 @@
       "resolution": "Addressed"
     },
     "225": {
-      "resolution": "Todo"
+      "resolution": "Addressed"
     },
     "226": {
       "resolution": "Addressed"
@@ -6919,7 +6920,7 @@
       "resolution": "Todo",
       "comment": "GN: Won't? ",
       "roles": "UD",
-      "complexity": "M"
+      "complexity": ""
     },
     "259": {
       "resolution": "Addressed"
@@ -6965,7 +6966,8 @@
       "resolution": "Addressed"
     },
     "273": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "UD"
     },
     "274": {
       "resolution": "Addressed"
