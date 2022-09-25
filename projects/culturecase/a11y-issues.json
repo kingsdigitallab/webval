@@ -4753,7 +4753,7 @@
     },
     "216": {
       "code": "MANUAL-ISSUE-1.3.2",
-      "message": "GN: seems to be a bug on this page as a lot of categories and articles are loaded but remains hidden.",
+      "message": "",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -4849,7 +4849,7 @@
     },
     "222": {
       "code": "MANUAL-ISSUE-1.4.1",
-      "message": "",
+      "message": "GN: expanded sub-categories are mainly indicated by a colored +/-",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -6783,10 +6783,10 @@
       "resolution": "Todo"
     },
     "216": {
-      "resolution": "Todo",
-      "roles": "D",
-      "comment": "GN: fix and ask partners to review on staging? Alternative option is to remove the \"Contents\" landing page altogether as it is redundant with Insights + Impacts.",
-      "complexity": "S"
+      "resolution": "Addressed",
+      "roles": "",
+      "comment": "",
+      "complexity": ""
     },
     "217": {
       "resolution": "Todo"
@@ -6804,7 +6804,9 @@
       "resolution": "Todo"
     },
     "222": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "223": {
       "resolution": "Todo"
