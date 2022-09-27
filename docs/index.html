@@ -14,6 +14,9 @@
       window.Octokit = Octokit
     </script>    
     <style>
+      .is-highlighted {
+        background-color: #ffff80;
+      }
       .rule-tag:hover {
         background-color: #ffff88;
       }
@@ -314,8 +317,8 @@
                 </td>
               </tr>
 
-              <tr v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue)]" class="issue">
-                <td class="cell-runner" @click="copyGitCommitPrefixToClipboard(issue)" title="Copy git commit prefix to clipboard">
+              <tr :id="'issue-'+issue.id" v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue), {'is-highlighted': selection.issueId == issue.id}]" class="issue">
+                <td class="cell-runner" @click="onClickIssueFirstCol(issue)" title="Copy git commit prefix to clipboard">
                   <span v-if="!issue.detected" class="tag is-info">Manual</span>
                   <span v-if="issue.runner!='manual'" class="tag is-info is-light">{{ issue.runner }}</span>
                 </td>
@@ -620,6 +623,7 @@
               deep: true,
               handler(val, valOld) {
                 this.saveSelection()
+                this.setSelectionToAddressBar()
               }
             },
             evaluation: {
@@ -865,6 +869,21 @@
               }
             },
             loadSelection() {
+              this.loadSelectionFromLocalStorage()
+              this.loadSelectionFromAddressBar()
+            },
+            loadSelectionFromAddressBar() {
+              let searchParams = new URLSearchParams(window.location.search)
+              
+              let defaults = this.getDefaultSelection()
+              for (let k of Object.keys(defaults)) {
+                let v = searchParams.get(k)
+                if (v) {
+                  this.selection[k] = v
+                }
+              }
+            },
+            loadSelectionFromLocalStorage() {
               this.selection = JSON.parse(window.localStorage.getItem('a11y.selection')) || {}
               
               let defaults = this.getDefaultSelection()
@@ -880,11 +899,22 @@
                 depth: 'issue',
                 tab: 'issues',
                 tagSlug: '',
-                gtoken: null
+                gtoken: null,
+                issueId: ''
               }
             },
             saveSelection() {
               window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
+            },
+            setSelectionToAddressBar() {
+              let searchParams = new URLSearchParams(window.location.search)
+              for (const [k, v] of Object.entries(this.selection)) {
+                if (k != 'gtoken') {
+                  searchParams.set(k, v);
+                }
+              }
+              let newRelativePathQuery = window.location.pathname + '?' + searchParams.toString();
+              history.pushState(null, '', newRelativePathQuery);            
             },
             async onSelectProject() {
               // load issues
@@ -903,6 +933,15 @@
                 this.evaluation_sha = null
               }
               this.isUnsaved = 0
+
+              this.$nextTick(() => {
+                const issueId = `issue-${this.selection.issueId}`
+                const selectedIssue = document.getElementById(issueId)
+                console.log(issueId, selectedIssue)
+                if (selectedIssue) {
+                  selectedIssue.scrollIntoView()
+                }
+              })
             },
             // getPrincipleFromIssue(issue) {
             //   return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
@@ -1221,6 +1260,10 @@
                   }
                 }
               }
+            },
+            onClickIssueFirstCol(issue) {
+              this.copyGitCommitPrefixToClipboard(issue)
+              this.selection.issueId = issue.id
             }
           }
         }).mount('#app');
