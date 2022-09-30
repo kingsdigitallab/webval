@@ -7250,7 +7250,7 @@
       "resolution": "Todo",
       "comment": "GN: to be discussed, probably not possible\nGN: Ask partners if we can drop the stick menu",
       "complexity": "",
-      "roles": "UD"
+      "roles": "P"
     },
     "214": {
       "resolution": "Addressed",
