@@ -7250,7 +7250,7 @@
       "resolution": "Todo",
       "comment": "GN: to be discussed, probably not possible\nGN: Ask partners if we can drop the stick menu",
       "complexity": "",
-      "roles": "UD"
+      "roles": "P"
     },
     "214": {
       "resolution": "Addressed",
@@ -7393,7 +7393,7 @@
       "resolution": "Addressed"
     },
     "258": {
-      "resolution": "Todo",
+      "resolution": "Won't",
       "comment": "GN: Won't? ",
       "roles": "UD",
       "complexity": ""
@@ -7574,13 +7574,17 @@
       "comment": "Aria-label added because of duplicate header (sticky-header). If aria-label removed will cause another error of header duplication. "
     },
     "312": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P",
+      "comment": "GN: Partners have control over the carousel colors"
     },
     "313": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P",
+      "comment": "GN: Partners have control over the carousel colors"
     },
     "314": {
-      "resolution": "Addressed",
+      "resolution": "Won't",
       "comment": "Fixed but still being detected",
       "roles": "U",
       "complexity": "S"
