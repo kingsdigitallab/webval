@@ -7393,7 +7393,7 @@
       "resolution": "Addressed"
     },
     "258": {
-      "resolution": "Todo",
+      "resolution": "Won't",
       "comment": "GN: Won't? ",
       "roles": "UD",
       "complexity": ""
@@ -7574,10 +7574,14 @@
       "comment": "Aria-label added because of duplicate header (sticky-header). If aria-label removed will cause another error of header duplication. "
     },
     "312": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P",
+      "comment": "GN: Partners have control over the carousel colors"
     },
     "313": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "P",
+      "comment": "GN: Partners have control over the carousel colors"
     },
     "314": {
       "resolution": "Won't",
