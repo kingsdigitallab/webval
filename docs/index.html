@@ -686,8 +686,17 @@
                 let isClosed = this.isIssueClosed(issue)
                 // addressed or won't issues
                 if (this.selection.resolutions != 'all') {
-                  if (isClosed == (this.selection.resolutions == 'open')) {
-                    return false
+                  let annotation = this.evaluation.annotations[issue.id]
+                  if (this.selection.resolutions == 'statement') {
+                    // Open issues || Won't (but not fixed)
+                    let isFixed = this.isIssueFixed(issue)
+                    if (isFixed || (isClosed && !["Won't"].includes(annotation?.resolution))) {
+                      return false
+                    }
+                  } else {
+                    if (isClosed == (this.selection.resolutions == 'open')) {
+                      return false
+                    }
                   }
                 }
                 // side-effect! create missing annotation slots for issue types
@@ -753,6 +762,7 @@
                 {title: 'Open issues', key: 'open'},
                 {title: 'All issues', key: 'all'},
                 {title: 'Closed issues', key: 'closed'},
+                {title: 'Statement issues', key: 'statement'},
               ]
             },
             depthsOptions() {
