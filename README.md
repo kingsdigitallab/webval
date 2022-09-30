@@ -33,27 +33,29 @@ A [Web application](https://kingsdigitallab.github.io/webval/docs/) entirely hos
 ## TODO
 
 * M further testing & debugging, interface improvements
-* S allow multiple manual issues for same rule per page (by accepting selector)
 * S documentation (how to add new project, etc.)
 * C assist with report & assessment generation
 
 [See the full list of github tickets](https://github.com/kingsdigitallab/webval/issues)
 
-## Testing locally
+## Evaluating locally
+
+Note that local and live evaluation affect the same list of issues in Webval.
 
 ### One-off setup
 
 1. clone this repository (`git clone git@github.com:kingsdigitallab/webval.git`)
-2. change into that cloned folder (`cd webval`)
+2. change to that cloned folder (`cd webval`)
 3. install the necessary packages: `npm i pa11y blink-diff`
 4. if (3) fails, you may need to do this first:
    * [install nvm on your machine](https://github.com/nvm-sh/nvm#install--update-script)
    * restart your terminal session
    * install node.js and npm: `nvm i node`
+5. create a new project in projects/projects.json if needed
 
 ### Evaluating a site running on your machine
 
-(where `culturecase` is the name of the project to test, and `http://localhost:8000` is the root of the site running on your machine)
+(replace `culturecase` with the name of the project to test, and `http://localhost:8000` with the root of the site running on your machine)
 
 1. Evaluate your local site: `git pull && node docs/evaluate.js culturecase http://localhost:8000`
 2. check the script ends with a message like this: `Detected issues (before) 84 -> 82 (now)` 
