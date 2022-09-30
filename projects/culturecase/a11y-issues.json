@@ -7020,7 +7020,7 @@
       "comment": "TO: There is an aria label that describes the function of the element"
     },
     "149": {
-      "resolution": "Addressed",
+      "resolution": "Won't",
       "comment": "TO: These are added when using a third party application CMS editor, Wagtail, which we have no control of and cannot change"
     },
     "150": {
