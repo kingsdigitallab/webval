@@ -7197,9 +7197,9 @@
       "comment": "TO: Fixed but still axe is still picking up and error"
     },
     "202": {
-      "resolution": "In progress",
+      "resolution": "Addressed",
       "comment": "GN: qst for TO/GF, browser will correctly highlights items when key-navigating. But SiteImprove seems to complain about highlight on :focus (& :active?), are they mandatory?",
-      "roles": "U",
+      "roles": "D",
       "complexity": "S"
     },
     "203": {
@@ -7512,11 +7512,14 @@
       "comment": "GN: not applicable, all actions trigger page load"
     },
     "294": {
-      "resolution": "Todo",
-      "roles": ""
+      "resolution": "Addressed",
+      "roles": "U",
+      "complexity": "S"
     },
     "295": {
-      "resolution": "Todo"
+      "resolution": "Addressed",
+      "roles": "U",
+      "complexity": "S"
     },
     "296": {
       "resolution": "Addressed",
@@ -7578,7 +7581,9 @@
     },
     "314": {
       "resolution": "Addressed",
-      "comment": "Fixed but still being detected"
+      "comment": "Fixed but still being detected",
+      "roles": "U",
+      "complexity": "S"
     },
     "/|1.4.3": {
       "resolution": "Todo",
