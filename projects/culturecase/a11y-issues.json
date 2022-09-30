@@ -6799,7 +6799,7 @@
       "comment": "GN: maybe... but not trivial to key-nav the sub-items. Also not needed b/c sub-items listed on landing pages.",
       "roles": "D",
       "complexity": "M",
-      "resolution": "Todo"
+      "resolution": "Won't"
     },
     "84": {
       "resolution": "Todo"
@@ -7567,7 +7567,8 @@
       "resolution": "Todo"
     },
     "311": {
-      "resolution": "Todo"
+      "resolution": "Won't",
+      "comment": "Aria-label added because of duplicate header (sticky-header). If aria-label removed will cause another error of header duplication. "
     },
     "312": {
       "resolution": "Todo"
@@ -7599,7 +7600,7 @@
       "resolution": "In progress",
       "roles": "UD",
       "complexity": "M",
-      "comment": "D, carousel issues, M. U, everything else, S."
+      "comment": ""
     },
     "/|4.1.1": {
       "resolution": "In progress",
