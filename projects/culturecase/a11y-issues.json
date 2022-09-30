@@ -7281,7 +7281,7 @@
       "resolution": "Addressed"
     },
     "222": {
-      "resolution": "Todo",
+      "resolution": "Won't",
       "roles": "D",
       "complexity": "S"
     },
@@ -7442,7 +7442,7 @@
       "resolution": "Addressed"
     },
     "273": {
-      "resolution": "Todo",
+      "resolution": "Addressed",
       "roles": "UD"
     },
     "274": {
