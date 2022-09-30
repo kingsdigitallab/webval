@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-09-27T01:27:59.897Z",
-  "evaluationEnded": "2022-09-27T01:28:37.272Z",
+  "evaluationStarted": "2022-09-28T13:17:52.681Z",
+  "evaluationEnded": "2022-09-28T13:18:17.103Z",
   "host": "http://localhost:8000",
-  "lastIssueId": 306
+  "lastIssueId": 310
  },
  "issues": {
   "1": {
@@ -6306,6 +6306,114 @@
    },
    "detected": "2022-09-27T01:27:59.897Z",
    "id": 306
+  },
+  "307": {
+   "code": "aria-allowed-attr",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must only use allowed ARIA attributes (https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI)",
+   "context": "<header id=\"header\" aria-label=\"primary\">\n    <div class=\"avada-row\" sty...</header>",
+   "selector": "#header",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures ARIA attributes are allowed for an element's role",
+    "impact": "serious",
+    "help": "Elements must only use allowed ARIA attributes",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-09-28T13:17:52.681Z",
+   "id": 307
+  },
+  "308": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"tp-caption large-black_text tp-fade tp-resizeme kdl-slide-title start\" data-x=\"right\" data-hoffset=\"-17\" data-y=\"58\" data-speed=\"300\" data-start=\"500\" data-easing=\"Power3.easeInOut\" data-splitin=\"none\" data-splitout=\"none\" data-elementdel...",
+   "selector": "#rev_slider_1_1 > ul > li:nth-child(1) > div:nth-child(3)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-28T13:17:52.681Z",
+   "id": 308
+  },
+  "309": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"tp-caption blackbigger tp-fade tp-resizeme kdl-slide-link start\" data-x=\"546\" data-y=\"270\" data-speed=\"300\" data-start=\"500\" data-easing=\"Power3.easeInOut\" data-splitin=\"none\" data-splitout=\"none\" data-elementdelay=\"0.1\" data-endelementde...",
+   "selector": "#rev_slider_1_1 > ul > li:nth-child(1) > div:nth-child(6)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-28T13:17:52.681Z",
+   "id": 309
+  },
+  "310": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4>Share this story – choose your ...</h4>",
+   "selector": "#post-2 > div:nth-child(7) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8000",
+   "webpath": "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-09-28T13:17:52.681Z",
+   "id": 310
   }
  },
  "annotations": {
@@ -7336,6 +7444,18 @@
    "resolution": "Todo"
   },
   "306": {
+   "resolution": "Todo"
+  },
+  "307": {
+   "resolution": "Todo"
+  },
+  "308": {
+   "resolution": "Todo"
+  },
+  "309": {
+   "resolution": "Todo"
+  },
+  "310": {
    "resolution": "Todo"
   },
   "/|1.4.3": {
