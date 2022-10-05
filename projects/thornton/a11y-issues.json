@@ -10433,7 +10433,7 @@
     },
     "398": {
       "code": "MANUAL-ISSUE-2.1.1",
-      "message": "Hamburger menu doesn't get keyboard focus",
+      "message": "Mobile/Hamburger menu doesn't receive keyboard focus",
       "context": "",
       "selector": "",
       "runner": "manual",
@@ -11641,7 +11641,9 @@
       "resolution": "Todo"
     },
     "398": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "UD",
+      "complexity": "S"
     },
     "/|4.1.2": {
       "resolution": "Todo"
