@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-10-06T20:31:29.891Z",
-  "evaluationEnded": "2022-10-06T20:31:52.886Z",
+  "evaluationStarted": "2022-10-06T21:37:10.813Z",
+  "evaluationEnded": "2022-10-06T21:37:33.745Z",
   "host": "http://localhost:8080",
-  "lastIssueId": 683
+  "lastIssueId": 684
  },
  "issues": {
   "1": {
@@ -17721,6 +17721,33 @@
    },
    "detected": "2022-10-06T20:31:29.891Z",
    "id": 683
+  },
+  "684": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<figcaption>Middleham Castle, Yorkshire. <b...</figcaption>",
+   "selector": "html > body > section > div > div:nth-child(2) > figure:nth-child(5) > figcaption",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-10-06T21:37:10.813Z",
+   "id": 684
   }
  },
  "annotations": {
@@ -19773,6 +19800,9 @@
    "resolution": "Todo"
   },
   "683": {
+   "resolution": "Todo"
+  },
+  "684": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
