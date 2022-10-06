@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-10-06T20:16:48.001Z",
-  "evaluationEnded": "2022-10-06T20:17:25.236Z",
+  "evaluationStarted": "2022-10-06T20:22:18.777Z",
+  "evaluationEnded": "2022-10-06T20:22:41.333Z",
   "host": "http://localhost:8080",
-  "lastIssueId": 672
+  "lastIssueId": 680
  },
  "issues": {
   "1": {
@@ -17459,6 +17459,192 @@
    },
    "detected": "2022-10-06T20:16:48.001Z",
    "id": 672
+  },
+  "673": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+   "context": "<img :src=\"tweet.user.profile_image_url_https\" :alt=\"tweet.user.name\">",
+   "selector": "#app > li > article > div > figure > p > img",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H37",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 673
+  },
+  "674": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a v-if=\"get_thumb_url(tweet)\" :href=\"get_url(tweet)\" :aria-label=\"`See tweet #${tweetIndex+1} on twitter`\"><img :src=\"get_thumb_url(tweet)...</a>",
+   "selector": "#app > li > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 674
+  },
+  "675": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a v-if=\"get_thumb_url(tweet)\" :href=\"get_url(tweet)\" :aria-label=\"`See tweet #${tweetIndex+1} on twitter`\"><img :src=\"get_thumb_url(tweet)...</a>",
+   "selector": "#app > li > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 675
+  },
+  "676": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a class=\"level-item\" :href=\"get_reply_url(tweet)\" aria-label=\"Reply\">\n            <span class=\"icon ...</a>",
+   "selector": "#app > li > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 676
+  },
+  "677": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a class=\"level-item\" :href=\"get_retweet_url(tweet)\" aria-label=\"Retweet\">\n            <span class=\"icon ...</a>",
+   "selector": "#app > li > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 677
+  },
+  "678": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a class=\"level-item\" :href=\"get_like_url(tweet)\" aria-label=\"Like\">\n            <span class=\"icon ...</a>",
+   "selector": "#app > li > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 678
+  },
+  "679": {
+   "code": "image-alt",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI)",
+   "context": "<img :src=\"get_thumb_url(tweet)\">",
+   "selector": "#app > li > article > a > img",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+    "impact": "critical",
+    "help": "Images must have alternate text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 679
+  },
+  "680": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<figcaption>Middleham Castle, Yorkshire. <b...</figcaption>",
+   "selector": "html > body > section > div > div:nth-child(2) > figure:nth-child(5) > figcaption",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-10-06T20:22:18.777Z",
+   "id": 680
   }
  },
  "annotations": {
@@ -19478,6 +19664,30 @@
    "resolution": "Todo"
   },
   "672": {
+   "resolution": "Todo"
+  },
+  "673": {
+   "resolution": "Todo"
+  },
+  "674": {
+   "resolution": "Todo"
+  },
+  "675": {
+   "resolution": "Todo"
+  },
+  "676": {
+   "resolution": "Todo"
+  },
+  "677": {
+   "resolution": "Todo"
+  },
+  "678": {
+   "resolution": "Todo"
+  },
+  "679": {
+   "resolution": "Todo"
+  },
+  "680": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
