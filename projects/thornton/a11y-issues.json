@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-10-06T20:22:18.777Z",
-  "evaluationEnded": "2022-10-06T20:22:41.333Z",
+  "evaluationStarted": "2022-10-06T20:31:29.891Z",
+  "evaluationEnded": "2022-10-06T20:31:52.886Z",
   "host": "http://localhost:8080",
-  "lastIssueId": 680
+  "lastIssueId": 683
  },
  "issues": {
   "1": {
@@ -17645,6 +17645,82 @@
    },
    "detected": "2022-10-06T20:22:18.777Z",
    "id": 680
+  },
+  "681": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1577961882736103425\" aria-label=\"See tweet #1 on twitter\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(1) > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:31:29.891Z",
+   "id": 681
+  },
+  "682": {
+   "code": "image-alt",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI)",
+   "context": "<img src=\"https://pbs.twimg.com/media/FeYL-F6WAAAJeyK.jpg:small\">",
+   "selector": "#app > li:nth-child(1) > article > a > img",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+    "impact": "critical",
+    "help": "Images must have alternate text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:31:29.891Z",
+   "id": 682
+  },
+  "683": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<figcaption>Middleham Castle, Yorkshire. <b...</figcaption>",
+   "selector": "html > body > section > div > div:nth-child(2) > figure:nth-child(5) > figcaption",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-10-06T20:31:29.891Z",
+   "id": 683
   }
  },
  "annotations": {
@@ -19688,6 +19764,15 @@
    "resolution": "Todo"
   },
   "680": {
+   "resolution": "Todo"
+  },
+  "681": {
+   "resolution": "Todo"
+  },
+  "682": {
+   "resolution": "Todo"
+  },
+  "683": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
