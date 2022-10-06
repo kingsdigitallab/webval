@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-10-06T14:14:51.972Z",
-  "evaluationEnded": "2022-10-06T14:15:15.169Z",
+  "evaluationStarted": "2022-10-06T18:24:10.282Z",
+  "evaluationEnded": "2022-10-06T18:24:33.324Z",
   "host": "http://localhost:8080",
-  "lastIssueId": 599
+  "lastIssueId": 616
  },
  "issues": {
   "1": {
@@ -15738,6 +15738,425 @@
    },
    "detected": "2022-10-06T14:14:51.972Z",
    "id": 599
+  },
+  "600": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1577961882736103425\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(1) > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 600
+  },
+  "601": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F92,ARIA4",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element's role is \"presentation\" but contains child elements with semantic meaning.",
+   "context": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" role=\"presentation\"><path d=\"M169.4 278.6C175.6 284...</svg>",
+   "selector": "html > body > section > div > div:nth-child(2) > a > svg",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F92,ARIA4",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 601
+  },
+  "602": {
+   "code": "image-alt",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI)",
+   "context": "<img src=\"https://pbs.twimg.com/media/FeYL-F6WAAAJeyK.jpg:small\">",
+   "selector": "#app > li:nth-child(1) > article > a > img",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+    "impact": "critical",
+    "help": "Images must have alternate text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 602
+  },
+  "603": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1577961882736103425\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(1) > article > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 603
+  },
+  "604": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"/posts/blog/2022-09-27-BlogPost_Raymond_AnselmentFV2/\"><img src=\"/assets/img/posts/Ins...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 604
+  },
+  "605": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"/posts/blog/2022-09-12-a-house-divided/\"><img src=\"/assets/img/posts/Bal...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 605
+  },
+  "606": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"/posts/blog/2022-08-25-encoding-alice-thorntons-books/\"><img src=\"/assets/img/posts/mos...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 606
+  },
+  "607": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"/posts/blog/2022-07-25-alice-thornton-middleham-castle/\"><img src=\"/assets/img/posts/Bk1...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(4) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 607
+  },
+  "608": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"/posts/news/2022-07-19-middleham-podcast/\"><img src=\"/assets/img/posts/Mid...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(5) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 608
+  },
+  "609": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"/posts/blog/2022-09-27-BlogPost_Raymond_AnselmentFV2/\"><img src=\"/assets/img/posts/Ins...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(1) > div > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 609
+  },
+  "610": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"/posts/blog/2022-09-12-a-house-divided/\"><img src=\"/assets/img/posts/Bal...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(2) > div > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 610
+  },
+  "611": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"/posts/blog/2022-08-25-encoding-alice-thorntons-books/\"><img src=\"/assets/img/posts/mos...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(3) > div > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 611
+  },
+  "612": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"/posts/blog/2022-07-25-alice-thornton-middleham-castle/\"><img src=\"/assets/img/posts/Bk1...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(4) > div > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 612
+  },
+  "613": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"/posts/news/2022-07-19-middleham-podcast/\"><img src=\"/assets/img/posts/Mid...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(5) > div > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 613
+  },
+  "614": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"/posts/blog/2022-06-23-two-missing-thornton-manuscripts/\"><img src=\"/assets/img/posts/boo...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(5) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 614
+  },
+  "615": {
+   "code": "link-name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI)",
+   "context": "<a href=\"/posts/blog/2022-06-23-two-missing-thornton-manuscripts/\"><img src=\"/assets/img/posts/boo...</a>",
+   "selector": "html > body > section > div > div:nth-child(2) > div:nth-child(5) > div > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures links have discernible text",
+    "impact": "serious",
+    "help": "Links must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/link-name?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 615
+  },
+  "616": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<figcaption>Middleham Castle, Yorkshire. <b...</figcaption>",
+   "selector": "html > body > section > div > div:nth-child(2) > figure:nth-child(5) > figcaption",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-10-06T18:24:10.282Z",
+   "id": 616
   }
  },
  "annotations": {
@@ -17538,6 +17957,57 @@
    "resolution": "Todo"
   },
   "599": {
+   "resolution": "Todo"
+  },
+  "600": {
+   "resolution": "Todo"
+  },
+  "601": {
+   "resolution": "Todo"
+  },
+  "602": {
+   "resolution": "Todo"
+  },
+  "603": {
+   "resolution": "Todo"
+  },
+  "604": {
+   "resolution": "Todo"
+  },
+  "605": {
+   "resolution": "Todo"
+  },
+  "606": {
+   "resolution": "Todo"
+  },
+  "607": {
+   "resolution": "Todo"
+  },
+  "608": {
+   "resolution": "Todo"
+  },
+  "609": {
+   "resolution": "Todo"
+  },
+  "610": {
+   "resolution": "Todo"
+  },
+  "611": {
+   "resolution": "Todo"
+  },
+  "612": {
+   "resolution": "Todo"
+  },
+  "613": {
+   "resolution": "Todo"
+  },
+  "614": {
+   "resolution": "Todo"
+  },
+  "615": {
+   "resolution": "Todo"
+  },
+  "616": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
