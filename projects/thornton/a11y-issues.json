@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2022-10-06T19:51:34.037Z",
-  "evaluationEnded": "2022-10-06T19:51:56.653Z",
+  "evaluationStarted": "2022-10-06T20:16:48.001Z",
+  "evaluationEnded": "2022-10-06T20:17:25.236Z",
   "host": "http://localhost:8080",
-  "lastIssueId": 634
+  "lastIssueId": 672
  },
  "issues": {
   "1": {
@@ -16603,6 +16603,862 @@
    },
    "detected": "2022-10-06T19:51:34.037Z",
    "id": 634
+  },
+  "635": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a href=\"//twitter.com/thornton_books/status/1577961882736103425\" aria-label=\"See tweet #1 on twitter\"><img src=\"https://pbs.twimg.com...</a>",
+   "selector": "#app > li:nth-child(1) > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:01:33.366Z",
+   "id": 635
+  },
+  "636": {
+   "code": "image-alt",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI)",
+   "context": "<img src=\"https://pbs.twimg.com/media/FeYL-F6WAAAJeyK.jpg:small\">",
+   "selector": "#app > li:nth-child(1) > article > a > img",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+    "impact": "critical",
+    "help": "Images must have alternate text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:01:33.366Z",
+   "id": 636
+  },
+  "637": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<figcaption>Middleham Castle, Yorkshire. <b...</figcaption>",
+   "selector": "html > body > section > div > div:nth-child(2) > figure:nth-child(5) > figcaption",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-10-06T20:01:33.366Z",
+   "id": 637
+  },
+  "638": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+   "context": "<img :src=\"tweet.user.profile_image_url_https\" :alt=\"tweet.user.name\">",
+   "selector": "#app > li > article > div > figure > p > img",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H37",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 638
+  },
+  "639": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H30.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.",
+   "context": "<a v-if=\"get_thumb_url(tweet)\" :href=\"get_url(tweet)\" :aria-label=\"`See tweet #${tweetIndex+1} on twitter`\"><img :src=\"get_thumb_url(tweet)...</a>",
+   "selector": "#app > li > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H30",
+    "target": "2",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 639
+  },
+  "640": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a v-if=\"get_thumb_url(tweet)\" :href=\"get_url(tweet)\" :aria-label=\"`See tweet #${tweetIndex+1} on twitter`\"><img :src=\"get_thumb_url(tweet)...</a>",
+   "selector": "#app > li > article > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 640
+  },
+  "641": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a class=\"level-item\" :href=\"get_reply_url(tweet)\" aria-label=\"Reply\">\n            <span class=\"icon ...</a>",
+   "selector": "#app > li > article > nav > div > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 641
+  },
+  "642": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a class=\"level-item\" :href=\"get_retweet_url(tweet)\" aria-label=\"Retweet\">\n            <span class=\"icon ...</a>",
+   "selector": "#app > li > article > nav > div > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 642
+  },
+  "643": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a class=\"level-item\" :href=\"get_like_url(tweet)\" aria-label=\"Like\">\n            <span class=\"icon ...</a>",
+   "selector": "#app > li > article > nav > div > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 643
+  },
+  "644": {
+   "code": "image-alt",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI)",
+   "context": "<img :src=\"get_thumb_url(tweet)\">",
+   "selector": "#app > li > article > a > img",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+    "impact": "critical",
+    "help": "Images must have alternate text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/image-alt?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 644
+  },
+  "645": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref1\" found on the web page.",
+   "context": "<a href=\"#fn1\" id=\"fnref1\">[1]</a>",
+   "selector": "#fnref1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 645
+  },
+  "646": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref2\" found on the web page.",
+   "context": "<a href=\"#fn2\" id=\"fnref2\">[2]</a>",
+   "selector": "#fnref2",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 646
+  },
+  "647": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref3\" found on the web page.",
+   "context": "<a href=\"#fn3\" id=\"fnref3\">[3]</a>",
+   "selector": "#fnref3",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 647
+  },
+  "648": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref4\" found on the web page.",
+   "context": "<a href=\"#fn4\" id=\"fnref4\">[4]</a>",
+   "selector": "#fnref4",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 648
+  },
+  "649": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref5\" found on the web page.",
+   "context": "<a href=\"#fn5\" id=\"fnref5\">[5]</a>",
+   "selector": "#fnref5",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 649
+  },
+  "650": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref6\" found on the web page.",
+   "context": "<a href=\"#fn6\" id=\"fnref6\">[6]</a>",
+   "selector": "#fnref6",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 650
+  },
+  "651": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn1\" found on the web page.",
+   "context": "<li id=\"fn1\" class=\"footnote-item\"><p>Parliament voted to restore ...</li>",
+   "selector": "#fn1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 651
+  },
+  "652": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn2\" found on the web page.",
+   "context": "<li id=\"fn2\" class=\"footnote-item\"><p>The text quoted above is fro...</li>",
+   "selector": "#fn2",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 652
+  },
+  "653": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn3\" found on the web page.",
+   "context": "<li id=\"fn3\" class=\"footnote-item\"><p>‘Butt Mr Thornton would not ...</li>",
+   "selector": "#fn3",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 653
+  },
+  "654": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn4\" found on the web page.",
+   "context": "<li id=\"fn4\" class=\"footnote-item\"><p>‘att that time, the happy re...</li>",
+   "selector": "#fn4",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 654
+  },
+  "655": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn5\" found on the web page.",
+   "context": "<li id=\"fn5\" class=\"footnote-item\"><p>Anne Norton was the sister o...</li>",
+   "selector": "#fn5",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 655
+  },
+  "656": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn6\" found on the web page.",
+   "context": "<li id=\"fn6\" class=\"footnote-item\"><p>‘in the heate of the warres ...</li>",
+   "selector": "#fn6",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 656
+  },
+  "657": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn1\" found on the web page.",
+   "context": "<li id=\"fn1\" class=\"footnote-item\"><p><a href=\"https://wwp.northea...</li>",
+   "selector": "#fn1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 657
+  },
+  "658": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn2\" found on the web page.",
+   "context": "<li id=\"fn2\" class=\"footnote-item\"><p>The official <a href=\"https:...</li>",
+   "selector": "#fn2",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 658
+  },
+  "659": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn3\" found on the web page.",
+   "context": "<li id=\"fn3\" class=\"footnote-item\"><p>Lou Burnard, <a href=\"https:...</li>",
+   "selector": "#fn3",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 659
+  },
+  "660": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn4\" found on the web page.",
+   "context": "<li id=\"fn4\" class=\"footnote-item\"><p>Raymond A. Anselment, '“My F...</li>",
+   "selector": "#fn4",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 660
+  },
+  "661": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref7\" found on the web page.",
+   "context": "<a href=\"#fn7\" id=\"fnref7\">[7]</a>",
+   "selector": "#fnref7",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 661
+  },
+  "662": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fnref8\" found on the web page.",
+   "context": "<a href=\"#fn8\" id=\"fnref8\">[8]</a>",
+   "selector": "#fnref8",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 662
+  },
+  "663": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn1\" found on the web page.",
+   "context": "<li id=\"fn1\" class=\"footnote-item\"><p>Note: The text quoted above ...</li>",
+   "selector": "#fn1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 663
+  },
+  "664": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn2\" found on the web page.",
+   "context": "<li id=\"fn2\" class=\"footnote-item\"><p>'But when we were gon soe fa...</li>",
+   "selector": "#fn2",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 664
+  },
+  "665": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn3\" found on the web page.",
+   "context": "<li id=\"fn3\" class=\"footnote-item\"><p>North Yorkshire County Recor...</li>",
+   "selector": "#fn3",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 665
+  },
+  "666": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn4\" found on the web page.",
+   "context": "<li id=\"fn4\" class=\"footnote-item\"><p>'At that time Sir Thomas Dan...</li>",
+   "selector": "#fn4",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 666
+  },
+  "667": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn5\" found on the web page.",
+   "context": "<li id=\"fn5\" class=\"footnote-item\"><p>'There she was delivrd of he...</li>",
+   "selector": "#fn5",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 667
+  },
+  "668": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn6\" found on the web page.",
+   "context": "<li id=\"fn6\" class=\"footnote-item\"><p>Alice Thornton, <em>My First...</li>",
+   "selector": "#fn6",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 668
+  },
+  "669": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn7\" found on the web page.",
+   "context": "<li id=\"fn7\" class=\"footnote-item\"><p>NYCCRO, 'Dates of birth of t...</li>",
+   "selector": "#fn7",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 669
+  },
+  "670": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn8\" found on the web page.",
+   "context": "<li id=\"fn8\" class=\"footnote-item\"><p>NYCCRO, 'An old memorandum b...</li>",
+   "selector": "#fn8",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 670
+  },
+  "671": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"fn1\" found on the web page.",
+   "context": "<li id=\"fn1\" class=\"footnote-item\"><p>Charles Jackson. Ed. <em>The...</li>",
+   "selector": "#fn1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 671
+  },
+  "672": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<figcaption>Middleham Castle, Yorkshire. <b...</figcaption>",
+   "selector": "html > body > section > div > div:nth-child(2) > figure:nth-child(5) > figcaption",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-10-06T20:16:48.001Z",
+   "id": 672
   }
  },
  "annotations": {
@@ -18508,6 +19364,120 @@
    "resolution": "Todo"
   },
   "634": {
+   "resolution": "Todo"
+  },
+  "635": {
+   "resolution": "Todo"
+  },
+  "636": {
+   "resolution": "Todo"
+  },
+  "637": {
+   "resolution": "Todo"
+  },
+  "638": {
+   "resolution": "Todo"
+  },
+  "639": {
+   "resolution": "Todo"
+  },
+  "640": {
+   "resolution": "Todo"
+  },
+  "641": {
+   "resolution": "Todo"
+  },
+  "642": {
+   "resolution": "Todo"
+  },
+  "643": {
+   "resolution": "Todo"
+  },
+  "644": {
+   "resolution": "Todo"
+  },
+  "645": {
+   "resolution": "Todo"
+  },
+  "646": {
+   "resolution": "Todo"
+  },
+  "647": {
+   "resolution": "Todo"
+  },
+  "648": {
+   "resolution": "Todo"
+  },
+  "649": {
+   "resolution": "Todo"
+  },
+  "650": {
+   "resolution": "Todo"
+  },
+  "651": {
+   "resolution": "Todo"
+  },
+  "652": {
+   "resolution": "Todo"
+  },
+  "653": {
+   "resolution": "Todo"
+  },
+  "654": {
+   "resolution": "Todo"
+  },
+  "655": {
+   "resolution": "Todo"
+  },
+  "656": {
+   "resolution": "Todo"
+  },
+  "657": {
+   "resolution": "Todo"
+  },
+  "658": {
+   "resolution": "Todo"
+  },
+  "659": {
+   "resolution": "Todo"
+  },
+  "660": {
+   "resolution": "Todo"
+  },
+  "661": {
+   "resolution": "Todo"
+  },
+  "662": {
+   "resolution": "Todo"
+  },
+  "663": {
+   "resolution": "Todo"
+  },
+  "664": {
+   "resolution": "Todo"
+  },
+  "665": {
+   "resolution": "Todo"
+  },
+  "666": {
+   "resolution": "Todo"
+  },
+  "667": {
+   "resolution": "Todo"
+  },
+  "668": {
+   "resolution": "Todo"
+  },
+  "669": {
+   "resolution": "Todo"
+  },
+  "670": {
+   "resolution": "Todo"
+  },
+  "671": {
+   "resolution": "Todo"
+  },
+  "672": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
