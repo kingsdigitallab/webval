@@ -1,105 +1,106 @@
 [
- {
-  "name": "LocalTest",
-  "slug": "local-test",
-  "sites": {
-   "liv": "http://localhost:5500"
+  {
+    "name": "LocalTest",
+    "slug": "local-test",
+    "sites": {
+      "liv": "http://localhost:5500"
+    },
+    "a11y": {
+      "urls": [
+        "/docs/",
+        "/docs/test.html"
+      ]
+    }
   },
-  "a11y": {
-   "urls": [
-    "/docs/",
-    "/docs/test.html"
-   ]
+  {
+    "name": "CultureCase",
+    "slug": "culturecase",
+    "sites": {
+      "liv": "https://culturecase.org"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/about/",
+        "/faqs/",
+        "/contents/",
+        "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+        "/search/?s=museum"
+      ],
+      "evaluationRequested": "2022-09-04T23:44:37.956Z",
+      "evaluationStarted": "2022-09-30T12:29:21.545Z",
+      "evaluationEnded": "2022-09-30T12:29:51.679Z"
+    },
+    "screenshots": {}
+  },
+  {
+    "name": "Alice Thornton",
+    "slug": "thornton",
+    "sites": {
+      "liv": "https://thornton.kdl.kcl.ac.uk"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/books/",
+        "/about/",
+        "/posts/",
+        "/posts/blog/",
+        "/posts/blog/2022-07-25-alice-thornton-middleham-castle/"
+      ],
+      "evaluationRequested": "2022-10-06T13:46:15.834Z",
+      "evaluationStarted": "2022-10-07T11:46:25.010Z",
+      "evaluationEnded": "2022-10-07T11:46:48.219Z"
+    },
+    "screenshots": {}
+  },
+  {
+    "name": "African Rock Art",
+    "slug": "tara",
+    "sites": {
+      "liv": "https://africanrockart.britishmuseum.org"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/introduction/origins/",
+        "/introduction/chronologies/",
+        "/introduction/techniques/",
+        "/country/",
+        "/country/chad/",
+        "/country/chad/niola-doa/",
+        "/country/nigeria/",
+        "/country/nigeria/images/",
+        "/country/nigeria/images/#image2",
+        "/thematic/",
+        "/thematic/gone-fishing/"
+      ],
+      "evaluationRequested": "2022-09-09T18:42:48.304Z",
+      "evaluationStarted": "2022-09-09T16:43:00.147Z",
+      "evaluationEnded": "2022-09-09T16:44:30.017Z"
+    },
+    "screenshots": {}
+  },
+  {
+    "name": "KDL Web 2022",
+    "slug": "kdlweb2",
+    "sites": {
+      "liv": "https://kingsdigitallab.github.io/kdl"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/projects/",
+        "/projects/aofm/",
+        "/blog/",
+        "/blog/indigenous-digital-humanities-research-theme-under-development/",
+        "/resources/faqs/",
+        "/resources/faqs/pre-project/could-you-work-from-my-existing-datasets-and-material/"
+      ],
+      "evaluationStarted": "2022-10-07T14:49:07.325Z",
+      "evaluationEnded": "2022-10-07T14:49:34.284Z",
+      "evaluationRequested": "2022-10-07T16:08:10.014Z"
+    },
+    "screenshots": {}
   }
- },
- {
-  "name": "CultureCase",
-  "slug": "culturecase",
-  "sites": {
-   "liv": "https://culturecase.org"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/about/",
-    "/faqs/",
-    "/contents/",
-    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
-    "/search/?s=museum"
-   ],
-   "evaluationRequested": "2022-09-04T23:44:37.956Z",
-   "evaluationStarted": "2022-09-30T12:29:21.545Z",
-   "evaluationEnded": "2022-09-30T12:29:51.679Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "Alice Thornton",
-  "slug": "thornton",
-  "sites": {
-   "liv": "https://thornton.kdl.kcl.ac.uk"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/books/",
-    "/about/",
-    "/posts/",
-    "/posts/blog/",
-    "/posts/blog/2022-07-25-alice-thornton-middleham-castle/"
-   ],
-   "evaluationRequested": "2022-10-06T13:46:15.834Z",
-   "evaluationStarted": "2022-10-07T11:46:25.010Z",
-   "evaluationEnded": "2022-10-07T11:46:48.219Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "African Rock Art",
-  "slug": "tara",
-  "sites": {
-   "liv": "https://africanrockart.britishmuseum.org"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/introduction/origins/",
-    "/introduction/chronologies/",
-    "/introduction/techniques/",
-    "/country/",
-    "/country/chad/",
-    "/country/chad/niola-doa/",
-    "/country/nigeria/",
-    "/country/nigeria/images/",
-    "/country/nigeria/images/#image2",
-    "/thematic/",
-    "/thematic/gone-fishing/"
-   ],
-   "evaluationRequested": "2022-09-09T18:42:48.304Z",
-   "evaluationStarted": "2022-09-09T16:43:00.147Z",
-   "evaluationEnded": "2022-09-09T16:44:30.017Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "KDL Web 2022",
-  "slug": "kdlweb2",
-  "sites": {
-   "liv": "https://kingsdigitallab.github.io/kdl"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/projects/",
-    "/projects/aofm/",
-    "/blog/",
-    "/blog/indigenous-digital-humanities-research-theme-under-development/",
-    "/resources/faqs/",
-    "/resources/faqs/pre-project/could-you-work-from-my-existing-datasets-and-material/"
-   ],
-   "evaluationStarted": "2022-10-07T14:49:07.325Z",
-   "evaluationEnded": "2022-10-07T14:49:34.284Z"
-  },
-  "screenshots": {}
- }
 ]
