@@ -80,5 +80,26 @@
    "evaluationEnded": "2022-09-09T16:44:30.017Z"
   },
   "screenshots": {}
+ },
+ {
+  "name": "KDL Web 2022",
+  "slug": "kdlweb2",
+  "sites": {
+   "liv": "https://kingsdigitallab.github.io/kdl"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/projects/",
+    "/projects/aofm/",
+    "/blog/",
+    "/blog/indigenous-digital-humanities-research-theme-under-development/",
+    "/resources/faqs/",
+    "/resources/faqs/pre-project/could-you-work-from-my-existing-datasets-and-material/"
+   ],
+   "evaluationStarted": "2022-10-07T14:49:07.325Z",
+   "evaluationEnded": "2022-10-07T14:49:34.284Z"
+  },
+  "screenshots": {}
  }
 ]
