@@ -130,7 +130,7 @@
     "name": "FIELD2",
     "slug": "field2",
     "sites": {
-      "stg": "https://field2-stg.kdl.kcl.ac.uk"
+      "liv": "https://field2-stg.kdl.kcl.ac.uk"
     },
     "a11y": {
       "urls": [
@@ -143,7 +143,7 @@
         "/search/?q=disease",
         "/resources/timeline/"
       ],
-      "evaluationRequested": "2022-11-03T23:52:17.737Z",
+      "evaluationRequested": "2022-11-03T14:52:17.737Z",
       "evaluationStarted": "2022-11-03T15:42:00.234Z",
       "evaluationEnded": "2022-11-03T15:42:22.828Z"
     },
