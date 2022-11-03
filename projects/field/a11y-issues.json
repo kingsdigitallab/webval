@@ -1,10 +1,10 @@
 {
  "meta": {
-  "lastIssueId": 122,
-  "host": "https://field-wt.co.uk",
+  "lastIssueId": 181,
+  "host": "https://field2-stg.kdl.kcl.ac.uk",
   "version": "0.3.0",
-  "evaluationStarted": "2022-11-03T13:16:57.194Z",
-  "evaluationEnded": "2022-11-03T13:17:25.288Z"
+  "evaluationStarted": "2022-11-03T15:42:00.234Z",
+  "evaluationEnded": "2022-11-03T15:42:22.828Z"
  },
  "issues": {
   "1": {
@@ -3070,6 +3070,1414 @@
    },
    "detected": "2022-11-03T13:16:57.194Z",
    "id": 122
+  },
+  "123": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n  <meta charset=\"utf-8\">...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 123
+  },
+  "124": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1:1. Recommendation:  change text colour to #fff.",
+   "context": "<a href=\"about\">Read more</a>",
+   "selector": "html > body > main > section > div > section:nth-child(2) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 124
+  },
+  "125": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.63:1. Recommendation:  change background to #5f653a.",
+   "context": "<a href=\"//twitter.com/field_wt\" target=\"_blank\">\n      <i class=\"fab fa-twitter...</a>",
+   "selector": "html > body > footer > ul:nth-child(3) > li > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 125
+  },
+  "126": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.63:1. Recommendation:  change background to #5f653a.",
+   "context": "<a href=\"//kdl.kcl.ac.uk\" title=\"King's Digital Lab\" target=\"_blank\">King's Digital Lab</a>",
+   "selector": "html > body > footer > p > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 126
+  },
+  "127": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/about/\">About</a>",
+   "selector": "#nav > ul > li:nth-child(1) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 127
+  },
+  "128": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/resources/\">Resources</a>",
+   "selector": "#nav > ul > li:nth-child(2) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 128
+  },
+  "129": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/stories/\">Stories</a>",
+   "selector": "#nav > ul > li:nth-child(3) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 129
+  },
+  "130": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/blog-news/\">News</a>",
+   "selector": "#nav > ul > li:nth-child(4) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 130
+  },
+  "131": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/contact-us/\">Contact Us</a>",
+   "selector": "#nav > ul > li:nth-child(5) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 131
+  },
+  "132": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/search/\">Search</a>",
+   "selector": "#nav > ul > li:nth-child(6) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 132
+  },
+  "133": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/blog-news/\">Latest</a>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > section:nth-child(2) > header > h2 > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 133
+  },
+  "134": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Welcome to FIELDS</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 134
+  },
+  "135": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Creative engagement methods for...</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 135
+  },
+  "136": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Five Things a Gate Can Be</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > section:nth-child(2) > div:nth-child(4) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 136
+  },
+  "137": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Callous Caring: The myth of dic...</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > section:nth-child(2) > div:nth-child(5) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 137
+  },
+  "138": {
+   "code": "aria-allowed-attr",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must only use allowed ARIA attributes (https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI)",
+   "context": "<div class=\"breadcrumb\" aria-label=\"breadcrumbs\">\n      <ul>\n        <li><a href...</div>",
+   "selector": "html > body > main > section > div:nth-child(1)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures ARIA attributes are allowed for an element's role",
+    "impact": "serious",
+    "help": "Elements must only use allowed ARIA attributes",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/about/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 138
+  },
+  "139": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputButton.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This buttoninput element does not have a name available to an accessibility API. Valid names are: value undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input type=\"submit\">",
+   "selector": "html > body > main > section > div:nth-child(2) > form > input:nth-child(5)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/contact-us/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputButton.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 139
+  },
+  "140": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li><label for=\"id_captcha_1\">Captc...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > form > li:nth-child(2)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/contact-us/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 140
+  },
+  "141": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li><label for=\"id_your-message\">Yo...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > form > li:nth-child(3)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/contact-us/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 141
+  },
+  "142": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li><label for=\"id_your-email\">Your...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > form > li:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/contact-us/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 142
+  },
+  "143": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<p>\n        \n            If you ha...</p>",
+   "selector": "html > body > main > section > div:nth-child(2) > div > p",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/contact-us/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 143
+  },
+  "144": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 144
+  },
+  "145": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<li>\n        <i class=\"fa fa-calend...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(2) > ul > li:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 145
+  },
+  "146": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/08/26/welcome-fields/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 146
+  },
+  "147": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Welcome%20to%20FIELDS%20http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/08/26/welcome-fields/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><span><i class=\"fa fa-twitter\">...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 147
+  },
+  "148": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/08/26/welcome-fields/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 148
+  },
+  "149": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 149
+  },
+  "150": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<li>\n        <i class=\"fa fa-calend...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(2) > ul > li:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 150
+  },
+  "151": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 151
+  },
+  "152": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Creative%20engagement%20methods%20for%20exploring%20public%20perceptions%20of%20livestock%20health%20and%20welfare%20issues%20http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/06/08/creative-engagement-me...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 152
+  },
+  "153": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/\" target=\"_blank\"><span><i class...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 153
+  },
+  "154": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 154
+  },
+  "155": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<li>\n        <i class=\"fa fa-calend...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(2) > ul > li:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 155
+  },
+  "156": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/03/30/five-things-gate-can-be/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 156
+  },
+  "157": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Five%20Things%20a%20Gate%20Can%20Be%20http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/03/30/five-things-gate-can-be/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><span><i class=\"fa fa-twitter\">......",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 157
+  },
+  "158": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/03/30/five-things-gate-can-be/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 158
+  },
+  "159": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 159
+  },
+  "160": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<li>\n        <i class=\"fa fa-calend...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(2) > ul > li:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 160
+  },
+  "161": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/02/19/artist-who-stares-sheep/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 161
+  },
+  "162": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=The%20artist%20who%20stares%20at%20sheep%20http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/02/19/artist-who-stares-sheep/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><span><i class=\"fa fa-twitter...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 162
+  },
+  "163": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/02/19/artist-who-stares-sheep/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 163
+  },
+  "164": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 164
+  },
+  "165": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<li>\n        <i class=\"fa fa-calend...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(2) > ul > li:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 165
+  },
+  "166": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/02/19/callous-caring-myth-dichotomy-farming/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 166
+  },
+  "167": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Callous%20Caring%3A%20The%20myth%20of%20dichotomy%20in%20farming%20http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/02/19/callous-caring-myth-dichotomy-farming/\" class=\"meta-act-link meta-tweet \" target=...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 167
+  },
+  "168": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/02/19/callous-caring-myth-dichotomy-farming/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 168
+  },
+  "169": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1:1. Recommendation:  change text colour to #fff.",
+   "context": "<span>Feed RSS</span>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > div > a > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 169
+  },
+  "170": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"section\">\n                <h4>Last Entri...</ul>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 170
+  },
+  "171": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"section\">\n                <h4>Popular En...</ul>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > ul:nth-child(3)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 171
+  },
+  "172": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"section\">\n                <h4>Categories...</ul>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > ul:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 172
+  },
+  "173": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"section\">\n                <h4>Tags</h4>\n...</ul>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > ul:nth-child(5)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 173
+  },
+  "174": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"section\">\n                <h4>Archive</h...</ul>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > ul:nth-child(6)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 174
+  },
+  "175": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 175
+  },
+  "176": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<li>\n        <i class=\"fa fa-calend...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article > section:nth-child(2) > ul > li:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 176
+  },
+  "177": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 177
+  },
+  "178": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Creative%20engagement%20methods%20for%20exploring%20public%20perceptions%20of%20livestock%20health%20and%20welfare%20issues%20http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/06/08/creative-engagement-me...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 178
+  },
+  "179": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field2-stg.kdl.kcl.ac.uk/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/\" target=\"_blank\"><span><i class...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 179
+  },
+  "180": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"search-phrase\" name=\"q\" type=\"search\" value=\"disease\" autocomplete=\"off\" autocorrect=\"off\" spellcheck=\"false\" placeholder=\"Search\">",
+   "selector": "html > body > main > section > div:nth-child(2) > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/search/?q=disease",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputSearch.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 180
+  },
+  "181": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<button class=\"search-submit\">Search</button>",
+   "selector": "html > body > main > section > div:nth-child(2) > form > button",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/search/?q=disease",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2022-11-03T15:42:00.234Z",
+   "id": 181
   }
  },
  "annotations": {
@@ -3437,6 +4845,183 @@
    "resolution": "Todo"
   },
   "122": {
+   "resolution": "Todo"
+  },
+  "123": {
+   "resolution": "Todo"
+  },
+  "124": {
+   "resolution": "Todo"
+  },
+  "125": {
+   "resolution": "Todo"
+  },
+  "126": {
+   "resolution": "Todo"
+  },
+  "127": {
+   "resolution": "Todo"
+  },
+  "128": {
+   "resolution": "Todo"
+  },
+  "129": {
+   "resolution": "Todo"
+  },
+  "130": {
+   "resolution": "Todo"
+  },
+  "131": {
+   "resolution": "Todo"
+  },
+  "132": {
+   "resolution": "Todo"
+  },
+  "133": {
+   "resolution": "Todo"
+  },
+  "134": {
+   "resolution": "Todo"
+  },
+  "135": {
+   "resolution": "Todo"
+  },
+  "136": {
+   "resolution": "Todo"
+  },
+  "137": {
+   "resolution": "Todo"
+  },
+  "138": {
+   "resolution": "Todo"
+  },
+  "139": {
+   "resolution": "Todo"
+  },
+  "140": {
+   "resolution": "Todo"
+  },
+  "141": {
+   "resolution": "Todo"
+  },
+  "142": {
+   "resolution": "Todo"
+  },
+  "143": {
+   "resolution": "Todo"
+  },
+  "144": {
+   "resolution": "Todo"
+  },
+  "145": {
+   "resolution": "Todo"
+  },
+  "146": {
+   "resolution": "Todo"
+  },
+  "147": {
+   "resolution": "Todo"
+  },
+  "148": {
+   "resolution": "Todo"
+  },
+  "149": {
+   "resolution": "Todo"
+  },
+  "150": {
+   "resolution": "Todo"
+  },
+  "151": {
+   "resolution": "Todo"
+  },
+  "152": {
+   "resolution": "Todo"
+  },
+  "153": {
+   "resolution": "Todo"
+  },
+  "154": {
+   "resolution": "Todo"
+  },
+  "155": {
+   "resolution": "Todo"
+  },
+  "156": {
+   "resolution": "Todo"
+  },
+  "157": {
+   "resolution": "Todo"
+  },
+  "158": {
+   "resolution": "Todo"
+  },
+  "159": {
+   "resolution": "Todo"
+  },
+  "160": {
+   "resolution": "Todo"
+  },
+  "161": {
+   "resolution": "Todo"
+  },
+  "162": {
+   "resolution": "Todo"
+  },
+  "163": {
+   "resolution": "Todo"
+  },
+  "164": {
+   "resolution": "Todo"
+  },
+  "165": {
+   "resolution": "Todo"
+  },
+  "166": {
+   "resolution": "Todo"
+  },
+  "167": {
+   "resolution": "Todo"
+  },
+  "168": {
+   "resolution": "Todo"
+  },
+  "169": {
+   "resolution": "Todo"
+  },
+  "170": {
+   "resolution": "Todo"
+  },
+  "171": {
+   "resolution": "Todo"
+  },
+  "172": {
+   "resolution": "Todo"
+  },
+  "173": {
+   "resolution": "Todo"
+  },
+  "174": {
+   "resolution": "Todo"
+  },
+  "175": {
+   "resolution": "Todo"
+  },
+  "176": {
+   "resolution": "Todo"
+  },
+  "177": {
+   "resolution": "Todo"
+  },
+  "178": {
+   "resolution": "Todo"
+  },
+  "179": {
+   "resolution": "Todo"
+  },
+  "180": {
+   "resolution": "Todo"
+  },
+  "181": {
    "resolution": "Todo"
   }
  }
