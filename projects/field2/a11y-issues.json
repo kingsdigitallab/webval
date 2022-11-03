@@ -1,10 +1,10 @@
 {
  "meta": {
-  "lastIssueId": 74,
+  "lastIssueId": 77,
   "host": "https://field2-stg.kdl.kcl.ac.uk",
   "version": "0.3.0",
-  "evaluationStarted": "2022-11-03T15:25:56.378Z",
-  "evaluationEnded": "2022-11-03T15:26:23.063Z"
+  "evaluationStarted": "2022-11-03T23:57:33.049Z",
+  "evaluationEnded": "2022-11-03T23:57:48.295Z"
  },
  "issues": {
   "1": {
@@ -1864,6 +1864,77 @@
    },
    "detected": "2022-11-03T15:25:56.378Z",
    "id": 74
+  },
+  "75": {
+   "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl",
+   "type": "error",
+   "typeCode": 1,
+   "message": "A title should be provided for the document, using a non-empty title element in the head section.",
+   "context": "<head></head>",
+   "selector": "html > head",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H25",
+    "target": "1.NoTitleEl",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T23:57:33.049Z",
+   "id": 75
+  },
+  "76": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head></head><body><pre style=\"...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2022-11-03T23:57:33.049Z",
+   "id": 76
+  },
+  "77": {
+   "code": "document-title",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Documents must have <title> element to aid in navigation (https://dequeuniversity.com/rules/axe/4.2/document-title?application=axeAPI)",
+   "context": "<html><head></head><body><pre style=\"...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each HTML document contains a non-empty <title> element",
+    "impact": "serious",
+    "help": "Documents must have <title> element to aid in navigation",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/document-title?application=axeAPI"
+   },
+   "host": "https://field2-stg.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "2"
+   },
+   "detected": "2022-11-03T23:57:33.049Z",
+   "id": 77
   }
  },
  "annotations": {
@@ -2087,6 +2158,15 @@
    "resolution": "Todo"
   },
   "74": {
+   "resolution": "Todo"
+  },
+  "75": {
+   "resolution": "Todo"
+  },
+  "76": {
+   "resolution": "Todo"
+  },
+  "77": {
    "resolution": "Todo"
   }
  }
