@@ -1,6 +1,6 @@
 # Webval
 
-A [Web application](https://kingsdigitallab.github.io/webval/docs/) entirely hosted on github that lets you run accessibility evaluation on multiple pages for a collection of sites. The accessibility issues are saved in this repository and can be browsed and manually annotated to facilitate accessibility assessments, reviews, reporting and continuous testing.
+A [Web application](https://kingsdigitallab.github.io/webval/docs/) entirely hosted on github that lets you run accessibility evaluation on multiple pages for a collection of sites. The accessibility issues are saved in this repository and can be browsed and manually annotated to facilitate accessibility assessments, reviews, reporting and continuous testing. 
 
 [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) 2.1 A & AA issues are reported by [Pa11y](https://pa11y.org/) (and detected by [HTML_CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) and [axe-core](https://github.com/dequelabs/axe-core) engines). 
 
