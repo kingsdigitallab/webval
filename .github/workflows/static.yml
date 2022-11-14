@@ -5,6 +5,12 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    paths:
+      - docs
+      - projects
+    paths-ignore:
+      - projects/evaluate.json
+      - projects/pa11y-ci.json
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,8 +41,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload app directory
-          path: 'app'
+          # Upload entire repository
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
