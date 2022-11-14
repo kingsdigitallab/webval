@@ -6,8 +6,8 @@ on:
   push:
     branches: ["main"]
     paths-ignore:
-      - projects/evaluate.json
-      - projects/pa11y-ci.json
+      - 'projects/evaluate.json'
+      - 'projects/pa11y-ci.json'
       - 'actions/**'
       - '.github/**'
       - '*'
