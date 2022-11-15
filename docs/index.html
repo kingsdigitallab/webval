@@ -636,7 +636,7 @@
             evaluation: {
               deep: true,
               handler(val, valOld) {
-                this.isUnsaved = this.isUnsaved === 0 ? false : true
+                if (this.isUnsaved === false) this.isUnsaved = true
               }
             }
           },
@@ -934,6 +934,7 @@
               history.pushState(null, '', newRelativePathQuery);            
             },
             async onSelectProject() {
+              this.isUnsaved = 0
               // load issues
               let res = null
               if (this.selection.project) {
@@ -949,15 +950,14 @@
                 }
                 this.evaluation_sha = null
               }
-              this.isUnsaved = 0
 
               this.$nextTick(() => {
                 const issueId = `issue-${this.selection.issueId}`
                 const selectedIssue = document.getElementById(issueId)
-                console.log(issueId, selectedIssue)
                 if (selectedIssue) {
                   selectedIssue.scrollIntoView()
                 }
+                this.isUnsaved = false
               })
             },
             // getPrincipleFromIssue(issue) {
@@ -1177,7 +1177,6 @@
                 this.getOctokit(), 
                 this.tags_sha
               )
-              console.log(res)
               this.tags_sha = res
             },
             onAddPastedIssues() {
