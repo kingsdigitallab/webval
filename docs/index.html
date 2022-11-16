@@ -381,46 +381,50 @@
           </p>
           <div class="panel-block">
             <form class="form-add-issue" @submit.stop.prevent="onAddNewIssue" v-if="project">
-              <div class="field">
-                <label class="label">Web path</label>
-                <div class="control">
-                  <div class="select">
-                    <select v-model="newIssue.webpath">
-                      <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
-                    </select>
+              <fieldset :disabled="isReadOnly">
+                <div class="field">
+                  <label class="label">Web path</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="newIssue.webpath">
+                        <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">WCAG Rule</label>
-                <div class="control">
-                  <div class="select">
-                    <select v-model="newIssue.ruleNumber">
-                      <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
-                    </select>
+                <div class="field">
+                  <label class="label">WCAG Rule</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="newIssue.ruleNumber">
+                        <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Detection</label>
-                <div class="control">
-                  <div class="select">
-                    <select v-model="newIssue.runner">
-                      <template v-for="engine in ['manual', 'siteimprove', 'equal-access']"><option :value="engine">{{ engine }}</option></template>
-                    </select>
+                <div class="field">
+                  <label class="label">Detection</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="newIssue.runner">
+                        <template v-for="engine in ['manual', 'siteimprove', 'equal-access']"><option :value="engine">{{ engine }}</option></template>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Problem & how to fix it</label>
-                <textarea class="textarea" v-model="newIssue.message"></textarea>
-              </div>
-              <p class="help is-danger" v-for="error in getNewIssueErrorMessages()">{{ error }}</p>
-              <div class="field">
-                <div class="control">
-                  <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issue</button>
+                <div class="field">
+                  <label class="label">Problem & how to fix it</label>
+                  <div class="control">
+                    <textarea class="textarea" v-model="newIssue.message"></textarea>
+                  </div>
                 </div>
-              </div>
+                <p class="help is-danger" v-for="error in getNewIssueErrorMessages()">{{ error }}</p>
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issue</button>
+                  </div>
+                </div>
+              </fieldset>
             </form>
           </div>
         </div>
@@ -436,32 +440,34 @@
           </p>
           <div class="panel-block">
             <form class="form-add-issue" @submit.stop.prevent="onAddPastedIssues" v-if="project">
-              <div class="field">
-                <label class="label">Web path</label>
-                <div class="control">
-                  <div class="select">
-                    <select v-model="pastedIssues.webpath">
-                      <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
-                    </select>
+              <fieldset :disabled="isReadOnly">
+                <div class="field">
+                  <label class="label">Web path</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="pastedIssues.webpath">
+                        <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Paste A & AA issues from SiteImprove</label>
-                <div class="control">
-                  <textarea class="textarea" v-model="pastedIssues.raw"></textarea>
+                <div class="field">
+                  <label class="label">Paste A & AA issues from SiteImprove</label>
+                  <div class="control">
+                    <textarea class="textarea" v-model="pastedIssues.raw"></textarea>
+                  </div>
                 </div>
-              </div>
-              
-              <div>
-                {{ getPastedIssues().length }} pasted SiteImprove issues
-              </div>
-              <p class="help is-danger" v-for="error in getPastedIssuesErrorMessages()">{{ error }}</p>
-              <div class="field">
-                <div class="control">
-                  <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="getPastedIssuesErrorMessages().length">Add new issues</button>
+                
+                <div>
+                  {{ getPastedIssues().length }} pasted SiteImprove issues
                 </div>
-              </div>
+                <p class="help is-danger" v-for="error in getPastedIssuesErrorMessages()">{{ error }}</p>
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="getPastedIssuesErrorMessages().length">Add new issues</button>
+                  </div>
+                </div>
+              </fieldset>
             </form>
           </div>
         </div>
@@ -476,7 +482,7 @@
                 <label class="label">Tag</label>
                 <div class="control">
                   <div class="select">
-                    <select v-model="selection.tagSlug">
+                    <select v-model="selection.tagSlug" :disabled="isReadOnly">
                       <option v-for="(tag, tagSlug) in tags" :value="tagSlug">{{ tagSlug}}</option>
                     </select>
                   </div>
@@ -485,7 +491,7 @@
               
               <div class="field">
                 <div class="control">
-                  <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issues</button>
+                  <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="isReadOnly">Add new issues</button>
                 </div>
               </div>
             </form>
@@ -507,7 +513,7 @@
           <h2 class="title is-2">Tags ({{ getRuleCountFromSelectedTag }} / {{ selectedRules.length }})</h2>
           <div class="field is-grouped bar-issues-filters">
             <div class="control">
-              <button @click="onSaveTags" class="button is-primary">save</button>
+              <button @click="onSaveTags" class="button is-primary" :disabled="isReadOnly">save</button>
             </div>
             <div class="select">
               <select v-model="selection.tagSlug">
@@ -516,14 +522,14 @@
             </div>
             &nbsp;
             <div class="control">
-              <button @click="onDeleteTag" class="button">delete</button>
+              <button @click="onDeleteTag" class="button" :disabled="isReadOnly">delete</button>
             </div>
-            <input type="text" class="control" v-model="newTagSlug" />
+            <input type="text" class="control" v-model="newTagSlug" :disabled="isReadOnly" />
             <div class="control">
-              <button @click="onRenameTag" class="button">rename</button>
+              <button @click="onRenameTag" class="button" :disabled="isReadOnly">rename</button>
             </div>
             <div class="control">
-              <button @click="onCreateTag" class="button">create</button>
+              <button @click="onCreateTag" class="button" :disabled="isReadOnly">create</button>
             </div>
           </div>
           <label class="label">
@@ -535,7 +541,7 @@
             <tr v-for="rule in selectedRules">
               <td class="rule-tag">
                 <label class="checkbox">
-                  <input type="checkbox" @click="onTagRule(rule)" :checked="isRuleTagged(rule)">
+                  <input type="checkbox" @click="onTagRule(rule)" :checked="isRuleTagged(rule)" :disabled="isReadOnly">
                   {{ rule.code }}
                 </label>
               </td> 
