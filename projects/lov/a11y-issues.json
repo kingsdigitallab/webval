@@ -1,0 +1,468 @@
+{
+ "meta": {
+  "lastIssueId": 17,
+  "host": "https://layersofvision.org",
+  "version": "0.3.0",
+  "evaluationStarted": "2022-11-23T16:28:00.288Z",
+  "evaluationEnded": "2022-11-23T16:28:13.714Z"
+ },
+ "issues": {
+  "1": {
+   "code": "audio-caption",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<audio> elements must have a captions track (https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI)",
+   "context": "<audio controls=\"\" src=\"/assets/audio/LoV_landing_page_audio.mp3\">\n    <a href=\"/assets/audio/LoV...</audio>",
+   "selector": "#main > div:nth-child(2) > figure > audio",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <audio> elements have captions",
+    "impact": "critical",
+    "help": "<audio> elements must have a captions track",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI"
+   },
+   "host": "https://layersofvision.org",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "2",
+    "rule": "1"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 1
+  },
+  "2": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/01-braffaella/\" xlink:title=\"Bianca Raffaella - In The Rose Garden\"><rect x=\"635\" y=\"199.9\" class=\"...</a>",
+   "selector": "#floorplan > svg > a:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 2
+  },
+  "3": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/02-msmithen/\" xlink:title=\"Mickel Smithen - Capturing Movement in Motion\"><rect x=\"408.9\" y=\"115.8\" class...</a>",
+   "selector": "#floorplan > svg > a:nth-child(5)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 3
+  },
+  "4": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/03-creynolds/\" xlink:title=\"Clarke Reynolds - Fab too Touch\"><rect x=\"298\" y=\"16.5\" class=\"s...</a>",
+   "selector": "#floorplan > svg > a:nth-child(6)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 4
+  },
+  "5": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/04-amcpeake/\" xlink:title=\"Aaron McPeake - Subjective Acuity\"><rect x=\"183.7\" y=\"16.5\" class=...</a>",
+   "selector": "#floorplan > svg > a:nth-child(7)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 5
+  },
+  "6": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/05-zpartington/\" xlink:title=\"Zoe Partington - Decoding Difference\"><rect x=\"18.3\" y=\"194.3\" class=...</a>",
+   "selector": "#floorplan > svg > a:nth-child(8)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 6
+  },
+  "7": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/06-achristina-corrigan/\" xlink:title=\"Alice Christina-Corrigan - Inner\"><rect x=\"210.3\" y=\"295.2\" class...</a>",
+   "selector": "#floorplan > svg > a:nth-child(9)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 7
+  },
+  "8": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/07-sbooth/\" xlink:title=\"Sally Booth - Football in the City\"><rect x=\"363.8\" y=\"295.2\" class...</a>",
+   "selector": "#floorplan > svg > a:nth-child(10)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 8
+  },
+  "9": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/08-ndoig/\" xlink:title=\"Natalie Doig - Seeking Solitude\"><rect x=\"438.1\" y=\"438.6\" class...</a>",
+   "selector": "#floorplan > svg > a:nth-child(11)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 9
+  },
+  "10": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/09-fkilburn/\" xlink:title=\"Fae Kilburn - Breaking Down Barriers\"><rect x=\"621.6\" y=\"528.8\" class...</a>",
+   "selector": "#floorplan > svg > a:nth-child(12)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 10
+  },
+  "11": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with no link content and no name and/or ID attribute.",
+   "context": "<a xlink:href=\"../people/10-djohnson/\" xlink:title=\"David Johnson - I as Object Un-Seen\"><polygon class=\"secondary-color...</a>",
+   "selector": "#floorplan > svg > a:nth-child(16)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.EmptyNoId",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 11
+  },
+  "12": {
+   "code": "audio-caption",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<audio> elements must have a captions track (https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI)",
+   "context": "<audio controls=\"\" src=\"/assets/audio/LoV_exhibition_page_audio.mp3\">\n\t<a href=\"/assets/audio/LoV_ex...</audio>",
+   "selector": "#main > div > figure > audio",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <audio> elements have captions",
+    "impact": "critical",
+    "help": "<audio> elements must have a captions track",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI"
+   },
+   "host": "https://layersofvision.org",
+   "webpath": "/exhibition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "2",
+    "rule": "1"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 12
+  },
+  "13": {
+   "code": "audio-caption",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<audio> elements must have a captions track (https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI)",
+   "context": "<audio controls=\"\" src=\"/assets/audio/Bianca.mp3\">\n        <a href=\"/assets/audio...</audio>",
+   "selector": "#main > div > div > figure:nth-child(5) > audio",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <audio> elements have captions",
+    "impact": "critical",
+    "help": "<audio> elements must have a captions track",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI"
+   },
+   "host": "https://layersofvision.org",
+   "webpath": "/people/01-braffaella/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "2",
+    "rule": "1"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 13
+  },
+  "14": {
+   "code": "WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Iframe element requires a non-empty title attribute that identifies the frame.",
+   "context": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.105639456962!2d-0.12591335481755506!3d51.512731474174785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876059db36081a5%3A0x13e84de39ffc689a!2sThe%20Arcade%20at%20Bush%20Ho...",
+   "selector": "#main > div > div:nth-child(13) > iframe",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://layersofvision.org",
+   "webpath": "/plan-your-visit/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H64",
+    "target": "1",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 14
+  },
+  "15": {
+   "code": "frame-title",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Frames must have an accessible name (https://dequeuniversity.com/rules/axe/4.2/frame-title?application=axeAPI)",
+   "context": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.105639456962!2d-0.12591335481755506!3d51.512731474174785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876059db36081a5%3A0x13e84de39ffc689a!2sThe%20Arcade%20at%20Bush%20Ho...",
+   "selector": "#main > div > div:nth-child(13) > iframe",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <iframe> and <frame> elements have an accessible name",
+    "impact": "serious",
+    "help": "Frames must have an accessible name",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/frame-title?application=axeAPI"
+   },
+   "host": "https://layersofvision.org",
+   "webpath": "/plan-your-visit/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 15
+  },
+  "16": {
+   "code": "audio-caption",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<audio> elements must have a captions track (https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI)",
+   "context": "<audio controls=\"\" src=\"/assets/audio/how-to-get-there.m4a\">\n    <a href=\"/assets/audio/how...</audio>",
+   "selector": "#main > div > figure > audio",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <audio> elements have captions",
+    "impact": "critical",
+    "help": "<audio> elements must have a captions track",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI"
+   },
+   "host": "https://layersofvision.org",
+   "webpath": "/plan-your-visit/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "2",
+    "rule": "1"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 16
+  },
+  "17": {
+   "code": "audio-caption",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<audio> elements must have a captions track (https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI)",
+   "context": "<audio controls=\"\" src=\"/assets/audio/Sally.mp3\">\n        <a href=\"/assets/audio...</audio>",
+   "selector": "#main > div > div > figure:nth-child(5) > audio",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <audio> elements have captions",
+    "impact": "critical",
+    "help": "<audio> elements must have a captions track",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/audio-caption?application=axeAPI"
+   },
+   "host": "https://layersofvision.org",
+   "webpath": "/people/07-sbooth/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "2",
+    "rule": "1"
+   },
+   "detected": "2022-11-23T16:28:00.288Z",
+   "id": 17
+  }
+ },
+ "annotations": {
+  "1": {
+   "resolution": "Todo"
+  },
+  "2": {
+   "resolution": "Todo"
+  },
+  "3": {
+   "resolution": "Todo"
+  },
+  "4": {
+   "resolution": "Todo"
+  },
+  "5": {
+   "resolution": "Todo"
+  },
+  "6": {
+   "resolution": "Todo"
+  },
+  "7": {
+   "resolution": "Todo"
+  },
+  "8": {
+   "resolution": "Todo"
+  },
+  "9": {
+   "resolution": "Todo"
+  },
+  "10": {
+   "resolution": "Todo"
+  },
+  "11": {
+   "resolution": "Todo"
+  },
+  "12": {
+   "resolution": "Todo"
+  },
+  "13": {
+   "resolution": "Todo"
+  },
+  "14": {
+   "resolution": "Todo"
+  },
+  "15": {
+   "resolution": "Todo"
+  },
+  "16": {
+   "resolution": "Todo"
+  },
+  "17": {
+   "resolution": "Todo"
+  }
+ }
+}
