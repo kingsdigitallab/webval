@@ -148,5 +148,23 @@
    "evaluationEnded": "2022-11-04T10:54:39.826Z"
   },
   "screenshots": {}
+ },
+ {
+  "name": "Layers of Vision",
+  "slug": "lov",
+  "sites": {
+   "liv": "https://layersofvision.org"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/exhibition/",
+    "/artists/",
+    "/people/01-braffaella/",
+    "/plan-your-visit/",
+    "/people/07-sbooth/"
+   ]
+  },
+  "screenshots": {}
  }
 ]
