@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KDL Accessibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="utils.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script type="module">
+      import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+      window.Octokit = Octokit
+    </script>    
+    <style>
+      .is-highlighted {
+        background-color: #ffff80;
+      }
+      .rule-tag:hover {
+        background-color: #ffff88;
+      }
+      .form-error {
+        
+      }
+      .form-add-issue .control {
+        max-width: 80%
+      }
+      .form-add-issue textarea {
+        max-width: 80%
+      }
+      .issues-page {
+        color: white;
+        background-color: #a0a0ff;
+        border-top: 3px solid #7d7dfd;
+      }
+      table.table.is-hoverable tbody tr.issues-page:hover {
+        background-color: #a0a0ff;
+      }
+      .issues-page td a {
+        color: white;
+        display: block;
+      }
+      .issues-group td {
+        background-color: #d0d0ff;
+      }
+      .issue-message {
+        font-style: italic;
+      }
+      .issue-message textarea.textarea {
+        font-size: 80%;
+        min-width: 10em;
+        min-height: 5em;
+      }
+      .issue-context, .issue-selector {
+        /* display: inline-block; */
+        padding: 0.5em;
+        font-size: 80%;
+        font-family: monospace;
+        background-color: black;
+        color: lightgreen;
+      }
+      .issue-selector {
+        color: inherit;
+        background-color: lightgrey;
+        cursor: copy; 
+      }
+      .cell-runner {
+        cursor: copy;
+      }
+      .cell-issue-comment {
+        position: relative;
+        min-width: 10em;
+      }
+      .issue-comment.textarea {
+        position: relative;
+        font-size: 80%;
+        min-height: 4em;
+      }
+      .issue-comment:hover, .issue-comment:focus {
+        position: absolute;
+        right: 1em;
+        min-width: 41em;
+        height: 10em;
+        z-index: 5;
+      }
+      .thumbnail {
+        max-height: 20em;
+      }
+      .level-count {
+        display: inline-block;
+        margin: 0.2em;
+      }
+      .levels-counts {
+        min-width: 7em;
+      }
+      h1 small {
+        font-size: 70%;
+      }
+      .issue-context, .issue-selector {
+        word-break: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section" id="app">
+      <div class="container">
+        <h1 class="title is-1">
+          KDL Accessibility
+          <small><a target="_blank" href="https://github.com/kingsdigitallab/webval#webval">(Help)</a></small>
+        </h1>
+
+        <div class="control">
+          <label class="label">Project:</label> 
+          <div class="select">
+            <select @change="onSelectProject()" v-model="selection.project">
+              <option v-for="project in projects" :value="project.slug">{{ project.name }}</option>
+            </select>
+          </div>
+        </div>
+        <p v-if="project">
+          Last evaluation: {{ formatDate(project.a11y.evaluationStarted) }} 
+          ({{ evaluation.meta?.host }})
+        </p>
+
+        <br>
+
+        <div class="tabs is-large is-boxed">
+          <ul>
+            <li v-for="tab in tabs" :class="{'is-active': selection.tab == tab.key}">
+              <a @click="selection.tab = tab.key">
+                {{tab.title}}
+                <template v-if="tab.key == 'issues'">
+                  ({{ issuesFiltered.length }})
+                </template>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <br>
+      </div>
+
+      <div class="container" v-if="selection.tab == 'summary'">
+        <div v-if="project">
+          <h3 class="title is-3">Workload</h3>
+
+          <template v-if="effort_columns.length">
+            <table v-if="effort_columns.length" class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Role
+                  </th>
+                  <th v-for="col in effort_columns">
+                    {{ col }}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(effort, role) in effort_roles">
+                  <td>{{ role }}</td>
+                  <td v-for="(qt, col) in effort">
+                    {{ (col.length == 1) ? qt.toFixed(0) : qt.toFixed(2) }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>min, max and avg expressed in days.</p>  
+          </template>
+          <p v-else>Please fill in complexity and roles fields at the rule levels to get summary estimates.</p>
+
+          <h3 class="title is-3">Issues</h3>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th><span class="tag is-danger">A</span></th>
+                <th><span class="tag is-warning">AA</span></th>
+                <th>Page</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="url in project.a11y.urls">
+                <td>{{ getIssuesCount(url, 'A') }}</td>
+                <td>{{ getIssuesCount(url, 'AA') }}</td>
+                <td>{{ url }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="title is-3">Visual regression tests</h3>
+
+          <button @click="onAcceptScreenshots" class="button is-primary" name="action" value="acceptScreenshots" :disabled="isReadOnly">Accept latest screenshots</button>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Page</th>
+                <th>Reference - Difference - Last evaluation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="url in project.a11y.urls">
+                <td>{{ url }}</td>
+                <td v-for="dir in ['accepted-last']">
+                  <a :href="getScreenshotFromUrl(url, dir)" target="_blank"><img class="thumbnail" :src="getScreenshotFromUrl(url, dir)"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container" v-if="selection.tab == 'issues'">
+
+        <div class="field is-grouped bar-issues-filters">
+          <div class="control">
+            <button @click="onClickEvaluate()" name="action" value="evaluate" class="button is-primary" :disabled="isReadOnly">
+              <template v-if="isEvaluating">Evaluating...</template><template v-else>Evaluate live</template>
+            </button>
+          </div>
+          <div class="control">
+            <button @click="onClickSave()" name="action" value="save" :class="{button: true, 'is-primary': !isReadOnly && isUnsaved, 'is-danger': hasConflict}" :disabled="isReadOnly || !isUnsaved || hasConflict">
+              <template v-if="hasConflict">Conflict</template>
+              <template v-else-if="isUnsaved">Save</template>
+              <template v-else>Saved</template>
+            </button>
+          </div>
+          <div class="select">
+            <select v-model="selection.levels">
+              <option v-for="levels in levelsOptions" :value="levels.key">{{ levels.title }}</option>
+            </select>
+          </div>
+          &nbsp;
+          <div class="select">
+            <select v-model="selection.resolutions">
+              <option v-for="resolutions in resolutionsOptions" :value="resolutions.key">{{ resolutions.title }}</option>
+            </select>
+          </div>
+          &nbsp;
+          <div class="select">
+            <select v-model="selection.depth">
+              <option v-for="depth in depthsOptions" :value="depth.key">{{ depth.title }}</option>
+            </select>
+          </div>
+        </div>
+        <article class="message is-danger" v-if="hasConflict">
+          <div class="message-body">
+            Someone else has already saved changes to those issues. 
+            Your changes cannot be saved as they would overwrite their modifications.
+            Please reload the page and resubmit your changes.
+          </div>
+        </article>
+        <article class="message is-warning" v-if="isTokenMissing">
+          <div class="message-body">
+            This web app is read-only until you have entered a github Personal Access Token under the Settings tab. 
+          </div>
+        </article>
+
+        <table class="table is-hoverable is-fullwidth is-narrow table-issues">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Description</th>
+              <th>Roles</th>
+              <th>Complexity</th>
+              <th>Resolution</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template v-for="(issue, idx) in issuesFiltered">
+              <tr v-if="idx == 0 || (issuesFiltered[idx-1].webpath != issue.webpath)" class="issues-page">
+                <td>
+                  <template v-for="(count, level) in getLevelsIssuesCountFromGroupKey(issue.webpath)">
+                    <span v-if="count" class="level-count">
+                      <span :class="['tag', getTagClassFromLevel(level)]">{{level}}</span>
+                      <br>
+                      {{count}}
+                    </span>
+                  </template>
+                </td>
+                <td colspan="5"><a :href="(evaluation.meta?.host || issue.host) + issue.webpath" target="_blank">{{ issue.webpath }}</a></td>
+              </tr>
+
+              <tr v-if="('type|issue'.includes(selection.depth)) && (idx == 0 || getGroupFromIssue(issuesFiltered[idx-1]) != getGroupFromIssue(issue))" class="issues-group">
+                <td class="levels-counts">
+                  <template v-for="(count, level) in getLevelsIssuesCountFromGroupKey(getGroupFromIssue(issue))">
+                    <span v-if="count" class="level-count">
+                      <span :class="['tag', getTagClassFromLevel(level)]">{{level}}</span>
+                      <br>
+                      {{count}}
+                    </span>
+                  </template>
+                </td>
+                <td>
+                  <a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+getIdFromIssue(issue)+'.html'" target="_blank">
+                    {{ getRuleFromIssue(issue) }} ({{ getGuidelineFromIssue(issue) }})
+                    <br>
+                    {{ getNumbersFromIssue(issue) }} 
+                  </a>
+                </td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[getGroupFromIssue(issue)].roles" :disabled="isReadOnly">
+                    <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
+                  </select>
+                </div></td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[getGroupFromIssue(issue)].complexity" :disabled="isReadOnly">
+                    <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
+                  </select>
+                </div></td>
+                <td>
+                  <div class="select">
+                    <select v-model="evaluation.annotations[getGroupFromIssue(issue)].resolution" :disabled="isReadOnly">
+                      <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="cell-issue-comment">
+                  <!-- <input class="input issue-comment" type="text" v-model="evaluation.annotations[getGroupFromIssue(issue)].comment" :disabled="isReadOnly" /> -->
+                  <textarea class="textarea issue-comment" v-model="evaluation.annotations[getGroupFromIssue(issue)].comment" :disabled="isReadOnly"></textarea>
+                </td>
+              </tr>
+
+              <tr :id="'issue-'+issue.id" v-if="selection.depth == 'issue'" :class="['issue-level-'+getLevelFromIssue(issue), {'is-highlighted': selection.issueId == issue.id}]" class="issue">
+                <td class="cell-runner" @click="onClickIssueFirstCol(issue)" title="Copy git commit prefix to clipboard">
+                  <span v-if="!issue.detected" class="tag is-info">Manual</span>
+                  <span v-if="issue.runner!='manual'" class="tag is-info is-light">{{ issue.runner }}</span>
+                </td>
+                <td>
+                  <div class="issue-message">
+                    <template v-if="issue.runner === 'manual'">
+                      <!-- <input class="input" type="text" v-model="issue.message" :disabled="isReadOnly" /> -->
+                      <textarea class="textarea" v-model="issue.message" :disabled="isReadOnly"></textarea>
+                    </template>
+                    <template v-else>
+                      <template v-if="(idx == 0) || (issue.message != issuesFiltered[idx-1].message)">{{ issue.message }}</template>
+                    </template>
+                  </div>
+                  <div v-if="issue.selector" class="issue-selector" @click="copyIssueSelectorToClipboard(issue)" title="copy to clipboard">
+                    {{ issue.selector }}
+                  </div>
+                  <div class="issue-context" v-if="issue.context">
+                    {{ issue.context }}
+                  </div>
+                </td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[issue.id].roles" :disabled="isReadOnly">
+                    <option v-for="(roleName, roleIdx) in roles" :value="roleName">{{roleName}}</option>
+                  </select>
+                </div></td>
+                <td><div class="select">
+                  <select v-model="evaluation.annotations[issue.id].complexity" :disabled="isReadOnly">
+                    <option v-for="(compName, compIdx) in complexities" :value="compName">{{compName}}</option>
+                  </select>
+                </div></td>
+                <td>
+                  <template v-if="isIssueFixed(issue)">
+                    Fixed
+                  </template>
+                  <div v-else class="select">
+                    <select v-model="evaluation.annotations[issue.id].resolution" :disabled="isReadOnly">
+                      <option v-for="(name, idx) in resolutions" :value="name">{{name}}</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="cell-issue-comment">
+                  <!-- <input class="input issue-comment" type="text" v-model="evaluation.annotations[issue.id].comment" :disabled="isReadOnly" /> -->
+                  <textarea class="textarea issue-comment" v-model="evaluation.annotations[issue.id].comment" :disabled="isReadOnly"></textarea>
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+
+        <div class="panel">
+          <p class="panel-heading">
+            Add new issue manually
+          </p>
+          <div class="panel-block">
+            <form class="form-add-issue" @submit.stop.prevent="onAddNewIssue" v-if="project">
+              <fieldset :disabled="isReadOnly">
+                <div class="field">
+                  <label class="label">Web path</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="newIssue.webpath">
+                        <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">WCAG Rule</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="newIssue.ruleNumber">
+                        <template v-for="rule in this.rules.rules"><option :value="rule.code" v-if="this.isLevelSelected(rule.level)">{{ rule.code }} {{ rule.title }} ({{ rule.level }})</option></template>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Detection</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="newIssue.runner">
+                        <template v-for="engine in ['manual', 'siteimprove', 'equal-access']"><option :value="engine">{{ engine }}</option></template>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Problem & how to fix it</label>
+                  <div class="control">
+                    <textarea class="textarea" v-model="newIssue.message"></textarea>
+                  </div>
+                </div>
+                <p class="help is-danger" v-for="error in getNewIssueErrorMessages()">{{ error }}</p>
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" name="action" value="addIssue" class="button is-primary">Add new issue</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel">
+          <p class="panel-heading">
+            Add SiteImprove issues 
+            <a class="icom" target="_blank" href="https://github.com/kingsdigitallab/webval/wiki#adding-siteimprove-issues">            <span class="icon-text">
+                <i class="fas fa-question-circle"></i>
+              </span>
+              <span>Help</span>
+            </a>
+          </p>
+          <div class="panel-block">
+            <form class="form-add-issue" @submit.stop.prevent="onAddPastedIssues" v-if="project">
+              <fieldset :disabled="isReadOnly">
+                <div class="field">
+                  <label class="label">Web path</label>
+                  <div class="control">
+                    <div class="select">
+                      <select v-model="pastedIssues.webpath">
+                        <option v-for="url in project.a11y.urls" :value="url">{{url}}</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Paste A & AA issues from SiteImprove</label>
+                  <div class="control">
+                    <textarea class="textarea" v-model="pastedIssues.raw"></textarea>
+                  </div>
+                </div>
+                
+                <div>
+                  {{ getPastedIssues().length }} pasted SiteImprove issues
+                </div>
+                <p class="help is-danger" v-for="error in getPastedIssuesErrorMessages()">{{ error }}</p>
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="getPastedIssuesErrorMessages().length">Add new issues</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel">
+          <p class="panel-heading">
+            Add Tagged issues
+          </p>
+          <div class="panel-block">
+            <form class="form-add-issue" @submit.stop.prevent="onAddTaggedIssues" v-if="project">
+              <div class="field">
+                <label class="label">Tag</label>
+                <div class="control">
+                  <div class="select">
+                    <select v-model="selection.tagSlug" :disabled="isReadOnly">
+                      <option v-for="(tag, tagSlug) in tags" :value="tagSlug">{{ tagSlug}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field">
+                <div class="control">
+                  <button type="submit" name="action" value="addIssue" class="button is-primary" :disabled="isReadOnly">Add new issues</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container" v-if="selection.tab == 'settings'">
+        <form :class="{notification: 1, 'is-warning': isTokenMissing}">
+          <div class="field">
+            <label class="label">Personal access token:</label>
+            <input type="password" v-model="selection.gtoken" class="input">
+            <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">Please generate and provide a github Personal Access Token to interact with the page</a>
+          </div>
+        </form>
+
+        <template v-if="selectedTag">
+          <h2 class="title is-2">Tags ({{ getRuleCountFromSelectedTag }} / {{ selectedRules.length }})</h2>
+          <div class="field is-grouped bar-issues-filters">
+            <div class="control">
+              <button @click="onSaveTags" class="button is-primary" :disabled="isReadOnly">save</button>
+            </div>
+            <div class="select">
+              <select v-model="selection.tagSlug">
+                <option v-for="(tag, tagSlug) in tags" :value="tagSlug">{{ tagSlug}}</option>
+              </select>
+            </div>
+            &nbsp;
+            <div class="control">
+              <button @click="onDeleteTag" class="button" :disabled="isReadOnly">delete</button>
+            </div>
+            <input type="text" class="control" v-model="newTagSlug" :disabled="isReadOnly" />
+            <div class="control">
+              <button @click="onRenameTag" class="button" :disabled="isReadOnly">rename</button>
+            </div>
+            <div class="control">
+              <button @click="onCreateTag" class="button" :disabled="isReadOnly">create</button>
+            </div>
+          </div>
+          <label class="label">
+            Description:
+            <input type="text" class="input" v-model="selectedTag.description">
+          </label>
+  
+          <table class="table">
+            <tr v-for="rule in selectedRules">
+              <td class="rule-tag">
+                <label class="checkbox">
+                  <input type="checkbox" @click="onTagRule(rule)" :checked="isRuleTagged(rule)" :disabled="isReadOnly">
+                  {{ rule.code }}
+                </label>
+              </td> 
+              <td>{{ rule.level }}</td> 
+              <td>
+                <a :href="'https://www.w3.org/WAI/WCAG21/Understanding/'+rule.id+'.html'" target="_blank">{{ rule.title }}</a>
+              </td> 
+              <td>{{ rule.description }}</td>
+            </tr>
+          </table>
+        </template>
+      </div>
+      
+      <div class="container" v-if="selection.tab == 'projects'">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Evaluated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="project in projects">
+              <td>{{ project.name }}</td>
+              <td>{{ formatDate(project.a11y.evaluationStarted) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script>
+      window.addEventListener("load", function(event) {
+        const { createApp } = Vue
+
+        createApp({
+          data() {
+            return {
+              projects: [],
+              evaluation: {
+                meta: {},
+                issues: {},
+                annotations: {}
+              },
+              evaluation_sha: null,
+              selection: {
+                // see getDefaultSelection()
+              },
+              newIssue: {
+                webpath: '',
+                ruleNumber: '',
+                context: '',
+                message: '',
+                selector: '',
+                runner: 'manual'
+              },
+              pastedIssues: {
+                raw: '',
+                webpath: '',
+              },
+              isUnsaved: false,
+
+              rules: {
+                rules: {}
+              },
+
+              tags: {},
+              newTagSlug: '',
+              tags_sha: null
+            }
+          },
+          async mounted() {
+            // TODO: non-blocking
+            this.levelCounters = {}
+            await this.loadSelection()
+            this.rules = (await utils.readGithubJsonFile('projects/rules.json')).data
+            let res = (await utils.readGithubJsonFile('projects/tags-rules.json', this.getOctokit()))
+            this.tags = res.data
+            this.tags_sha = res.sha
+            await this.loadProjects()
+            this.onSelectProject()
+
+            setInterval(this.checkEvaluation, 60000);
+
+            window.onbeforeunload = () => {
+              if (this.isUnsaved) {
+                return "You have unsaved changes are you sure you want to close this tab?";
+              }
+            };            
+          },
+          watch: {
+            selection: {
+              deep: true,
+              handler(val, valOld) {
+                this.saveSelection()
+                this.setSelectionToAddressBar()
+              }
+            },
+            evaluation: {
+              deep: true,
+              handler(val, valOld) {
+                if (this.isUnsaved === false) this.isUnsaved = true
+              }
+            }
+          },
+          computed: {
+            issues() {
+              return this.evaluation.issues
+            },
+            annotations() {
+              return this.evaluation.annotations
+            },
+            project() {
+              let ret = this.projects.filter(p => p.slug == this.selection.project)
+              return ret ? ret[0] : null
+            },
+            isTokenMissing() {
+              return !this.selection.gtoken
+            },
+            isReadOnly() {
+              return this.isEvaluating || this.isTokenMissing || this.hasConflict
+            },
+            complexities() {
+              // return ['XS', 'S', 'M', 'L', 'XL']
+              return ['', 'S', 'M', 'L']
+            },
+            resolutions() {
+              return ['Todo', 'In progress', 'Addressed', 'Won\'t']
+            },
+            roles() {
+              return ['', 'U', 'D', 'UD', 'A', 'P']
+            },
+            isEvaluating() {
+              let ret = this.project && (this.project?.a11y?.evaluationRequested || '0') > (this.project?.a11y?.evaluationEnded || '0')
+              return ret
+            },
+            issuesFiltered() {
+              this.levelCounters = {}
+
+              updateLevelCounter = (issue) => {
+                ['ALL', issue.webpath, this.getGroupFromIssue(issue)].filter(k => {
+                  if (!this.levelCounters[k]) {
+                    this.levelCounters[k] = {'A': 0, 'AA': 0, 'AAA': 0}
+                  }
+                  let level = this.getLevelFromIssue(issue)
+                  this.levelCounters[k][level] += 1
+                })
+              }
+
+              let ret = Object.values(this.issues).filter(issue => {
+                // filter by selected levels
+                if (!this.isLevelSelected(this.getLevelFromIssue(issue))) {
+                  return false
+                }
+                // issues detected in the last evaluation OR issues manually entered
+                let isClosed = this.isIssueClosed(issue)
+                // addressed or won't issues
+                if (this.selection.resolutions != 'all') {
+                  let annotation = this.evaluation.annotations[issue.id]
+                  if (this.selection.resolutions == 'statement') {
+                    // Open issues || Won't (but not fixed)
+                    let isFixed = this.isIssueFixed(issue)
+                    if (isFixed || (isClosed && !["Won't"].includes(annotation?.resolution))) {
+                      return false
+                    }
+                  } else {
+                    if (isClosed == (this.selection.resolutions == 'open')) {
+                      return false
+                    }
+                  }
+                }
+                // side-effect! create missing annotation slots for issue types
+                if (!this.evaluation.annotations[this.getGroupFromIssue(issue)]) {
+                  this.evaluation.annotations[this.getGroupFromIssue(issue)] = {
+                    resolution: 'Todo'
+                  }
+                }
+
+                updateLevelCounter(issue)
+
+                return true
+              })
+              
+              // sort by (page, level, code)
+              let getSortKey = (issue) => {
+                return (
+                  ''
+                  + (this.getLevelFromIssue(issue).padStart(3, '0'))
+                  + (issue.rule.principle.padStart(4,'0'))
+                  + (issue.rule.guideline.padStart(4,'0'))
+                  + (issue.rule.rule.padStart(4,'0'))
+                  + (issue.rule.code || '')
+                  + (issue.message || '')
+                )
+              }
+
+              ret.sort((a, b) => {
+                let c = a.webpath.length - b.webpath.length
+                if (c == 0) {
+                  c = (a.webpath == b.webpath) ? 0 : (a.webpath > b.webpath) ? 1 : -1
+                  if (c == 0) {
+                    sks = [getSortKey(a), getSortKey(b)]
+                    c = sks[0] == sks[1] ? 0 : (sks[0] > sks[1]) ? 1 : -1
+                  }
+                }
+                return c
+              })
+
+              // console.log(this.levelCounters)
+              
+              return ret
+            },
+            levelsOptions() {
+              return [
+                {title: 'All levels', key: ''},
+                {title: 'A', key: '|A|'},
+                {title: 'AA', key: '|AA|'},
+                {title: 'A + AA', key: '|A|AA|'},
+                {title: 'AAA', key: '|AAA|'},
+              ]
+            },
+            tabs() {
+              return [
+                {title: 'Issues', key: 'issues'},
+                {title: 'Summary', key: 'summary'},
+                {title: 'Settings', key: 'settings'},
+                // {title: 'Other projects', key: 'projects'},
+              ]
+            },
+            resolutionsOptions() {
+              return [
+                {title: 'Open issues', key: 'open'},
+                {title: 'All issues', key: 'all'},
+                {title: 'Closed issues', key: 'closed'},
+                {title: 'Statement issues', key: 'statement'},
+              ]
+            },
+            depthsOptions() {
+              return [
+                {title: 'Pages', key: 'page'},
+                {title: 'Pages > rules', key: 'type'},
+                {title: 'Pages > rules > issues', key: 'issue'},
+              ]
+            },
+            effort_columns() {
+              let ret = []
+              for (k of Object.keys(this.effort_roles)) {
+                console.log(k, this.effort_roles[k])
+                ret = Object.keys(this.effort_roles[k])
+                break
+              }
+              return ret  
+            },
+            effort_roles() {
+              let complexities_range = {
+                // 10-60 mins
+                'S': [0.025, 0.14],
+                // 1-7 hour
+                'M': [0.14, 1],
+                // 1-2 day
+                'L': [1, 2],
+              }
+              let ret = {}
+
+              let total = {'min': 0, 'max': 0, 'avg': 0, 'Undefined': 0}
+              for (comp of this.complexities) {
+                if (comp) {
+                  total[comp] = 0
+                }
+              }
+
+              let issueLast = null;
+              for (let issue of this.issuesFiltered) {
+                if (!issueLast || this.getGroupFromIssue(issueLast) != this.getGroupFromIssue(issue)) {
+                  let annotation = this.evaluation.annotations[this.getGroupFromIssue(issue)]
+                  for (let role of (annotation?.roles || '').split('')) {
+                    let comp = ''
+                    if (!ret[role]) {
+                      ret[role] = {'min': 0, 'max': 0, 'avg': 0}
+                      for (comp of this.complexities) {
+                        if (comp) {
+                          ret[role][comp] = 0
+                        }
+                      }
+                    }
+                    comp = annotation.complexity || 'Undefined'
+                    ret[role][comp] += 1
+                    let range = complexities_range[comp]
+                    if (range) {
+                      ret[role]['min'] += range[0]
+                      ret[role]['max'] += range[1]
+                      ret[role]['avg'] += (range[0] + range[1]) / 2
+
+                      total['min'] += range[0]
+                      total['max'] += range[1]
+                    } else {
+                      console.log('comp', comp)
+                    }
+                    total[comp] += 1 
+                  }
+                }
+                issueLast = issue
+              }
+
+              if (Object.keys(ret).length) {
+                total['avg'] = (total['min'] + total['max']) / 2
+                ret['Total'] = total
+              }
+
+              return ret
+            },
+            hasConflict() {
+              return this.evaluation_sha === 0
+            },
+            selectedTag() {
+              let slugs = Object.keys(this.tags)
+              if (!slugs.length) {
+                slugs = ['new-tag']
+                this.newTagSlug = slugs[0]
+                this.onCreateTag()
+              }
+              let ret = this.tags[this.selection.tagSlug]
+              if (!ret) {
+                this.selection.tagSlug = slugs[0]
+                ret = this.tags[this.selection.tagSlug]
+              }
+              return ret
+            },
+            selectedRules() {
+              if (!this.rules) return []
+              return Object.values(this.rules.rules).filter(r => this.isLevelSelected(r.level)) 
+            },
+            getRuleCountFromSelectedTag () {
+              let ret = this.selectedRules.filter(r => this.isRuleTagged(r)).length
+              return ret
+            }
+          },
+          methods: {
+            async loadProjects() {
+              let res = await utils.readGithubJsonFile('projects/projects.json', this.getOctokit())
+              this.projects = res.data
+              this.projects_sha = res.sha
+              
+              // select first project in none selected
+              if (this.projects.length) {
+                if (!this.projects.filter(p => p.slug == this.selection?.project).length) {
+                  this.selection.project = this.projects[0].slug
+                }
+              }
+            },
+            loadSelection() {
+              this.loadSelectionFromLocalStorage()
+              this.loadSelectionFromAddressBar()
+            },
+            loadSelectionFromAddressBar() {
+              let searchParams = new URLSearchParams(window.location.search)
+              
+              let defaults = this.getDefaultSelection()
+              for (let k of Object.keys(defaults)) {
+                let v = searchParams.get(k)
+                if (v) {
+                  this.selection[k] = v
+                }
+              }
+            },
+            loadSelectionFromLocalStorage() {
+              this.selection = JSON.parse(window.localStorage.getItem('a11y.selection')) || {}
+              
+              let defaults = this.getDefaultSelection()
+              for (let k of Object.keys(defaults)) {
+                this.selection[k] ||= defaults[k] 
+              }
+            },
+            getDefaultSelection() {
+              return {
+                project: null,
+                levels: '|A|AA|',
+                resolutions: 'open',
+                depth: 'issue',
+                tab: 'issues',
+                tagSlug: '',
+                gtoken: null,
+                issueId: ''
+              }
+            },
+            saveSelection() {
+              window.localStorage.setItem('a11y.selection', JSON.stringify(this.selection))
+            },
+            setSelectionToAddressBar() {
+              let searchParams = new URLSearchParams(window.location.search)
+              for (const [k, v] of Object.entries(this.selection)) {
+                if (k != 'gtoken') {
+                  searchParams.set(k, v);
+                }
+              }
+              let newRelativePathQuery = window.location.pathname + '?' + searchParams.toString();
+              history.pushState(null, '', newRelativePathQuery);            
+            },
+            async onSelectProject() {
+              this.isUnsaved = 0
+              // load issues
+              let res = null
+              if (this.selection.project) {
+                res = await utils.readGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.getOctokit())
+              }
+              if (res) {
+                this.evaluation = res.data
+                this.evaluation_sha = res.sha
+              } else {
+                this.evaluation = {
+                  issues: {},
+                  annotations: {}
+                }
+                this.evaluation_sha = null
+              }
+
+              this.$nextTick(() => {
+                const issueId = `issue-${this.selection.issueId}`
+                const selectedIssue = document.getElementById(issueId)
+                if (selectedIssue) {
+                  selectedIssue.scrollIntoView()
+                }
+                this.isUnsaved = false
+              })
+            },
+            // getPrincipleFromIssue(issue) {
+            //   return "Perceivable Operable Understandable Robust".split(" ")[issue.rule.principle-1]
+            // },
+            isLevelSelected(level) {
+              return !(this.selection.levels && !this.selection.levels.includes('|'+level+'|'))
+            },
+            getLevelFromIssue(issue) {
+              if (!this.rules.rules[this.getNumbersFromIssue(issue)]) {
+                console.log(issue)
+              }
+              return this.rules.rules[this.getNumbersFromIssue(issue)].level
+            },
+            getPrincipleFromIssue(issue) {
+              return this.rules.principles[issue.rule.principle].title
+            },
+            getGuidelineFromIssue(issue) {
+              let r = issue.rule
+              return this.rules.guidelines[`${r.principle}.${r.guideline}`].title
+            },
+            getRuleFromIssue(issue) {
+              return this.rules.rules[this.getNumbersFromIssue(issue)].title
+            },
+            getDescriptionFromIssue(issue) {
+              return this.rules.rules[this.getNumbersFromIssue(issue)].description
+            },
+            getGroupFromIssue(issue) {
+              return `${issue.webpath}|${this.getNumbersFromIssue(issue)}`
+            },
+            getNumbersFromIssue(issue) {
+              return `${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`
+            },
+            getTagClassFromLevel(level) {
+              return {
+                'A': 'is-danger',
+                'AA': 'is-warning',
+                'AAA': 'is-info',
+              }[level]
+            },
+            getTagClassFromIssue(issue) {
+              return this.getTagClassFromLevel(this.getLevelFromIssue(issue))
+            },
+            getOctokit(){
+              let ret = null
+              if (this.selection.gtoken) {
+                ret = new Octokit({
+                  auth: this.selection.gtoken
+                })
+              }
+              return ret
+            },
+            copyGitCommitPrefixToClipboard(issue) {
+              navigator.clipboard.writeText(this.getGitCommitPrefixFromIssue(issue))
+            },
+            getGitCommitPrefixFromIssue(issue) {
+              // TODO: make this more unique, at the moment it only takes the first word in the webpath
+              let pathSlugs = issue.webpath.match(/\w+/)
+              let pathSlug = pathSlugs ? pathSlugs[0] : 'home'
+              return `ax-${this.getNumbersFromIssue(issue)}-${pathSlug}`
+            },
+            getIdFromIssue(issue){
+              return this.rules.rules[this.getNumbersFromIssue(issue)].id
+            },
+            async onClickSave() {
+              if (this.isReadOnly) return;
+              
+              this.evaluation_sha = await utils.updateGithubJsonFile(`projects/${this.selection.project}/a11y-issues.json`, this.evaluation, this.getOctokit(), this.evaluation_sha)
+
+              this.isUnsaved = false
+            },
+            async onClickEvaluate() {
+              if (this.isReadOnly) return;
+              
+              this.project.a11y.evaluationRequested = new Date().toISOString()
+
+              this.projects_sha = await utils.updateGithubJsonFile(`projects/projects.json`, this.projects, this.getOctokit(), this.projects_sha)
+              await utils.updateGithubJsonFile(`projects/evaluate.json`, {slug: this.selection.project, requested: this.project.a11y.evaluationRequested}, this.getOctokit())
+            },
+            formatDate(adate) {
+              if (!adate?.toDateString) {
+                adate = new Date(adate)
+              }
+              let ret = adate.toLocaleTimeString()
+              if ((new Date()).toLocaleDateString() != adate.toLocaleDateString()) {
+                ret = `${adate.toLocaleDateString()} ${ret}` 
+              }
+              return ret;
+            },
+            checkEvaluation() {
+              if (this.isEvaluating) {
+                this.loadProjects()
+                if (!this.isEvaluating) {
+                  this.onSelectProject()
+                }
+              }
+            },
+            async onAcceptScreenshots() {
+              if (this.isReadOnly) return;
+              
+              await utils.updateGithubJsonFile(
+                'actions/accept_screenshots.json', {
+                  projectSlug: this.selection.project,
+                  requested: new Date().toISOString()
+                }, 
+                this.getOctokit()
+              )
+            },
+            getNewIssueFromForm() {
+              let newIssue = this.newIssue
+              let codeParts = newIssue.ruleNumber.split('.')
+              let rule = this.rules[newIssue.ruleNumber]
+              let issue = {
+                code: `MANUAL-ISSUE-${newIssue.ruleNumber}`,
+                message: (newIssue.message || '').trim(),
+                context: newIssue.context,
+                selector: newIssue.selector,
+                runner: newIssue.runner,
+                host: this.project.sites.liv,
+                webpath: newIssue.webpath,
+                rule: {
+                  standard: 'WCAG2',
+                  principle: codeParts[0],
+                  guideline: codeParts[1],
+                  rule: codeParts[2],
+                }
+              }
+              return issue
+            },
+            getNewIssueErrorMessages() {
+              let ret = []
+              let issue = this.getNewIssueFromForm()
+              if (!issue.webpath) {
+                ret.push('Please specify a webpath.')
+              }
+              if (!issue.rule?.rule) {
+                ret.push('Please select a rule.')
+              }
+              // if (this.issues[issue.id]) {
+              //   ret.push('An issue for the same rule on that webpath already exists.')
+              // }
+              return ret
+            },
+            onAddNewIssue() {
+              if (this.getNewIssueErrorMessages().length == 0) {
+                let issue = this.getNewIssueFromForm()
+                issue.id = (++this.evaluation.meta.lastIssueId)
+                this.issues[issue.id] = issue
+
+                this.annotations[issue.id] = {
+                  resolution: "Todo"
+                }
+              }
+            },
+            getScreenshotFromUrl(url, batch='last') {
+              let ret = ''
+              if (this.project) {
+                let urlSlug = url.replace(/\W+/g, '-')
+                ret = `../projects/${this.project.slug}/screenshots/${batch}/${urlSlug}.png`
+              }
+              return ret
+            },
+            getIssuesCount(url, level) {
+              return this.issuesFiltered.filter(i => i.webpath == url && this.getLevelFromIssue(i) == level).length
+            },
+            getLevelsIssuesCountFromGroupKey(key) {
+              return this.levelCounters[key]
+            },
+            copyIssueSelectorToClipboard(issue) {
+              navigator.clipboard.writeText(`inspect($$("${issue.selector}")[0])`)
+            },
+            isIssueFixed(issue) {
+              // any previously detected issue not detected during last evaluation
+              return (issue.detected && issue.detected != this.evaluation.meta.evaluationStarted)
+            },
+            isIssueClosed(issue) {
+              let resolution = this.annotations[issue.id].resolution
+              return (
+                // any previously detected issue not detected during last evaluation
+                this.isIssueFixed(issue)
+                // won't is always closed
+                || (resolution == 'Won\'t')
+                // addressed is only closed if manual
+                // automatically detected issues are closed by first clause
+                || (!issue.detected && resolution == 'Addressed') 
+              )
+            },
+            isRuleTagged(rule) {
+              return this.selectedTag && this.selectedTag.rules.includes(rule.code)
+            },
+            onTagRule(rule) {
+              let tag = this.selectedTag
+              if (!tag) return
+              if (!this.isRuleTagged(rule)) {
+                tag.rules.push(rule.code)
+              } else {
+                tag.rules = tag.rules.filter(c => c != rule.code)
+              }
+            },
+            onCreateTag() {
+              this.tags[this.newTagSlug] = {'rules': [], 'description': ''}
+              this.selection.tagSlug = this.newTagSlug
+            },
+            onRenameTag() {
+              this.tags[this.newTagSlug] = this.selectedTag
+              this.onDeleteTag()
+              this.selection.tagSlug = this.newTagSlug
+            },
+            onDeleteTag() {
+              delete this.tags[this.selection.tagSlug]
+              this.selection.tagSlug = Object.keys(this.tags)[0]
+            },
+            async onSaveTags () {
+              let res = await utils.updateGithubJsonFile(
+                `projects/tags-rules.json`, 
+                this.tags, 
+                this.getOctokit(), 
+                this.tags_sha
+              )
+              this.tags_sha = res
+            },
+            onAddPastedIssues() {
+              let issues = this.getPastedIssues()
+              if (issues.length < 1) return
+
+              let issueIds = []
+              for (let issue of issues) {
+                let sameIssues = Object.values(this.issues).filter(i => (
+                  i.code == issue.code && i.runner == issue.runner && i.message == issue.message && i.webpath == issue.webpath
+                ))
+                if (sameIssues.length) {
+                  let sameIssue = sameIssues[0]
+                  let annotation = this.annotations[sameIssues[0].id]
+                  if (annotation.resolution == 'Addressed') {
+                    annotation.resolution = 'Todo'
+                  }
+                  issueIds.push(sameIssue.id)
+                } else {
+                  // this issue didn't exist
+                  issue.id = (++this.evaluation.meta.lastIssueId)
+
+                  this.issues[issue.id] = issue
+                  this.annotations[issue.id] = {
+                    resolution: "Todo"
+                  }
+                  issueIds.push(issue.id)
+                }
+              }
+              // reset all undetected SiteImprove issues to "Addressed"
+              for (let issue of Object.values(this.issues)) {
+                if (issue.runner == 'siteimprove' && issue.webpath == this.pastedIssues.webpath && !issueIds.includes(issue.id)) {
+                  this.annotations[issue.id].resolution = 'Addressed'
+                }
+              }
+            },
+            getPastedIssues() {
+              let ret = utils.getIssuesFromPastedSiteImprove(
+                this.pastedIssues.raw, 
+                this.pastedIssues.webpath,
+                this.project.sites.liv
+              )
+              return ret
+            },
+            getPastedIssuesErrorMessages() {
+              let ret = []
+              let issues = this.getPastedIssues()
+              if (!this.pastedIssues.webpath) {
+                ret.push('Please specify a webpath.')
+              }
+              if (issues.length < 1) {
+                ret.push('Please copy all text from SiteImprove browser pane and paste it in the above text box.')
+              }
+              // if (this.issues[issue.id]) {
+              //   ret.push('An issue for the same rule on that webpath already exists.')
+              // }
+              return ret
+            },
+            onAddTaggedIssues() {
+              let rules = this.selectedRules.filter(r => this.isRuleTagged(r))
+              for (let rule of rules) {
+                for (let url of this.project.a11y.urls) {
+                  let codeParts = rule.code.split('.')
+                  let issue = {
+                    code: `MANUAL-ISSUE-${rule.code}`,
+                    message: (rule.message || '').trim(),
+                    context: '',
+                    selector: '',
+                    runner: 'manual',
+                    host: this.project.sites.liv,
+                    webpath: url,
+                    rule: {
+                      standard: 'WCAG2',
+                      principle: codeParts[0],
+                      guideline: codeParts[1],
+                      rule: codeParts[2],
+                    }
+                  }
+
+                  let sameIssues = Object.values(this.issues).filter(i => {
+                    return i.code == issue.code && i.webpath == issue.webpath
+                  })
+
+                  if (sameIssues.length < 1) {
+                    // this issue didn't exist
+                    issue.id = (++this.evaluation.meta.lastIssueId)
+
+                    this.issues[issue.id] = issue
+                    this.annotations[issue.id] = {
+                      resolution: "Todo"
+                    }
+                  } else {
+                    let annotation = this.annotations[sameIssues[0].id]
+                    if (annotation.resolution == "Addessed") {
+                      annotation.resolution = "Todo"
+                    }
+                  }
+                }
+              }
+            },
+            onClickIssueFirstCol(issue) {
+              this.copyGitCommitPrefixToClipboard(issue)
+              this.selection.issueId = issue.id
+            }
+          }
+        }).mount('#app');
+      })
+    </script>
+  </body>
+</html>

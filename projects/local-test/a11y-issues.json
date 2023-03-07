@@ -1,0 +1,728 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "evaluationStarted": "2022-09-04T19:19:56.760Z",
+    "evaluationEnded": "2022-09-04T19:20:01.357Z"
+  },
+  "issues": {
+    "20983101": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"local-test\">Loca...</select>",
+      "selector": "#app > div > div:nth-child(3) > div > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": 20983101
+    },
+    "47752301": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Duplicate id attribute value \"id1\" found on the web page.",
+      "context": "<span id=\"id1\">v3</span>",
+      "selector": "#id1",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/test.html",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "1",
+        "code": "F77",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": 47752301
+    },
+    "286325257": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputPassword.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This passwordinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<input type=\"password\" class=\"input\">",
+      "selector": "#app > div > form > div > input",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "InputPassword.Name"
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": 286325257
+    },
+    "305303641": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"local-test\">Loca...</select>",
+      "selector": "#app > div:nth-child(1) > div:nth-child(2) > div > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": 305303641
+    },
+    "341155308": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Duplicate id attribute value \"id1\" found on the web page.",
+      "context": "<span id=\"id1\">v2</span>",
+      "selector": "#id1",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/test.html",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "1",
+        "code": "F77",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": 341155308
+    },
+    "545226838": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"local-test\">Loca...</select>",
+      "selector": "#app > div > div:nth-child(3) > div > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": 545226838
+    },
+    "660864964": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"\">All levels</op...</select>",
+      "selector": "#app > div > div:nth-child(4) > div:nth-child(3) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-03T22:07:29.204Z",
+      "hash": 660864964
+    },
+    "672181091": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"\">All levels</op...</select>",
+      "selector": "#app > div > div:nth-child(5) > div:nth-child(3) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": 672181091
+    },
+    "967767831": {
+      "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+      "context": "<img src=\"https://s1.qwant.com/thumbr/0x380/9/7/54b459af646429517aa91eefb92e937da4648b7b57e05e496f6b966d1c0146/991958-sky-clouds-nature.jpg?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2019%2F09%2F991958-sky-clouds-nature.jpg&amp;q=0&amp;b=1&a...",
+      "selector": "html > body > section > div > img",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/test.html",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "1",
+        "rule": "1",
+        "code": "H37",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": 967767831
+    },
+    "1154580939": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"\">All levels</op...</select>",
+      "selector": "#app > div:nth-child(2) > div > div:nth-child(3) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": 1154580939
+    },
+    "1398338803": {
+      "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+      "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+      "selector": "html",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/test.html",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "3",
+        "guideline": "1",
+        "rule": "1",
+        "code": "H57",
+        "target": "2"
+      },
+      "detected": "2022-09-03T11:32:24.683Z",
+      "hash": 1398338803
+    },
+    "1793735223": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"open\">Open issue...</select>",
+      "selector": "#app > div > div:nth-child(4) > div:nth-child(4) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-03T22:07:29.204Z",
+      "hash": 1793735223
+    },
+    "1805051350": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"open\">Open issue...</select>",
+      "selector": "#app > div > div:nth-child(5) > div:nth-child(4) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": 1805051350
+    },
+    "1856586820": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"\">All levels</op...</select>",
+      "selector": "#app > div:nth-child(2) > div > div:nth-child(3) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": 1856586820
+    },
+    "-774091915": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Duplicate id attribute value \"id4\" found on the web page.",
+      "context": "<span id=\"id4\">v5</span>",
+      "selector": "#id4",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/test.html",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "1",
+        "code": "F77",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": -774091915
+    },
+    "-2008773264": {
+      "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+      "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+      "selector": "html",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "3",
+        "guideline": "1",
+        "rule": "1",
+        "code": "H57",
+        "target": "2"
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": -2008773264
+    },
+    "-808082859": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"local-test\">Loca...</select>",
+      "selector": "#app > div > div:nth-child(2) > div > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-03T22:07:29.204Z",
+      "hash": -808082859
+    },
+    "-1332326596": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"local-test\">Loca...</select>",
+      "selector": "#app > div > div:nth-child(2) > div > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-03T22:07:29.204Z",
+      "hash": -1332326596
+    },
+    "-41140917": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"\">All levels</op...</select>",
+      "selector": "#app > div > div:nth-child(4) > div:nth-child(3) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-03T22:07:29.204Z",
+      "hash": -41140917
+    },
+    "-1799226192": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"open\">Open issue...</select>",
+      "selector": "#app > div > div:nth-child(4) > div:nth-child(4) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-03T22:07:29.204Z",
+      "hash": -1799226192
+    },
+    "-1163957551": {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+      "context": "<form class=\"notification is-warning\"><div class=\"field\"><label class...</form>",
+      "selector": "#app > div > form",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "3",
+        "guideline": "2",
+        "rule": "2",
+        "code": "H32",
+        "target": "2"
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": -1163957551
+    },
+    "-951873449": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<input type=\"password\" class=\"input\">",
+      "selector": "#app > div > form > div > input",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": -951873449
+    },
+    "-29824790": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"\">All levels</op...</select>",
+      "selector": "#app > div > div:nth-child(5) > div:nth-child(3) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": -29824790
+    },
+    "-1787910065": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"open\">Open issue...</select>",
+      "selector": "#app > div > div:nth-child(5) > div:nth-child(4) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T10:40:35.624Z",
+      "hash": -1787910065
+    },
+    "-396702240": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"local-test\">Loca...</select>",
+      "selector": "#app > div:nth-child(1) > div:nth-child(2) > div > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": -396702240
+    },
+    "-1305510217": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+      "context": "<select><option value=\"open\">Open issue...</select>",
+      "selector": "#app > div:nth-child(2) > div > div:nth-child(4) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "2",
+        "code": "H91",
+        "target": "Select.Name"
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": -1305510217
+    },
+    "-603504336": {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<select><option value=\"open\">Open issue...</select>",
+      "selector": "#app > div:nth-child(2) > div > div:nth-child(4) > select",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "1",
+        "guideline": "3",
+        "rule": "1",
+        "code": "F68",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": -603504336
+    },
+    "-1067494922": {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Duplicate id attribute value \"id4\" found on the web page.",
+      "context": "<span id=\"id4\">v6</span>",
+      "selector": "#id4",
+      "runner": "htmlcs",
+      "runnerExtras": {},
+      "host": "http://localhost:5500",
+      "webpath": "/docs/test.html",
+      "rule": {
+        "standard": "WCAG2",
+        "principle": "4",
+        "guideline": "1",
+        "rule": "1",
+        "code": "F77",
+        "target": ""
+      },
+      "detected": "2022-09-04T19:19:56.760Z",
+      "hash": -1067494922
+    }
+  },
+  "annotations": {
+    "20983101": {
+      "resolution": "Todo"
+    },
+    "47752301": {
+      "resolution": "Todo"
+    },
+    "286325257": {
+      "resolution": "Todo"
+    },
+    "305303641": {
+      "resolution": "Todo"
+    },
+    "341155308": {
+      "resolution": "Todo"
+    },
+    "545226838": {
+      "resolution": "Todo"
+    },
+    "660864964": {
+      "resolution": "Todo"
+    },
+    "672181091": {
+      "resolution": "Todo"
+    },
+    "967767831": {
+      "complexity": "M",
+      "roles": "U",
+      "comment": "123456",
+      "resolution": "Todo"
+    },
+    "1154580939": {
+      "resolution": "Todo"
+    },
+    "1398338803": {},
+    "1793735223": {
+      "resolution": "Todo"
+    },
+    "1805051350": {
+      "resolution": "Todo"
+    },
+    "1856586820": {
+      "resolution": "Todo"
+    },
+    "-774091915": {
+      "resolution": "Todo"
+    },
+    "-2008773264": {
+      "resolution": "Todo"
+    },
+    "-808082859": {
+      "resolution": "Todo"
+    },
+    "-1332326596": {
+      "resolution": "Todo"
+    },
+    "-41140917": {
+      "resolution": "Todo"
+    },
+    "-1799226192": {
+      "resolution": "Todo"
+    },
+    "-1163957551": {
+      "resolution": "Todo"
+    },
+    "-951873449": {
+      "resolution": "Todo"
+    },
+    "-29824790": {
+      "resolution": "Todo"
+    },
+    "-1787910065": {
+      "resolution": "Todo"
+    },
+    "-396702240": {
+      "resolution": "Todo"
+    },
+    "-1305510217": {
+      "resolution": "Todo"
+    },
+    "-603504336": {
+      "resolution": "Todo"
+    },
+    "-1067494922": {
+      "resolution": "Todo"
+    },
+    "/docs/test.html|4.1.1": {
+      "resolution": "Todo"
+    },
+    "/docs/|1.3.1": {
+      "resolution": "Todo",
+      "comment": "1234"
+    },
+    "/docs/test.html|1.1.1": {
+      "resolution": "Todo"
+    },
+    "/docs/|4.1.2": {
+      "resolution": "Todo"
+    },
+    "/docs/|3.1.1": {
+      "resolution": "Todo"
+    }
+  }
+}

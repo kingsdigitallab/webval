@@ -1,0 +1,9 @@
+.env
+node_modules/
+bin/
+.idea/
+/tmp
+package.json
+package-lock.json
+/tst
+.vscode

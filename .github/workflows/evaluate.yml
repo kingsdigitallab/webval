@@ -1,0 +1,32 @@
+name: Automated accessibility evaluation
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'projects/evaluate.json'
+
+jobs:
+  accessibility-evaluation:
+
+    name: accessibility-evaluation-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    container: buildkite/puppeteer
+
+    steps:
+    - name: install git
+      run: rm /etc/apt/sources.list.d/google.list && apt update && apt install -y git
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i pa11y && npm i blink-diff
+    - name: Evaluation
+      run: node docs/evaluate.js
+    - name: Commit and push
+      if: ${{ true }}
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Automated accessibility evaluation
