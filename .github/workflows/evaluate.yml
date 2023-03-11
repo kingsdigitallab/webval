@@ -25,6 +25,8 @@ jobs:
       run: npm i pa11y && npm i blink-diff
     - name: Evaluation
       run: node docs/evaluate.js
+    - name: gh ownership exception
+      run: git config --global --add safe.directory /__w/webval/webval
     - name: Commit and push
       if: ${{ true }}
       uses: stefanzweifel/git-auto-commit-action@v4
