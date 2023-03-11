@@ -1,18 +1,5 @@
 [
  {
-  "name": "LocalTest",
-  "slug": "local-test",
-  "sites": {
-   "liv": "http://localhost:5500"
-  },
-  "a11y": {
-   "urls": [
-    "/docs/",
-    "/docs/test.html"
-   ]
-  }
- },
- {
   "name": "CultureCase",
   "slug": "culturecase",
   "sites": {
@@ -55,34 +42,7 @@
   "screenshots": {}
  },
  {
-  "name": "African Rock Art",
-  "slug": "tara",
-  "sites": {
-   "liv": "https://africanrockart.britishmuseum.org"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/introduction/origins/",
-    "/introduction/chronologies/",
-    "/introduction/techniques/",
-    "/country/",
-    "/country/chad/",
-    "/country/chad/niola-doa/",
-    "/country/nigeria/",
-    "/country/nigeria/images/",
-    "/country/nigeria/images/#image2",
-    "/thematic/",
-    "/thematic/gone-fishing/"
-   ],
-   "evaluationRequested": "2022-09-09T18:42:48.304Z",
-   "evaluationStarted": "2022-09-09T16:43:00.147Z",
-   "evaluationEnded": "2022-09-09T16:44:30.017Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "KDL Web 2022",
+  "name": "KDL Web",
   "slug": "kdlweb2",
   "sites": {
    "liv": "https://kingsdigitallab.github.io/kdl"
@@ -100,71 +60,6 @@
    "evaluationStarted": "2023-03-11T00:39:16.641Z",
    "evaluationEnded": "2023-03-11T00:39:42.768Z",
    "evaluationRequested": "2023-03-11T00:38:01.827Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "FIELD",
-  "slug": "field",
-  "sites": {
-   "liv": "https://field-wt.co.uk"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/about/",
-    "/about/meetteam/research-team/",
-    "/contact-us/",
-    "/blog-news/",
-    "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
-    "/search/?q=disease",
-    "/resources/timeline/"
-   ],
-   "evaluationRequested": "2022-11-16T14:50:48.933Z",
-   "evaluationStarted": "2022-11-16T14:51:56.538Z",
-   "evaluationEnded": "2022-11-16T14:52:19.912Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "FIELD2",
-  "slug": "field2",
-  "sites": {
-   "liv": "https://field2-stg.kdl.kcl.ac.uk"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/about/",
-    "/about/meetteam/",
-    "/contact-us/",
-    "/blog-news/",
-    "/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/",
-    "/search/?q=disease",
-    "/resources/timeline/"
-   ],
-   "evaluationRequested": "2022-11-04T10:53:19.209Z",
-   "evaluationStarted": "2022-11-04T10:54:25.853Z",
-   "evaluationEnded": "2022-11-04T10:54:39.826Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "Layers of Vision",
-  "slug": "lov",
-  "sites": {
-   "liv": "https://layersofvision.org"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/exhibition/",
-    "/artists/",
-    "/people/01-braffaella/",
-    "/plan-your-visit/",
-    "/people/07-sbooth/"
-   ],
-   "evaluationRequested": "2022-11-23T16:26:47.121Z"
   },
   "screenshots": {}
  }
