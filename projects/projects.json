@@ -42,7 +42,7 @@
   "screenshots": {}
  },
  {
-  "name": "KDL Web",
+  "name": "KDL Web 2",
   "slug": "kdlweb2",
   "sites": {
    "liv": "https://kingsdigitallab.github.io/kdl"
@@ -62,5 +62,24 @@
    "evaluationRequested": "2023-03-11T00:38:01.827Z"
   },
   "screenshots": {}
- }
+ },
+ {
+  "name": "KDL Web 1",
+  "slug": "kdlweb1",
+  "sites": {
+   "liv": "https://kdl.kcl.ac.uk"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/our-work/",
+    "/our-work/paradox-medieval-scotland/",
+    "/what-we-do/",
+    "/blog/",
+    "/blog/rtp-rse4/",
+    "/contact-us/"
+   ]
+  },
+  "screenshots": {}
+ } 
 ]
