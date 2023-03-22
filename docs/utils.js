@@ -82,7 +82,7 @@
     }
 
     if (fetchUrl) {
-      let res = await fetch(getUrl);
+      let res = await fetch(fetchUrl);
       if (res && res.status == 200) {
         content = await res.json()
       }
