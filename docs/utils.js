@@ -49,53 +49,50 @@
 
   // client-side
   exports.readGithubJsonFile = async function (filePath, octokit) {
-    let ret = null;
-    let res = null;
+    let content = null;
+    let sha = null;
+    let fetchUrl = null;
+
     if (octokit) {
       let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`;
       try {
-        res = await octokit.request(`GET ${getUrl}`, {
+        let res = await octokit.request(`GET ${getUrl}`, {
           headers: {
             "If-None-Match": "",
           },
         });
         res = res.data;
+        if (res) {
+
+          sha = res.sha
+          if (!res.content) {
+            // res.content == "" for file > 1MB
+            // need to get content with second request to download_url
+            fetchUrl = res?.download_url
+          } else {
+            content = JSON.parse(atob(res.content))
+          }
+        }
       } catch (err) {
         console.log(err);
       }
     } else {
-      if (0) {
-        // we don't use octokit here
-        // as we want this call to work without a github PAT
-        // https://stackoverflow.com/a/42518434
-        // TODO: use Octokit if PAT provided, so we don't exceed rate limits
-        let getUrl = `https://api.github.com/repos/kingsdigitallab/webval/contents/${filePath}`;
+      // TODO: simple relative fetch, no sha
+      fetchUrl = `../${filePath}`;
+    }
 
-        // let res = await fetch(getUrl, {cache: "no-cache"})
-        let res = await fetch(getUrl);
-        if (res && res.status == 200) {
-          res = await res.json();
-        }
-      } else {
-        // TODO: simple relative fetch, no sha
-        let getUrl = `../${filePath}`;
-        let res = null;
-        res = await fetch(getUrl);
-        if (res && res.status == 200) {
-          ret = {
-            data: await res.json(),
-            sha: null,
-          };
-        }
-        res = null;
+    if (fetchUrl) {
+      let res = await fetch(getUrl);
+      if (res && res.status == 200) {
+        content = await res.json()
       }
     }
 
-    if (res) {
+    if (content !== null) {
       ret = {
-        data: JSON.parse(atob(res.content)),
-        sha: res.sha,
-      };
+        data: content,
+        sha: sha
+      }
     }
 
     return ret;
