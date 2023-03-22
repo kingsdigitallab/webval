@@ -1,10 +1,10 @@
 {
  "meta": {
-  "lastIssueId": 68,
+  "lastIssueId": 132,
   "host": "https://kingsdigitallab.github.io/kdl",
   "version": "0.3.0",
-  "evaluationStarted": "2022-10-07T16:09:19.589Z",
-  "evaluationEnded": "2022-10-07T16:09:38.417Z"
+  "evaluationStarted": "2023-03-11T00:39:16.641Z",
+  "evaluationEnded": "2023-03-11T00:39:42.768Z"
  },
  "issues": {
   "1": {
@@ -1812,6 +1812,1724 @@
    },
    "detected": "2022-10-07T16:09:19.589Z",
    "id": 68
+  },
+  "69": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"pagefind-ui__search-input svelte-1bkqzc5\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#search > div > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 69
+  },
+  "70": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"pagefind-ui__search-input svelte-1bkqzc5\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#search > div > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 70
+  },
+  "71": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<input class=\"pagefind-ui__search-input svelte-1bkqzc5\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#search > div > form > input",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 71
+  },
+  "72": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/projects/\" aria-current=\"page\">Projects</a>",
+   "selector": "html > body > main > header > nav > ol > li > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 72
+  },
+  "73": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2020–2025\n        </dd>",
+   "selector": "html > body > main > article:nth-child(2) > header > section > section > dl > dd",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 73
+  },
+  "74": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2020–2025\n        </dd>",
+   "selector": "html > body > main > article:nth-child(3) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 74
+  },
+  "75": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2022–2024\n        </dd>",
+   "selector": "html > body > main > article:nth-child(4) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 75
+  },
+  "76": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2021–2024\n        </dd>",
+   "selector": "html > body > main > article:nth-child(5) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 76
+  },
+  "77": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2018–2023\n        </dd>",
+   "selector": "html > body > main > article:nth-child(6) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 77
+  },
+  "78": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2020–2022\n        </dd>",
+   "selector": "html > body > main > article:nth-child(7) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 78
+  },
+  "79": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2018–2022\n        </dd>",
+   "selector": "html > body > main > article:nth-child(8) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 79
+  },
+  "80": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2019–2022\n        </dd>",
+   "selector": "html > body > main > article:nth-child(9) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 80
+  },
+  "81": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2022–2022\n        </dd>",
+   "selector": "html > body > main > article:nth-child(10) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 81
+  },
+  "82": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2021–2022\n        </dd>",
+   "selector": "html > body > main > article:nth-child(11) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 82
+  },
+  "83": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2017–2021\n        </dd>",
+   "selector": "html > body > main > article:nth-child(12) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 83
+  },
+  "84": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2016–2021\n        </dd>",
+   "selector": "html > body > main > article:nth-child(13) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 84
+  },
+  "85": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2021–2021\n        </dd>",
+   "selector": "html > body > main > article:nth-child(14) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 85
+  },
+  "86": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2019–2021\n        </dd>",
+   "selector": "html > body > main > article:nth-child(15) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 86
+  },
+  "87": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2015–2021\n        </dd>",
+   "selector": "html > body > main > article:nth-child(16) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 87
+  },
+  "88": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2019–2020\n        </dd>",
+   "selector": "html > body > main > article:nth-child(17) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 88
+  },
+  "89": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2013–2020\n        </dd>",
+   "selector": "html > body > main > article:nth-child(18) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 89
+  },
+  "90": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2018–2020\n        </dd>",
+   "selector": "html > body > main > article:nth-child(19) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 90
+  },
+  "91": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2018–2019\n        </dd>",
+   "selector": "html > body > main > article:nth-child(20) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 91
+  },
+  "92": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2018–2019\n        </dd>",
+   "selector": "html > body > main > article:nth-child(21) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 92
+  },
+  "93": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2019–2019\n        </dd>",
+   "selector": "html > body > main > article:nth-child(22) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 93
+  },
+  "94": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2017–2019\n        </dd>",
+   "selector": "html > body > main > article:nth-child(23) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 94
+  },
+  "95": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2014–2017\n        </dd>",
+   "selector": "html > body > main > article:nth-child(24) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 95
+  },
+  "96": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2017–2017\n        </dd>",
+   "selector": "html > body > main > article:nth-child(25) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 96
+  },
+  "97": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<dd>\n            2011–2017\n        </dd>",
+   "selector": "html > body > main > article:nth-child(26) > header > section > section > dl > dd:nth-child(4)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 97
+  },
+  "98": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/kdl/projects/2/\">Next <span class=\"kdl-visually-...</a>",
+   "selector": "html > body > main > nav > ol > li:nth-child(4) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 98
+  },
+  "99": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<span class=\"kdl-visually-hidden\">page</span>",
+   "selector": "html > body > main > nav > ol > li:nth-child(4) > a > span",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 99
+  },
+  "100": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/kdl/projects/3/\">Last <span class=\"kdl-visually-...</a>",
+   "selector": "html > body > main > nav > ol > li:nth-child(5) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 100
+  },
+  "101": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<span class=\"kdl-visually-hidden\">page</span>",
+   "selector": "html > body > main > nav > ol > li:nth-child(5) > a > span",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 101
+  },
+  "102": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Active\">\n        Active, published\n    </section>",
+   "selector": "html > body > main > article:nth-child(2) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 102
+  },
+  "103": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Post-project\">\n        Post-project, draft\n  ...</section>",
+   "selector": "html > body > main > article:nth-child(3) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 103
+  },
+  "104": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Active\">\n        Active, published\n    </section>",
+   "selector": "html > body > main > article:nth-child(4) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 104
+  },
+  "105": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Active\">\n        Active, published\n    </section>",
+   "selector": "html > body > main > article:nth-child(5) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 105
+  },
+  "106": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Active\">\n        Active, published\n    </section>",
+   "selector": "html > body > main > article:nth-child(6) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 106
+  },
+  "107": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Post-project\">\n        Post-project, publishe...</section>",
+   "selector": "html > body > main > article:nth-child(7) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 107
+  },
+  "108": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, published\n...</section>",
+   "selector": "html > body > main > article:nth-child(8) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 108
+  },
+  "109": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Active\">\n        Active, published\n    </section>",
+   "selector": "html > body > main > article:nth-child(9) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 109
+  },
+  "110": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Active\">\n        Active, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(10) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 110
+  },
+  "111": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Post-project\">\n        Post-project, publishe...</section>",
+   "selector": "html > body > main > article:nth-child(11) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 111
+  },
+  "112": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, published\n...</section>",
+   "selector": "html > body > main > article:nth-child(12) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 112
+  },
+  "113": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, published\n...</section>",
+   "selector": "html > body > main > article:nth-child(13) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 113
+  },
+  "114": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Post-project\">\n        Post-project, publishe...</section>",
+   "selector": "html > body > main > article:nth-child(14) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 114
+  },
+  "115": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, published\n...</section>",
+   "selector": "html > body > main > article:nth-child(15) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 115
+  },
+  "116": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(16) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 116
+  },
+  "117": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, published\n...</section>",
+   "selector": "html > body > main > article:nth-child(17) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 117
+  },
+  "118": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(18) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 118
+  },
+  "119": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, published\n...</section>",
+   "selector": "html > body > main > article:nth-child(19) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 119
+  },
+  "120": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(20) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 120
+  },
+  "121": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Post-project\">\n        Post-project, draft\n  ...</section>",
+   "selector": "html > body > main > article:nth-child(21) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 121
+  },
+  "122": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Post-project\">\n        Post-project, draft\n  ...</section>",
+   "selector": "html > body > main > article:nth-child(22) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 122
+  },
+  "123": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(23) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 123
+  },
+  "124": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(24) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 124
+  },
+  "125": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(25) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 125
+  },
+  "126": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<section class=\"status Maintained\">\n        Maintained, draft\n    </section>",
+   "selector": "html > body > main > article:nth-child(26) > footer > section",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 126
+  },
+  "127": {
+   "code": "definition-list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements (https://dequeuniversity.com/rules/axe/4.2/definition-list?application=axeAPI)",
+   "context": "<dl>\n    <dt>\n        Partner insti...</dl>",
+   "selector": "#metadata > dl",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <dl> elements are structured correctly",
+    "impact": "serious",
+    "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/definition-list?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/projects/aofm/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 127
+  },
+  "128": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/blog/\" aria-current=\"page\">Blog</a>",
+   "selector": "html > body > main > header > nav > ol > li > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/blog/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 128
+  },
+  "129": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/kdl/blog/2/\">Next <span class=\"kdl-visually-...</a>",
+   "selector": "html > body > main > nav > ol > li:nth-child(4) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/blog/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 129
+  },
+  "130": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/kdl/blog/2/\">Last <span class=\"kdl-visually-...</a>",
+   "selector": "html > body > main > nav > ol > li:nth-child(5) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/blog/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 130
+  },
+  "131": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/resources/\">Resources</a>",
+   "selector": "html > body > main > header > nav > ol > li:nth-child(1) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/resources/faqs/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 131
+  },
+  "132": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/kdl/resources/faqs/\" aria-current=\"page\">FAQs</a>",
+   "selector": "html > body > main > header > nav > ol > li:nth-child(2) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/resources/faqs/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-03-11T00:39:16.641Z",
+   "id": 132
   }
  },
  "annotations": {
@@ -2017,6 +3735,198 @@
    "resolution": "Todo"
   },
   "68": {
+   "resolution": "Todo"
+  },
+  "69": {
+   "resolution": "Todo"
+  },
+  "70": {
+   "resolution": "Todo"
+  },
+  "71": {
+   "resolution": "Todo"
+  },
+  "72": {
+   "resolution": "Todo"
+  },
+  "73": {
+   "resolution": "Todo"
+  },
+  "74": {
+   "resolution": "Todo"
+  },
+  "75": {
+   "resolution": "Todo"
+  },
+  "76": {
+   "resolution": "Todo"
+  },
+  "77": {
+   "resolution": "Todo"
+  },
+  "78": {
+   "resolution": "Todo"
+  },
+  "79": {
+   "resolution": "Todo"
+  },
+  "80": {
+   "resolution": "Todo"
+  },
+  "81": {
+   "resolution": "Todo"
+  },
+  "82": {
+   "resolution": "Todo"
+  },
+  "83": {
+   "resolution": "Todo"
+  },
+  "84": {
+   "resolution": "Todo"
+  },
+  "85": {
+   "resolution": "Todo"
+  },
+  "86": {
+   "resolution": "Todo"
+  },
+  "87": {
+   "resolution": "Todo"
+  },
+  "88": {
+   "resolution": "Todo"
+  },
+  "89": {
+   "resolution": "Todo"
+  },
+  "90": {
+   "resolution": "Todo"
+  },
+  "91": {
+   "resolution": "Todo"
+  },
+  "92": {
+   "resolution": "Todo"
+  },
+  "93": {
+   "resolution": "Todo"
+  },
+  "94": {
+   "resolution": "Todo"
+  },
+  "95": {
+   "resolution": "Todo"
+  },
+  "96": {
+   "resolution": "Todo"
+  },
+  "97": {
+   "resolution": "Todo"
+  },
+  "98": {
+   "resolution": "Todo"
+  },
+  "99": {
+   "resolution": "Todo"
+  },
+  "100": {
+   "resolution": "Todo"
+  },
+  "101": {
+   "resolution": "Todo"
+  },
+  "102": {
+   "resolution": "Todo"
+  },
+  "103": {
+   "resolution": "Todo"
+  },
+  "104": {
+   "resolution": "Todo"
+  },
+  "105": {
+   "resolution": "Todo"
+  },
+  "106": {
+   "resolution": "Todo"
+  },
+  "107": {
+   "resolution": "Todo"
+  },
+  "108": {
+   "resolution": "Todo"
+  },
+  "109": {
+   "resolution": "Todo"
+  },
+  "110": {
+   "resolution": "Todo"
+  },
+  "111": {
+   "resolution": "Todo"
+  },
+  "112": {
+   "resolution": "Todo"
+  },
+  "113": {
+   "resolution": "Todo"
+  },
+  "114": {
+   "resolution": "Todo"
+  },
+  "115": {
+   "resolution": "Todo"
+  },
+  "116": {
+   "resolution": "Todo"
+  },
+  "117": {
+   "resolution": "Todo"
+  },
+  "118": {
+   "resolution": "Todo"
+  },
+  "119": {
+   "resolution": "Todo"
+  },
+  "120": {
+   "resolution": "Todo"
+  },
+  "121": {
+   "resolution": "Todo"
+  },
+  "122": {
+   "resolution": "Todo"
+  },
+  "123": {
+   "resolution": "Todo"
+  },
+  "124": {
+   "resolution": "Todo"
+  },
+  "125": {
+   "resolution": "Todo"
+  },
+  "126": {
+   "resolution": "Todo"
+  },
+  "127": {
+   "resolution": "Todo"
+  },
+  "128": {
+   "resolution": "Todo"
+  },
+  "129": {
+   "resolution": "Todo"
+  },
+  "130": {
+   "resolution": "Todo"
+  },
+  "131": {
+   "resolution": "Todo"
+  },
+  "132": {
    "resolution": "Todo"
   }
  }

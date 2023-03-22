@@ -27,6 +27,8 @@ jobs:
       run: node docs/evaluate.js
     - name: gh ownership exception
       run: git config --global --add safe.directory /__w/webval/webval
+    - name: increase gh buffer
+      run: git config http.postBuffer 524288000
     - name: Commit and push
       if: ${{ true }}
       uses: stefanzweifel/git-auto-commit-action@v4
