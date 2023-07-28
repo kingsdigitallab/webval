@@ -108,5 +108,18 @@
    "evaluationEnded": "2023-07-28T09:26:34.970Z"
   },
   "screenshots": {}
- }
+ },
+ {
+    "name": "Crossreads.A",
+    "slug": "crossreads-a",
+    "sites": {
+     "liv": "https://kingsdigitallab.github.io/crossreads"
+    },
+    "a11y": {
+     "urls": [
+      "/annotator.html"
+     ]
+    },
+    "screenshots": {}
+} 
 ]
