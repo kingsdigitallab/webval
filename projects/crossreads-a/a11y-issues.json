@@ -1,0 +1,2968 @@
+{
+ "meta": {
+  "lastIssueId": 107,
+  "host": "localhost:5500/app",
+  "version": "0.3.0",
+  "evaluationStarted": "2023-07-28T15:02:38.458Z",
+  "evaluationEnded": "2023-07-28T15:02:40.418Z"
+ },
+ "issues": {
+  "1": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 1
+  },
+  "2": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 2
+  },
+  "3": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 3
+  },
+  "4": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 4
+  },
+  "5": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 5
+  },
+  "6": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 6
+  },
+  "7": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 7
+  },
+  "8": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 8
+  },
+  "9": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 9
+  },
+  "10": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 10
+  },
+  "11": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 11
+  },
+  "12": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 12
+  },
+  "13": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 13
+  },
+  "14": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 14
+  },
+  "15": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:52:32.818Z",
+   "id": 15
+  },
+  "16": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 16
+  },
+  "17": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 17
+  },
+  "18": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 18
+  },
+  "19": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 19
+  },
+  "20": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 20
+  },
+  "21": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 21
+  },
+  "22": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 22
+  },
+  "23": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 23
+  },
+  "24": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 24
+  },
+  "25": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 25
+  },
+  "26": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 26
+  },
+  "27": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 27
+  },
+  "28": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 28
+  },
+  "29": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 29
+  },
+  "30": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/crossreads",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:00.078Z",
+   "id": 30
+  },
+  "31": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 31
+  },
+  "32": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 32
+  },
+  "33": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 33
+  },
+  "34": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 34
+  },
+  "35": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 35
+  },
+  "36": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 36
+  },
+  "37": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 37
+  },
+  "38": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 38
+  },
+  "39": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 39
+  },
+  "40": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 40
+  },
+  "41": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 41
+  },
+  "42": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 42
+  },
+  "43": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 43
+  },
+  "44": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 44
+  },
+  "45": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:57:36.188Z",
+   "id": 45
+  },
+  "46": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 46
+  },
+  "47": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"123\"></a>",
+   "selector": "html > body > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 47
+  },
+  "48": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 48
+  },
+  "49": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 49
+  },
+  "50": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 50
+  },
+  "51": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 51
+  },
+  "52": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 52
+  },
+  "53": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 53
+  },
+  "54": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 54
+  },
+  "55": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 55
+  },
+  "56": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 56
+  },
+  "57": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 57
+  },
+  "58": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 58
+  },
+  "59": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 59
+  },
+  "60": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 60
+  },
+  "61": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:23.894Z",
+   "id": 61
+  },
+  "62": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 62
+  },
+  "63": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 63
+  },
+  "64": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 64
+  },
+  "65": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 65
+  },
+  "66": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 66
+  },
+  "67": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 67
+  },
+  "68": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 68
+  },
+  "69": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 69
+  },
+  "70": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 70
+  },
+  "71": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 71
+  },
+  "72": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 72
+  },
+  "73": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 73
+  },
+  "74": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 74
+  },
+  "75": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 75
+  },
+  "76": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:36.488Z",
+   "id": 76
+  },
+  "77": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 77
+  },
+  "78": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"123\"></a>",
+   "selector": "html > body > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 78
+  },
+  "79": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 79
+  },
+  "80": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 80
+  },
+  "81": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 81
+  },
+  "82": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 82
+  },
+  "83": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 83
+  },
+  "84": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 84
+  },
+  "85": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 85
+  },
+  "86": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 86
+  },
+  "87": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 87
+  },
+  "88": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 88
+  },
+  "89": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 89
+  },
+  "90": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 90
+  },
+  "91": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 91
+  },
+  "92": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T14:58:53.052Z",
+   "id": 92
+  },
+  "93": {
+   "code": "WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H57",
+    "target": "2",
+    "principle": "3",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 93
+  },
+  "94": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 94
+  },
+  "95": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"input\" type=\"text\" placeholder=\"Search\">",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > p > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 95
+  },
+  "96": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 96
+  },
+  "97": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"><option value=\"latin-1\">Greek 1...</select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(2) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 97
+  },
+  "98": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "Select.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 98
+  },
+  "99": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<select disabled=\"\"></select>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(3) > div > div > dl > dd:nth-child(4) > div > select",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 99
+  },
+  "100": {
+   "code": "list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements (https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI)",
+   "context": "<ul class=\"list-selectable\"><a href=\"#\"><li class=\"\">ISic00...</ul>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures that lists are structured correctly",
+    "impact": "serious",
+    "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/list?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 100
+  },
+  "101": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000001</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(1) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 101
+  },
+  "102": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000007</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 102
+  },
+  "103": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000031</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(3) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 103
+  },
+  "104": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000046</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(4) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 104
+  },
+  "105": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic000079</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(5) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 105
+  },
+  "106": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li class=\"\">ISic002745</li>",
+   "selector": "#annotator > div > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(3) > ul > a:nth-child(6) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 106
+  },
+  "107": {
+   "code": "bypass",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Page must have means to bypass repeated blocks (https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI)",
+   "context": "<html><head>\n    <meta charset=\"utf-8...</html>",
+   "selector": "html",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+    "impact": "serious",
+    "help": "Page must have means to bypass repeated blocks",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/bypass?application=axeAPI"
+   },
+   "host": "localhost:5500/app",
+   "webpath": "/annotator.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-07-28T15:02:38.458Z",
+   "id": 107
+  }
+ },
+ "annotations": {
+  "1": {
+   "resolution": "Todo"
+  },
+  "2": {
+   "resolution": "Todo"
+  },
+  "3": {
+   "resolution": "Todo"
+  },
+  "4": {
+   "resolution": "Todo"
+  },
+  "5": {
+   "resolution": "Todo"
+  },
+  "6": {
+   "resolution": "Todo"
+  },
+  "7": {
+   "resolution": "Todo"
+  },
+  "8": {
+   "resolution": "Todo"
+  },
+  "9": {
+   "resolution": "Todo"
+  },
+  "10": {
+   "resolution": "Todo"
+  },
+  "11": {
+   "resolution": "Todo"
+  },
+  "12": {
+   "resolution": "Todo"
+  },
+  "13": {
+   "resolution": "Todo"
+  },
+  "14": {
+   "resolution": "Todo"
+  },
+  "15": {
+   "resolution": "Todo"
+  },
+  "16": {
+   "resolution": "Todo"
+  },
+  "17": {
+   "resolution": "Todo"
+  },
+  "18": {
+   "resolution": "Todo"
+  },
+  "19": {
+   "resolution": "Todo"
+  },
+  "20": {
+   "resolution": "Todo"
+  },
+  "21": {
+   "resolution": "Todo"
+  },
+  "22": {
+   "resolution": "Todo"
+  },
+  "23": {
+   "resolution": "Todo"
+  },
+  "24": {
+   "resolution": "Todo"
+  },
+  "25": {
+   "resolution": "Todo"
+  },
+  "26": {
+   "resolution": "Todo"
+  },
+  "27": {
+   "resolution": "Todo"
+  },
+  "28": {
+   "resolution": "Todo"
+  },
+  "29": {
+   "resolution": "Todo"
+  },
+  "30": {
+   "resolution": "Todo"
+  },
+  "31": {
+   "resolution": "Todo"
+  },
+  "32": {
+   "resolution": "Todo"
+  },
+  "33": {
+   "resolution": "Todo"
+  },
+  "34": {
+   "resolution": "Todo"
+  },
+  "35": {
+   "resolution": "Todo"
+  },
+  "36": {
+   "resolution": "Todo"
+  },
+  "37": {
+   "resolution": "Todo"
+  },
+  "38": {
+   "resolution": "Todo"
+  },
+  "39": {
+   "resolution": "Todo"
+  },
+  "40": {
+   "resolution": "Todo"
+  },
+  "41": {
+   "resolution": "Todo"
+  },
+  "42": {
+   "resolution": "Todo"
+  },
+  "43": {
+   "resolution": "Todo"
+  },
+  "44": {
+   "resolution": "Todo"
+  },
+  "45": {
+   "resolution": "Todo"
+  },
+  "46": {
+   "resolution": "Todo"
+  },
+  "47": {
+   "resolution": "Todo"
+  },
+  "48": {
+   "resolution": "Todo"
+  },
+  "49": {
+   "resolution": "Todo"
+  },
+  "50": {
+   "resolution": "Todo"
+  },
+  "51": {
+   "resolution": "Todo"
+  },
+  "52": {
+   "resolution": "Todo"
+  },
+  "53": {
+   "resolution": "Todo"
+  },
+  "54": {
+   "resolution": "Todo"
+  },
+  "55": {
+   "resolution": "Todo"
+  },
+  "56": {
+   "resolution": "Todo"
+  },
+  "57": {
+   "resolution": "Todo"
+  },
+  "58": {
+   "resolution": "Todo"
+  },
+  "59": {
+   "resolution": "Todo"
+  },
+  "60": {
+   "resolution": "Todo"
+  },
+  "61": {
+   "resolution": "Todo"
+  },
+  "62": {
+   "resolution": "Todo"
+  },
+  "63": {
+   "resolution": "Todo"
+  },
+  "64": {
+   "resolution": "Todo"
+  },
+  "65": {
+   "resolution": "Todo"
+  },
+  "66": {
+   "resolution": "Todo"
+  },
+  "67": {
+   "resolution": "Todo"
+  },
+  "68": {
+   "resolution": "Todo"
+  },
+  "69": {
+   "resolution": "Todo"
+  },
+  "70": {
+   "resolution": "Todo"
+  },
+  "71": {
+   "resolution": "Todo"
+  },
+  "72": {
+   "resolution": "Todo"
+  },
+  "73": {
+   "resolution": "Todo"
+  },
+  "74": {
+   "resolution": "Todo"
+  },
+  "75": {
+   "resolution": "Todo"
+  },
+  "76": {
+   "resolution": "Todo"
+  },
+  "77": {
+   "resolution": "Todo"
+  },
+  "78": {
+   "resolution": "Todo"
+  },
+  "79": {
+   "resolution": "Todo"
+  },
+  "80": {
+   "resolution": "Todo"
+  },
+  "81": {
+   "resolution": "Todo"
+  },
+  "82": {
+   "resolution": "Todo"
+  },
+  "83": {
+   "resolution": "Todo"
+  },
+  "84": {
+   "resolution": "Todo"
+  },
+  "85": {
+   "resolution": "Todo"
+  },
+  "86": {
+   "resolution": "Todo"
+  },
+  "87": {
+   "resolution": "Todo"
+  },
+  "88": {
+   "resolution": "Todo"
+  },
+  "89": {
+   "resolution": "Todo"
+  },
+  "90": {
+   "resolution": "Todo"
+  },
+  "91": {
+   "resolution": "Todo"
+  },
+  "92": {
+   "resolution": "Todo"
+  },
+  "93": {
+   "resolution": "Todo"
+  },
+  "94": {
+   "resolution": "Todo"
+  },
+  "95": {
+   "resolution": "Todo"
+  },
+  "96": {
+   "resolution": "Todo"
+  },
+  "97": {
+   "resolution": "Todo"
+  },
+  "98": {
+   "resolution": "Todo"
+  },
+  "99": {
+   "resolution": "Todo"
+  },
+  "100": {
+   "resolution": "Todo"
+  },
+  "101": {
+   "resolution": "Todo"
+  },
+  "102": {
+   "resolution": "Todo"
+  },
+  "103": {
+   "resolution": "Todo"
+  },
+  "104": {
+   "resolution": "Todo"
+  },
+  "105": {
+   "resolution": "Todo"
+  },
+  "106": {
+   "resolution": "Todo"
+  },
+  "107": {
+   "resolution": "Todo"
+  }
+ }
+}

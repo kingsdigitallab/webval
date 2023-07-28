@@ -77,8 +77,8 @@
         console.log(err);
       }
     } else {
-      // TODO: simple relative fetch, no sha
-      fetchUrl = `../${filePath}`;
+      // TODO: simple relative fetch, no shags
+      fetchUrl = `../${filePath}?${Date.now()}`;
     }
 
     if (fetchUrl) {
