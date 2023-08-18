@@ -1,0 +1,1208 @@
+{
+ "meta": {
+  "lastIssueId": 44,
+  "host": "https://field-wt.co.uk",
+  "version": "0.3.0",
+  "evaluationStarted": "2023-08-18T15:53:07.235Z",
+  "evaluationEnded": "2023-08-18T15:53:21.921Z"
+ },
+ "issues": {
+  "1": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1:1. Recommendation:  change text colour to #fff.",
+   "context": "<a href=\"about\">Read more</a>",
+   "selector": "html > body > main > section > div > section:nth-child(2) > div:nth-child(2) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 1
+  },
+  "2": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.63:1. Recommendation:  change background to #5f653a.",
+   "context": "<a href=\"//twitter.com/field_wt\" target=\"_blank\">\n      <i class=\"fab fa-twitter...</a>",
+   "selector": "html > body > footer > ul:nth-child(3) > li > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 2
+  },
+  "3": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.63:1. Recommendation:  change background to #5f653a.",
+   "context": "<a href=\"//kdl.kcl.ac.uk\" title=\"King's Digital Lab\" target=\"_blank\">King's Digital Lab</a>",
+   "selector": "html > body > footer > p > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 3
+  },
+  "4": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/about/\">About</a>",
+   "selector": "#nav > ul > li:nth-child(1) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 4
+  },
+  "5": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/resources/\">Resources</a>",
+   "selector": "#nav > ul > li:nth-child(2) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 5
+  },
+  "6": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/stories/\">FIELDS</a>",
+   "selector": "#nav > ul > li:nth-child(3) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 6
+  },
+  "7": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/blog-news/\">News</a>",
+   "selector": "#nav > ul > li:nth-child(4) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 7
+  },
+  "8": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/contact-us/\">Contact Us</a>",
+   "selector": "#nav > ul > li:nth-child(5) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 8
+  },
+  "9": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/search/\">Search</a>",
+   "selector": "#nav > ul > li:nth-child(6) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 9
+  },
+  "10": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<p>FIELD is a five-year interdisci...</p>",
+   "selector": "html > body > main > section > div > section:nth-child(2) > div:nth-child(1) > p:nth-child(1)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 10
+  },
+  "11": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<p>The team works closely with ind...</p>",
+   "selector": "html > body > main > section > div > section:nth-child(2) > div:nth-child(1) > p:nth-child(2)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 11
+  },
+  "12": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<p>FIELD specifically examines end...</p>",
+   "selector": "html > body > main > section > div > section:nth-child(2) > div:nth-child(1) > p:nth-child(3)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 12
+  },
+  "13": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"/blog-news/\">Latest</a>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > header > h2 > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 13
+  },
+  "14": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Welcome to FIELDS</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > div:nth-child(2) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 14
+  },
+  "15": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Creative engagement methods for...</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > div:nth-child(3) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 15
+  },
+  "16": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Five Things a Gate Can Be</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > div:nth-child(4) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 16
+  },
+  "17": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"truncated-text padded-text\">Callous Caring: The myth of dic...</h3>",
+   "selector": "html > body > main > section > div > section:nth-child(4) > div:nth-child(5) > a > div > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 17
+  },
+  "18": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"search-phrase\" name=\"q\" type=\"search\" value=\"\" autocomplete=\"off\" autocorrect=\"off\" spellcheck=\"false\" placeholder=\"Search\">",
+   "selector": "html > body > main > section > div:nth-child(2) > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/search/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputSearch.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 18
+  },
+  "19": {
+   "code": "aria-roles",
+   "type": "error",
+   "typeCode": 1,
+   "message": "ARIA roles used must conform to valid values (https://dequeuniversity.com/rules/axe/4.2/aria-roles?application=axeAPI)",
+   "context": "<nav class=\"pagination\" role=\"pagination\" aria-label=\"pagination\">\n    <ul>\n        \n        <li ...</nav>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(3) > nav",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures all elements with a role attribute use a valid value",
+    "impact": "critical",
+    "help": "ARIA roles used must conform to valid values",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/aria-roles?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/search/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 19
+  },
+  "20": {
+   "code": "aria-allowed-attr",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must only use allowed ARIA attributes (https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI)",
+   "context": "<div class=\"breadcrumb\" aria-label=\"breadcrumbs\">\n      <ul>\n        <li><a href...</div>",
+   "selector": "html > body > main > section > div:nth-child(1)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures ARIA attributes are allowed for an element's role",
+    "impact": "serious",
+    "help": "Elements must only use allowed ARIA attributes",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/search/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 20
+  },
+  "21": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<button class=\"search-submit\">Search</button>",
+   "selector": "html > body > main > section > div:nth-child(2) > form > button",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/search/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 21
+  },
+  "22": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 22
+  },
+  "23": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field-wt.co.uk/blog-news/2021/08/26/welcome-fields/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 23
+  },
+  "24": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Welcome%20to%20FIELDS%20http%3A//field-wt.co.uk/blog-news/2021/08/26/welcome-fields/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><span><i class=\"fa fa-twitter\">...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 24
+  },
+  "25": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field-wt.co.uk/blog-news/2021/08/26/welcome-fields/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(2) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 25
+  },
+  "26": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 26
+  },
+  "27": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field-wt.co.uk/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 27
+  },
+  "28": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Creative%20engagement%20methods%20for%20exploring%20public%20perceptions%20of%20livestock%20health%20and%20welfare%20issues%20http%3A//field-wt.co.uk/blog-news/2021/06/08/creative-engagement-methods-expl...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 28
+  },
+  "29": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field-wt.co.uk/blog-news/2021/06/08/creative-engagement-methods-exploring-public-perceptions-livestock-health-and-welfare-issues/\" target=\"_blank\"><span><i class=\"fa fa-li...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(3) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 29
+  },
+  "30": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 30
+  },
+  "31": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field-wt.co.uk/blog-news/2021/03/30/five-things-gate-can-be/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 31
+  },
+  "32": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Five%20Things%20a%20Gate%20Can%20Be%20http%3A//field-wt.co.uk/blog-news/2021/03/30/five-things-gate-can-be/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><span><i class=\"fa fa-twitter\">...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 32
+  },
+  "33": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field-wt.co.uk/blog-news/2021/03/30/five-things-gate-can-be/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(4) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 33
+  },
+  "34": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 34
+  },
+  "35": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field-wt.co.uk/blog-news/2021/02/19/artist-who-stares-sheep/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 35
+  },
+  "36": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=The%20artist%20who%20stares%20at%20sheep%20http%3A//field-wt.co.uk/blog-news/2021/02/19/artist-who-stares-sheep/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><span><i class=\"fa fa-twitter\">...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 36
+  },
+  "37": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field-wt.co.uk/blog-news/2021/02/19/artist-who-stares-sheep/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(5) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 37
+  },
+  "38": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.12:1. Recommendation:  change text colour to #080808.",
+   "context": "<a href=\"/blog-news/author/bclark/\">\n            bclark\n        </a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(2) > ul > li:nth-child(1) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 38
+  },
+  "39": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A//field-wt.co.uk/blog-news/2021/02/19/callous-caring-myth-dichotomy-farming/\" class=\"\" target=\"_blank\"><span><i class=\"fa fa-facebook\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 39
+  },
+  "40": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a href=\"https://twitter.com/intent/tweet?text=Callous%20Caring%3A%20The%20myth%20of%20dichotomy%20in%20farming%20http%3A//field-wt.co.uk/blog-news/2021/02/19/callous-caring-myth-dichotomy-farming/\" class=\"meta-act-link meta-tweet \" target=\"_blank\"><...",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 40
+  },
+  "41": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+   "context": "<a class=\"box-social\" href=\"https://www.linkedin.com/shareArticle?url=http%3A//field-wt.co.uk/blog-news/2021/02/19/callous-caring-myth-dichotomy-farming/\" target=\"_blank\"><span><i class=\"fa fa-linkedin\"...</a>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(1) > article:nth-child(6) > section:nth-child(3) > div:nth-child(2) > ul > li:nth-child(3) > div > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "A.NoContent",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 41
+  },
+  "42": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1:1. Recommendation:  change text colour to #fff.",
+   "context": "<span>Feed RSS</span>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > span",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 42
+  },
+  "43": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li>\n    \n    <article>\n        <h4...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 43
+  },
+  "44": {
+   "code": "listitem",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<li> elements must be contained in a <ul> or <ol> (https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI)",
+   "context": "<li>\n    \n    <article>\n        <h4...</li>",
+   "selector": "html > body > main > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > li",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <li> elements are used semantically",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/listitem?application=axeAPI"
+   },
+   "host": "https://field-wt.co.uk",
+   "webpath": "/blog-news/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2023-08-18T15:53:07.235Z",
+   "id": 44
+  }
+ },
+ "annotations": {
+  "1": {
+   "resolution": "Todo"
+  },
+  "2": {
+   "resolution": "Todo"
+  },
+  "3": {
+   "resolution": "Todo"
+  },
+  "4": {
+   "resolution": "Todo"
+  },
+  "5": {
+   "resolution": "Todo"
+  },
+  "6": {
+   "resolution": "Todo"
+  },
+  "7": {
+   "resolution": "Todo"
+  },
+  "8": {
+   "resolution": "Todo"
+  },
+  "9": {
+   "resolution": "Todo"
+  },
+  "10": {
+   "resolution": "Todo"
+  },
+  "11": {
+   "resolution": "Todo"
+  },
+  "12": {
+   "resolution": "Todo"
+  },
+  "13": {
+   "resolution": "Todo"
+  },
+  "14": {
+   "resolution": "Todo"
+  },
+  "15": {
+   "resolution": "Todo"
+  },
+  "16": {
+   "resolution": "Todo"
+  },
+  "17": {
+   "resolution": "Todo"
+  },
+  "18": {
+   "resolution": "Todo"
+  },
+  "19": {
+   "resolution": "Todo"
+  },
+  "20": {
+   "resolution": "Todo"
+  },
+  "21": {
+   "resolution": "Todo"
+  },
+  "22": {
+   "resolution": "Todo"
+  },
+  "23": {
+   "resolution": "Todo"
+  },
+  "24": {
+   "resolution": "Todo"
+  },
+  "25": {
+   "resolution": "Todo"
+  },
+  "26": {
+   "resolution": "Todo"
+  },
+  "27": {
+   "resolution": "Todo"
+  },
+  "28": {
+   "resolution": "Todo"
+  },
+  "29": {
+   "resolution": "Todo"
+  },
+  "30": {
+   "resolution": "Todo"
+  },
+  "31": {
+   "resolution": "Todo"
+  },
+  "32": {
+   "resolution": "Todo"
+  },
+  "33": {
+   "resolution": "Todo"
+  },
+  "34": {
+   "resolution": "Todo"
+  },
+  "35": {
+   "resolution": "Todo"
+  },
+  "36": {
+   "resolution": "Todo"
+  },
+  "37": {
+   "resolution": "Todo"
+  },
+  "38": {
+   "resolution": "Todo"
+  },
+  "39": {
+   "resolution": "Todo"
+  },
+  "40": {
+   "resolution": "Todo"
+  },
+  "41": {
+   "resolution": "Todo"
+  },
+  "42": {
+   "resolution": "Todo"
+  },
+  "43": {
+   "resolution": "Todo"
+  },
+  "44": {
+   "resolution": "Todo"
+  }
+ }
+}
