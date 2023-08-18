@@ -1,0 +1,3363 @@
+{
+ "meta": {
+  "lastIssueId": 123,
+  "host": "https://stories.field-wt.co.uk",
+  "version": "0.3.0",
+  "evaluationStarted": "2023-08-18T16:00:46.433Z",
+  "evaluationEnded": "2023-08-18T16:01:14.593Z"
+ },
+ "issues": {
+  "1": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">Working with photographic, film...</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(1) > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 1
+  },
+  "2": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">It invites us to think about th...</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(1) > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 2
+  },
+  "3": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">Image: Michele Allen</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(1) > div > div:nth-child(1) > figure > figcaption > div:nth-child(1) > p",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 3
+  },
+  "4": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\"><a href=\"https://stories.field-...</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 4
+  },
+  "5": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<a href=\"https://stories.field-wt.co.uk/#group-section-EVENTS-38Jaas1D95\">Events</a>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(1) > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 5
+  },
+  "6": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<a href=\"https://stories.field-wt.co.uk/#group-section-EXHIBITION-cd6oHv5Tb1\">exhibition</a>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(1) > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 6
+  },
+  "7": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">Supported by <a href=\"https://s...</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 7
+  },
+  "8": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<a href=\"https://stories.field-wt.co.uk/#group-section-STORIES-na9TKxG0Ll\">new online stories</a>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(2) > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 8
+  },
+  "9": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<a href=\"https://stories.field-wt.co.uk/#group-section-COMMISSIONS-j806Bhd9JE\">artist commissions</a>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(2) > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 9
+  },
+  "10": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">Market stalls in Newcastle upon...</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 10
+  },
+  "11": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">Touring film programme<em> FIEL...</p>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 11
+  },
+  "12": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<em> FIELDS: Farming on Film</em>",
+   "selector": "#section-7vL03Ys4A7 > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(4) > em",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 12
+  },
+  "13": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\">Three commissioned artists from...</p>",
+   "selector": "#section-ZjEsOTq3Dv > div > div > div:nth-child(1) > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 13
+  },
+  "14": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\">Using film, photography, techno...</p>",
+   "selector": "#section-ZjEsOTq3Dv > div > div > div:nth-child(1) > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 14
+  },
+  "15": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\">Their work will be shared onlin...</p>",
+   "selector": "#section-ZjEsOTq3Dv > div > div > div:nth-child(2) > div > div:nth-child(1) > p",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 15
+  },
+  "16": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\"><em><strong>MARK JONES</strong>...</p>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 16
+  },
+  "17": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<a href=\"https://vimeo.com/unmarkedfilms\" target=\"_blank\">vimeo.com/unmarkedfilms</a>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(3) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 17
+  },
+  "18": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\"><em><strong>MICHELE ALLEN</stro...</p>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(6)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 18
+  },
+  "19": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<em>Ruminations </em>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(6) > em:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 19
+  },
+  "20": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<em>Westwood -</em>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(6) > em:nth-child(5)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 20
+  },
+  "21": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<a href=\"https://www.michele-allen.co.uk/\" target=\"_blank\">michele-allen.co.uk</a>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(6) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 21
+  },
+  "22": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\"><em><strong>SHANE FINAN</strong...</p>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(9)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 22
+  },
+  "23": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<em>A Detached Touch</em>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(9) > em:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 23
+  },
+  "24": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<a href=\"https://field.shanefinan.org/\" target=\"_blank\">field.shanefinan.org</a>",
+   "selector": "#section-394MrQYr2D > div > div > div > div > div:nth-child(1) > p:nth-child(9) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 24
+  },
+  "25": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">Screening of Michele Allen’s sh...</p>",
+   "selector": "#section-EVENTS-38Jaas1D95 > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 25
+  },
+  "26": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">The film was screened on loop i...</p>",
+   "selector": "#section-EVENTS-38Jaas1D95 > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 26
+  },
+  "27": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">Event included display and dist...</p>",
+   "selector": "#section-EVENTS-38Jaas1D95 > div > div > div > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 27
+  },
+  "28": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<em>Ruminations</em>",
+   "selector": "#section-EVENTS-38Jaas1D95 > div > div > div > div > div:nth-child(1) > p:nth-child(4) > a > em",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 28
+  },
+  "29": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\"><strong>Friday 10 September 202...</p>",
+   "selector": "#section-EVENTS-38Jaas1D95 > div > div > div > div > div:nth-child(1) > p:nth-child(5)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 29
+  },
+  "30": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">Screenings of new film commissi...</p>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 30
+  },
+  "31": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<a href=\"https://www.bfi.org.uk\" target=\"_blank\">BFI</a>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 31
+  },
+  "32": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<a href=\"https://merl.reading.ac.uk\" target=\"_blank\">Museum of English Rural Life</a>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 32
+  },
+  "33": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<a href=\"https://www.yfanefa.com\" target=\"_blank\">Yorkshire &amp; North East Film...</a>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 33
+  },
+  "34": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<a href=\"https://www.macearchive.org\" target=\"_blank\">Media Archive of Central Englan...</a>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > a:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 34
+  },
+  "35": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<em>Ruminations</em>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > em:nth-child(7)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 35
+  },
+  "36": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<em>Because The Exchange is Complet...</em>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > em:nth-child(8)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 36
+  },
+  "37": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<em>Ar Y Fferm</em>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(2) > em:nth-child(9)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 37
+  },
+  "38": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\"><br><strong>*</strong>part of <...</p>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 38
+  },
+  "39": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<a href=\"https://beinghumanfestival.org/\" target=\"_blank\">beinghumanfestival.org</a>",
+   "selector": "#section-EVENTS-BCQnnklvTC > div > div > div > div > div:nth-child(1) > p:nth-child(4) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 39
+  },
+  "40": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">FIELD artists and researchers s...</p>",
+   "selector": "#section-MARKETS-5oyCOhswsJ > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 40
+  },
+  "41": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">Free copies of the FIELDS newsp...</p>",
+   "selector": "#section-MARKETS-5oyCOhswsJ > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 41
+  },
+  "42": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\"><strong>Sunday 8 August 2021: N...</p>",
+   "selector": "#section-MARKETS-5oyCOhswsJ > div > div > div > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 42
+  },
+  "43": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<p class=\"\">An exhibition of museum collect...</p>",
+   "selector": "#section-cd6oHv5Tb1 > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 43
+  },
+  "44": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.6:1. Recommendation:  change text colour to #636c3d.",
+   "context": "<a href=\"https://merl.reading.ac.uk/\" target=\"_blank\">merl.reading.ac.uk </a>",
+   "selector": "#section-cd6oHv5Tb1 > div > div > div > div > div:nth-child(1) > p:nth-child(4) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 44
+  },
+  "45": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">5000 tabloid print newspapers, ...</p>",
+   "selector": "#section-ZIkABwxzaa > div > div > div > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 45
+  },
+  "46": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change background to #060700.",
+   "context": "<p class=\"\">Series of collectable Beer Mat ...</p>",
+   "selector": "#section-ZIkABwxzaa > div > div > div > div > div:nth-child(1) > p:nth-child(8)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 46
+  },
+  "47": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\"><strong>FIELDS</strong> is a pa...</p>",
+   "selector": "#section-WF6R7BgbPK > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 47
+  },
+  "48": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.4:1. Recommendation:  change text colour to #060700.",
+   "context": "<p class=\"\"><strong>FIELD</strong> partners...</p>",
+   "selector": "#section-WF6R7BgbPK > div > div > div > div > div:nth-child(1) > p:nth-child(6)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 48
+  },
+  "49": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-INTRODUCTION-UFQcHZbDFm\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">INTRODUCTION</a>",
+   "selector": "#navigation > ul > li:nth-child(2) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 49
+  },
+  "50": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-STORIES-na9TKxG0Ll\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">STORIES</a>",
+   "selector": "#navigation > ul > li:nth-child(3) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 50
+  },
+  "51": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-ABOUT-4mTx6x4tVB\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">ABOUT</a>",
+   "selector": "#navigation > ul > li:nth-child(4) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 51
+  },
+  "52": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-COMMISSIONS-j806Bhd9JE\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">COMMISSIONS</a>",
+   "selector": "#navigation > ul > li:nth-child(5) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 52
+  },
+  "53": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-EVENTS-Q5yWktCsgN\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">EVENTS</a>",
+   "selector": "#navigation > ul > li:nth-child(6) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 53
+  },
+  "54": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-EXHIBITION-XCANZyOzNJ\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">EXHIBITION</a>",
+   "selector": "#navigation > ul > li:nth-child(7) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 54
+  },
+  "55": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-PRINT-VeHl61RUQL\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">PRINT</a>",
+   "selector": "#navigation > ul > li:nth-child(8) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 55
+  },
+  "56": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#group-section-CREDITS-XhHmECzmOP\" class=\"Theme-NavigationLink\" data-story-nav-item=\"true\">CREDITS</a>",
+   "selector": "#navigation > ul > li:nth-child(9) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 56
+  },
+  "57": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#article\" class=\"Layout__snap--xcenter Layout__snap--ycenter Theme-FooterTopLink\">Top</a>",
+   "selector": "#article > div:nth-child(11) > div > a:nth-child(1)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 57
+  },
+  "58": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"Layout Theme-Layer-Gallery-Heading\">EXPLORE FIELDS STORIES:</h3>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 58
+  },
+  "59": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">Why our relationship to farming...</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(1) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 59
+  },
+  "60": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Geraint Davies is a Welsh farme...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(1) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 60
+  },
+  "61": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">The sheep that disappeared (and...</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(2) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 61
+  },
+  "62": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Nicole Gosling writes about the...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(2) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 62
+  },
+  "63": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">Why did they paint fat cows?</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(3) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 63
+  },
+  "64": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Jacqui Winston-Silk from the Mu...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(3) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 64
+  },
+  "65": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">23 English farmers </h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(4) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 65
+  },
+  "66": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">23 portraits of English farmers...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(4) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 66
+  },
+  "67": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">My dream was to manage a tenant...</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(5) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 67
+  },
+  "68": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Zowie Bell is the pasture warde...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(5) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 68
+  },
+  "69": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">One history of a knacker</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(6) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 69
+  },
+  "70": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Writer and farmer Tony Harman (...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(6) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 70
+  },
+  "71": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">Memorial to a cow</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(7) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 71
+  },
+  "72": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Across England there are headst...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(7) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 72
+  },
+  "73": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">When did you last see a cow?</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(8) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 73
+  },
+  "74": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">People who live in Newcastle up...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(8) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 74
+  },
+  "75": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">How do sheep see us?</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(9) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 75
+  },
+  "76": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Shane Finan is an artist who ha...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(9) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 76
+  },
+  "77": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">None of us are outside of it</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(10) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 77
+  },
+  "78": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Photographer Michele Allen has ...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(10) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 78
+  },
+  "79": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">To say that farmers are callous...</h4>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(11) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 79
+  },
+  "80": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Olwen Ford is a farmer in Llanf...</div>",
+   "selector": "#section-STORIES-na9TKxG0Ll > div:nth-child(1) > ul > li:nth-child(11) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 80
+  },
+  "81": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">When my grandfather moved here ...</p>",
+   "selector": "#section-rKt5aJhsQi > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 81
+  },
+  "82": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">15 years ago this was an intens...</p>",
+   "selector": "#section-rKt5aJhsQi > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 82
+  },
+  "83": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">We kept having to rent blocks o...</p>",
+   "selector": "#section-rKt5aJhsQi > div > div > div > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 83
+  },
+  "84": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">It wasn't sustainable for my bu...</p>",
+   "selector": "#section-rKt5aJhsQi > div > div > div > div > div:nth-child(1) > p:nth-child(5)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 84
+  },
+  "85": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">The suckler cows go up on the h...</p>",
+   "selector": "#section-YfVbefqtZi > div > div > div > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 85
+  },
+  "86": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">I’ve really put my heart and pa...</p>",
+   "selector": "#section-YfVbefqtZi > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 86
+  },
+  "87": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">You walk amongst your animals a...</p>",
+   "selector": "#section-YfVbefqtZi > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 87
+  },
+  "88": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\"><strong>I dread calving time be...</p>",
+   "selector": "#section-V1JlklrgRs > div > div > div > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 88
+  },
+  "89": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\"><strong>A lot of people have th...</p>",
+   "selector": "#section-V1JlklrgRs > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 89
+  },
+  "90": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\"><strong>The way the media portr...</p>",
+   "selector": "#section-V1JlklrgRs > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 90
+  },
+  "91": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\"><strong>People don't want to kn...</p>",
+   "selector": "#section-V1JlklrgRs > div > div > div > div > div:nth-child(1) > p:nth-child(4)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 91
+  },
+  "92": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">We need to forget about being t...</p>",
+   "selector": "#section-oHgKTyjOSc > div > div > div > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 92
+  },
+  "93": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<em>oh, bloody weeds'</em>",
+   "selector": "#section-oHgKTyjOSc > div > div > div > div > div:nth-child(1) > p:nth-child(1) > em",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 93
+  },
+  "94": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">Being Welsh is something really...</p>",
+   "selector": "#section-oHgKTyjOSc > div > div > div > div > div:nth-child(1) > p:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 94
+  },
+  "95": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.55:1. Recommendation:  change background to #000801.",
+   "context": "<p class=\"\">This area of Meirionnydd, over ...</p>",
+   "selector": "#section-oHgKTyjOSc > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 95
+  },
+  "96": {
+   "code": "WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Iframe element requires a non-empty title attribute that identifies the frame.",
+   "context": "<iframe allow=\"autoplay *; encrypted-media *;\" scrolling=\"no\" allowfullscreen=\"\" style=\"top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;\" data-img-created=\"\" src=\"https://iframely.shorthand.com/6C12w75?playerjs=1&amp;img=1&a...",
+   "selector": "#section-oHgKTyjOSc > div > div > div > div > div:nth-child(1) > figure > div > div > div > iframe",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H64",
+    "target": "1",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 96
+  },
+  "97": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.02:1. Recommendation:  change background to #70572a.",
+   "context": "<p class=\"h-align-center\">Geraint was interviewed by film...</p>",
+   "selector": "#section-JqsU9GKiFW > div > div > div > div > div:nth-child(1) > p:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 97
+  },
+  "98": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.02:1. Recommendation:  change background to #70572a.",
+   "context": "<p class=\"\">Mark Jones is a documentary fil...</p>",
+   "selector": "#section-JqsU9GKiFW > div > div > div > div > div:nth-child(1) > p:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 98
+  },
+  "99": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.02:1. Recommendation:  change background to #70572a.",
+   "context": "<a href=\"https://vimeo.com/unmarkedfilms\" target=\"_blank\">vimeo.com/unmarkedfilms</a>",
+   "selector": "#section-JqsU9GKiFW > div > div > div > div > div:nth-child(1) > p:nth-child(4) > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 99
+  },
+  "100": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.02:1. Recommendation:  change background to #70572a.",
+   "context": "<p class=\"h-align-center\">All content © Mark Jones</p>",
+   "selector": "#section-JqsU9GKiFW > div > div > div > div > div:nth-child(1) > p:nth-child(6)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 100
+  },
+  "101": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<a href=\"#article\" class=\"Layout__snap--xcenter Layout__snap--ycenter Theme-FooterTopLink\">Top</a>",
+   "selector": "#article > div:nth-child(13) > div > a:nth-child(1)",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 101
+  },
+  "102": {
+   "code": "frame-title",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Frames must have an accessible name (https://dequeuniversity.com/rules/axe/4.2/frame-title?application=axeAPI)",
+   "context": "<iframe allow=\"autoplay *; encrypted-media *;\" scrolling=\"no\" allowfullscreen=\"\" style=\"top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;\" data-img-created=\"\" src=\"https://iframely.shorthand.com/6C12w75?playerjs=1&amp;img=1&a...",
+   "selector": "#section-oHgKTyjOSc > div > div > div > div > div:nth-child(1) > figure > div > div > div > iframe",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <iframe> and <frame> elements have an accessible name",
+    "impact": "serious",
+    "help": "Frames must have an accessible name",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/frame-title?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 102
+  },
+  "103": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h3 class=\"Layout Theme-Layer-Gallery-Heading\">EXPLORE FIELDS STORIES:</h3>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > h3",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 103
+  },
+  "104": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">The sheep that disappeared (and...</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(1) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 104
+  },
+  "105": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Nicole Gosling writes about the...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(1) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 105
+  },
+  "106": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">Why did they paint fat cows?</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(2) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 106
+  },
+  "107": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Jacqui Winston-Silk from the Mu...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(2) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 107
+  },
+  "108": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">23 English farmers </h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(3) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 108
+  },
+  "109": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">23 portraits of English farmers...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(3) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 109
+  },
+  "110": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">My dream was to manage a tenant...</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(4) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 110
+  },
+  "111": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Zowie Bell is the pasture warde...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(4) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 111
+  },
+  "112": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">One history of a knacker</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(5) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 112
+  },
+  "113": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Writer and farmer Tony Harman (...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(5) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 113
+  },
+  "114": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">Memorial to a cow</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(6) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 114
+  },
+  "115": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Across England there are headst...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(6) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 115
+  },
+  "116": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">When did you last see a cow?</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(7) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 116
+  },
+  "117": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">People who live in Newcastle up...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(7) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 117
+  },
+  "118": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">How do sheep see us?</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(8) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 118
+  },
+  "119": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Shane Finan is an artist who ha...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(8) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 119
+  },
+  "120": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">None of us are outside of it</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(9) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 120
+  },
+  "121": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Photographer Michele Allen has ...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(9) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 121
+  },
+  "122": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<h4 class=\"Theme-Layer-Gallery-Item-Title\">To say that farmers are callous...</h4>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(10) > a > div:nth-child(2) > h4",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 122
+  },
+  "123": {
+   "code": "color-contrast",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI)",
+   "context": "<div class=\"Theme-Layer-Gallery-Item-Description\">Olwen Ford is a farmer in Llanf...</div>",
+   "selector": "#section-OL0cRrh5TB > div:nth-child(1) > ul > li:nth-child(10) > a > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "impact": "serious",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI"
+   },
+   "host": "https://stories.field-wt.co.uk",
+   "webpath": "/why-our-relationship-to-farming-needs-to-change/index.html",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2023-08-18T16:00:46.433Z",
+   "id": 123
+  }
+ },
+ "annotations": {
+  "1": {
+   "resolution": "Todo"
+  },
+  "2": {
+   "resolution": "Todo"
+  },
+  "3": {
+   "resolution": "Todo"
+  },
+  "4": {
+   "resolution": "Todo"
+  },
+  "5": {
+   "resolution": "Todo"
+  },
+  "6": {
+   "resolution": "Todo"
+  },
+  "7": {
+   "resolution": "Todo"
+  },
+  "8": {
+   "resolution": "Todo"
+  },
+  "9": {
+   "resolution": "Todo"
+  },
+  "10": {
+   "resolution": "Todo"
+  },
+  "11": {
+   "resolution": "Todo"
+  },
+  "12": {
+   "resolution": "Todo"
+  },
+  "13": {
+   "resolution": "Todo"
+  },
+  "14": {
+   "resolution": "Todo"
+  },
+  "15": {
+   "resolution": "Todo"
+  },
+  "16": {
+   "resolution": "Todo"
+  },
+  "17": {
+   "resolution": "Todo"
+  },
+  "18": {
+   "resolution": "Todo"
+  },
+  "19": {
+   "resolution": "Todo"
+  },
+  "20": {
+   "resolution": "Todo"
+  },
+  "21": {
+   "resolution": "Todo"
+  },
+  "22": {
+   "resolution": "Todo"
+  },
+  "23": {
+   "resolution": "Todo"
+  },
+  "24": {
+   "resolution": "Todo"
+  },
+  "25": {
+   "resolution": "Todo"
+  },
+  "26": {
+   "resolution": "Todo"
+  },
+  "27": {
+   "resolution": "Todo"
+  },
+  "28": {
+   "resolution": "Todo"
+  },
+  "29": {
+   "resolution": "Todo"
+  },
+  "30": {
+   "resolution": "Todo"
+  },
+  "31": {
+   "resolution": "Todo"
+  },
+  "32": {
+   "resolution": "Todo"
+  },
+  "33": {
+   "resolution": "Todo"
+  },
+  "34": {
+   "resolution": "Todo"
+  },
+  "35": {
+   "resolution": "Todo"
+  },
+  "36": {
+   "resolution": "Todo"
+  },
+  "37": {
+   "resolution": "Todo"
+  },
+  "38": {
+   "resolution": "Todo"
+  },
+  "39": {
+   "resolution": "Todo"
+  },
+  "40": {
+   "resolution": "Todo"
+  },
+  "41": {
+   "resolution": "Todo"
+  },
+  "42": {
+   "resolution": "Todo"
+  },
+  "43": {
+   "resolution": "Todo"
+  },
+  "44": {
+   "resolution": "Todo"
+  },
+  "45": {
+   "resolution": "Todo"
+  },
+  "46": {
+   "resolution": "Todo"
+  },
+  "47": {
+   "resolution": "Todo"
+  },
+  "48": {
+   "resolution": "Todo"
+  },
+  "49": {
+   "resolution": "Todo"
+  },
+  "50": {
+   "resolution": "Todo"
+  },
+  "51": {
+   "resolution": "Todo"
+  },
+  "52": {
+   "resolution": "Todo"
+  },
+  "53": {
+   "resolution": "Todo"
+  },
+  "54": {
+   "resolution": "Todo"
+  },
+  "55": {
+   "resolution": "Todo"
+  },
+  "56": {
+   "resolution": "Todo"
+  },
+  "57": {
+   "resolution": "Todo"
+  },
+  "58": {
+   "resolution": "Todo"
+  },
+  "59": {
+   "resolution": "Todo"
+  },
+  "60": {
+   "resolution": "Todo"
+  },
+  "61": {
+   "resolution": "Todo"
+  },
+  "62": {
+   "resolution": "Todo"
+  },
+  "63": {
+   "resolution": "Todo"
+  },
+  "64": {
+   "resolution": "Todo"
+  },
+  "65": {
+   "resolution": "Todo"
+  },
+  "66": {
+   "resolution": "Todo"
+  },
+  "67": {
+   "resolution": "Todo"
+  },
+  "68": {
+   "resolution": "Todo"
+  },
+  "69": {
+   "resolution": "Todo"
+  },
+  "70": {
+   "resolution": "Todo"
+  },
+  "71": {
+   "resolution": "Todo"
+  },
+  "72": {
+   "resolution": "Todo"
+  },
+  "73": {
+   "resolution": "Todo"
+  },
+  "74": {
+   "resolution": "Todo"
+  },
+  "75": {
+   "resolution": "Todo"
+  },
+  "76": {
+   "resolution": "Todo"
+  },
+  "77": {
+   "resolution": "Todo"
+  },
+  "78": {
+   "resolution": "Todo"
+  },
+  "79": {
+   "resolution": "Todo"
+  },
+  "80": {
+   "resolution": "Todo"
+  },
+  "81": {
+   "resolution": "Todo"
+  },
+  "82": {
+   "resolution": "Todo"
+  },
+  "83": {
+   "resolution": "Todo"
+  },
+  "84": {
+   "resolution": "Todo"
+  },
+  "85": {
+   "resolution": "Todo"
+  },
+  "86": {
+   "resolution": "Todo"
+  },
+  "87": {
+   "resolution": "Todo"
+  },
+  "88": {
+   "resolution": "Todo"
+  },
+  "89": {
+   "resolution": "Todo"
+  },
+  "90": {
+   "resolution": "Todo"
+  },
+  "91": {
+   "resolution": "Todo"
+  },
+  "92": {
+   "resolution": "Todo"
+  },
+  "93": {
+   "resolution": "Todo"
+  },
+  "94": {
+   "resolution": "Todo"
+  },
+  "95": {
+   "resolution": "Todo"
+  },
+  "96": {
+   "resolution": "Todo"
+  },
+  "97": {
+   "resolution": "Todo"
+  },
+  "98": {
+   "resolution": "Todo"
+  },
+  "99": {
+   "resolution": "Todo"
+  },
+  "100": {
+   "resolution": "Todo"
+  },
+  "101": {
+   "resolution": "Todo"
+  },
+  "102": {
+   "resolution": "Todo"
+  },
+  "103": {
+   "resolution": "Todo"
+  },
+  "104": {
+   "resolution": "Todo"
+  },
+  "105": {
+   "resolution": "Todo"
+  },
+  "106": {
+   "resolution": "Todo"
+  },
+  "107": {
+   "resolution": "Todo"
+  },
+  "108": {
+   "resolution": "Todo"
+  },
+  "109": {
+   "resolution": "Todo"
+  },
+  "110": {
+   "resolution": "Todo"
+  },
+  "111": {
+   "resolution": "Todo"
+  },
+  "112": {
+   "resolution": "Todo"
+  },
+  "113": {
+   "resolution": "Todo"
+  },
+  "114": {
+   "resolution": "Todo"
+  },
+  "115": {
+   "resolution": "Todo"
+  },
+  "116": {
+   "resolution": "Todo"
+  },
+  "117": {
+   "resolution": "Todo"
+  },
+  "118": {
+   "resolution": "Todo"
+  },
+  "119": {
+   "resolution": "Todo"
+  },
+  "120": {
+   "resolution": "Todo"
+  },
+  "121": {
+   "resolution": "Todo"
+  },
+  "122": {
+   "resolution": "Todo"
+  },
+  "123": {
+   "resolution": "Todo"
+  }
+ }
+}
