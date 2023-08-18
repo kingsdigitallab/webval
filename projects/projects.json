@@ -136,10 +136,7 @@
     "/search/",
     "/resources/research-resources/",
     "/blog-news/"
-   ],
-   "evaluationRequested": "2023-01-06T19:21:05.771Z",
-   "evaluationStarted": "2022-09-30T12:29:21.545Z",
-   "evaluationEnded": "2022-09-30T12:29:51.679Z"
+   ]
   },
   "screenshots": {}
  },
@@ -153,11 +150,8 @@
    "urls": [
     "/",
     "/why-our-relationship-to-farming-needs-to-change/index.html"
-   ],
-   "evaluationRequested": "2023-01-06T19:21:05.771Z",
-   "evaluationStarted": "2022-09-30T12:29:21.545Z",
-   "evaluationEnded": "2022-09-30T12:29:51.679Z"
+   ]
   },
   "screenshots": {}
- },
+ }
 ]
