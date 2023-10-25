@@ -65,7 +65,7 @@
         "/blog/snapshot-mission/",
         "/blog/indigenous-digital-humanities-research-theme-under-development/",
         "/contact-us/",
-        "/search/",
+        "/search/"
       ],
       "evaluationStarted": "2023-03-11T00:39:16.641Z",
       "evaluationEnded": "2023-03-11T00:39:42.768Z",
@@ -97,7 +97,7 @@
         "/blog/snapshot-mission/",
         "/blog/indigenous-digital-humanities-research-theme-under-development/",
         "/contact-us/",
-        "/search/",
+        "/search/"
       ],
       "evaluationRequested": "2023-03-17T17:48:03.740Z"
     },
@@ -136,9 +136,7 @@
       "liv": "https://kingsdigitallab.github.io/crossreads"
     },
     "a11y": {
-      "urls": [
-        "/annotator.html"
-      ],
+      "urls": ["/annotator.html"],
       "evaluationStarted": "2023-07-28T15:02:38.458Z",
       "evaluationEnded": "2023-07-28T15:02:40.418Z"
     },
