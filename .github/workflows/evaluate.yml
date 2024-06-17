@@ -14,6 +14,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        version: [22]
         os: [ubuntu-latest]
     container: buildkite/puppeteer
 
@@ -22,7 +23,7 @@ jobs:
       run: rm /etc/apt/sources.list.d/google.list && apt update && apt install -y git
     - uses: actions/checkout@v2
     - name: Install dependencies
-      run: npm i pa11y && npm i blink-diff
+      run: npm ci
     - name: Evaluation
       run: node docs/evaluate.js
     - name: gh ownership exception
