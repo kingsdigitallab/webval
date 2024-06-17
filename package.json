@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "blink-diff": "^1.0.13",
+    "pa11y": "^6.2.3"
+  }
+}
