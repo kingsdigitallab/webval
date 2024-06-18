@@ -9,10 +9,13 @@
    "urls": [
     "/",
     "/books/",
+    "/books/book_one/",
     "/about/",
     "/posts/",
     "/posts/blog/",
-    "/posts/blog/2022-07-25-alice-thornton-middleham-castle/"
+    "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+    "/edition/",
+    "/entities/"
    ],
    "evaluationRequested": "2024-06-17T16:27:43.026Z",
    "evaluationStarted": "2024-06-18T00:17:11.564Z",
