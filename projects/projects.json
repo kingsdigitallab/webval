@@ -1,62 +1,62 @@
 [
-  {
-    "name": "Alice Thornton",
-    "slug": "thornton",
-    "sites": {
-      "liv": "https://thornton.kdl.kcl.ac.uk"
-    },
-    "a11y": {
-      "urls": [
-        "/",
-        "/books/",
-        "/books/book_one/",
-        "/about/",
-        "/posts/",
-        "/posts/blog/",
-        "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
-        "/edition/",
-        "/entities/"
-      ],
-      "evaluationRequested": "2024-06-18T00:26:58.844Z",
-      "evaluationStarted": "2024-06-18T00:17:11.564Z",
-      "evaluationEnded": "2024-06-18T00:17:30.658Z"
-    },
-    "screenshots": {}
+ {
+  "name": "Alice Thornton",
+  "slug": "thornton",
+  "sites": {
+   "liv": "https://thornton.kdl.kcl.ac.uk"
   },
-  {
-    "name": "Crossreads.A",
-    "slug": "crossreads-a",
-    "sites": {
-      "liv": "https://kingsdigitallab.github.io/crossreads"
-    },
-    "a11y": {
-      "urls": [
-        "/annotator.html"
-      ],
-      "evaluationStarted": "2023-07-28T15:02:38.458Z",
-      "evaluationEnded": "2023-07-28T15:02:40.418Z"
-    },
-    "screenshots": {}
+  "a11y": {
+   "urls": [
+    "/",
+    "/books/",
+    "/books/book_one/",
+    "/about/",
+    "/posts/",
+    "/posts/blog/",
+    "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+    "/edition/",
+    "/entities/"
+   ],
+   "evaluationRequested": "2024-06-18T00:26:58.844Z",
+   "evaluationStarted": "2024-06-18T00:27:45.952Z",
+   "evaluationEnded": "2024-06-18T00:28:14.598Z"
   },
-  {
-    "name": "CultureCase",
-    "slug": "culturecase",
-    "sites": {
-      "liv": "https://culturecase.org"
-    },
-    "a11y": {
-      "urls": [
-        "/",
-        "/about/",
-        "/faqs/",
-        "/contents/",
-        "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
-        "/search/?s=museum"
-      ],
-      "evaluationRequested": "2023-01-06T19:21:05.771Z",
-      "evaluationStarted": "2022-09-30T12:29:21.545Z",
-      "evaluationEnded": "2022-09-30T12:29:51.679Z"
-    },
-    "screenshots": {}
-  }
+  "screenshots": {}
+ },
+ {
+  "name": "Crossreads.A",
+  "slug": "crossreads-a",
+  "sites": {
+   "liv": "https://kingsdigitallab.github.io/crossreads"
+  },
+  "a11y": {
+   "urls": [
+    "/annotator.html"
+   ],
+   "evaluationStarted": "2023-07-28T15:02:38.458Z",
+   "evaluationEnded": "2023-07-28T15:02:40.418Z"
+  },
+  "screenshots": {}
+ },
+ {
+  "name": "CultureCase",
+  "slug": "culturecase",
+  "sites": {
+   "liv": "https://culturecase.org"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/about/",
+    "/faqs/",
+    "/contents/",
+    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+    "/search/?s=museum"
+   ],
+   "evaluationRequested": "2023-01-06T19:21:05.771Z",
+   "evaluationStarted": "2022-09-30T12:29:21.545Z",
+   "evaluationEnded": "2022-09-30T12:29:51.679Z"
+  },
+  "screenshots": {}
+ }
 ]
