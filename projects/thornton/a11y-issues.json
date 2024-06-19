@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2024-06-18T00:27:45.952Z",
-  "evaluationEnded": "2024-06-18T00:28:14.598Z",
+  "evaluationStarted": "2024-06-19T11:42:42.382Z",
+  "evaluationEnded": "2024-06-19T11:43:06.945Z",
   "host": "https://thornton.kdl.kcl.ac.uk",
-  "lastIssueId": 2139
+  "lastIssueId": 2145
  },
  "issues": {
   "1": {
@@ -56947,6 +56947,143 @@
    },
    "detected": "2024-06-18T00:27:45.952Z",
    "id": 2139
+  },
+  "2140": {
+   "code": "link-in-text-block",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must be distinguishable without relying on color (https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI)",
+   "context": "<a href=\"//kdl.kcl.ac.uk/\">King's Digital Lab</a>",
+   "selector": "html > body > footer > div > p:nth-child(5) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+    "impact": "serious",
+    "help": "Links must be distinguishable without relying on color",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI"
+   },
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2024-06-19T11:42:42.382Z",
+   "id": 2140
+  },
+  "2141": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+   "context": "<img itemprop=\"image\" src=\"/assets/img/books/Book1FrontCover.jpg\" class=\"book-thumb\">",
+   "selector": "html > body > section > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > img",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/books/book_one/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H37",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2024-06-19T11:42:42.382Z",
+   "id": 2141
+  },
+  "2142": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Duplicate id attribute value \"read-more-alice-thornton-picnic\" found on the web page.",
+   "context": "<a href=\"/posts/news/2024-05-09-alice-thornton-picnic/\" class=\"button is-secondary\" id=\"read-more-alice-thornton-picnic\" aria-label=\"Read more about 'Project Team to Host Alice Thornton Picnic'\">Read more</a>",
+   "selector": "#read-more-alice-thornton-picnic",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/posts/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F77",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2024-06-19T11:42:42.382Z",
+   "id": 2142
+  },
+  "2143": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H42.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+   "context": "<h1 class=\"title\">\n          \n        </h1>",
+   "selector": "html > body > section > div:nth-child(1) > h1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/edition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H42",
+    "target": "2",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2024-06-19T11:42:42.382Z",
+   "id": 2143
+  },
+  "2144": {
+   "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+   "context": "<form class=\"search-inputs column is-3\"><h2 class=\"undecorated\">Filters...</form>",
+   "selector": "#search > div > form",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H32",
+    "target": "2",
+    "principle": "3",
+    "guideline": "2",
+    "rule": "2"
+   },
+   "detected": "2024-06-19T11:42:42.382Z",
+   "id": 2144
+  },
+  "2145": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"search\" autocomplete=\"off\" placeholder=\"Find people or places\">",
+   "selector": "#search > div > form > nav > div:nth-child(2) > div > div > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputSearch.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2024-06-19T11:42:42.382Z",
+   "id": 2145
   }
  },
  "annotations": {
@@ -63370,6 +63507,24 @@
    "resolution": "Todo"
   },
   "2139": {
+   "resolution": "Todo"
+  },
+  "2140": {
+   "resolution": "Todo"
+  },
+  "2141": {
+   "resolution": "Todo"
+  },
+  "2142": {
+   "resolution": "Todo"
+  },
+  "2143": {
+   "resolution": "Todo"
+  },
+  "2144": {
+   "resolution": "Todo"
+  },
+  "2145": {
    "resolution": "Todo"
   },
   "/|4.1.2": {

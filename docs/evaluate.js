@@ -219,7 +219,10 @@ function evaluate() {
             if (setIssueRuleFromIssueCode(issue)) {
               // ignore duplicate issues (code, context, selector) during this evaluation
               let issueKey = utils.getKeyFromIssue(issue)
+
               if (issueKeys[issueKey]) continue
+
+              if (isIssueUnreliable(issue)) continue;
 
               // overwrite existing issue
               let issueId = (++res.meta.lastIssueId)
@@ -275,6 +278,24 @@ function evaluate() {
       }
 
     })
+}
+
+function isIssueUnreliable(issue) {
+  // return true if the issue is just a warning or possibly a false positive
+  // see https://github.com/kingsdigitallab/webval/issues/17
+  // e.g. Axe contrast warnings are relayed as errors by Pa11y.
+  let ret = false;
+
+
+  let code = `${issue.runner}.${issue.rule.principle}.${issue.rule.guideline}.${issue.rule.rule}`
+  // console.log(code)
+  // TODO: turn that into an exclusion array and move it to a constant
+  if (code == 'axe.1.4.3') {
+    ret = true;
+    // console.log('UNRELIABLE')
+  }
+
+  return ret;
 }
 
 // ENTRY POINT
