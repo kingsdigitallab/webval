@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2024-06-19T12:03:44.047Z",
-  "evaluationEnded": "2024-06-19T12:04:20.939Z",
+  "evaluationStarted": "2024-07-02T10:46:37.228Z",
+  "evaluationEnded": "2024-07-02T10:47:11.981Z",
   "host": "https://thornton.kdl.kcl.ac.uk",
-  "lastIssueId": 2151
+  "lastIssueId": 2155
  },
  "issues": {
   "1": {
@@ -57221,6 +57221,94 @@
    },
    "detected": "2024-06-19T12:03:44.047Z",
    "id": 2151
+  },
+  "2152": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+   "context": "<img itemprop=\"image\" src=\"/assets/img/books/Book1FrontCover.jpg\" class=\"book-thumb\">",
+   "selector": "html > body > section > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > img",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/books/book_one/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H37",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2024-07-02T10:46:37.228Z",
+   "id": 2152
+  },
+  "2153": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H42.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.",
+   "context": "<h1 class=\"title\">\n          \n        </h1>",
+   "selector": "html > body > section > div:nth-child(1) > h1",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/edition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H42",
+    "target": "2",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2024-07-02T10:46:37.228Z",
+   "id": 2153
+  },
+  "2154": {
+   "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+   "context": "<form class=\"search-inputs column is-3\"><h2 class=\"undecorated\">Filters...</form>",
+   "selector": "#search > div > form",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H32",
+    "target": "2",
+    "principle": "3",
+    "guideline": "2",
+    "rule": "2"
+   },
+   "detected": "2024-07-02T10:46:37.228Z",
+   "id": 2154
+  },
+  "2155": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"search\" autocomplete=\"off\" placeholder=\"Find people or places\">",
+   "selector": "#search > div > form > nav > div:nth-child(2) > div > div > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://thornton.kdl.kcl.ac.uk",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputSearch.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2024-07-02T10:46:37.228Z",
+   "id": 2155
   }
  },
  "annotations": {
@@ -63680,6 +63768,18 @@
    "resolution": "Todo"
   },
   "2151": {
+   "resolution": "Todo"
+  },
+  "2152": {
+   "resolution": "Todo"
+  },
+  "2153": {
+   "resolution": "Todo"
+  },
+  "2154": {
+   "resolution": "Todo"
+  },
+  "2155": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
