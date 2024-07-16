@@ -58,5 +58,19 @@
    "evaluationEnded": "2022-09-30T12:29:51.679Z"
   },
   "screenshots": {}
+ },
+ {
+  "name": "Corpus Building",
+  "slug": "corpus-building",
+  "sites": {
+    "liv": "https://kingsdigitallab.github.io/corpus-building"
+  },
+  "a11y": {
+    "urls": [
+      "/",
+      "/inscription/ISic000001"
+    ]
+  },
+  "screenshots": {}
  }
 ]
