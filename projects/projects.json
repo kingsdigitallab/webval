@@ -27,7 +27,7 @@
   "name": "KDL Web",
   "slug": "kdlweb",
   "sites": {
-   "stg": "https://kingsdigitallab.github.io/kdl"
+   "liv": "https://kingsdigitallab.github.io/kdl"
   },
   "a11y": {
    "urls": [
