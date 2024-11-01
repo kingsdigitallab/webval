@@ -1,11 +1,68 @@
 {
  "meta": {
-  "lastIssueId": 0,
-  "host": "https://kdl.kcl.ac.uk",
+  "lastIssueId": 2,
+  "host": "https://kingsdigitallab.github.io/kdl",
   "version": "0.3.0",
-  "evaluationStarted": "2023-10-25T09:59:36.531Z",
-  "evaluationEnded": "2023-10-25T10:00:32.978Z"
+  "evaluationStarted": "2024-11-01T17:53:29.477Z",
+  "evaluationEnded": "2024-11-01T17:53:49.561Z"
  },
- "issues": {},
- "annotations": {}
+ "issues": {
+  "1": {
+   "code": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This link points to a named anchor \"explore\" within the document, but no anchor exists with that name.",
+   "context": "<a class=\"scroll\" href=\"#explore\" aria-label=\"Scroll down for mode content\">\n    <ion-icon name=\"chevron-do...</a>",
+   "selector": "html > body > main > article > section > a",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G1,G123,G124",
+    "target": "NoSuchID",
+    "principle": "2",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2024-11-01T17:53:29.477Z",
+   "id": 1
+  },
+  "2": {
+   "code": "video-caption",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<video> elements must have captions (https://dequeuniversity.com/rules/axe/4.2/video-caption?application=axeAPI)",
+   "context": "<video autoplay=\"\" loop=\"\" muted=\"\" playsinline=\"\">\n    <source src=\"/kdl/assets/v...</video>",
+   "selector": "html > body > main > article > section > video",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <video> elements have captions",
+    "impact": "critical",
+    "help": "<video> elements must have captions",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.2/video-caption?application=axeAPI"
+   },
+   "host": "https://kingsdigitallab.github.io/kdl",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "2",
+    "rule": "2"
+   },
+   "detected": "2024-11-01T17:53:29.477Z",
+   "id": 2
+  }
+ },
+ "annotations": {
+  "1": {
+   "resolution": "Todo"
+  },
+  "2": {
+   "resolution": "Todo"
+  }
+ }
 }
