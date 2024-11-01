@@ -24,6 +24,25 @@
   "screenshots": {}
  },
  {
+  "name": "KDL Web",
+  "slug": "kdlweb",
+  "sites": {
+   "stg": "https://kingsdigitallab.github.io/kdl"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/about/",
+    "/projects/",
+    "/projects/step-up/",
+    "/blog/",
+    "/blog/from-cagliari-to-kdl/",
+    "/contact-us/"
+   ]
+  },
+  "screenshots": {}
+ }, 
+ {
   "name": "Corpus Building",
   "slug": "corpus-building",
   "sites": {
