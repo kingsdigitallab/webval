@@ -1,125 +1,120 @@
 [
- {
-  "name": "Alice Thornton",
-  "slug": "thornton",
-  "sites": {
-   "liv": "https://thornton.kdl.kcl.ac.uk"
+  {
+    "name": "Alice Thornton",
+    "slug": "thornton",
+    "sites": {
+      "liv": "https://thornton.kdl.kcl.ac.uk"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/books/",
+        "/books/book_one/",
+        "/about/",
+        "/posts/",
+        "/posts/blog/",
+        "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
+        "/edition/",
+        "/entities/"
+      ],
+      "evaluationRequested": "2024-06-19T12:02:49.712Z",
+      "evaluationStarted": "2024-11-01T17:34:56.092Z",
+      "evaluationEnded": "2024-11-01T17:35:25.366Z"
+    },
+    "screenshots": {}
   },
-  "a11y": {
-   "urls": [
-    "/",
-    "/books/",
-    "/books/book_one/",
-    "/about/",
-    "/posts/",
-    "/posts/blog/",
-    "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
-    "/edition/",
-    "/entities/"
-   ],
-   "evaluationRequested": "2024-06-19T12:02:49.712Z",
-   "evaluationStarted": "2024-11-01T17:34:56.092Z",
-   "evaluationEnded": "2024-11-01T17:35:25.366Z"
+  {
+    "name": "KDL Web",
+    "slug": "kdlweb",
+    "sites": {
+      "liv": "https://kingsdigitallab.github.io/kdl"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/about/",
+        "/projects/",
+        "/projects/step-up/",
+        "/blog/",
+        "/blog/from-cagliari-to-kdl/",
+        "/contact-us/"
+      ],
+      "evaluationStarted": "2024-11-01T17:53:29.477Z",
+      "evaluationEnded": "2024-11-01T17:53:49.561Z"
+    },
+    "screenshots": {}
   },
-  "screenshots": {}
- },
- {
-  "name": "KDL Web",
-  "slug": "kdlweb",
-  "sites": {
-   "liv": "https://kingsdigitallab.github.io/kdl"
+  {
+    "name": "Corpus Building",
+    "slug": "corpus-building",
+    "sites": {
+      "liv": "https://kingsdigitallab.github.io/corpus-building"
+    },
+    "a11y": {
+      "urls": ["/", "/inscription/ISic000001"],
+      "evaluationRequested": "2024-07-16T14:57:50.943Z",
+      "evaluationStarted": "2024-07-16T14:58:40.446Z",
+      "evaluationEnded": "2024-07-16T14:58:46.281Z"
+    },
+    "screenshots": {}
   },
-  "a11y": {
-   "urls": [
-    "/",
-    "/about/",
-    "/projects/",
-    "/projects/step-up/",
-    "/blog/",
-    "/blog/from-cagliari-to-kdl/",
-    "/contact-us/"
-   ],
-   "evaluationStarted": "2024-11-01T17:53:29.477Z",
-   "evaluationEnded": "2024-11-01T17:53:49.561Z"
+  {
+    "name": "Crossreads.A",
+    "slug": "crossreads-a",
+    "sites": {
+      "liv": "https://kingsdigitallab.github.io/crossreads"
+    },
+    "a11y": {
+      "urls": ["/annotator.html"],
+      "evaluationStarted": "2023-07-28T15:02:38.458Z",
+      "evaluationEnded": "2023-07-28T15:02:40.418Z"
+    },
+    "screenshots": {}
   },
-  "screenshots": {}
- },
- {
-  "name": "Corpus Building",
-  "slug": "corpus-building",
-  "sites": {
-   "liv": "https://kingsdigitallab.github.io/corpus-building"
+  {
+    "name": "CultureCase",
+    "slug": "culturecase",
+    "sites": {
+      "liv": "https://culturecase.org"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/about/",
+        "/faqs/",
+        "/contents/",
+        "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
+        "/search/?s=museum"
+      ],
+      "evaluationRequested": "2023-01-06T19:21:05.771Z",
+      "evaluationStarted": "2022-09-30T12:29:21.545Z",
+      "evaluationEnded": "2022-09-30T12:29:51.679Z"
+    },
+    "screenshots": {}
   },
-  "a11y": {
-   "urls": [
-    "/",
-    "/inscription/ISic000001"
-   ],
-   "evaluationRequested": "2024-07-16T14:57:50.943Z",
-   "evaluationStarted": "2024-07-16T14:58:40.446Z",
-   "evaluationEnded": "2024-07-16T14:58:46.281Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "Crossreads.A",
-  "slug": "crossreads-a",
-  "sites": {
-   "liv": "https://kingsdigitallab.github.io/crossreads"
-  },
-  "a11y": {
-   "urls": [
-    "/annotator.html"
-   ],
-   "evaluationStarted": "2023-07-28T15:02:38.458Z",
-   "evaluationEnded": "2023-07-28T15:02:40.418Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "CultureCase",
-  "slug": "culturecase",
-  "sites": {
-   "liv": "https://culturecase.org"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/about/",
-    "/faqs/",
-    "/contents/",
-    "/research/2022/08/the-different-audience-responses-to-shakespeare-staged-in-a-womens-prison/",
-    "/search/?s=museum"
-   ],
-   "evaluationRequested": "2023-01-06T19:21:05.771Z",
-   "evaluationStarted": "2022-09-30T12:29:21.545Z",
-   "evaluationEnded": "2022-09-30T12:29:51.679Z"
-  },
-  "screenshots": {}
- },
- {
-  "name": "King's Past",
-  "slug": "kings-past",
-  "sites": {
-   "github": "https://kingsdigitallab.github.io/kings-past"
-  },
-  "a11y": {
-   "urls": [
-    "/",
-    "/about",
-    "/about/demonumenta",
-    "/moments",
-    "/moments/04",
-    "/moments/04/war-studies-at-kcl",
-    "/database",
-    "/database/people",
-    "database/places",
-    "/database/people/tomas-garrigue-masaryk-360",
-    "/search?q=william+cotton"
-   ],
-   "evaluationStarted": "2024-11-04T07:41:12.008Z",
-   "evaluationEnded": "2024-11-04T07:41:50.066Z"
-  },
-  "screenshots": {}
- }
+  {
+    "name": "King's Past",
+    "slug": "kings-past",
+    "sites": {
+      "github": "https://kingsdigitallab.github.io/kings-past"
+    },
+    "a11y": {
+      "urls": [
+        "/",
+        "/about",
+        "/about/demonumenta",
+        "/moments",
+        "/moments/04",
+        "/moments/04/war-studies-at-kcl",
+        "/database",
+        "/database/people",
+        "/database/places",
+        "/database/people/tomas-garrigue-masaryk-360",
+        "/search?q=william+cotton"
+      ],
+      "evaluationStarted": "2024-11-04T07:41:12.008Z",
+      "evaluationEnded": "2024-11-04T07:41:50.066Z"
+    },
+    "screenshots": {}
+  }
 ]
