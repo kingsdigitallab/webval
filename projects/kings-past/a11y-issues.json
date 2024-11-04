@@ -1,10 +1,10 @@
 {
  "meta": {
-  "lastIssueId": 32,
+  "lastIssueId": 34,
   "host": "https://kingsdigitallab.github.io/kings-past",
   "version": "0.3.0",
-  "evaluationStarted": "2024-11-04T12:28:18.867Z",
-  "evaluationEnded": "2024-11-04T12:28:50.467Z"
+  "evaluationStarted": "2024-11-04T15:32:01.011Z",
+  "evaluationEnded": "2024-11-04T15:32:34.704Z"
  },
  "issues": {
   "1": {
@@ -715,6 +715,50 @@
    },
    "detected": "2024-11-04T12:28:18.867Z",
    "id": 32
+  },
+  "33": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"pagefind-ui__search-input svelte-e9gkc3\" type=\"text\" placeholder=\"Search\" autocapitalize=\"none\" enterkeyhint=\"search\" autofocus=\"\" style=\"padding-right: 44px;\">",
+   "selector": "#search > div > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/search?q=william+cotton",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2024-11-04T15:32:01.011Z",
+   "id": 33
+  },
+  "34": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"pagefind-ui__search-input svelte-e9gkc3\" type=\"text\" placeholder=\"Search\" autocapitalize=\"none\" enterkeyhint=\"search\" autofocus=\"\" style=\"padding-right: 44px;\">",
+   "selector": "#search > div > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/search?q=william+cotton",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2024-11-04T15:32:01.011Z",
+   "id": 34
   }
  },
  "annotations": {
@@ -812,6 +856,12 @@
    "resolution": "Todo"
   },
   "32": {
+   "resolution": "Todo"
+  },
+  "33": {
+   "resolution": "Todo"
+  },
+  "34": {
    "resolution": "Todo"
   }
  }
