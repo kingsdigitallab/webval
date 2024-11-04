@@ -1,10 +1,10 @@
 {
  "meta": {
-  "lastIssueId": 21,
+  "lastIssueId": 32,
   "host": "https://kingsdigitallab.github.io/kings-past",
   "version": "0.3.0",
-  "evaluationStarted": "2024-11-04T07:41:12.008Z",
-  "evaluationEnded": "2024-11-04T07:41:50.066Z"
+  "evaluationStarted": "2024-11-04T12:28:18.867Z",
+  "evaluationEnded": "2024-11-04T12:28:50.467Z"
  },
  "issues": {
   "1": {
@@ -473,6 +473,248 @@
    },
    "detected": "2024-11-04T07:41:12.008Z",
    "id": 21
+  },
+  "22": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com/3d-models/demonumenta-statue-of-thomas-guy-92aeb064785147099bca15ac298a751c?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=92aeb064785147099bca15ac298a751c\" target=\"_blank\" rel=\"nofollow\" style=\"font-weig...",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(3) > div > p > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 22
+  },
+  "23": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com/demonumenta?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=92aeb064785147099bca15ac298a751c\" target=\"_blank\" rel=\"nofollow\" style=\"font-weight: bold; color: #1CAAD9;\">demonumenta</a>",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(3) > div > p > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 23
+  },
+  "24": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=92aeb064785147099bca15ac298a751c\" target=\"_blank\" rel=\"nofollow\" style=\"font-weight: bold; color: #1CAAD9;\">Sketchfab</a>",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(3) > div > p > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 24
+  },
+  "25": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com/3d-models/demonumenta-statue-of-william-gladstone-0ffe3caf193d42bb8398aa0f5226db1e?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=0ffe3caf193d42bb8398aa0f5226db1e\" target=\"_blank\" rel=\"nofollow\" style=\"fo...",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(5) > div > p > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 25
+  },
+  "26": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com/demonumenta?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=0ffe3caf193d42bb8398aa0f5226db1e\" target=\"_blank\" rel=\"nofollow\" style=\"font-weight: bold; color: #1CAAD9;\">demonumenta</a>",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(5) > div > p > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 26
+  },
+  "27": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=0ffe3caf193d42bb8398aa0f5226db1e\" target=\"_blank\" rel=\"nofollow\" style=\"font-weight: bold; color: #1CAAD9;\">Sketchfab</a>",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(5) > div > p > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 27
+  },
+  "28": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com/3d-models/demonumenta-statue-of-james-africanus-horton-4eed40e447574fe58b9070a3eed3a462?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=4eed40e447574fe58b9070a3eed3a462\" target=\"_blank\" rel=\"nofollow\" styl...",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(7) > div > p > a:nth-child(1)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 28
+  },
+  "29": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com/demonumenta?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=4eed40e447574fe58b9070a3eed3a462\" target=\"_blank\" rel=\"nofollow\" style=\"font-weight: bold; color: #1CAAD9;\">demonumenta</a>",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(7) > div > p > a:nth-child(2)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 29
+  },
+  "30": {
+   "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 2.55:1. Recommendation:  change text colour to #002835.",
+   "context": "<a href=\"https://sketchfab.com?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=4eed40e447574fe58b9070a3eed3a462\" target=\"_blank\" rel=\"nofollow\" style=\"font-weight: bold; color: #1CAAD9;\">Sketchfab</a>",
+   "selector": "html > body > div > div:nth-child(1) > main > div > div > article > div:nth-child(7) > div > p > a:nth-child(3)",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/about/demonumenta",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "G18",
+    "target": "Fail",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "3"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 30
+  },
+  "31": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"pagefind-ui__search-input svelte-e9gkc3\" type=\"text\" placeholder=\"Search\" autocapitalize=\"none\" enterkeyhint=\"search\" autofocus=\"\" style=\"padding-right: 44px;\">",
+   "selector": "#search > div > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/search?q=william+cotton",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputText.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 31
+  },
+  "32": {
+   "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+   "context": "<input class=\"pagefind-ui__search-input svelte-e9gkc3\" type=\"text\" placeholder=\"Search\" autocapitalize=\"none\" enterkeyhint=\"search\" autofocus=\"\" style=\"padding-right: 44px;\">",
+   "selector": "#search > div > form > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "https://kingsdigitallab.github.io/kings-past",
+   "webpath": "/search?q=william+cotton",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "F68",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2024-11-04T12:28:18.867Z",
+   "id": 32
   }
  },
  "annotations": {
@@ -537,6 +779,39 @@
    "resolution": "Todo"
   },
   "21": {
+   "resolution": "Todo"
+  },
+  "22": {
+   "resolution": "Todo"
+  },
+  "23": {
+   "resolution": "Todo"
+  },
+  "24": {
+   "resolution": "Todo"
+  },
+  "25": {
+   "resolution": "Todo"
+  },
+  "26": {
+   "resolution": "Todo"
+  },
+  "27": {
+   "resolution": "Todo"
+  },
+  "28": {
+   "resolution": "Todo"
+  },
+  "29": {
+   "resolution": "Todo"
+  },
+  "30": {
+   "resolution": "Todo"
+  },
+  "31": {
+   "resolution": "Todo"
+  },
+  "32": {
    "resolution": "Todo"
   }
  }
