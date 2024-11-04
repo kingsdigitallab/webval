@@ -96,5 +96,30 @@
    "evaluationEnded": "2022-09-30T12:29:51.679Z"
   },
   "screenshots": {}
+ },
+ {
+  "name": "King's Past",
+  "slug": "kings-past",
+  "sites": {
+   "github": "https://kingsdigitallab.github.io/kings-past"
+  },
+  "a11y": {
+   "urls": [
+    "/",
+    "/about",
+    "/about/demonumenta",
+    "/moments",
+    "/moments/04",
+    "/moments/04/war-studies-at-kcl",
+    "/database",
+    "/database/people",
+    "database/places",
+    "/database/people/tomas-garrigue-masaryk-360",
+    "/search?q=william+cotton"
+   ],
+   "evaluationStarted": "2024-11-04T07:41:12.008Z",
+   "evaluationEnded": "2024-11-04T07:41:50.066Z"
+  },
+  "screenshots": {}
  }
 ]
