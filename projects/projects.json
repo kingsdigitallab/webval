@@ -9,17 +9,19 @@
    "urls": [
     "/",
     "/books/",
-    "/books/book_one/",
+    "/books/book_of_remembrances/",
     "/about/",
     "/posts/",
     "/posts/blog/",
     "/posts/blog/2022-07-25-alice-thornton-middleham-castle/",
     "/edition/",
-    "/entities/"
+    "/entities/",
+    "/entities/textsearch/",
+    "/timeline/"
    ],
    "evaluationRequested": "2024-06-19T12:02:49.712Z",
-   "evaluationStarted": "2024-11-01T17:34:56.092Z",
-   "evaluationEnded": "2024-11-01T17:35:25.366Z"
+   "evaluationStarted": "2025-02-06T16:42:13.572Z",
+   "evaluationEnded": "2025-02-06T16:42:38.003Z"
   },
   "screenshots": {}
  },
