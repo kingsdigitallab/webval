@@ -1,9 +1,27 @@
 (function (exports) {
+
+  const isBrowser = (typeof window !== "undefined")
+  
   function base64Encode(str) {
-    if (typeof window !== "undefined") {
-      return btoa(str);
+    // https://developer.mozilla.org/en-US/docs/Glossary/Base64#the_unicode_problem
+    if (isBrowser) {
+      // return btoa(str);
+      const bytes = new TextEncoder().encode(str)
+      const binString = Array.from(bytes, (x) => String.fromCodePoint(x)).join("");
+      return btoa(binString);      
     } else {
-      return Buffer.from(str).toString("base64");
+      throw new Error('add support for unicode to base64Encode() browser implementation')
+      // return Buffer.from(str).toString("base64");
+    }
+  }
+
+  function base64Decode(str) {
+    if (isBrowser) {
+      const binString = atob(str);
+      return new TextDecoder().decode(Uint8Array.from(binString, (m) => m.codePointAt(0)));
+    } else {
+      throw new Error('add support for unicode to base64Decode() browser implementation')
+      // return Buffer.from(str).toString("base64");
     }
   }
 
@@ -63,21 +81,20 @@
         });
         res = res.data;
         if (res) {
-
           sha = res.sha
-          if (!res.content) {
+          if (res.encoding === 'base64' && res.content) {
+            content = JSON.parse(base64Decode(res.content))
+          } else {
             // res.content == "" for file > 1MB
             // need to get content with second request to download_url
             fetchUrl = res?.download_url
-          } else {
-            content = JSON.parse(atob(res.content))
           }
         }
       } catch (err) {
         console.log(err);
       }
     } else {
-      // TODO: simple relative fetch, no shags
+      // TODO: simple relative fetch, no shas
       fetchUrl = `../${filePath}?${Date.now()}`;
     }
 
