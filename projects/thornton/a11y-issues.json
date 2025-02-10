@@ -65760,19 +65760,29 @@
       "resolution": "Todo"
     },
     "2212": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "2213": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "complexity": "S",
+      "roles": "UD"
     },
     "2214": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "complexity": "S",
+      "roles": "U"
     },
     "2215": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "complexity": "S",
+      "roles": "D"
     },
     "2216": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "2217": {
       "resolution": "Todo"
@@ -65805,7 +65815,9 @@
       "resolution": "Todo"
     },
     "2227": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "/|4.1.2": {
       "resolution": "Todo"
@@ -65851,7 +65863,9 @@
       "resolution": "Todo"
     },
     "/entities/|4.1.2": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "complexity": "S",
+      "roles": "UD"
     },
     "/entities/textsearch/|4.1.2": {
       "resolution": "Todo"
