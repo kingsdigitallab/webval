@@ -69621,34 +69621,54 @@
       "resolution": "Todo"
     },
     "2337": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "complexity": "S",
+      "roles": "U"
     },
     "2338": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "2339": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "2340": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "complexity": "M",
+      "roles": "U"
     },
     "2341": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "UD",
+      "complexity": "M"
     },
     "2342": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "M"
     },
     "2343": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "2344": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "2345": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "U",
+      "complexity": "S"
     },
     "2346": {
-      "resolution": "Todo"
+      "resolution": "Todo",
+      "roles": "D",
+      "complexity": "S"
     },
     "2347": {
       "resolution": "Todo"
