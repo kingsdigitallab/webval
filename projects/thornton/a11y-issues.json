@@ -1,10 +1,10 @@
 {
  "meta": {
   "version": "0.3.0",
-  "evaluationStarted": "2025-02-24T23:35:11.139Z",
-  "evaluationEnded": "2025-02-24T23:35:40.942Z",
+  "evaluationStarted": "2025-02-25T22:21:25.745Z",
+  "evaluationEnded": "2025-02-25T22:21:56.723Z",
   "host": "http://localhost:8080",
-  "lastIssueId": 2359
+  "lastIssueId": 2379
  },
  "issues": {
   "1": {
@@ -62592,6 +62592,521 @@
    },
    "detected": "2025-02-24T23:35:11.139Z",
    "id": 2359
+  },
+  "2360": {
+   "code": "link-in-text-block",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Links must be distinguishable without relying on color (https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI)",
+   "context": "<a href=\"//kdl.kcl.ac.uk/\">King's Digital Lab</a>",
+   "selector": "html > body > footer > div > p:nth-child(6) > a",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+    "impact": "serious",
+    "help": "Links must be distinguishable without relying on color",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "4",
+    "rule": "1"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2360
+  },
+  "2361": {
+   "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+   "context": "<img itemprop=\"image\" src=\"/assets/img/books/BookRemembrancesFrontCover.jpg\" class=\"book-thumb\">",
+   "selector": "html > body > section > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > img",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/books/book_of_remembrances/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H37",
+    "target": "",
+    "principle": "1",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2361
+  },
+  "2362": {
+   "code": "definition-list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements (https://dequeuniversity.com/rules/axe/4.8/definition-list?application=axeAPI)",
+   "context": "<dl><dt>Book:</dt><dd>Book of Remem...</dl>",
+   "selector": "#drawer > h1 > dl",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <dl> elements are structured correctly",
+    "impact": "serious",
+    "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/definition-list?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/edition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2362
+  },
+  "2363": {
+   "code": "scrollable-region-focusable",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Scrollable region must have keyboard access (https://dequeuniversity.com/rules/axe/4.8/scrollable-region-focusable?application=axeAPI)",
+   "context": "<div class=\"content\"><h2>Key</h2><p><sup>*</sup>Only...</div>",
+   "selector": "#drawer > div > div:nth-child(2) > div",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensure elements that have scrollable content are accessible by keyboard",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/scrollable-region-focusable?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/edition/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "2",
+    "guideline": "1",
+    "rule": "1"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2363
+  },
+  "2364": {
+   "code": "definition-list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements (https://dequeuniversity.com/rules/axe/4.8/definition-list?application=axeAPI)",
+   "context": "<dl><dt>Book:</dt><dd>Book 1&nbsp; ...</dl>",
+   "selector": "#drawer > h1 > dl",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <dl> elements are structured correctly",
+    "impact": "serious",
+    "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/definition-list?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/edition/?p0.do=book_one&p0.lo=p.3&p0.vi=modern",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2364
+  },
+  "2365": {
+   "code": "definition-list",
+   "type": "error",
+   "typeCode": 1,
+   "message": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements (https://dequeuniversity.com/rules/axe/4.8/definition-list?application=axeAPI)",
+   "context": "<dl><dt>Book:</dt><dd>&nbsp; <a tit...</dl>",
+   "selector": "#drawer > h1 > dl",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures <dl> elements are structured correctly",
+    "impact": "serious",
+    "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/definition-list?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/edition/?p0.do=book_one&p0.lo=p.5",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "1",
+    "guideline": "3",
+    "rule": "1"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2365
+  },
+  "2366": {
+   "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+   "context": "<form class=\"search-inputs column is-3\"><h2 class=\"undecorated\">Filters...</form>",
+   "selector": "#search > div:nth-child(4) > form",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H32",
+    "target": "2",
+    "principle": "3",
+    "guideline": "2",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2366
+  },
+  "2367": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"search\" autocomplete=\"off\" placeholder=\"Person, place or event\">",
+   "selector": "#search > div:nth-child(4) > form > nav > div:nth-child(2) > div > div > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputSearch.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2367
+  },
+  "2368": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(1) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2368
+  },
+  "2369": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(2) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2369
+  },
+  "2370": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(3) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2370
+  },
+  "2371": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(4) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2371
+  },
+  "2372": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(5) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2372
+  },
+  "2373": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(6) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2373
+  },
+  "2374": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(7) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2374
+  },
+  "2375": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(8) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2375
+  },
+  "2376": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(9) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2376
+  },
+  "2377": {
+   "code": "nested-interactive",
+   "type": "error",
+   "typeCode": 1,
+   "message": "Interactive controls must not be nested (https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI)",
+   "context": "<summary class=\"result-head\"><span class=\"icon\"><i class=\"ty...</summary>",
+   "selector": "#search > div:nth-child(4) > div > ul > li:nth-child(10) > details > summary",
+   "runner": "axe",
+   "runnerExtras": {
+    "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+    "impact": "serious",
+    "help": "Interactive controls must not be nested",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI"
+   },
+   "host": "http://localhost:8080",
+   "webpath": "/entities/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "",
+    "target": "",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2377
+  },
+  "2378": {
+   "code": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid.",
+   "context": "<form @submit.prevent=\"onSubmitInputs\" class=\"search-inputs column is-3\">\n      <h2 class=\"undecorated\">...</form>",
+   "selector": "#search > div:nth-child(4) > form",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/entities/textsearch/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H32",
+    "target": "2",
+    "principle": "3",
+    "guideline": "2",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2378
+  },
+  "2379": {
+   "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputSearch.Name",
+   "type": "error",
+   "typeCode": 1,
+   "message": "This searchinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+   "context": "<input class=\"input\" type=\"search\" v-model=\"selection.query\" autocomplete=\"off\" placeholder=\"search the edition\" @search=\"search()\" @keyup=\"onKeyUp()\">",
+   "selector": "#search > div:nth-child(4) > form > nav > div > div > div > input",
+   "runner": "htmlcs",
+   "runnerExtras": {},
+   "host": "http://localhost:8080",
+   "webpath": "/entities/textsearch/",
+   "rule": {
+    "standard": "WCAG2",
+    "code": "H91",
+    "target": "InputSearch.Name",
+    "principle": "4",
+    "guideline": "1",
+    "rule": "2"
+   },
+   "detected": "2025-02-25T22:21:25.745Z",
+   "id": 2379
   }
  },
  "annotations": {
@@ -69687,6 +70202,66 @@
    "resolution": "Todo"
   },
   "2359": {
+   "resolution": "Todo"
+  },
+  "2360": {
+   "resolution": "Todo"
+  },
+  "2361": {
+   "resolution": "Todo"
+  },
+  "2362": {
+   "resolution": "Todo"
+  },
+  "2363": {
+   "resolution": "Todo"
+  },
+  "2364": {
+   "resolution": "Todo"
+  },
+  "2365": {
+   "resolution": "Todo"
+  },
+  "2366": {
+   "resolution": "Todo"
+  },
+  "2367": {
+   "resolution": "Todo"
+  },
+  "2368": {
+   "resolution": "Todo"
+  },
+  "2369": {
+   "resolution": "Todo"
+  },
+  "2370": {
+   "resolution": "Todo"
+  },
+  "2371": {
+   "resolution": "Todo"
+  },
+  "2372": {
+   "resolution": "Todo"
+  },
+  "2373": {
+   "resolution": "Todo"
+  },
+  "2374": {
+   "resolution": "Todo"
+  },
+  "2375": {
+   "resolution": "Todo"
+  },
+  "2376": {
+   "resolution": "Todo"
+  },
+  "2377": {
+   "resolution": "Todo"
+  },
+  "2378": {
+   "resolution": "Todo"
+  },
+  "2379": {
    "resolution": "Todo"
   },
   "/|4.1.2": {
